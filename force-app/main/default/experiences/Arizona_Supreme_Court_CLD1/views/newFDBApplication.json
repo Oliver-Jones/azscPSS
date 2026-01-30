@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "3722312c-9e20-4070-a8ad-e33eb20f32bd",
+  "label" : "New FDB Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDFiduciaryLicensingBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "2fea0aff-9da2-427a-be98-a09f31b4c738",
+          "columns" : [ {
+            "UUID" : "bf23a811-928a-42a2-b0f1-154442d0c444",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "2fea0aff-9da2-427a-be98-a09f31b4c738",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "",
+            "subType" : "",
+            "theme" : "",
+            "type" : ""
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "4e781806-8d9e-4bb5-abd4-57d2a6d04c28",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bf23a811-928a-42a2-b0f1-154442d0c444",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fcc10901-5de1-4b19-84a8-f28ff9608abf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Fiduciary Business Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cb18a08c-b0c0-46a0-8aec-a1e9e0644862",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e0b211ca-3369-4f95-9241-d99c2a480e5c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-fdb-application"
+}

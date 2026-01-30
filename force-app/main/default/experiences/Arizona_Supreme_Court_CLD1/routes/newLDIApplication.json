@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "cefc5a8c-f913-4f75-8371-fd679a6216ba",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_LDI_Application__c",
+  "id" : "9e47ef2b-2162-4e62-8ae4-b3f97602bfff",
+  "label" : "New LDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-ldi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/new-ldi-application"
+}

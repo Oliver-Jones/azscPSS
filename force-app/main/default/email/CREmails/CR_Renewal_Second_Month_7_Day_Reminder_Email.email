@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015PY00000XRadv&amp;oid=00DKj000002YfWw&amp;lastMod=1764870419000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{CurrentDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">Our records indicate you have not submitted a renewal application for your Certified Reporter licensure. The Certified Reporters program has now opened its certification renewal application process and will close on {{{BusinessLicense.Expiration_Date__c}}}. Remaining days to renew: 7 Days.<br />
+<br />
+PLEASE NOTE: All applications submitted in the month of February will be assessed a $100 late renewal fee.<br />
+<br />
+You can apply and pay online for your renewal application using your debit or credit card. To start your application, please visit the AZ COURTS PORTAL link prior to your certification expiration. Additional resources can be found at <a href="https://www.azcourts.gov/cld">www.azcourts.gov/cld</a>.<br />
+<br />
+If you encounter difficulties renewing online, contact the Certification and Licensing Division at the email address below.<br />
+<br />
+You will not be able to renew the license after the date of expiration. <strong>All Certified Reporter Individual Certificates and Registered Firms will expire at Midnight on {{{BusinessLicense.Expiration_Date__c}}}</strong>. In the event you fail to renew your license prior to the expiration date, you must contact the Division for next steps.</div>
+
+<div style="padding-left:50%;"><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+courtrep@courts.az.gov</div>
+</body>
+</html>

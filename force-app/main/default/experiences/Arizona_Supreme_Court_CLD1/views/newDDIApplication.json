@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "6536f59c-523c-4aac-ad96-e47989ec4808",
+  "label" : "New DDI Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/DDdrive?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4f5cd9a4-c620-4730-90f3-26133cd18438",
+          "columns" : [ {
+            "UUID" : "f9750b85-ec75-4483-8ce4-17d854fdd470",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4f5cd9a4-c620-4730-90f3-26133cd18438",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "",
+            "subType" : "",
+            "theme" : "",
+            "type" : ""
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "9bf8e194-5483-4ea0-8878-65e82196770d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f9750b85-ec75-4483-8ce4-17d854fdd470",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "af41dc18-724b-48b3-b878-30bc7ba6d764",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Defensive Driving Instructor Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "aaa08b59-7921-4f91-b3e1-ebdcad763634",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5b8b7275-2a2e-4b8c-a4c1-3eaf3e0a9d82",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-ddi-application"
+}

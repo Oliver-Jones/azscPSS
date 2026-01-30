@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "44e58031-b615-4661-9885-61a5d6aa733f",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_LDI_Application__c",
+  "id" : "f3c8def7-936a-41c1-afeb-186007edb33f",
+  "label" : "Renewal LDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-ldi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/renewal-ldi-application"
+}

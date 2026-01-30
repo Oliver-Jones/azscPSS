@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;Data&quot;:[{&quot;AppliedDate&quot;:&quot;Sep 19, 2025 1:36:42 PM&quot;,&quot;RecordId&quot;:&quot;0kTOu0000000C2nMAE&quot;,&quot;ResumeUrl&quot;:&quot;https://azcld--mastekpssd.sandbox.my.site.com/s/applications/renewal-abs-application?c__applnType=Renewal%20Licensure&amp;c__applnCategory=Non-Profit%20ABS&amp;c__sfl=true&amp;c__instanceId=0kTOu0000000C2nMAE&quot;,&quot;ApplicationStatus&quot;:&quot;In Progress&quot;},{&quot;AppliedDate&quot;:&quot;Sep 19, 2025 3:12:20 PM&quot;,&quot;RecordId&quot;:&quot;0kTOu0000000C4PMAU&quot;,&quot;ResumeUrl&quot;:&quot;https://azcld--mastekpssd.sandbox.my.site.com/s/applications/renewal-abs-application?c__applnType=Renewal%20Licensure&amp;c__applnCategory=Non-Profit%20ABS&amp;c__sfl=true&amp;c__instanceId=0kTOu0000000C4PMAU&quot;,&quot;ApplicationStatus&quot;:&quot;In Progress&quot;},{&quot;AppliedDate&quot;:&quot;Sep 22, 2025 12:00:00 AM&quot;,&quot;Role&quot;:&quot;Applicant&quot;,&quot;ApplicationName&quot;:&quot;Alternative Business Structure License&quot;,&quot;BusinessName&quot;:&quot;Manny&apos;s Cafe&quot;,&quot;ApplicationStatus&quot;:&quot;New&quot;,&quot;ApplicationNumber&quot;:&quot;BLA-0000000361&quot;,&quot;RecordId&quot;:&quot;0f0Ou0000000AiXIAU&quot;},{&quot;AppliedDate&quot;:&quot;Sep 23, 2025 12:00:00 AM&quot;,&quot;Role&quot;:&quot;Applicant&quot;,&quot;ApplicationName&quot;:&quot;Alternative Business Structure License&quot;,&quot;BusinessName&quot;:&quot;Manny&apos;s Cafe&quot;,&quot;ApplicationStatus&quot;:&quot;New&quot;,&quot;ApplicationNumber&quot;:&quot;BLA-0000000362&quot;,&quot;RecordId&quot;:&quot;0f0Ou0000000Ak9IAE&quot;},{&quot;AppliedDate&quot;:&quot;Sep 23, 2025 12:00:00 AM&quot;,&quot;Role&quot;:&quot;Applicant&quot;,&quot;ApplicationName&quot;:&quot;Alternative Business Structure License&quot;,&quot;BusinessName&quot;:&quot;Manny&apos;s Cafe&quot;,&quot;ApplicationStatus&quot;:&quot;New&quot;,&quot;ApplicationNumber&quot;:&quot;BLA-0000000363&quot;,&quot;RecordId&quot;:&quot;0f0Ou0000000AllIAE&quot;}],&quot;CurrentPage&quot;:&quot;2&quot;,&quot;PageSize&quot;:&quot;10&quot;,&quot;Action&quot;:&quot;first&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>English</language>
+    <name>Pagination</name>
+    <omniProcessElements>
+        <description>List Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FilterList</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;LoopBlock:LoopOutput&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;(Index &gt; ((PageSize * PageNumber) - PageSize)) &amp;&amp; (Index &lt;= (PageSize * PageNumber))&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>List Merge Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Set Values Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InitializeValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;Total&quot; : &quot;=LISTSIZE(%Data%)&quot;,
+    &quot;LoopInput&quot; : &quot;=LIST(%Data%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <description>List Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ModifiedList</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;InitializeValues:LoopInput&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;PageSize&quot; : &quot;=%PageProperties:PageSize%&quot;,
+    &quot;PageNumber&quot; : &quot;=%PageProperties:PageNumber%&quot;,
+    &quot;PageTotal&quot; : &quot;=%PageProperties:PageTotal%&quot;,
+    &quot;Index&quot; : &quot;=%InitializeValues:Index%&quot;,
+    &quot;Last&quot; : &quot;=%PageProperties:Last%&quot;,
+    &quot;First&quot; : &quot;=%PageProperties:First%&quot;,
+    &quot;OneZero&quot; : &quot;=%PageProperties:OneZero%&quot;,
+    &quot;TwoFive&quot; : &quot;=%PageProperties:TwoFive%&quot;,
+    &quot;FiveZero&quot; : &quot;=%PageProperties:FiveZero%&quot;,
+    &quot;OneZeroZero&quot; : &quot;=%PageProperties:OneZeroZero%&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;mergeFields&quot; : [ ]
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <description>Set Values Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SetIndex</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;LoopIndex&quot;,
+  &quot;responseJSONNode&quot; : &quot;InitializeValues:Index&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;LoopIndex&quot; : &quot;=SUM(%InitializeValues:Index%, 1)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <description>Loop Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoopBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;loopList&quot; : &quot;InitializeValues:LoopInput&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;loopOutput&quot; : {
+    &quot;LoopOutput&quot; : &quot;%ModifiedList%&quot;
+  }
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Loop Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Set Values Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PageNumber</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;SetPageNumber&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;SetPageNumber&quot; : &quot;=IF(%Action% == \&quot;first\&quot;, 1 , IF(%Action% == \&quot;last\&quot;, IF(%InitializeValues:Total% == 0, 0, IF(%InitializeValues:Total% &lt; %PageSize%, 1, ROUND(%InitializeValues:Total%/(%PageSize%), 0, CEILING))), IF(%Action% == \&quot;next\&quot;, SUM(%CurrentPage%, 1), IF(%Action% == \&quot;previous\&quot;, SUM(%CurrentPage%, -1), %CurrentPage%))))&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Set Values Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PageProperties</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;PageSize&quot; : &quot;%PageSize%&quot;,
+    &quot;PageNumber&quot; : &quot;=%PageNumber%&quot;,
+    &quot;PageTotal&quot; : &quot;=%PageTotal%&quot;,
+    &quot;First&quot; : &quot;=IF(%PageNumber% == 1, true, false)&quot;,
+    &quot;Last&quot; : &quot;=IF(%PageNumber% == %PageTotal%, true, false)&quot;,
+    &quot;OneZero&quot; : &quot;=%PageSize% == 10&quot;,
+    &quot;TwoFive&quot; : &quot;=%PageSize% == 25&quot;,
+    &quot;FiveZero&quot; : &quot;=%PageSize% == 50&quot;,
+    &quot;OneZeroZero&quot; : &quot;=%PageSize% == 100&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Set Values Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PageTotal</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;SetPageTotal&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;SetPageTotal&quot; : &quot;=IF(%InitializeValues:Total% == 0, 0, IF(%InitializeValues:Total% &lt; %PageSize%, 1, ROUND((%InitializeValues:Total%)/(%PageSize%), 0, CEILING)))&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Response Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Response</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;responseFormat&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;Page&quot; : &quot;=%PageProperties%&quot;,
+    &quot;Result&quot; : &quot;=%FilterList%&quot;
+  },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>AZSC_Pagination</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : [ ],
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : [ ],
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;transientValues&quot; : {
+    &quot;activateOrDeactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>Pagination</subType>
+    <type>AZSC</type>
+    <uniqueName>AZSC_Pagination_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

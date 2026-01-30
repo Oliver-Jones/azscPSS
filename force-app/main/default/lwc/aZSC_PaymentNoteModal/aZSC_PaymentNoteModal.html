@@ -1,0 +1,53 @@
+<template>
+    <lightning-modal-header>
+        <h2 class="slds-text-heading_medium slds-hyphenate">
+            <template if:true={isPayNow}>Pay Now</template>
+            <template if:true={isPayLater}>Pay Later</template>
+        </h2>
+    </lightning-modal-header>
+    <lightning-modal-body>
+        <template lwc:if={showSpinner}>
+            <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+        </template>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+            <template if:true={isPayNow}>
+                <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium">
+                    You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.
+                </div>
+                <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small">
+                    Are you sure you want to proceed to a secure site for the payment transaction?
+                </div>
+                <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_small">
+                    Please note: Once redirected to the payment gateway, do not refresh the page, click the browser's back button, or close the browser, as this may disrupt the transaction process.
+                </div>
+            </template>
+            <template if:true={isPayLater}>
+                <div class="slds-col slds-size_12-of-12 slds-float_left slds-p-around_medium">
+                    <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+                        Please submit your payment using the following accepted forms of payment:
+                    </div>
+                    <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+                        1. Check or Money Order payable to “Arizona Supreme Court” <br/>
+                        2. Visa or Mastercard with the <a target="_blank" href="https://www.azcourts.gov/Portals/0/26/Credit%20Card%20Authorization%20Form.pdf">credit card authorization form</a><br/>
+                        3. AND can be mailed OR dropped off at
+                    </div>
+                    <div style="line-height: 2; text-align: left; padding-left: 10%;" class="slds-text-heading_small slds-p-top_xx-small slds-p-left_xx-large">
+                        1501 W. Washington St.,<br/>
+                        Ste 104 Phoenix, AZ 85007<br/>
+                        attn: Certification and Licensing Division
+                    </div>
+                    <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+                        (Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <button class="slds-button slds-button_neutral" onclick={closeModal}>Cancel</button>
+        <button class="slds-button slds-button_brand" onclick={confirmClose}>
+            <template if:true={isPayNow}>Proceed to Pay Now</template>
+            <template if:true={isPayLater}>Pay Later & Close App</template>
+        </button>
+    </lightning-modal-footer>
+</template>

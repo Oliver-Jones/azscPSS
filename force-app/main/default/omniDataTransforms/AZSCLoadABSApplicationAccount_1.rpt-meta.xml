@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:14:23.468Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;&quot;,
+  &quot;DPBusinessState&quot; : &quot;&quot;,
+  &quot;DPHomeCountry&quot; : &quot;&quot;,
+  &quot;DPHomeState&quot; : &quot;&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : {
+      &quot;documentName2&quot; : &quot;Draft Articles of Organization or Partnership Agreement&quot;
+    },
+    &quot;Block3&quot; : {
+      &quot;documentName3&quot; : &quot;Letter Not Submitted Entity&quot;
+    },
+    &quot;BusinessState&quot; : &quot;UT&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Whitetown&quot;,
+    &quot;BusinessZip&quot; : &quot;12314&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-02&quot;,
+    &quot;FederalTaxID&quot; : &quot;123131288&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Limited Liability Co.&quot;,
+    &quot;ApplicantRegisteredWithAZCommission&quot; : &quot;No&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004A5MAI&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadABSApplicationAccount</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount4731306114355127</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>POC_Email__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount13676225709006795</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Date_Business_Formed__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount3806285920524174</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadABSApplicationAccount8462811185075019</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount7058395666894585</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount7093292398121444</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessFax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccountCustom9393</globalKey>
+        <inputFieldName>ApplicantInfo:DBAName3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_3__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount11292236119233356</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount510302866447762</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessTelephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6cd1dfac-088e-4c0e-8db6-36cd70932bbf</globalKey>
+        <inputFieldName>ABSAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount1697088553995414</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount3407558803897187</globalKey>
+        <inputFieldName>ApplicantInfo:StateTaxID</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>State_Tax_ID_Number__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicantInfo:DBAName1 var:NULL != var:ApplicantInfo:DBAName1 &apos;&apos; IF | var:ApplicantInfo:DBAName1 var:NULL != var:ApplicantInfo:DBAName2 var:NULL != AND &apos;,/\/\/&apos; &apos;&apos; IF + | var:ApplicantInfo:DBAName2 var:NULL != var:ApplicantInfo:DBAName2 &apos;&apos; IF + | var:ApplicantInfo:DBAName2 var:NULL != var:ApplicantInfo:DBAName3 var:NULL != AND &apos;,/\/\/&apos; &apos;&apos; IF + | var:ApplicantInfo:DBAName3 var:NULL != var:ApplicantInfo:DBAName3 &apos;&apos; IF +</formulaConverted>
+        <formulaExpression>IF(%ApplicantInfo:DBAName1% != NULL, %ApplicantInfo:DBAName1%, &apos;&apos;) + IF(AND(%ApplicantInfo:DBAName1% != NULL, %ApplicantInfo:DBAName2% != NULL), &apos;, &apos;, &apos;&apos;) + IF(%ApplicantInfo:DBAName2% != NULL, %ApplicantInfo:DBAName2%, &apos;&apos;) + IF(AND(%ApplicantInfo:DBAName2% != NULL, %ApplicantInfo:DBAName3% != NULL), &apos;, &apos;, &apos;&apos;) + IF(%ApplicantInfo:DBAName3% != NULL, %ApplicantInfo:DBAName3%, &apos;&apos;)</formulaExpression>
+        <formulaResultPath>DBAName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>AZSCLoadABSApplicationAccount669029717578548</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccountCustom7428</globalKey>
+        <inputFieldName>ApplicantInfo:DBAName2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_2__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount8249653632277251</globalKey>
+        <inputFieldName>DBAName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List_ALL_assumed_DBA_s_or_trade_names__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccountCustom7724</globalKey>
+        <inputFieldName>ApplicantInfo:DBAName1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_1__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount12835413638591342</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccountCustom4456</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List_Name_of_Business__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>ABS_Entity</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount3309509774612365</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount2206773484828649</globalKey>
+        <inputFieldName>ApplicantInfo:BusinessOrganization</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Organization_Type__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Business</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccountCustom1921</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount013791861038532471</globalKey>
+        <inputFieldName>ApplicantInfo:OrgLegalName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadABSApplicationAccount9647326862906161</globalKey>
+        <inputFieldName>ApplicantInfo:FederalTaxID</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadABSApplicationAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Federal_Tax_ID_Number__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataMapperPostAction9&quot; : null,
+    &quot;InsertAuthorizedPersons&quot; : null,
+    &quot;LoadStatutoryAgentBusiness&quot; : null,
+    &quot;ReturnApplicationInfo&quot; : null,
+    &quot;LoadDraftApplication&quot; : null,
+    &quot;InitializeVariables&quot; : null,
+    &quot;LoadABSApplicationCase&quot; : null,
+    &quot;LoadStatutoryAgentIndividual&quot; : null,
+    &quot;LoadComplianceLawyer&quot; : null,
+    &quot;LoadBusinessLicenseApplication&quot; : null,
+    &quot;LoadDesignatedPrincipal&quot; : null,
+    &quot;LoadApplicantInfo&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadABSApplicationAccount_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "10e4e0cb-fe77-464f-bf85-60a2a803e38d",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Reinstate_ABS_Application__c",
+  "id" : "1462d64f-1df6-49e5-a902-b796d600a709",
+  "label" : "Reinstate ABS Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-reinstate-abs-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/reinstate-abs-application"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "d927f9f6-9fcc-4e13-abe6-d1b558958f4e",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_DDS_Application__c",
+  "id" : "b743fbbf-4dbb-4416-91a4-9d9a3de9a3d7",
+  "label" : "Renewal DDS Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-dds-application",
+  "type" : "route",
+  "urlPrefix" : "applications/dd-program/renewal-dds-application"
+}

@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "db64d318-ed5a-466f-bceb-c08d84434192",
+  "label" : "Renewal FDB Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDFiduciaryLicensingBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6b6b8c6c-de3c-4102-aa9e-085cdbc3f9c3",
+          "columns" : [ {
+            "UUID" : "6b57c2de-1294-4a69-8f42-2db7227b6fd9",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6b6b8c6c-de3c-4102-aa9e-085cdbc3f9c3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "",
+            "subType" : "",
+            "theme" : "",
+            "type" : ""
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "d1302707-ed4e-4b2c-825e-901f42ec8e9b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6b57c2de-1294-4a69-8f42-2db7227b6fd9",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6b8d6b96-bea5-46e0-8dc5-0f5e2594bd66",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Renew Fiduciary Business Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "87186543-0b66-447f-bb25-ff2f9fedddeb",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1971a671-c51b-43aa-85e4-72e109ef0e81",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-renewal-fdb-application"
+}

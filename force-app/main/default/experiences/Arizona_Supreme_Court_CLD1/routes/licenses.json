@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "b56bf349-1cd8-4aa0-b612-5d09e8696c0d",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Licenses__c",
+  "id" : "5fd50749-a225-4a64-80e0-57beff25f19b",
+  "label" : "Licenses",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-licenses",
+  "type" : "route",
+  "urlPrefix" : "licenses"
+}

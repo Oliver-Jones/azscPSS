@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Recipient.Name}}}<br />
+{{{Recipient.MailingStreet}}}<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}} {{{Recipient.MailingPostalCode}}}<br />
+<br />
+<br />
+Re: Arizona {{{PersonExamination.Certification_Type__c}}} Examination Results - First Attempt<br />
+<br />
+<br />
+Dear {{{Recipient.FirstName}}},<br />
+<br />
+Under the Arizona Code of Judicial Administration (ACJA) § 7-201(E)(1)(f)(1)(g), this letter is notification of a non-passing score on your recent certification or licensure examination. Reexamination with a passing result is required to meet the qualifications for certification or licensure.<br />
+<br />
+<strong>Passing Score for {{{PersonExamination.Certification_Type__c}}} Exam: {{{PersonExamination.Passing_Program_Score__c}}}<br />
+<br />
+Your Score for {{{PersonExamination.Certification_Type__c}}} Exam: {{{PersonExamination.Score}}}<br />
+<br />
+An applicant who does not achieve a passing score on the first examination may submit a written request for an in-person review of the test questions missed. To schedule a review, contact the Division at the program email below.<br />
+<br />
+To retake the examination, submit a written request to the program email below. Additionally, an applicant must file a new application and pay the applicable examination fee. Registration for reexamination must be submitted through the Arizona Judicial Branch’s Certification &amp; Licensing Portal at&nbsp;<a href="https://azcld--partial.sandbox.my.site.com/s/">https://azcld--partial.sandbox.my.site.com/s/</a>.<br />
+<br />
+Requests to review examination questions and to retake the examination must be submitted to the program email at:&nbsp;<a href="https://cldexams@courts.az.gov">cldexams@courts.az.gov</a></strong><br />
+<br />
+For any questions related to the application process (but not exams), please feel free to reach out to the appropriate&nbsp;program mailboxes listed below:<br />
+<br />
+Certified Court Reporter:&nbsp;<a href="mailto:CourtRep@courts.az.gov">CourtRep@courts.az.gov</a><br />
+Defensive Driving:&nbsp;<a href="mailto:DDrive@courts.az.gov">DDrive@courts.az.gov</a><br />
+Certified Legal Document Preparer:&nbsp;<a href="mailto:LDP@courts.az.gov">LDP@courts.az.gov</a><br />
+Legal Paraprofessional:&nbsp;<a href="mailto:LPProgram@courts.az.gov">LPProgram@courts.az.gov</a><br />
+Fiduciary:&nbsp;<a href="mailto:PFP@courts.az.gov">PFP@courts.az.gov</a><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division<br />
+Arizona Supreme Court</body>
+</html>

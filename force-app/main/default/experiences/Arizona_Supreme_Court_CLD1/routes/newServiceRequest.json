@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "1e3f7c95-b7d9-47b0-a349-a26c698a322d",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_Service_Request__c",
+  "id" : "969efdc2-28f1-4ff8-b99c-57b2c73a81f1",
+  "label" : "New Service Request",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-service-request",
+  "type" : "route",
+  "urlPrefix" : "service-requests/new-service-request"
+}

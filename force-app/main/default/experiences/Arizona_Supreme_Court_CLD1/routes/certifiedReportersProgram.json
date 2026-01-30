@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "8281081a-e5fe-4b04-bc38-6257d6c51e68",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Certified_Reporters_Program__c",
+  "id" : "8e7da8de-8e66-409c-9d64-b183b80a0136",
+  "label" : "Certified Reporters Program",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-cr-program",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program"
+}

@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015PY00000XRadv&amp;oid=00DKj000002YfWw&amp;lastMod=1764870419000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;"><br />
+Dear {{{Recipient.Name}}},<br />
+<br />
+Division records indicate no renewal application was received this certification period. Under Arizona Code of Judicial Administration ("ACJA") effective as of midnight of {{{BusinessLicense.PeriodEnd}}}. All registered reporting firms expire on February 28th of even numbered years. Your Registered Reporting Firm certificate {{{BusinessLicense.Name}}}, has expired and is no longer active.<br />
+<br />
+You must immediately cease providing services. If you believe you have received this notification in error, please contact the Certification and Licensing Division by emailing the Certified Reporter Program inbox at <a href="https://CourtRep@courts.az.gov">CourtRep@courts.az.gov</a>.<br />
+<br />
+<strong>NOTE REGARDING PENDING COMPLAINTS: </strong>The expiration of your certification <strong>DOES NOT</strong> limit the Division's authority to investigate, or the Board's authority to act on, pending complaints.</div>
+
+<div style="padding-left:50%;"><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+courtrep@courts.az.gov</div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+</body>
+</html>

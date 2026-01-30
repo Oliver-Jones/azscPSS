@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Endorsement_Subject_Matter__c</fullName>
+    <label>Endorsement Subject Matter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Administrative Law Subject Matter</label>
+            </value>
+            <value>
+                <fullName>Civil Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Civil Law Subject Matter</label>
+            </value>
+            <value>
+                <fullName>Criminal Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Criminal Law Subject Matter</label>
+            </value>
+            <value>
+                <fullName>Family Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Family Law Subject Matter</label>
+            </value>
+            <value>
+                <fullName>Juvenile Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Juvenile Law Subject Matter</label>
+            </value>
+            <value>
+                <fullName>Probate Law Subject Matter</fullName>
+                <default>false</default>
+                <label>Probate Law Subject Matter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

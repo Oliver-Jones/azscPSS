@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Arizona Supreme Court CLD</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>New Application</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>ABS Application</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/abs-program/abs-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Designated Principal Application</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/abs-program/designated-principal-sub-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Compliance Lawyer Application</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/abs-program/compliance-lawyer-sub-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Authorized Individual Application</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/abs-program/authorized-individual-sub-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Authorized Entity Application</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/abs-program/authorized-entity-sub-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>CRI Application</label>
+                <position>5</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/cr-program/new-cri-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>New CRF Application</label>
+                <position>6</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/applications/cr-program/new-crf-application</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Exams</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/exams</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Applications</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Licenses</label>
+        <menuItemBranding>
+            <tileImage>penandpaper1454441</tileImage>
+        </menuItemBranding>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/licenses</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

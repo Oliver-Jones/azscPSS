@@ -1,0 +1,68 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "c7652257-f855-43b8-8b8a-e774291617ad",
+  "label" : "Payment",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "99b32794-355d-46a0-9eaf-fb4fb753bb4c",
+          "columns" : [ {
+            "UUID" : "51971e21-02ae-44e4-8d87-d842561d56a1",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "99b32794-355d-46a0-9eaf-fb4fb753bb4c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:aZSC_PaymentRedirect",
+          "id" : "3de6a45b-59e2-404b-aefb-9c1547490ca5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "51971e21-02ae-44e4-8d87-d842561d56a1",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dc94ccda-5939-43ce-9b57-3a490e63efec",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Payment"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ad0f0b29-26d4-4e5c-926a-12b3ad123ead",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "21f72afa-9f03-4d77-8b17-f78c947279cb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-payment"
+}

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;UserInfo&quot;:{&quot;ContactId&quot;:&quot;003Ou00000b2ceLIAQ&quot;,&quot;IsPortalEnabled&quot;:true,&quot;AccountId&quot;:&quot;001Ou00000U5w8bIAB&quot;},&quot;applnType&quot;:&quot;Initial Licensure&quot;,&quot;applnCategory&quot;:&quot;Equity ABS&quot;,&quot;userProfile&quot;:&quot;AZSC Portal User&quot;,&quot;timeStamp&quot;:&quot;2025-09-15T12:46:54.948Z&quot;,&quot;userTimeZoneName&quot;:&quot;America/Yellowknife&quot;,&quot;userTimeZone&quot;:&quot;-360&quot;,&quot;userCurrencyCode&quot;:&quot;USD&quot;,&quot;userName&quot;:&quot;mitchellefloryn312@yopmail.com.azsc&quot;,&quot;userId&quot;:&quot;005Ou00000Frt2XIAR&quot;,&quot;omniProcessId&quot;:&quot;0jNOu0000001IfdMAE&quot;,&quot;localTimeZoneName&quot;:&quot;UTC&quot;,&quot;AuthorizedPersonInformation&quot;:{&quot;AuthorizedPersonBlock&quot;:[{&quot;AddedFrom&quot;:&quot;DP&quot;,&quot;DoNotCreateUser&quot;:true,&quot;AuthorizedPersonName&quot;:&quot;Marcus Barnes&quot;,&quot;AuthorizedPersonTypeFormula&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonFirstName&quot;:&quot;Marcus&quot;,&quot;AuthorizedPersonMiddleName&quot;:&quot;T&quot;,&quot;AuthorizedPersonLastName&quot;:&quot;Barnes&quot;,&quot;AuthorizedPersonLegalName&quot;:null,&quot;AuthorizedPersonPOCFirstName&quot;:null,&quot;AuthorizedPersonPOCLastName&quot;:null,&quot;AuthorizedPersonPOCEmail&quot;:null,&quot;AuthorizedPersonType&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonEmail&quot;:&quot;michaelbarnes22@yopmail.com&quot;,&quot;AuthorizedPersonTelephone&quot;:&quot;2131321321&quot;},{&quot;AuthorizedPersonTypeFormula&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonFirstName&quot;:&quot;Mia&quot;,&quot;AuthorizedPersonMiddleName&quot;:&quot;N&quot;,&quot;AuthorizedPersonLastName&quot;:&quot;White&quot;,&quot;AuthorizedPersonLegalName&quot;:null,&quot;AuthorizedPersonName&quot;:&quot;Mia White&quot;,&quot;AuthorizedPersonPOCFirstName&quot;:null,&quot;AuthorizedPersonPOCLastName&quot;:null,&quot;AuthorizedPersonPOCEmail&quot;:null,&quot;AddedFrom&quot;:&quot;CL&quot;,&quot;DoNotCreateUser&quot;:true,&quot;AuthorizedPersonType&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonEmail&quot;:&quot;mwhite5441@yopmail.com&quot;,&quot;AuthorizedPersonTelephone&quot;:&quot;0123123123&quot;},{&quot;AuthorizedPersonTypeFormula&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonFirstName&quot;:&quot;Jane&quot;,&quot;AuthorizedPersonMiddleName&quot;:&quot;D&quot;,&quot;AuthorizedPersonLastName&quot;:&quot;Maxie&quot;,&quot;AuthorizedPersonLegalName&quot;:null,&quot;AuthorizedPersonName&quot;:&quot;Jane Maxie&quot;,&quot;AuthorizedPersonPOCFirstName&quot;:null,&quot;AuthorizedPersonPOCLastName&quot;:null,&quot;AuthorizedPersonPOCEmail&quot;:null,&quot;AddedFrom&quot;:null,&quot;DoNotCreateUser&quot;:null,&quot;AuthorizedPersonType&quot;:&quot;Individual&quot;,&quot;AuthorizedPersonEmail&quot;:&quot;janemazie123@yopmail.com&quot;,&quot;AuthorizedPersonTelephone&quot;:&quot;4123123123&quot;},{&quot;AuthorizedPersonTypeFormula&quot;:&quot;Entity&quot;,&quot;AuthorizedPersonFirstName&quot;:null,&quot;AuthorizedPersonMiddleName&quot;:null,&quot;AuthorizedPersonLastName&quot;:null,&quot;AuthorizedPersonLegalName&quot;:&quot;Buyers Packers and Movers&quot;,&quot;AuthorizedPersonName&quot;:&quot;Buyers Packers and Movers&quot;,&quot;AuthorizedPersonPOCFirstName&quot;:&quot;Marc&quot;,&quot;AuthorizedPersonPOCLastName&quot;:&quot;Buyers&quot;,&quot;AuthorizedPersonPOCEmail&quot;:&quot;marcbuyers22@yopmail.com&quot;,&quot;AddedFrom&quot;:null,&quot;DoNotCreateUser&quot;:null,&quot;AuthorizedPersonType&quot;:&quot;Entity&quot;,&quot;AuthorizedPersonEmail&quot;:&quot;buyersbusiness78@yopmail.com&quot;,&quot;AuthorizedPersonTelephone&quot;:&quot;1341241412&quot;}]},&quot;AuthPersonInfo&quot;:null,&quot;PaymentOverview&quot;:null,&quot;Contact&quot;:{&quot;Name&quot;:&quot;Mitchelle Floryn&quot;,&quot;LastName&quot;:&quot;Floryn&quot;,&quot;MailingCountryCode&quot;:&quot;US&quot;,&quot;FirstName&quot;:&quot;Mitchelle&quot;,&quot;Email&quot;:&quot;mitchellefloryn312@yopmail.com&quot;},&quot;Account&quot;:{&quot;Name&quot;:&quot;Mitchelle Floryn&quot;,&quot;CreatedDate&quot;:&quot;2025-08-25T07:19:22.000Z&quot;,&quot;BillingCountryCode&quot;:&quot;US&quot;},&quot;appType&quot;:&quot;ABSInitialLicense&quot;,&quot;ApplicationName&quot;:&quot;Alternative Business Structure License&quot;,&quot;FeeType&quot;:&quot;Initial Licensure&quot;,&quot;ApplnType&quot;:&quot;Initial Licensure&quot;,&quot;ApplnCategory&quot;:&quot;Equity ABS&quot;,&quot;ApplicantInfo&quot;:{&quot;Block0&quot;:null,&quot;Block1&quot;:null,&quot;Block2&quot;:{&quot;documentName2&quot;:&quot;Letter Not Submitted Entity&quot;,&quot;File2&quot;:[{&quot;data&quot;:&quot;069Ou000005iIw2IAE&quot;,&quot;filename&quot;:&quot;OmniScriptDataJSON.json&quot;,&quot;vId&quot;:&quot;068Ou000005gJmYIAU&quot;,&quot;size&quot;:11211,&quot;deleteLabel&quot;:&quot;Delete OmniScriptDataJSON.json&quot;}]},&quot;ReasonNotIncorporated&quot;:&quot;test&quot;,&quot;ApplicantFirstName&quot;:&quot;Mitchelle&quot;,&quot;ApplicantLastName&quot;:&quot;Floryn&quot;,&quot;BusinessCountry&quot;:&quot;US&quot;,&quot;BusinessState&quot;:&quot;AZ&quot;,&quot;OrgLegalName&quot;:&quot;Honda Cars Leviona&quot;,&quot;BusinessName&quot;:&quot;Honda Cars Leviona&quot;,&quot;DBAName1&quot;:&quot;Sam&quot;,&quot;DBAName2&quot;:&quot;Beth&quot;,&quot;DBAName3&quot;:&quot;Greg&quot;,&quot;BusinessStreet&quot;:&quot;123N, Charleston Street&quot;,&quot;BusinessCity&quot;:&quot;Bountyard&quot;,&quot;BusinessZip&quot;:&quot;12345&quot;,&quot;BusinessTelephone&quot;:&quot;0123123123&quot;,&quot;BusinessFax&quot;:&quot;1231231231&quot;,&quot;BusinessEmail&quot;:&quot;michaelbarnes22@yopmail.com&quot;,&quot;BusinessDate&quot;:&quot;2025-09-01&quot;,&quot;FederalTaxID&quot;:&quot;NV1412&quot;,&quot;StateTaxID&quot;:&quot;Alabama&quot;,&quot;BusinessOrganization&quot;:&quot;Limited Liability Co.&quot;,&quot;ApplicantRegisteredWithAZCommission&quot;:&quot;No&quot;},&quot;sInstanceId&quot;:&quot;0kTOu0000000BgDMAU&quot;,&quot;ReasonNotIncorporatedError&quot;:false,&quot;DesignatedPrincipalInfo&quot;:{&quot;DPHomeTelephone&quot;:null,&quot;DPBusinessTitle&quot;:null,&quot;DPBusinessPosition&quot;:null,&quot;DPIHaveEconomicInterestPercent&quot;:11,&quot;Block4&quot;:null,&quot;DPBusinessCountry&quot;:&quot;US&quot;,&quot;DPBusinessState&quot;:&quot;AZ&quot;,&quot;DPHomeCountry&quot;:&quot;US&quot;,&quot;DPHomeState&quot;:&quot;AZ&quot;,&quot;DPLastName&quot;:&quot;Barnes&quot;,&quot;DPFirstName&quot;:&quot;Marcus&quot;,&quot;DPEmail&quot;:&quot;michaelbarnes22@yopmail.com&quot;,&quot;DPBusinessTelephone&quot;:&quot;2131321321&quot;,&quot;DPBusinessStreet&quot;:&quot;123N, Charleston Street&quot;,&quot;DPBusinessCity&quot;:&quot;Bountyard&quot;,&quot;DPBusinessZip&quot;:&quot;12345&quot;,&quot;DPSocialSecurityNumber&quot;:&quot;323123123&quot;,&quot;DPDateofBirth&quot;:&quot;1941-09-11&quot;,&quot;DPHomeStreet&quot;:&quot;123N, Charleston Street&quot;,&quot;DPMiddleName&quot;:&quot;T&quot;,&quot;DPHomeCity&quot;:&quot;Bountyard&quot;,&quot;DPHomeZip&quot;:&quot;12345&quot;,&quot;DPIHaveEconomicInterest&quot;:&quot;Yes&quot;,&quot;DPIHaveLegalRighttoExercise&quot;:&quot;No&quot;},&quot;DPFullName&quot;:&quot;Marcus Barnes&quot;,&quot;AddDesignatedPrincipalAsAuthIndividual&quot;:true,&quot;StatutoryAgentInfo&quot;:{&quot;SAFirstName&quot;:&quot;Sammy&quot;,&quot;SALastName&quot;:&quot;May&quot;,&quot;SABusinessName&quot;:null,&quot;SAPOCFirstName&quot;:null,&quot;SAPOCLastName&quot;:null,&quot;SAPOCEmail&quot;:null,&quot;StatutoryAgentType&quot;:&quot;Individual&quot;,&quot;SABusinessCountry&quot;:&quot;US&quot;,&quot;SABusinessState&quot;:&quot;AZ&quot;,&quot;SAEmail&quot;:&quot;asd@asd.com&quot;,&quot;SABusinessTelephone&quot;:&quot;0123123123&quot;,&quot;SABusinessStreet&quot;:&quot;123, North Street&quot;,&quot;SABusinessCity&quot;:&quot;Black Hills&quot;,&quot;SABusinessZip&quot;:&quot;12312&quot;},&quot;ComplianceLawyerInfo&quot;:{&quot;CLBusinessTitle&quot;:null,&quot;CLBusinessPosition&quot;:null,&quot;CLHomeCountry&quot;:null,&quot;CLHomeStreet&quot;:null,&quot;CLHomeCity&quot;:null,&quot;CLHomeState&quot;:null,&quot;CLHomeZip&quot;:null,&quot;CLStateBarLicense&quot;:null,&quot;CLAdmissionDate&quot;:null,&quot;CLPendingAdmission&quot;:null,&quot;CLPendingAdmissionDate&quot;:null,&quot;CLPreviousApplicationSubmitted&quot;:null,&quot;CLPreviousApplicationSubmittedDate&quot;:null,&quot;CLIHaveEconomicInterestPercent&quot;:12,&quot;Block1&quot;:null,&quot;CLBusinessCountry&quot;:&quot;US&quot;,&quot;CLBusinessState&quot;:&quot;AZ&quot;,&quot;CLLastName&quot;:&quot;White&quot;,&quot;CLFirstName&quot;:&quot;Mia&quot;,&quot;CLMiddleName&quot;:&quot;N&quot;,&quot;CLSocialSecurityNumber&quot;:&quot;323212312&quot;,&quot;CLEmail&quot;:&quot;mwhite5441@yopmail.com&quot;,&quot;CLBusinessTelephone&quot;:&quot;0123123123&quot;,&quot;CLBusinessStreet&quot;:&quot;123N, Charleston Street&quot;,&quot;CLBusinessCity&quot;:&quot;Bountyard&quot;,&quot;CLBusinessZip&quot;:&quot;12345&quot;,&quot;CLDateofBirth&quot;:&quot;1941-09-11&quot;,&quot;CLIHaveEconomicInterest&quot;:&quot;Yes&quot;,&quot;CLIHaveLegalRightToExercise&quot;:&quot;No&quot;},&quot;AddComplianceLawyerAsAuthIndividual&quot;:true,&quot;CLFullName&quot;:&quot;Mia White&quot;,&quot;PublicDirectoryInfo&quot;:{&quot;AuthorizeMyBusinessNameAndOtherInfo&quot;:true,&quot;PDMailingCountry&quot;:&quot;US&quot;,&quot;PDMailingState&quot;:&quot;AZ&quot;,&quot;PDName&quot;:&quot;Marc Buyers&quot;,&quot;PDPhone&quot;:&quot;2131231231&quot;},&quot;AuthorizedBusinessInfoRequiredError&quot;:false,&quot;BusinessOverview&quot;:{&quot;BusinessDescription&quot;:&quot;q&quot;,&quot;BusinessObjective&quot;:&quot;q&quot;,&quot;GovernanceStructures&quot;:&quot;q&quot;,&quot;NonLegalServices&quot;:&quot;q&quot;},&quot;BackgroundInformation&quot;:{&quot;Block1&quot;:null,&quot;Block2&quot;:null,&quot;Block3&quot;:null,&quot;Block4&quot;:null,&quot;Block5&quot;:null,&quot;Block6&quot;:{&quot;BgInfoName6&quot;:&quot;Admitted in Jurisdiction Explanation&quot;,&quot;BgInfoFile6&quot;:[{&quot;data&quot;:&quot;069Ou000005iGr1IAE&quot;,&quot;filename&quot;:&quot;OmniScriptDataJSON (1).json&quot;,&quot;vId&quot;:&quot;068Ou000005gHrDIAU&quot;,&quot;size&quot;:6262,&quot;deleteLabel&quot;:&quot;Delete OmniScriptDataJSON (1).json&quot;}],&quot;BarLicenseNumber&quot;:&quot;q&quot;,&quot;DisciplinaryHistory&quot;:&quot;q&quot;},&quot;Block7&quot;:null,&quot;Block8&quot;:null,&quot;Block9&quot;:null,&quot;Block10&quot;:null,&quot;Block11&quot;:null,&quot;Block12&quot;:null,&quot;Block13&quot;:null,&quot;Block14&quot;:null,&quot;Block15&quot;:null,&quot;Block16&quot;:null,&quot;BgInfoQ1&quot;:false,&quot;BgInfoQ2&quot;:false,&quot;BgInfoQ3&quot;:false,&quot;BgInfoQ4&quot;:false,&quot;BgInfoQ5&quot;:false,&quot;BgInfoQ6&quot;:true,&quot;BgInfoQ7&quot;:false,&quot;BgInfoQ8&quot;:false,&quot;BgInfoQ9&quot;:false,&quot;BgInfoQ10&quot;:false,&quot;BgInfoQ11&quot;:false,&quot;BgInfoQ12&quot;:false,&quot;BgInfoQ13&quot;:false,&quot;BgInfoQ14&quot;:false,&quot;BgInfoQ15&quot;:false,&quot;BgInfoQ16&quot;:false,&quot;BgInfoQues1&quot;:&quot;No&quot;,&quot;BgInfoQues2&quot;:&quot;No&quot;,&quot;BgInfoQues3&quot;:&quot;No&quot;,&quot;BgInfoQues4&quot;:&quot;No&quot;,&quot;BgInfoQues5&quot;:&quot;No&quot;,&quot;BgInfoQues6&quot;:&quot;Yes&quot;,&quot;BgInfoQues7&quot;:&quot;No&quot;,&quot;BgInfoQues8&quot;:&quot;No&quot;,&quot;BgInfoQues9&quot;:&quot;No&quot;,&quot;BgInfoQues10&quot;:&quot;No&quot;,&quot;BgInfoQues11&quot;:&quot;No&quot;,&quot;BgInfoQues12&quot;:&quot;No&quot;,&quot;BgInfoQues13&quot;:&quot;No&quot;,&quot;BgInfoQues14&quot;:&quot;No&quot;,&quot;BgInfoQues15&quot;:&quot;No&quot;,&quot;BgInfoQues16&quot;:&quot;No&quot;},&quot;BusinessInfo&quot;:{&quot;BusinessInfoQ4Block&quot;:{&quot;BusinessInfoQ4Name&quot;:&quot;Profit Documents&quot;,&quot;BusinessInfoQ4File&quot;:[{&quot;data&quot;:&quot;069Ou000005iLXJIA2&quot;,&quot;filename&quot;:&quot;server.crt&quot;,&quot;vId&quot;:&quot;068Ou000005gMMDIA2&quot;,&quot;size&quot;:1289,&quot;deleteLabel&quot;:&quot;Delete server.crt&quot;}]},&quot;BusinessInfoQ5Block&quot;:null,&quot;BusinessInfoQ6Block&quot;:null,&quot;BusinessInfoQ7Block&quot;:null,&quot;BusinessInfoQ8Block&quot;:null,&quot;BusinessInfoQ9Block&quot;:null,&quot;BusinessInfoQ10Block&quot;:null,&quot;BusinessInfoQ4&quot;:true,&quot;BusinessInfoQ5&quot;:false,&quot;BusinessInfoQ6&quot;:false,&quot;BusinessInfoQ7&quot;:false,&quot;BusinessInfoQ8&quot;:false,&quot;BusinessInfoQ9&quot;:false,&quot;BusinessInfoQ10&quot;:false,&quot;BusinessInfoQ1&quot;:&quot;q&quot;,&quot;BusinessInfoQ2&quot;:&quot;q&quot;,&quot;BusinessInfoQ3&quot;:&quot;q&quot;,&quot;BusinessInfoQues4&quot;:&quot;Yes&quot;,&quot;BusinessInfoQues5&quot;:&quot;No&quot;,&quot;BusinessInfoQues6&quot;:&quot;No&quot;,&quot;BusinessInfoQues7&quot;:&quot;No&quot;,&quot;BusinessInfoQues8&quot;:&quot;No&quot;,&quot;BusinessInfoQues9&quot;:&quot;No&quot;,&quot;BusinessInfoQues10&quot;:&quot;No&quot;,&quot;BusinessInfoQ11&quot;:&quot;q&quot;,&quot;BusinessInfoQ12&quot;:&quot;q&quot;,&quot;BusinessInfoQ13&quot;:&quot;q&quot;,&quot;BusinessInfoQ14&quot;:&quot;q&quot;,&quot;BusinessInfoQ15&quot;:&quot;q&quot;},&quot;Acknowledgment&quot;:{&quot;FinalDisclosure&quot;:true,&quot;AckSignature&quot;:&quot;Buyers&quot;},&quot;omniScriptId&quot;:&quot;0jNOu0000001IfdMAE&quot;,&quot;elementName&quot;:&quot;Save Initial Application&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Save Main Application (Initial &amp; Renewal)</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CopyPreviousAuthPersons</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;copyPreviousAuthPersons&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;ABSRenewalLicense\&quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;,
+    &quot;LicenseId&quot; : &quot;%licenseId%&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Remote Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DeleteExistingRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;remoteMethod&quot; : &quot;DeleteExistingRecords&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%ApplicationId% != null&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : false,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InitializeVariables</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;HasDraft&quot; : &quot;=IF( ISBLANK(%instanceId%), %sInstanceId% LIKE \&quot;0kT\&quot;, %instanceId% LIKE \&quot;0kT\&quot;) &quot;,
+    &quot;HasAuthPersons&quot; : &quot;=IF(%AuthorizedPersonInformation% != &apos;{}&apos; &amp;&amp; %AuthorizedPersonInformation:AuthorizedPersonBlock% != &apos;null&apos;, true, false)&quot;,
+    &quot;ApplicantId&quot; : &quot;=IF(%UserInfo:IsPortalEnabled% == true, %LoadPortalApplicant:Id%, %LoadAdminApplicant:Id%)&quot;,
+    &quot;DraftId&quot; : &quot;=IF( ISBLANK(%instanceId%), %sInstanceId%, %instanceId%)&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertAuthorizedPersons</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;insertAuthorizedPersons&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Ownership&quot; : &quot;=%DesignatedPrincipalInfo:DPIHaveEconomicInterestPercent%&quot;,
+    &quot;HasEconomicInterest&quot; : &quot;=IF(%DesignatedPrincipalInfo:DPIHaveEconomicInterest% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;HasRightToDecisionMaking&quot; : &quot;=IF(%DesignatedPrincipalInfo:DPIHaveLegalRighttoExercise% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;,
+    &quot;LicenseId&quot; : &quot;%licenseId%&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%AuthorizedPersonInformation:AuthorizedPersonBlock:AuthorizedPersonName%)&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertComplianceLawyer</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;upsertParticipant&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;ABSInitialLicense\&quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessZip%), %ComplianceLawyerInfo:CLBusinessZip% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessZip%)&quot;,
+    &quot;Ownership&quot; : &quot;=%ComplianceLawyerInfo:CLIHaveEconomicInterestPercent%&quot;,
+    &quot;Email&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLEmail%), %ComplianceLawyerInfo:CLEmail% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLEmail%)&quot;,
+    &quot;HasEconomicInterest&quot; : &quot;=IF(%ComplianceLawyerInfo:CLIHaveEconomicInterest% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;HasRightToDecisionMaking&quot; : &quot;=IF(%ComplianceLawyerInfo:CLIHaveLegalRighttoExercise% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;FirstName&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLFirstName%), %ComplianceLawyerInfo:CLFirstName% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLFirstName%)&quot;,
+    &quot;City&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessCity%), %ComplianceLawyerInfo:CLBusinessCity% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessCity%)&quot;,
+    &quot;MiddleName&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLMiddleName%), %ComplianceLawyerInfo:CLMiddleName% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLMiddleName%)&quot;,
+    &quot;SSN&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLSocialSecurityNumber%), %ComplianceLawyerInfo:CLSocialSecurityNumber% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLSocialSecurityNumber%)&quot;,
+    &quot;DOB&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLDateofBirth%), %ComplianceLawyerInfo:CLDateofBirth% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLDateofBirth%)&quot;,
+    &quot;Phone&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessTelephone%), %ComplianceLawyerInfo:CLBusinessTelephone% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessTelephone%)&quot;,
+    &quot;State&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessState%), %ComplianceLawyerInfo:CLBusinessState% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessState%)&quot;,
+    &quot;Street&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessStreet%), %ComplianceLawyerInfo:CLBusinessStreet% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessStreet%)&quot;,
+    &quot;Country&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLBusinessCountry%), %ComplianceLawyerInfo:CLBusinessCountry% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLBusinessCountry%)&quot;,
+    &quot;ParticipantType&quot; : &quot;=\&quot;Individual\&quot;&quot;,
+    &quot;LastName&quot; : &quot;=IF(OR(ISBLANK(%ComplianceLawyerInfo:CLLastName%), %ComplianceLawyerInfo:CLLastName% = &apos;null&apos;), &apos;&apos;, %ComplianceLawyerInfo:CLLastName%)&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;,
+    &quot;ParticipantRole&quot; : &quot;=\&quot;Compliance Lawyer\&quot;&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertDesignatedPrincipal</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;upsertParticipant&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;ABSInitialLicense\&quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessZip%), %DesignatedPrincipalInfo:DPBusinessZip% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessZip%)&quot;,
+    &quot;HomeStreet&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPHomeStreet%), %DesignatedPrincipalInfo:DPHomeStreet% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPHomeStreet%)&quot;,
+    &quot;Ownership&quot; : &quot;=%DesignatedPrincipalInfo:DPIHaveEconomicInterestPercent%&quot;,
+    &quot;Email&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPEmail%), %DesignatedPrincipalInfo:DPEmail% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPEmail%)&quot;,
+    &quot;HomeCountry&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPHomeCountry%), %DesignatedPrincipalInfo:DPHomeCountry% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPHomeCountry%)&quot;,
+    &quot;HasEconomicInterest&quot; : &quot;=IF(%DesignatedPrincipalInfo:DPIHaveEconomicInterest% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;HasRightToDecisionMaking&quot; : &quot;=IF(%DesignatedPrincipalInfo:DPIHaveLegalRighttoExercise% == \&quot;Yes\&quot;, true, false)&quot;,
+    &quot;FirstName&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPFirstName%), %DesignatedPrincipalInfo:DPFirstName% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPFirstName%)&quot;,
+    &quot;City&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessCity%), %DesignatedPrincipalInfo:DPBusinessCity% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessCity%)&quot;,
+    &quot;MiddleName&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPMiddleName%), %DesignatedPrincipalInfo:DPMiddleName% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPMiddleName%)&quot;,
+    &quot;SSN&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPSocialSecurityNumber%), %DesignatedPrincipalInfo:DPSocialSecurityNumber% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPSocialSecurityNumber%)&quot;,
+    &quot;DOB&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPDateofBirth%), %DesignatedPrincipalInfo:DPDateofBirth% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPDateofBirth%)&quot;,
+    &quot;Phone&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessTelephone%), %DesignatedPrincipalInfo:DPBusinessTelephone% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessTelephone%)&quot;,
+    &quot;State&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessState%), %DesignatedPrincipalInfo:DPBusinessState% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessState%)&quot;,
+    &quot;HomeState&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPHomeState%), %DesignatedPrincipalInfo:DPHomeState% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPHomeState%)&quot;,
+    &quot;Street&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessStreet%), %DesignatedPrincipalInfo:DPBusinessStreet% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessStreet%)&quot;,
+    &quot;Country&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPBusinessCountry%), %DesignatedPrincipalInfo:DPBusinessCountry% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPBusinessCountry%)&quot;,
+    &quot;ParticipantType&quot; : &quot;=\&quot;Individual\&quot;&quot;,
+    &quot;LastName&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPLastName%), %DesignatedPrincipalInfo:DPLastName% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPLastName%)&quot;,
+    &quot;HomeZip&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPHomeZip%), %DesignatedPrincipalInfo:DPHomeZip% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPHomeZip%)&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;,
+    &quot;HomeCity&quot; : &quot;=IF(OR(ISBLANK(%DesignatedPrincipalInfo:DPHomeCity%), %DesignatedPrincipalInfo:DPHomeCity% = &apos;null&apos;), &apos;&apos;, %DesignatedPrincipalInfo:DPHomeCity%)&quot;,
+    &quot;ParticipantRole&quot; : &quot;=\&quot;Designated Principal\&quot;&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertStatutoryAgent</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;upsertParticipant&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;ABSInitialLicense\&quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessZip%), %StatutoryAgentInfo:SABusinessZip% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessZip%)&quot;,
+    &quot;POCLastName&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAPOCLastName%), %StatutoryAgentInfo:SAPOCLastName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAPOCLastName%)&quot;,
+    &quot;Email&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAEmail%), %StatutoryAgentInfo:SAEmail% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAEmail%)&quot;,
+    &quot;FirstName&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAFirstName%), %StatutoryAgentInfo:SAFirstName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAFirstName%)&quot;,
+    &quot;POCEmail&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAPOCEmail%), %StatutoryAgentInfo:SAPOCEmail% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAPOCEmail%)&quot;,
+    &quot;City&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessCity%), %StatutoryAgentInfo:SABusinessCity% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessCity%)&quot;,
+    &quot;MiddleName&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAMiddleName%), %StatutoryAgentInfo:SAMiddleName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAMiddleName%)&quot;,
+    &quot;Name&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessName%), %StatutoryAgentInfo:SABusinessName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessName%)&quot;,
+    &quot;SSN&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SASocialSecurityNumber%), %StatutoryAgentInfo:SASocialSecurityNumber% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SASocialSecurityNumber%)&quot;,
+    &quot;DOB&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SADateofBirth%), %StatutoryAgentInfo:SADateofBirth% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SADateofBirth%)&quot;,
+    &quot;Phone&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessTelephone%), %StatutoryAgentInfo:SABusinessTelephone% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessTelephone%)&quot;,
+    &quot;State&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessState%), %StatutoryAgentInfo:SABusinessState% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessState%)&quot;,
+    &quot;Street&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessStreet%), %StatutoryAgentInfo:SABusinessStreet% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessStreet%)&quot;,
+    &quot;Country&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SABusinessCountry%), %StatutoryAgentInfo:SABusinessCountry% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SABusinessCountry%)&quot;,
+    &quot;ParticipantType&quot; : &quot;=%StatutoryAgentInfo:StatutoryAgentType%&quot;,
+    &quot;LastName&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SALastName%), %StatutoryAgentInfo:SALastName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SALastName%)&quot;,
+    &quot;POCFirstName&quot; : &quot;=IF(OR(ISBLANK(%StatutoryAgentInfo:SAPOCFirstName%), %StatutoryAgentInfo:SAPOCFirstName% = &apos;null&apos;), &apos;&apos;, %StatutoryAgentInfo:SAPOCFirstName%)&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;,
+    &quot;ParticipantRole&quot; : &quot;=\&quot;Statutory Agent\&quot;&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadABSApplicationAccount</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;Account_1|1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;ABSLoadEntityAccount&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadAdminApplicant</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;Contact_1|1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%UserInfo:IsPortalEnabled% != true &amp;&amp; %appType% == \&quot;ABSInitialLicense\&quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;=IF(%UserInfo:IsPortalEnabled% == true, %UserInfo:AccountId%, %LoadABSApplicationAccount:Id%)&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;ABSLoadAdminAccount&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadBusinessLicenseApplication</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;BusinessLicenseApplication_1|1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;CaseId&quot; : &quot;=%LoadABSApplicationCase:Id%&quot;,
+    &quot;ABSAccountId&quot; : &quot;=%LoadABSApplicationAccount:Id%&quot;,
+    &quot;ContactId&quot; : &quot;=IF(%UserInfo:IsPortalEnabled% == true, %UserInfo:ContactId%, %LoadAdminApplicant:Id%)&quot;
+  },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;ABSLoadBusinessLicenseApplication&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadPortalApplicant</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : true,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;Contact_1|1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%UserInfo:IsPortalEnabled% == true &amp;&amp; %appType% == \&quot;ABSInitialLicense\&quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;ABSLoadPortalAccount&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ReturnApplicationInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;isActive&quot; : true,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;HasDraft&quot; : &quot;%InitializeVariables:HasDraft%&quot;,
+    &quot;ApplicantId&quot; : &quot;%InitializeVariables:ApplicantId%&quot;,
+    &quot;ABSAccountId&quot; : &quot;=%LoadABSApplicationAccount:Id%&quot;,
+    &quot;DraftId&quot; : &quot;%InitializeVariables:DraftId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessLicenseApplication:Id%&quot;
+  },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ABS_SaveMainApplication</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;transientValues&quot; : {
+    &quot;activateOrDeactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>SaveMainApplication</subType>
+    <type>ABS</type>
+    <uniqueName>ABS_SaveMainApplication_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

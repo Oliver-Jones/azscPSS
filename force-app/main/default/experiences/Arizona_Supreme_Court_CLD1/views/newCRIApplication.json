@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "5ab4457d-2771-49bb-a5af-896e754357b8",
+  "label" : "New CRI Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CertifiedReportersBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "51daaa8e-88ce-4702-9d61-9dfb2dbdf62a",
+          "columns" : [ {
+            "UUID" : "62f52c0f-36c3-4073-8642-30929ca580cf",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "51daaa8e-88ce-4702-9d61-9dfb2dbdf62a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "InitialApplication",
+            "theme" : "lightning",
+            "type" : "CRI"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "2eabf994-3881-4025-b7c5-00fbffaa1ffc",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "62f52c0f-36c3-4073-8642-30929ca580cf",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "619b7d2d-7b1c-41cb-bb30-01b1855545da",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Certified Reporters Individual Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2c7cf57a-1866-4fc4-9d24-9adc34f63162",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "60e03fc4-d5fc-4858-86ca-cd3ebdcbb346",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-cri-application"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Change of Designated Principal</fullName>
+        <default>false</default>
+        <label>Change of Designated Principal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Information Change</fullName>
+        <default>false</default>
+        <label>Contact Information Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Liability Insurance</fullName>
+        <default>false</default>
+        <label>Liability Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Name Change (individual or business)</fullName>
+        <default>false</default>
+        <label>Name Change (individual or business)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reinstatement</fullName>
+        <default>false</default>
+        <label>Reinstatement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request to go Inactive</fullName>
+        <default>false</default>
+        <label>Request to go Inactive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request to Reactivate</fullName>
+        <default>false</default>
+        <label>Request to Reactivate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request to Voluntary Surrender</fullName>
+        <default>false</default>
+        <label>Request to Voluntary Surrender</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Surety Bond</fullName>
+        <default>false</default>
+        <label>Surety Bond</label>
+    </standardValue>
+</StandardValueSet>

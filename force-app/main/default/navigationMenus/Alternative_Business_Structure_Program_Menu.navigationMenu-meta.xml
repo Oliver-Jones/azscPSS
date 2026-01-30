@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Arizona Supreme Court CLD</container>
+    <containerType>Network</containerType>
+    <label>Alternative Business Structure Program Menu</label>
+    <navigationMenuItem>
+        <label>ABS Application</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications/abs-program/abs-application</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Designated Principal Application</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications/abs-program/designated-principal-sub-application</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Compliance Lawyer Application</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>3</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications/abs-program/compliance-lawyer-sub-application</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Authorized Individual Application</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications/abs-program/authorized-individual-sub-application</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Authorized Entity Application</label>
+        <menuItemBranding>
+            <tileImage>penandpaper14544411</tileImage>
+        </menuItemBranding>
+        <position>5</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications/abs-program/authorized-entity-sub-application</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

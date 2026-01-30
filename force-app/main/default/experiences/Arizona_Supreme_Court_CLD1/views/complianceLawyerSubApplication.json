@@ -1,0 +1,54 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "69eefb37-bfee-4093-920d-3b949ff21729",
+  "label" : "Compliance Lawyer Sub Application",
+  "regions" : [ {
+    "id" : "e25c4f61-ce7b-4b44-b83a-a97bf4e1f7d3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "direction" : "ltr",
+        "display" : "Display OmniScript on page",
+        "inlineVariant" : "brand",
+        "language" : "English",
+        "subType" : "ComplianceLawyerAppln",
+        "theme" : "lightning",
+        "type" : "ABS"
+      },
+      "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+      "id" : "c2dae868-956e-4ac4-b978-ff8806a57e9f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7c1fab00-957f-4087-9f4b-32d7ff372f85",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "6e3b3231-edc5-4e8a-b005-fe89442c94c1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Compliance Lawyer Sub Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b60bdeb1-cd24-491c-9372-0669f6339448",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7a7ef53e-17a0-4042-a397-3f96f073a468",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-compliance-lawyer-sub-application"
+}

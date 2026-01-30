@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;FeeData&quot;:null,&quot;PartialFeeData&quot;:null,&quot;hidePayLater&quot;:null,&quot;omniscriptId&quot;:&quot;0jNOz00000082PzMAI&quot;,&quot;language&quot;:&quot;English&quot;,&quot;type&quot;:&quot;CRI&quot;,&quot;subType&quot;:&quot;InitialApplication&quot;,&quot;sId&quot;:&quot;0jNOz00000082PzMAI&quot;,&quot;runMode&quot;:&quot;preview&quot;,&quot;theme&quot;:&quot;lightning&quot;,&quot;LanguageCode&quot;:&quot;en_US&quot;,&quot;timeStamp&quot;:&quot;1764713600030&quot;,&quot;userTimeZoneName&quot;:&quot;12&quot;,&quot;userCurrencyCode&quot;:&quot;000&quot;,&quot;userName&quot;:&quot;krish@mastek.com.krishdev&quot;,&quot;userId&quot;:&quot;005Oz00000R2dVZ&quot;,&quot;userTimeZone&quot;:&quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,&quot;omniProcessId&quot;:&quot;0jNOz00000082PzMAI&quot;,&quot;localTimeZoneName&quot;:&quot;Asia/Calcutta&quot;,&quot;InitialApplicantInfo&quot;:{&quot;ApplicantMailingInputCountry&quot;:&quot;US&quot;,&quot;ApplicantMailingInputStreet&quot;:&quot;124 Marine Drive&quot;,&quot;ApplicantMailingInputCity&quot;:&quot;Chandler&quot;,&quot;ApplicantMailingInputState&quot;:&quot;AZ&quot;,&quot;ApplicantMailingInputZip&quot;:&quot;85224&quot;,&quot;ApplicantHomeCloneCountry&quot;:null,&quot;ApplicantHomeCloneStreet&quot;:null,&quot;ApplicantHomeCloneCity&quot;:null,&quot;ApplicantHomeCloneState&quot;:null,&quot;ApplicantHomeCloneZip&quot;:null,&quot;ApplicantMailingCountry&quot;:&quot;US&quot;,&quot;ApplicantMailingStreet&quot;:&quot;124 Marine Drive&quot;,&quot;ApplicantMailingCity&quot;:&quot;Chandler&quot;,&quot;ApplicantMailingState&quot;:&quot;AZ&quot;,&quot;ApplicantMailingZip&quot;:&quot;85224&quot;,&quot;HasDriverLicense&quot;:false,&quot;HasDriverLicenseInput&quot;:null,&quot;DriverLicenseBlock&quot;:null,&quot;ApplicantHomeCountry&quot;:&quot;US&quot;,&quot;ApplicantHomeState&quot;:&quot;AZ&quot;,&quot;ApplicantFirstName&quot;:&quot;John&quot;,&quot;ApplicantLastName&quot;:&quot;Doe&quot;,&quot;CertificationType&quot;:&quot;Standard&quot;,&quot;ApplicantSocialSecurityNumber&quot;:&quot;465234236&quot;,&quot;OfficialOrFreeLance&quot;:&quot;Official&quot;,&quot;ApplicantHomeStreet&quot;:&quot;2195 W Chandler Blvd Suite 160&quot;,&quot;ApplicantHomeCity&quot;:&quot;Chandler&quot;,&quot;ApplicantHomeZip&quot;:&quot;85224&quot;,&quot;ApplicantMailingSameAsHome&quot;:&quot;No&quot;,&quot;ApplicantTelephoneNumber&quot;:&quot;5346543664&quot;,&quot;ApplicantFaxNumber&quot;:&quot;2432346523&quot;,&quot;ApplicantCellPhoneNumber&quot;:&quot;2342356232&quot;,&quot;ApplicantEmail&quot;:&quot;john.shelby@yopmail.com&quot;},&quot;RenewalApplicantInfo&quot;:null,&quot;EmployerInfo&quot;:{&quot;WorkCountry&quot;:&quot;US&quot;,&quot;WorkState&quot;:&quot;AZ&quot;,&quot;EmployerName&quot;:&quot;Overton Enterprises&quot;,&quot;WorkStreet&quot;:&quot;2195 W Chandler Blvd Suite 160&quot;,&quot;WorkCity&quot;:&quot;Chandler&quot;,&quot;WorkZip&quot;:&quot;85224&quot;,&quot;WorkTelephoneNumber&quot;:&quot;8579325600&quot;,&quot;WorkEmail&quot;:&quot;john.shelby@yopmail.com&quot;,&quot;WorkFaxNumber&quot;:&quot;1512345325&quot;},&quot;ReportingFirmInformation&quot;:null,&quot;EmploymentInformation&quot;:null,&quot;ProfessionalSkillProficiency&quot;:{&quot;ProofOfCitizenshipBlock&quot;:null,&quot;ProfessionalInfoQ2ABlock&quot;:null,&quot;ProfessionalInfoQ2BBlock&quot;:null,&quot;ProfessionalInfoQ2CBlock&quot;:null,&quot;ProfessionalInfoQ9&quot;:null,&quot;ProfessionalInfoQ9Block&quot;:null,&quot;ProfessionalInfoQ3Block&quot;:null,&quot;ProfessionalInfoQ4Block&quot;:null,&quot;ProfessionalInfoQ5Block&quot;:null,&quot;ProfessionalInfoQ7Block&quot;:null,&quot;CertifiedStateBlock&quot;:null,&quot;ProfInfoQ1&quot;:false,&quot;ProfInfoQ2&quot;:false,&quot;ProfInfoQ3&quot;:false,&quot;ProfInfoQ4&quot;:false,&quot;ProfInfoQ5&quot;:false,&quot;ProfInfoQ6&quot;:false,&quot;ProfInfoQ7&quot;:false,&quot;ProfInfoQ8&quot;:false,&quot;ProfessionalInfoQ7&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ6&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ5&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ4&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ3&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ2&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ1&quot;:&quot;No&quot;,&quot;ProfessionalInfoQ8&quot;:&quot;No&quot;},&quot;ApplicantAffidavit&quot;:null,&quot;InitialBackgroundInformation&quot;:{&quot;Block18&quot;:null,&quot;Block19&quot;:null,&quot;Block20&quot;:null,&quot;Block21&quot;:null,&quot;Block22&quot;:null,&quot;Block23&quot;:null,&quot;Block24&quot;:null,&quot;Block25&quot;:null,&quot;BgInfoQ18&quot;:false,&quot;BgInfoQ19&quot;:false,&quot;BgInfoQ20&quot;:false,&quot;BgInfoQ21&quot;:false,&quot;BgInfoQ22&quot;:false,&quot;BgInfoQ23&quot;:false,&quot;BgInfoQ24&quot;:false,&quot;BgInfoQ25&quot;:false},&quot;RenewalBackgroundInformation&quot;:null,&quot;CRIDocumentUploads&quot;:{},&quot;CertifiedReporterPaymentOverview&quot;:null,&quot;PaymentOverview&quot;:{},&quot;Account&quot;:{&quot;IsPersonAccount&quot;:true,&quot;BillingCountryCode&quot;:&quot;US&quot;,&quot;CreatedDate&quot;:&quot;Nov 6, 2025 5:07:56 PM&quot;,&quot;Name&quot;:&quot;John Doe&quot;},&quot;UserInfo&quot;:{&quot;AccountId&quot;:&quot;001Oz00000kV4b7IAC&quot;,&quot;IsPortalEnabled&quot;:true,&quot;ContactId&quot;:&quot;003Oz00000i2qE5IAI&quot;},&quot;Contact&quot;:{&quot;Email&quot;:&quot;johndoe202@yopmail.com&quot;,&quot;FirstName&quot;:&quot;John&quot;,&quot;MailingCountryCode&quot;:&quot;US&quot;,&quot;LastName&quot;:&quot;Doe&quot;,&quot;Name&quot;:&quot;John Doe&quot;},&quot;appType&quot;:&quot;CRIInitialLicense&quot;,&quot;ApplicationName&quot;:&quot;Certified Reporter Individual License&quot;,&quot;FeeType&quot;:&quot;Initial Licensure&quot;,&quot;ApplnType&quot;:&quot;Initial Licensure&quot;,&quot;RecordType&quot;:&quot;CRI_Application&quot;,&quot;RegAuthTypeCode&quot;:&quot;CRILicense&quot;,&quot;OwnerName&quot;:&quot;ABS_Specialist_Queue&quot;,&quot;IsIndividualApplication&quot;:true,&quot;sInstanceId&quot;:&quot;0kTO2000000C8BVMA0&quot;,&quot;ApplnCategory&quot;:&quot;Standard (&lt;1 Year)&quot;,&quot;FingerPrintingFeeInfo&quot;:{&quot;ApplnCategory&quot;:&quot;Fingerprint Processing Fee&quot;,&quot;ApplicationName&quot;:&quot;Certified Reporter Individual License&quot;,&quot;FeeType&quot;:&quot;Initial Licensure&quot;},&quot;DRId_OmniScriptSavedSession&quot;:&quot;0kTO2000000C8BVMA0&quot;,&quot;PublicDirectoryInfo&quot;:{&quot;BusinessName&quot;:null,&quot;PDName&quot;:&quot;James Overton&quot;,&quot;AuthorizeOnlyBusinessName&quot;:true,&quot;AuthorizeMyBusinessNameAndOtherInfo&quot;:true,&quot;AuthorizeOnlyBusiness&quot;:null,&quot;AuthorizeOnlyIndividual&quot;:true,&quot;AuthorizeMyBusinessNameAndOther&quot;:null,&quot;AuthorizeMyIndividualNameAndOther&quot;:true,&quot;CountyBlock&quot;:{&quot;CountiesServed&quot;:&quot;All Counties&quot;,&quot;CountyInfo&quot;:{&quot;DirectoryCountry&quot;:&quot;US&quot;,&quot;DirectoryState&quot;:&quot;AZ&quot;,&quot;DirectoryWebsite&quot;:&quot;www.overton.org&quot;,&quot;DirectoryStreet&quot;:&quot;2195 W Chandler Blvd Suite 160&quot;,&quot;DirectoryCity&quot;:&quot;Chandler&quot;,&quot;DirectoryZip&quot;:&quot;85224&quot;}},&quot;PDMailingCountry&quot;:&quot;US&quot;,&quot;PDMailingState&quot;:&quot;AZ&quot;,&quot;IndividualName&quot;:&quot;James Overton&quot;,&quot;PDEmail&quot;:&quot;john.shelby@yopmail.com&quot;,&quot;PDPhone&quot;:&quot;8579325600&quot;,&quot;PDMailingStreet&quot;:&quot;2195 W Chandler Blvd Suite 160&quot;,&quot;PDMailingCity&quot;:&quot;Chandler&quot;,&quot;PDMailingZip&quot;:&quot;85224&quot;},&quot;AuthorizedBusinessInfoCheckboxError&quot;:false,&quot;ProofOfCitizenshipError&quot;:false,&quot;CertifiedStateError&quot;:false,&quot;ApplicationId&quot;:&quot;0iTOz0000002bebMAA&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>SaveApplicantAdditionalInfo</name>
+    <omniProcessElements>
+        <description>Data Mapper Post Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AZSCSaveCRIApplcntHomeAddnlInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCSaveCRIApplcntHomeAddnlInfo&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Data Mapper Post Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCSaveCRIApplcntMailAddnlInfo&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Data Mapper Post Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AZSCSaveCRICurrntEmployerAddnlInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCSaveCRICurrntEmployerAddnlInfo&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessKey>CRI_SaveApplicantAdditionalInfo</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : [ ],
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : [ ],
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;transientValues&quot; : {
+    &quot;activateOrDeactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>SaveApplicantAdditionalInfo</subType>
+    <type>CRI</type>
+    <uniqueName>CRI_SaveApplicantAdditionalInfo_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

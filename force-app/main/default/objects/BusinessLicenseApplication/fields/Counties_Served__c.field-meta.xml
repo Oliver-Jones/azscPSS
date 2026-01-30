@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Counties_Served__c</fullName>
+    <label>Counties Served</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All Counties</fullName>
+                <default>false</default>
+                <label>All Counties</label>
+            </value>
+            <value>
+                <fullName>Apache</fullName>
+                <default>false</default>
+                <label>Apache</label>
+            </value>
+            <value>
+                <fullName>Cochise</fullName>
+                <default>false</default>
+                <label>Cochise</label>
+            </value>
+            <value>
+                <fullName>Coconino</fullName>
+                <default>false</default>
+                <label>Coconino</label>
+            </value>
+            <value>
+                <fullName>Gila</fullName>
+                <default>false</default>
+                <label>Gila</label>
+            </value>
+            <value>
+                <fullName>Graham</fullName>
+                <default>false</default>
+                <label>Graham</label>
+            </value>
+            <value>
+                <fullName>Greenlee</fullName>
+                <default>false</default>
+                <label>Greenlee</label>
+            </value>
+            <value>
+                <fullName>La Paz</fullName>
+                <default>false</default>
+                <label>La Paz</label>
+            </value>
+            <value>
+                <fullName>Maricopa</fullName>
+                <default>false</default>
+                <label>Maricopa</label>
+            </value>
+            <value>
+                <fullName>Mohave</fullName>
+                <default>false</default>
+                <label>Mohave</label>
+            </value>
+            <value>
+                <fullName>Navajo</fullName>
+                <default>false</default>
+                <label>Navajo</label>
+            </value>
+            <value>
+                <fullName>Pima</fullName>
+                <default>false</default>
+                <label>Pima</label>
+            </value>
+            <value>
+                <fullName>Pinal</fullName>
+                <default>false</default>
+                <label>Pinal</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz</fullName>
+                <default>false</default>
+                <label>Santa Cruz</label>
+            </value>
+            <value>
+                <fullName>Yavapai</fullName>
+                <default>false</default>
+                <label>Yavapai</label>
+            </value>
+            <value>
+                <fullName>Yuma</fullName>
+                <default>false</default>
+                <label>Yuma</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

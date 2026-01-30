@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <elementTypeComponentMapping>{"ElementTypeToHTMLTemplateList":[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Initial Application</name>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>AZSC|ApplicantInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Applicant Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "Type" : "AZSC",
+  "Sub Type" : "ApplicantInformation",
+  "Language" : "English",
+  "show" : null
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>AZSC|PaymentInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Application Payment Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "Type" : "AZSC",
+  "Sub Type" : "PaymentInformation",
+  "Language" : "English",
+  "show" : null
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignInitialValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "Assign Initial Values",
+  "elementValueMap" : {
+    "appType" : "CRFInitialLicense",
+    "ApplicationName" : "Certified Reporter Registered Reporting Firm License",
+    "FeeType" : "Initial Licensure",
+    "ApplicantFirstName" : "=%Contact:FirstName%",
+    "ApplicantLastName" : "=%Contact:LastName%",
+    "SABusinessCountry" : "='US'",
+    "SABusinessState" : "='AZ'",
+    "CLBusinessCountry" : "='US'",
+    "CLBusinessState" : "='AZ'",
+    "PDMailingCountry" : "='US'",
+    "PDMailingState" : "='AZ'",
+    "ApplnType" : "=IF(%c__applnType% != NULL, %c__applnType%, %applnType%)",
+    "RecordType" : "CRF_Application",
+    "RegAuthTypeCode" : "CRFLicense",
+    "OwnerName" : "ABS_Specialist_Queue",
+    "CertificationType" : "=IF(%c__certificationType% != NULL, %c__certificationType%, %certificationType%)",
+    "CRIMailingCountry" : "='US'",
+    "CRIMailingState" : "='AZ'",
+    "CRIPhysicalCountry" : "='US'",
+    "CRIPhysicalState" : "='AZ'",
+    "DirectoryCountry" : "='US'",
+    "DirectoryState" : "='AZ'",
+    "ApplnCategory" : "=IF(%c__certificationType% != NULL, %c__certificationType%, %certificationType%) + ' (2 Year)'"
+  },
+  "showPersistentComponent" : [ true, false ],
+  "show" : null,
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "lwcComponentOverride" : ""
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>AZSC|DocumentUploads|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Document Uploads</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "Type" : "AZSC",
+  "Sub Type" : "DocumentUploads",
+  "Language" : "English",
+  "show" : null
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>AZSC|EmployerInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Employer Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "Type" : "AZSC",
+  "Sub Type" : "EmployerInformation",
+  "Language" : "English",
+  "show" : null
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtractUserInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "Extract User Info",
+  "bundle" : "AZSCExtractUserInformation",
+  "ignoreCache" : false,
+  "dataRaptor Input Parameters" : [ {
+    "element" : "userId",
+    "inputParam" : "Id"
+  } ],
+  "remoteTimeout" : 30000,
+  "responseJSONPath" : "",
+  "responseJSONNode" : "",
+  "inProgressMessage" : "In Progress",
+  "postMessage" : "Done",
+  "failureNextLabel" : "Continue",
+  "failureAbortLabel" : "Abort",
+  "failureGoBackLabel" : "Go Back",
+  "failureAbortMessage" : "Are you sure?",
+  "validationRequired" : "Step",
+  "redirectPageName" : "",
+  "redirectTemplateUrl" : "vlcAcknowledge.html",
+  "redirectNextLabel" : "Next",
+  "redirectNextWidth" : 3,
+  "redirectPreviousLabel" : "Previous",
+  "redirectPreviousWidth" : 3,
+  "showPersistentComponent" : [ true, false ],
+  "show" : null,
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "errorMessage" : {
+    "custom" : [ ],
+    "default" : null
+  },
+  "enableDefaultAbort" : false,
+  "enableActionMessage" : false,
+  "businessCategory" : "",
+  "businessEvent" : ""
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ApplicationInstructions</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "TextBlock1",
+  "text" : "<div style=\"width: 100%; text-align: center;\">\n<h2>ARIZONA SUPREME COURT</h2>\n<h4>Application for Initial License of Certified Reporter - Registered Reporting Law Firm</h4>\n<p style=\"text-align: left; background: lightgray; padding: 15px; font-family: Helvetica, Arial, sans-serif; font-size: 16px;\">Please read all the following instructions carefully before proceeding. There are several supporting documents listed below which must accompany&nbsp;the&nbsp;online submission.&nbsp;It is recommended that these documents are&nbsp;prepared and&nbsp;assembled prior to beginning the on online application process.&nbsp;To obtain additional assistance, contact the Certification and Licensing Division at&nbsp;<u><a href=\"mailto:CourtRep@courts.az.gov\">CourtRep@courts.az.gov</a></u>&nbsp;or&nbsp;visit the Arizona Judicial Department website at&nbsp;<u><a href=\"https://www.azcourts.gov/cld/Certified-Reporters-Program\" target=\"_blank\" rel=\"noopener\">https://www.azcourts.gov/cld/Certified-Reporters-Program</a></u>.&nbsp;</p>\n</div>\n<div style=\"padding: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 16px;\">\n<div>Authorization of Reporting Firm. This form must be signed, notarized and uploaded with the application. Please refer to the certified reporter program link on the Resource Center page of the Certification and Licensing Portal to access the form.</div>\n<div>&nbsp;</div>\n<ol>\n<li><u>Fees:</u><br>Please refer to ACJA &sect; 7-206(K) to reference the applicable NON-REFUNDABLE fee(s) which are required to submit this application. <br><br></li>\n<li><u>Photograph:</u><br>Applicant must upload one color passport-size photograph, two inches by two inches of the head, neck and shoulders only. The photograph must have been taken within the last two years and clearly identify the applicant.<br><br></li>\n<li><u>Education: (THIS DOCUMENTATION IS REQUIRED ONLY IF APPLYING FOR STANDARD CERTIFICATION)</u><br>Though applicants are required to indicate educational history on this application, applicant will only need to upload documentation (in the Documents Section) for the highest level of education achieved. However, a photocopy of all other certificates or licenses listed, as well as Letters of Good Standing are still required. <br><br></li>\n<li><u>Verification of RPR/CVR: (THIS VERFICIATION IS REQUIRED ONLY IF APPLYING FOR STANDARD CERTIFICATION)</u><br>Applicant must complete and submit the request for verification form (included with the notice of passing score for the program exam) to the appropriate administering entity. The request for verification forms are pre-filled with the Division address as the verification MUST come directly from the entity to the Division. <strong>Verification of passing the RPR/CVR will not be accepted from the applicant</strong>. The request form may also be accessed through the Certified Reporter link on the Resource Center page of the Certification and Licensing Portal. <br><br></li>\n<li><u>Fingerprint Card:</u><br>A standard FBI fingerprint card is forwarded to applicants with the notice of passing score on the program exam. This card must be completed and returned to the Division via US mail. If the fingerprints are not clear, the card will be rejected and require resubmission. The <strong>$22.00</strong> (subject to change) FBI processing fee is included with this application fee. Please fill out the sections of the card as indicated in the exam letter.</li>\n<li style=\"padding-top: 10px;\"><u>Proof of Citizenship/Legal Residency Acceptable Documents:</u><br>Please upload <strong>CLEAR</strong> and <strong>READABLE</strong> copies. Failure to do so may result in a delay in processing the application. Please refer to the List of Acceptable Residency/Citizenship Documents on the Resource Center page of the Certification and Licensing Portal.<br><br></li>\n<li><u>Copy of Arizona Driver&rsquo;s License: (THIS DOCUMENTATION IS REQUIRED ONLY IF APPLYING FOR RECIPROCAL CERTIFICATION)</u><br>If the applicant has an Arizona driver&rsquo;s license and the driver&rsquo;s license is not already being submitted as proof of US citizenship/legal residency, applicant must upload a copy of the Arizona driver&rsquo;s license.<br><br></li>\n<li><u>Assumed Name (or D.B.A.)</u><br>While conducting certified reporter business, a certificate holder shall use the name as shown on the certificate and shall not transact business in this state under an assumed name or under any designation, name or style, corporate or otherwise, other than the real name of the individual unless the individual files with Division staff a license setting forth the name under which business will be transacted.<br><br></li>\n<li><u>Background Information:</u><br>If <strong>YES</strong> is indicated for any question in the Background Section of this application, a <strong>SIGNED</strong> statement must be uploaded with this application describing in <strong>detail</strong> all incidents including (1) names of all parties involved, (2) dates and locations, (3) the names and localities of any courts and/or administrative agencies involved, (4) the disposition of each matter, (5) whether the conviction, plea or finding was for a felony, misdemeanor, or open-ended charge.<br><br></li>\n<li><u>Authorization and Release:</u><br>This form must be signed, notarized and uploaded with the application. Please refer to the certified reporter program link on the Resource Center page of the Certification and Licensing Portal to access the form.</li>\n</ol>\n<div style=\"height: 100px;\">&nbsp;</div>\n</div>",
+  "show" : null,
+  "dataJSON" : false,
+  "HTMLTemplateId" : "",
+  "textKey" : "",
+  "sanitize" : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Instructions</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "label" : "Instructions",
+  "validationRequired" : true,
+  "previousLabel" : "Back",
+  "previousWidth" : 3,
+  "nextLabel" : "Continue",
+  "nextWidth" : 3,
+  "cancelLabel" : "Cancel",
+  "cancelMessage" : "Are you sure?",
+  "saveLabel" : "Save & Exit",
+  "saveMessage" : "Do you wish to save your progress and exit this application?",
+  "completeLabel" : "Complete",
+  "completeMessage" : "Are you sure you want to complete the script?",
+  "instruction" : "",
+  "showPersistentComponent" : [ true, false ],
+  "remoteClass" : "",
+  "remoteMethod" : "",
+  "remoteTimeout" : 30000,
+  "remoteOptions" : { },
+  "knowledgeOptions" : {
+    "language" : "English",
+    "publishStatus" : "Online",
+    "keyword" : "",
+    "dataCategoryCriteria" : "",
+    "remoteTimeout" : 30000,
+    "typeFilter" : ""
+  },
+  "show" : null,
+  "conditionType" : "Hide if False",
+  "HTMLTemplateId" : "",
+  "instructionKey" : "",
+  "chartLabel" : null,
+  "allowSaveForLater" : false,
+  "errorMessage" : {
+    "custom" : [ ],
+    "default" : null
+  },
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "businessCategory" : "",
+  "businessEvent" : ""
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadDraftApplication</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "Load Draft Application",
+  "bundle" : "AZSCLoadDraftApplication",
+  "remoteTimeout" : 30000,
+  "postTransformBundle" : "",
+  "sendJSONPath" : "",
+  "sendJSONNode" : "",
+  "inProgressMessage" : "In Progress",
+  "postMessage" : "Done",
+  "failureNextLabel" : "Continue",
+  "failureAbortLabel" : "Abort",
+  "failureGoBackLabel" : "Go Back",
+  "failureAbortMessage" : "Are you sure?",
+  "validationRequired" : "Submit",
+  "redirectPageName" : "",
+  "redirectTemplateUrl" : "vlcAcknowledge.html",
+  "redirectNextLabel" : "Next",
+  "redirectNextWidth" : 3,
+  "redirectPreviousLabel" : "Previous",
+  "redirectPreviousWidth" : 3,
+  "showPersistentComponent" : [ true, false ],
+  "show" : {
+    "group" : {
+      "operator" : "AND",
+      "rules" : [ {
+        "data" : null,
+        "condition" : "<>",
+        "field" : "sInstanceId"
+      } ]
+    }
+  },
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "errorMessage" : {
+    "custom" : [ ],
+    "default" : null
+  },
+  "enableDefaultAbort" : false,
+  "enableActionMessage" : false,
+  "businessCategory" : "",
+  "businessEvent" : ""
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save Document Uploads</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "",
+  "integrationProcedureKey" : "AZSC_SaveDocumentUploads",
+  "useContinuation" : false,
+  "remoteOptions" : {
+    "preTransformBundle" : "",
+    "postTransformBundle" : "",
+    "useFuture" : true,
+    "chainable" : false
+  },
+  "remoteTimeout" : 30000,
+  "preTransformBundle" : "",
+  "postTransformBundle" : "",
+  "sendJSONPath" : "",
+  "sendJSONNode" : "",
+  "responseJSONPath" : "",
+  "responseJSONNode" : "",
+  "extraPayload" : { },
+  "inProgressMessage" : "In Progress",
+  "postMessage" : "Done",
+  "failureNextLabel" : "Continue",
+  "failureAbortLabel" : "Abort",
+  "failureGoBackLabel" : "Go Back",
+  "failureAbortMessage" : "Are you sure?",
+  "validationRequired" : "Step",
+  "redirectPageName" : "",
+  "redirectTemplateUrl" : "vlcAcknowledge.html",
+  "redirectNextLabel" : "Next",
+  "redirectNextWidth" : 3,
+  "redirectPreviousLabel" : "Previous",
+  "redirectPreviousWidth" : 3,
+  "showPersistentComponent" : [ true, false ],
+  "show" : null,
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "svgSprite" : "",
+  "svgIcon" : "",
+  "errorMessage" : {
+    "custom" : [ ],
+    "default" : null
+  },
+  "enableDefaultAbort" : false,
+  "enableActionMessage" : false,
+  "businessCategory" : "",
+  "businessEvent" : "",
+  "invokeMode" : "noBlock"
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save Business License Application</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "",
+  "integrationProcedureKey" : "CRF_SaveMainApplication",
+  "useContinuation" : false,
+  "remoteOptions" : {
+    "preTransformBundle" : "",
+    "postTransformBundle" : "",
+    "useFuture" : false,
+    "chainable" : false
+  },
+  "remoteTimeout" : 30000,
+  "preTransformBundle" : "",
+  "postTransformBundle" : "",
+  "sendJSONPath" : "",
+  "sendJSONNode" : "",
+  "responseJSONPath" : "",
+  "responseJSONNode" : "",
+  "extraPayload" : { },
+  "inProgressMessage" : "In Progress",
+  "postMessage" : "Done",
+  "failureNextLabel" : "Continue",
+  "failureAbortLabel" : "Abort",
+  "failureGoBackLabel" : "Go Back",
+  "failureAbortMessage" : "Are you sure?",
+  "validationRequired" : "Step",
+  "redirectPageName" : "",
+  "redirectTemplateUrl" : "vlcAcknowledge.html",
+  "redirectNextLabel" : "Next",
+  "redirectNextWidth" : 3,
+  "redirectPreviousLabel" : "Previous",
+  "redirectPreviousWidth" : 3,
+  "showPersistentComponent" : [ true, false ],
+  "show" : null,
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : false,
+  "message" : { },
+  "pubsub" : false,
+  "svgSprite" : "",
+  "svgIcon" : "",
+  "errorMessage" : {
+    "custom" : [ ],
+    "default" : null
+  },
+  "enableDefaultAbort" : false,
+  "enableActionMessage" : false,
+  "businessCategory" : "",
+  "businessEvent" : ""
+}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NavigateToPayment</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "controlWidth" : 12,
+  "label" : "Navigate to Payment",
+  "validationRequired" : "Submit",
+  "show" : null,
+  "HTMLTemplateId" : "",
+  "wpm" : false,
+  "ssm" : true,
+  "pubsub" : false,
+  "message" : {
+    "PaymentRedirect" : "%PayNow%"
+  },
+  "targetType" : "Community Named Page",
+  "objectAction" : "home",
+  "recordAction" : "view",
+  "loginAction" : "login",
+  "targetFilter" : "Recent",
+  "targetId" : "%ContextId%",
+  "variant" : "brand",
+  "iconName" : "",
+  "iconVariant" : "",
+  "iconPosition" : "left",
+  "replace" : true,
+  "targetLWCLayout" : "lightning",
+  "businessCategory" : "",
+  "businessEvent" : "",
+  "targetName" : "Payment__c",
+  "targetParams" : "c__applnId=%ApplicationId%",
+  "lwcComponentOverride" : ""
+}</propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>AZSC|PublicDirectory|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Public Directory Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "Type" : "AZSC",
+  "Sub Type" : "PublicDirectory",
+  "Language" : "English",
+  "show" : null
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save Initial Application</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{

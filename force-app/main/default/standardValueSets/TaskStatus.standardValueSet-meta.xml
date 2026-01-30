@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Skipped</fullName>
+        <default>false</default>
+        <label>Skipped</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Deficient</fullName>
+        <default>false</default>
+        <label>Deficient</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Record Found</fullName>
+        <default>false</default>
+        <label>Record Found</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

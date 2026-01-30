@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "ee52711c-a1d9-4269-90f0-7a36808a16e8",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Complete__c",
+  "id" : "9f48292b-7a00-411b-88a7-5373999d760c",
+  "label" : "Application Submission",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-complete",
+  "type" : "route",
+  "urlPrefix" : "complete"
+}

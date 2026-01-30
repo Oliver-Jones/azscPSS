@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Portal Users</audienceName>
+    <container>Arizona Supreme Court CLD</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <profile>admin</profile>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>00d4163b-c1bb-4ca0-a81a-552f3e2d4fe3$#$b16eb6b2-29c6-49a0-bf3f-2d79340606a8</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Theme_Navigation_Menu_Component_Properties</targetValue>
+        </target>
+        <target>
+            <groupName>90e5d54d-c37f-462f-8b8f-a98712d089a1$#$423d9da2-df39-451e-b86d-084a72b6877d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>ABS_Homepage_Tile_Menu_Component_Properties</targetValue>
+        </target>
+    </targets>
+</Audience>

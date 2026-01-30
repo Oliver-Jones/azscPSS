@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_Type__c</fullName>
+    <label>Fee Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial Application</fullName>
+                <default>false</default>
+                <label>Initial Application</label>
+            </value>
+            <value>
+                <fullName>Renewal Application</fullName>
+                <default>false</default>
+                <label>Renewal Application</label>
+            </value>
+            <value>
+                <fullName>Background check</fullName>
+                <default>false</default>
+                <label>Background check</label>
+            </value>
+            <value>
+                <fullName>Service Tax</fullName>
+                <default>false</default>
+                <label>Service Tax</label>
+            </value>
+            <value>
+                <fullName>Duplicate License</fullName>
+                <default>false</default>
+                <label>Duplicate License</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Initial Certification (greater than 1 yr)</fullName>
+                <default>false</default>
+                <label>Initial Certification (greater than 1 yr)</label>
+            </value>
+            <value>
+                <fullName>Initial Certification (less than 1 yr)</fullName>
+                <default>false</default>
+                <label>Initial Certification (less than 1 yr)</label>
+            </value>
+            <value>
+                <fullName>Fingerprint Processing</fullName>
+                <default>false</default>
+                <label>Fingerprint Processing</label>
+            </value>
+            <value>
+                <fullName>Certification Renewal</fullName>
+                <default>false</default>
+                <label>Certification Renewal</label>
+            </value>
+            <value>
+                <fullName>Initial Registration</fullName>
+                <default>false</default>
+                <label>Initial Registration</label>
+            </value>
+            <value>
+                <fullName>Renewal Registration</fullName>
+                <default>false</default>
+                <label>Renewal Registration</label>
+            </value>
+            <value>
+                <fullName>Initial License (greater than 1 yr)</fullName>
+                <default>false</default>
+                <label>Initial License (greater than 1 yr)</label>
+            </value>
+            <value>
+                <fullName>License Renewal</fullName>
+                <default>false</default>
+                <label>License Renewal</label>
+            </value>
+            <value>
+                <fullName>Initial (one time)</fullName>
+                <default>false</default>
+                <label>Initial (one time)</label>
+            </value>
+            <value>
+                <fullName>Initial Certification</fullName>
+                <default>false</default>
+                <label>Initial Certification</label>
+            </value>
+            <value>
+                <fullName>Initial Licensure</fullName>
+                <default>false</default>
+                <label>Initial Licensure</label>
+            </value>
+            <value>
+                <fullName>Renewal Licensure</fullName>
+                <default>false</default>
+                <label>Renewal Licensure</label>
+            </value>
+            <value>
+                <fullName>Reinstatement Application</fullName>
+                <default>false</default>
+                <label>Reinstatement Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

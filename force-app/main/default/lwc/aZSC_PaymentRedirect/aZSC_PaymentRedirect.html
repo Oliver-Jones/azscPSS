@@ -1,0 +1,13 @@
+<template>
+    <template lwc:if={showSpinner}>
+		<lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+	</template>
+    <div class="">
+        <template lwc:if={showPaymentRedirect}>
+            Redirecting to Payment Portal...
+        </template>
+        <template lwc:else>
+            Redirecting to Applications...
+        </template>
+    </div>
+</template>

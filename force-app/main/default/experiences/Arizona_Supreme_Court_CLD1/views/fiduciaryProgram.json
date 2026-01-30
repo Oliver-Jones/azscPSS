@@ -1,0 +1,93 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "27a860f9-407f-45a0-b660-67148b602348",
+  "label" : "Fiduciary Program",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDFiduciaryLicensingBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "44b3ee43-5232-4631-9f63-b3a3cbabfd3b",
+          "columns" : [ {
+            "UUID" : "bdba96b5-426d-4948-b32b-b29fe1731c6a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "44b3ee43-5232-4631-9f63-b3a3cbabfd3b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"height:30vh;\"></div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "d6969168-1a5f-48fa-a2df-704d1904e6cd",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 35,
+            "borderRadius" : 20,
+            "boxShadow" : true,
+            "haveBanner" : false,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(116,116,116)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "default",
+            "tileMenuEditor" : "Fiduciary_Program",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "7dac4179-1009-4e45-a1b0-845a8cfb7fec",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bdba96b5-426d-4948-b32b-b29fe1731c6a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4824b4d0-bc63-4552-84fd-5e61c32eb45a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Fiduciary Program"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b91dc090-9fb4-4478-a29a-e8d7b2996d39",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "96c40423-fc35-42eb-a5d0-93573f031ddb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-fiduciary-program"
+}

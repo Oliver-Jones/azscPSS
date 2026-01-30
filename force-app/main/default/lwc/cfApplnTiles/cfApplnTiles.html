@@ -1,0 +1,137 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small slds-size_8-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Type%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  placeholder="output"  field-name="ApplnType"  label=""  type="text"  styles='\{"value":{"fontSize":"20px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element2" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element2_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element3" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element3_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Number%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element4" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element4_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Status%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element5" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element5_child"   card={card}  record={record}  placeholder=""  field-name="ApplnName"  label=""  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element6" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element6_child"   card={card}  record={record}  placeholder="output"  field-name="ApplnStatus"  label=""  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element7" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element7_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element8" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element8_child"   card={card}  record={record}  merge-field="%3Cdiv%3EOrganization%20Name%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element9" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element9_child"   card={card}  record={record}  merge-field="%3Cdiv%3EReceived%20Date%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element10" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element10_child"   card={card}  record={record}  placeholder=""  field-name="Business"  label=""  type="text"  styles='\{"value":{"textDecoration":""}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element11" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element11_child"   card={card}  record={record}  placeholder="output"  field-name="AppliedDate"  label=""  type="date"  format="M/D/YYYY"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element12" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element12_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-p-around_x-small slds-size_4-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="slds-col  slds-text-align_right slds-p-around_x-small  slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"IsResume","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element1block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element1block_element0_child flexActionElement" 
+        data-action-element-class="state0element1block_element0_child" data-action-key="state0element1block_element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action2"   state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751896070855","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"{ResumeURL}"}},"key":"1751892161447-tdfsa9oka","label":"Resume Application","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"IsResume","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element1block_element1" class="slds-col  slds-text-align_right slds-p-around_x-small  slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-7","field":"IsPayLater","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element1block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element1block_element1_child flexActionElement" 
+        data-action-element-class="state0element1block_element1_child" data-action-key="state0element1block_element1" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action3"   state-obj={record}  card={card}  record={record}  label="Pay Now"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751898426251","type":"Flyout","openUrlIn":"Current Window","flyoutType":"customLwc","openFlyoutIn":"Modal","channelName":"","flyoutLwc":"aZSC_PaymentNoteModal","hasExtraParams":true,"flyoutParams":{"payMode":"paynow","applnId":"{ApplnId}","isPortalEnabled":"true"}},"key":"1751892161447-tdfsa9oka","label":"Resume Application","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{"openFlyoutIn":"Modal"}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-7","field":"IsPayLater","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  flyout-channel=""  theme="slds"  ><div slot="modalflyout" class="action3action0 " ><omnistudio-custom-lwc-wrapper element-name="c-a-z-s-c_-payment-note-modal" property='\{"applnId":"{ApplnId}"}' records={records} record-id={recordId} record={record}  card={card}  action={modalAction.action3action0} >
+     <c-a-z-s-c_-payment-note-modal      pay-mode="paynow"  is-portal-enabled="true"  ></c-a-z-s-c_-payment-note-modal>
+    </omnistudio-custom-lwc-wrapper></div></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state1element0" class="slds-col  slds-text-align_center  slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0_child flexActionElement" 
+        data-action-element-class="state1element0_child" data-action-key="state1element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action0"   state-obj={record}  card={card}  record={record}  label="New Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751897554252","type":"Custom","targetType":"Community Named Page","openUrlIn":"Current Window","Community Named Page":{"targetName":"ABS_Application__c"}},"key":"1751897514472-i949m7uhd","label":"Action","draggable":true,"isOpen":true,"actionIndex":0}]'  hide-action-icon="true"  display-as-button="true"  button-variant="brand"  flyout-details='\{}'  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state0element0" class="slds-col   slds-p-around_x-small slds-size_8-of-12  " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Type%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element1" class="slds-col   slds-size_12-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element1_child"   card={card}  record={record}  placeholder="output"  field-name="ApplnType"  label=""  type="text"  styles='\{"value":{"fontSize":"20px"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element2" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element2_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element3" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element3_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Number%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element4" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element4_child"   card={card}  record={record}  merge-field="%3Cdiv%3EApplication%20Status%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element5" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element5_child"   card={card}  record={record}  placeholder=""  field-name="ApplnName"  label=""  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element6" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element6_child"   card={card}  record={record}  placeholder="output"  field-name="ApplnStatus"  label=""  type="text"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element7" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element7_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element8" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element8_child"   card={card}  record={record}  merge-field="%3Cdiv%3EOrganization%20Name%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element9" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element9_child"   card={card}  record={record}  merge-field="%3Cdiv%3EReceived%20Date%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element10" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element10_child"   card={card}  record={record}  placeholder=""  field-name="Business"  label=""  type="text"  styles='\{"value":{"textDecoration":""}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element11" class="slds-col   slds-size_6-of-12  " data-rindex={rindex} style="      
+         font-weight:700;" ><omnistudio-output-field data-style-id="state0element0block_element11_child"   card={card}  record={record}  placeholder="output"  field-name="AppliedDate"  label=""  type="date"  format="M/D/YYYY"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element0block_element12" class="slds-col   slds-size_12-of-12 " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element0block_element12_child"   card={card}  record={record}  merge-field="%3Ch6%3E&nbsp;%3C/h6%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-p-around_x-small slds-size_4-of-12 " data-rindex={rindex} style="" >
+    <omnistudio-block data-style-id="state0element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="slds-col  slds-text-align_right slds-p-around_x-small  slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"IsResume","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element1block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element1block_element0_child flexActionElement" 
+        data-action-element-class="state0element1block_element0_child" data-action-key="state0element1block_element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action2"   state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751896070855","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","Web Page":{"targetName":"{ResumeURL}"}},"key":"1751892161447-tdfsa9oka","label":"Resume Application","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"IsResume","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element1block_element1" class="slds-col  slds-text-align_right slds-p-around_x-small  slds-size_12-of-12  condition-element" data-rindex={rindex} style="      
+         "  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-7","field":"IsPayLater","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element1block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element1block_element1_child flexActionElement" 
+        data-action-element-class="state0element1block_element1_child" data-action-key="state0element1block_element1" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action3"   state-obj={record}  card={card}  record={record}  label="Pay Now"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751898426251","type":"Flyout","openUrlIn":"Current Window","flyoutType":"customLwc","openFlyoutIn":"Modal","channelName":"","flyoutLwc":"aZSC_PaymentNoteModal","hasExtraParams":true,"flyoutParams":{"payMode":"paynow","applnId":"{ApplnId}","isPortalEnabled":"true"}},"key":"1751892161447-tdfsa9oka","label":"Resume Application","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{"openFlyoutIn":"Modal"}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-7","field":"IsPayLater","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  flyout-channel=""  theme="slds"  ><div slot="modalflyout" class="action3action0 " ><omnistudio-custom-lwc-wrapper element-name="c-a-z-s-c_-payment-note-modal" property='\{"applnId":"{ApplnId}"}' records={records} record-id={recordId} record={record}  card={card}  action={modalAction.action3action0} >
+     <c-a-z-s-c_-payment-note-modal      pay-mode="paynow"  is-portal-enabled="true"  ></c-a-z-s-c_-payment-note-modal>
+    </omnistudio-custom-lwc-wrapper></div></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div>
+        </div>
+      </omnistudio-flex-card-state><omnistudio-flex-card-state  record={record} data-statue="false"  data-index="1" data-rindex={rindex} class="cf-vlocity-state-1 cf-vlocity-state slds-size_12-of-12"  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small" style="">
+          <div data-style-id="state1element0" class="slds-col  slds-text-align_center  slds-size_12-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-flex-action data-style-id="state1element0_child"  tracking-obj={_childCardTrackingObj}  class= "state1element0_child flexActionElement" 
+        data-action-element-class="state1element0_child" data-action-key="state1element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action0"   state-obj={record}  card={card}  record={record}  label="New Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1751897554252","type":"Custom","targetType":"Community Named Page","openUrlIn":"Current Window","Community Named Page":{"targetName":"ABS_Application__c"}},"key":"1751897514472-i949m7uhd","label":"Action","draggable":true,"isOpen":true,"actionIndex":0}]'  hide-action-icon="true"  display-as-button="true"  button-variant="brand"  flyout-details='\{}'  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

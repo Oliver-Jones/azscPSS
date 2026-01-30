@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;appType&quot;:&quot;CRIInitialLicense&quot;,&quot;ProfessionalSkillProficiency&quot;:{&quot;CertifiedStateBlock&quot;:[{&quot;CertifiedState&quot;:&quot;AK&quot;,&quot;CertificationDate&quot;:&quot;2025-12-02&quot;,&quot;ExpirationDate&quot;:&quot;2025-12-03&quot;,&quot;EntityName&quot;:&quot;Testst&quot;,&quot;EntityPhone&quot;:&quot;3214112451&quot;,&quot;EntityEmail&quot;:&quot;w5qjt@starmail.net&quot;,&quot;EntityAddress&quot;:&quot;Airport City&quot;},{&quot;CertifiedState&quot;:&quot;AR&quot;,&quot;CertificationDate&quot;:&quot;2025-12-01&quot;,&quot;ExpirationDate&quot;:&quot;2025-11-30&quot;,&quot;EntityName&quot;:&quot;Ftasdads&quot;,&quot;EntityPhone&quot;:&quot;3213213211&quot;,&quot;EntityEmail&quot;:&quot;w5qjt@starmail.net&quot;,&quot;EntityAddress&quot;:&quot;Airport City&quot;}]}}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>English</language>
+    <name>Save Related Information</name>
+    <omniProcessElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRFApplicantHomeAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhoneNumber%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephoneNumber%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFaxNumber%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRFApplicantMailingAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhoneNumber%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephoneNumber%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFaxNumber%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRFPublicDirectoryInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;DirectoryStreet&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDMailingStreet%, %ReportingFirmRenewalInformation:ApplicantPhysicalStreet%)&quot;,
+    &quot;DirectoryCity&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCity%, %ReportingFirmRenewalInformation:ApplicantPhysicalCity%)&quot;,
+    &quot;DirectoryCountry&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCountry%, %ReportingFirmRenewalInformation:ApplicantPhysicalCountry%)&quot;,
+    &quot;DirectoryZip&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDMailingZip%, %ReportingFirmRenewalInformation:ApplicantPhysicalZip%)&quot;,
+    &quot;DirectoryState&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDMailingState%, %ReportingFirmRenewalInformation:ApplicantPhysicalState%)&quot;,
+    &quot;DirectoryName&quot; : &quot;=%PublicDirectoryInfo:PDName%&quot;,
+    &quot;DirectoryEmail&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDEmail%, %ReportingFirmRenewalInformation:ApplicantEmail%)&quot;,
+    &quot;DirectoryPhone&quot; : &quot;=IF(%appType% == &apos;CRFInitialLicense&apos;, %PublicDirectoryInfo:PDPhone%, %ReportingFirmRenewalInformation:ApplicantTelephoneNumber%)&quot;,
+    &quot;InformationType&quot; : &quot;Public Directory&quot;,
+    &quot;RecordTypeName&quot; : &quot;Public_Directory&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <description>Conditional Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CRFLicenseBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;CRFInitialLicense\&quot; || %appType% == \&quot;CRFRenewalLicense\&quot;&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignCertifiedStateData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;CertifiedStateData&quot; : &quot;=LIST(%ProfessionalSkillProficiency:CertifiedStateBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadCRICertifiedStatesInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedCertifiedStateData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedCertifiedStateData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignCertifiedStateData:CertifiedStateData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;CertifiedState&quot; : &quot;&quot;,
+    &quot;Email&quot; : &quot;=EntityEmail&quot;,
+    &quot;ExpirationDate&quot; : &quot;=ExpirationDate&quot;,
+    &quot;EntityName&quot; : &quot;=EntityName&quot;,
+    &quot;CertificationDate&quot; : &quot;=CertificationDate&quot;,
+    &quot;Phone&quot; : &quot;=EntityPhone&quot;,
+    &quot;State&quot; : &quot;=CertifiedState&quot;,
+    &quot;Street&quot; : &quot;=EntityAddress&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Certified_States&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;InformationType&quot; : &quot;Certified State&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CertifiedStatesBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%ProfessionalSkillProficiency:CertifiedStateBlock:CertifiedState%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRIApplicantHomeAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhoneNumber%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephoneNumber%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFaxNumber%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRIApplicantMailingAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhoneNumber%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephoneNumber%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingState%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFaxNumber%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadCRIPublicDirectoryInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;CRIInitialLicense\&quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;DirectoryStreet&quot; : &quot;=%PublicDirectoryInfo:PDMailingStreet%&quot;,
+    &quot;DirectoryCity&quot; : &quot;=%PublicDirectoryInfo:PDMailingCity%&quot;,
+    &quot;DirectoryCountry&quot; : &quot;=%PublicDirectoryInfo:PDMailingCountry%&quot;,
+    &quot;DirectoryZip&quot; : &quot;=%PublicDirectoryInfo:PDMailingZip%&quot;,
+    &quot;DirectoryState&quot; : &quot;=%PublicDirectoryInfo:PDMailingState%&quot;,
+    &quot;DirectoryName&quot; : &quot;=%PublicDirectoryInfo:PDName%&quot;,
+    &quot;DirectoryEmail&quot; : &quot;=%PublicDirectoryInfo:PDEmail%&quot;,
+    &quot;DirectoryPhone&quot; : &quot;=%PublicDirectoryInfo:PDPhone%&quot;,
+    &quot;InformationType&quot; : &quot;Public Directory&quot;,
+    &quot;RecordTypeName&quot; : &quot;Public_Directory&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;Applicationid&quot; : &quot;=%ApplicationId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <description>Conditional Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CRILicenseBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;CRIInitialLicense\&quot; || %appType% == \&quot;CRIRenewalLicense\&quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignAdditionalLocationsData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;AdditionalLocationsData&quot; : &quot;=LIST(%LDPRelatedActivities:AdditionalLocationBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadModifiedAdditionalLocationsInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedAdditionalLocationsData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedAdditionalLocationsData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignAdditionalLocationsData:AdditionalLocationsData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;Zip&quot; : &quot;=AdditionalLocationZip&quot;,
+    &quot;State&quot; : &quot;=AdditionalLocationState&quot;,
+    &quot;Street&quot; : &quot;=AdditionalLocationStreet&quot;,
+    &quot;Country&quot; : &quot;=AdditionalLocationCountry&quot;,
+    &quot;City&quot; : &quot;=AdditionalLocationCity&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;LDB_Additional_Locations&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Other&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AdditionalLocationBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%LDPRelatedActivities:AdditionalLocationBlock:AdditionalLocationStreet%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignBusinessEntityMembersData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;BusinessEntityMembersData&quot; : &quot;=LIST(%BusinessEntityMemberInformation:BusinessEntityMemberBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadModifiedBusinessEntityMembersInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedBusinessEntityMembersData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedBusinessEntityMembersData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignBusinessEntityMembersData:BusinessEntityMembersData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;Zip&quot; : &quot;=BusniessEntityMemberZip&quot;,
+    &quot;CorporateTitle/Position&quot; : &quot;=BusniessEntityMemberTitle&quot;,
+    &quot;FirstName&quot; : &quot;=BusniessEntityMemberFirstName&quot;,
+    &quot;Phone&quot; : &quot;=BusinessEntityMemberTelephone&quot;,
+    &quot;State&quot; : &quot;=BusniessEntityMemberState&quot;,
+    &quot;Street&quot; : &quot;=BusniessEntityMemberStreet&quot;,
+    &quot;Country&quot; : &quot;=BusniessEntityMemberCountry&quot;,
+    &quot;City&quot; : &quot;=BusniessEntityMemberCity&quot;,
+    &quot;LastName&quot; : &quot;=BusniessEntityMemberLastName&quot;,
+    &quot;MiddleName&quot; : &quot;=BusniessEntityMemberMiddleName&quot;,
+    &quot;SSN&quot; : &quot;=BusniessEntityMemberSSN&quot;,
+    &quot;BirthDate&quot; : &quot;=BusinessEntityMemberDOB&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Business_Entity_Members&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Other&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>BusinessEntityMemberBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%BusinessEntityMemberInformation:BusinessEntityMemberBlock:BusniessEntityMemberLastName%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignPreparerandTraineesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;PreparerandTraineesData&quot; : &quot;=LIST(%PreparerandTraineesInfo:PreparerandTraineesBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadLDBPreparerandTraineesInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedPreparerandTraineesData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedPreparerandTraineesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignPreparerandTraineesData:PreparerandTraineesData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;Zip&quot; : &quot;=PreparerTraineeZip&quot;,
+    &quot;License/RegistrationStatus&quot; : &quot;=PreparerTraineeLicenseStatus&quot;,
+    &quot;FirstName&quot; : &quot;=PreparerTraineeFirstName&quot;,
+    &quot;State&quot; : &quot;=PreparerTraineeState&quot;,
+    &quot;AZCLDP#&quot; : &quot;=PreparerTraineeLicenseNumber&quot;,
+    &quot;Street&quot; : &quot;=PreparerTraineeStreet&quot;,
+    &quot;Country&quot; : &quot;=PreparerTraineeCountry&quot;,
+    &quot;LastName&quot; : &quot;=PreparerTraineeLastName&quot;,
+    &quot;City&quot; : &quot;=PreparerTraineeCity&quot;,
+    &quot;MiddleName&quot; : &quot;=PreparerTraineeMiddleName&quot;,
+    &quot;SSN&quot; : &quot;=PreparerTraineeSSN&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Certified_Legal_Document_Preparer_and_Trainees&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Other&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LegalDocumentPreparerBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%PreparerandTraineesInfo:PreparerandTraineesBlock:PreparerTraineeLastName%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDBApplicantHomeAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%BusinessInformation:BusinessPhysicalZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;State&quot; : &quot;=%BusinessInformation:BusinessPhysicalState%&quot;,
+    &quot;Phone&quot; : &quot;=%BusinessInformation:BusinessPhysicalTelephone%&quot;,
+    &quot;Country&quot; : &quot;=%BusinessInformation:BusinessPhysicalCountry%&quot;,
+    &quot;Street&quot; : &quot;=%BusinessInformation:BusinessPhysicalStreet%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%BusinessInformation:BusinessPhysicalCity%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%BusinessInformation:BusinessFax%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDBApplicantMailingAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%BusinessInformation:BusinessMailingZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;State&quot; : &quot;=%BusinessInformation:BusinessMailingState%&quot;,
+    &quot;Country&quot; : &quot;=%BusinessInformation:BusinessMailingCountry%&quot;,
+    &quot;Street&quot; : &quot;=%BusinessInformation:BusinessMailingStreet%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%BusinessInformation:BusinessMailingCity%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;SSN&quot; : &quot;=%BusinessInformation:ApplicantSocialSecurityNumber%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDBPublicDirectoryInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;DirectoryStreet&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDMailingStreet%, %BusinessInformation:ApplicantPhysicalStreet%)&quot;,
+    &quot;DirectoryCity&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCity%, %BusinessInformation:ApplicantPhysicalCity%)&quot;,
+    &quot;DirectoryCountry&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCountry%, %BusinessInformation:ApplicantPhysicalCountry%)&quot;,
+    &quot;DirectoryZip&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDMailingZip%, %BusinessInformation:ApplicantPhysicalZip%)&quot;,
+    &quot;DirectoryState&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDMailingState%, %BusinessInformation:ApplicantPhysicalState%)&quot;,
+    &quot;DirectoryName&quot; : &quot;=%PublicDirectoryInfo:PDName%&quot;,
+    &quot;DirectoryEmail&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDEmail%, %BusinessInformation:ApplicantEmail%)&quot;,
+    &quot;DirectoryPhone&quot; : &quot;=IF(%appType% == &apos;LDBInitialLicense&apos;, %PublicDirectoryInfo:PDPhone%, %BusinessInformation:ApplicantTelephoneNumber%)&quot;,
+    &quot;InformationType&quot; : &quot;Public Directory&quot;,
+    &quot;RecordTypeName&quot; : &quot;Public_Directory&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignOtherLicensesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;OtherLicensesData&quot; : &quot;=LIST(%LDPRelatedActivities:OtherLicenseBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadModifiedOtherLicensesInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedOtherLicensesData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadBusApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedOtherLicensesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignOtherLicensesData:OtherLicensesData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;ExpirationDate&quot; : &quot;=ExpirationDate&quot;,
+    &quot;OtherLicensesHeld&quot; : &quot;=OtherLicensesHeld&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;LDB_Other_Licenses&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Other&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OtherLicenseBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%LDPRelatedActivities:OtherLicenseBlock:OtherLicensesHeld%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <description>Conditional Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LDBLicenseBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;LDBInitialLicense\&quot; || %appType% == \&quot;LDBRenewalLicense\&quot;&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignCertifiedStatesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;CertifiedStatesData&quot; : &quot;=LIST(%InitialApplicantInfo:CertifiedStateBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadModifiedCertifiedStatesInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedCertifiedStatesData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedCertifiedStatesData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignCertifiedStatesData:CertifiedStatesData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;CertifiedState&quot; : &quot;=State&quot;,
+    &quot;CertifiedCity&quot; : &quot;=City&quot;,
+    &quot;CertificationDate&quot; : &quot;=CertifiedDate&quot;,
+    &quot;CertifiedZip&quot; : &quot;=Zip&quot;,
+    &quot;CertifiedCountry&quot; : &quot;=Country&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Certified_States&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Certified State&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CertifiedStateBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%InitialApplicantInfo:CertifiedStateBlock:CertifiedState%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <description>Set Values Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>AssignEmploymentHistoryData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;EmploymentHistoryData&quot; : &quot;=LIST(%EmploymentHistory:EmploymentHistoryBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <description>Data Mapper Post Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LoadModifiedEmploymentHistoryInfo</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;ModifiedEmploymentHistoryData&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <description>List Action</description>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>ModifiedEmploymentHistoryData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;AssignEmploymentHistoryData:EmploymentHistoryData&quot; ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;Position&quot; : &quot;=EmploymentPosition&quot;,
+    &quot;EmploymentZip&quot; : &quot;=EmploymentZip&quot;,
+    &quot;SupervisorName&quot; : &quot;=EmploymentSupervisorName&quot;,
+    &quot;From&quot; : &quot;=EmploymentPositionFrom&quot;,
+    &quot;SupervisorPhone&quot; : &quot;=EmploymentSupervisorPhone&quot;,
+    &quot;JobDuty&quot; : &quot;=EmploymentJobDuty&quot;,
+    &quot;CompanyName&quot; : &quot;=EmployerCompanyName&quot;,
+    &quot;SupervisorTitle&quot; : &quot;=EmploymentSupervisorTitle&quot;,
+    &quot;EmploymentStreet&quot; : &quot;=EmploymentStreet&quot;,
+    &quot;EmploymentCity&quot; : &quot;=EmploymentCity&quot;,
+    &quot;To&quot; : &quot;=EmploymentPositionTo&quot;,
+    &quot;EmploymentState&quot; : &quot;=EmploymentState&quot;,
+    &quot;EmploymentCountry&quot; : &quot;=EmploymentCountry&quot;
+  },
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Employment_History&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Other&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : { },
+  &quot;advancedMerge&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;allowMergeNulls&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <description>Conditional Block</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>EmploymentHistoryBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%EmploymentHistory:EmploymentHistoryBlock:EmployerCompanyName%)&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDIApplicantHomeAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : &quot;&quot;,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhone%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephone%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantHomeStreet%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFax%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDIApplicantMailingAddressInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;Zip&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingZip%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;Email&quot; : &quot;=%InitialApplicantInfo:ApplicantEmail%&quot;,
+    &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;,
+    &quot;City&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingCity%&quot;,
+    &quot;Mobile&quot; : &quot;=%InitialApplicantInfo:ApplicantCellPhone%&quot;,
+    &quot;SSN&quot; : &quot;=%InitialApplicantInfo:ApplicantSocialSecurityNumber%&quot;,
+    &quot;State&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingState%&quot;,
+    &quot;Phone&quot; : &quot;=%InitialApplicantInfo:ApplicantTelephone%&quot;,
+    &quot;Country&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingCountry%&quot;,
+    &quot;Street&quot; : &quot;=%InitialApplicantInfo:ApplicantMailingStreet%&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;InformationType&quot; : &quot;Mailing (e.g., PO Box)&quot;,
+    &quot;Fax&quot; : &quot;=%InitialApplicantInfo:ApplicantFax%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadLDIPublicDirectoryInfo</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;DirectoryStreet&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDMailingStreet%, %InitialApplicantInfo:PDMailingStreet%)&quot;,
+    &quot;DirectoryCity&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCity%, %InitialApplicantInfo:PDMailingCity%)&quot;,
+    &quot;DirectoryCountry&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDMailingCountry%, %InitialApplicantInfo:PDMailingCountry%)&quot;,
+    &quot;DirectoryZip&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDMailingZip%, %InitialApplicantInfo:PDMailingZip%)&quot;,
+    &quot;DirectoryState&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDMailingState%, %InitialApplicantInfo:PDMailingState%)&quot;,
+    &quot;DirectoryName&quot; : &quot;=%PublicDirectoryInfo:PDName%&quot;,
+    &quot;DirectoryEmail&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDEmail%, %InitialApplicantInfo:PDEmail%)&quot;,
+    &quot;DirectoryPhone&quot; : &quot;=IF(%appType% == &apos;LDIInitialLicense&apos;, %PublicDirectoryInfo:PDPhone%, %InitialApplicantInfo:PDPhone%)&quot;,
+    &quot;InformationType&quot; : &quot;Public Directory&quot;,
+    &quot;RecordTypeName&quot; : &quot;Public_Directory&quot;,
+    &quot;ApplicationId&quot; : &quot;=%ApplicationId%&quot;,
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;ContactId&quot; : &quot;=%ContactId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;bundle&quot; : &quot;AZSCLoadIndApplicationInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <description>Conditional Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LDILicenseBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;LDIInitialLicense\&quot; || %appType% == \&quot;LDIRenewalLicense\&quot;&quot;,
+  &quot;elementValueMap&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;isIfElseBlock&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessKey>AZSC_SaveRelatedInformation</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;transientValues&quot; : {
+    &quot;activateOrDeactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>SaveRelatedInformation</subType>
+    <type>AZSC</type>
+    <uniqueName>AZSC_SaveRelatedInformation_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

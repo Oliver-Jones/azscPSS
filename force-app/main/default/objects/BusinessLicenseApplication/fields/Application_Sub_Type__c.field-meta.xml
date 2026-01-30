@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Sub_Type__c</fullName>
+    <label>Application Sub Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial Application</fullName>
+                <default>false</default>
+                <label>Initial Application</label>
+            </value>
+            <value>
+                <fullName>Renewal Application</fullName>
+                <default>false</default>
+                <label>Renewal Application</label>
+            </value>
+            <value>
+                <fullName>Initial Appointment of Compliance Lawyer</fullName>
+                <default>false</default>
+                <label>Initial Appointment of Compliance Lawyer</label>
+            </value>
+            <value>
+                <fullName>Initial Appointment of Designated Principal</fullName>
+                <default>false</default>
+                <label>Initial Appointment of Designated Principal</label>
+            </value>
+            <value>
+                <fullName>Change of Compliance Lawyer</fullName>
+                <default>false</default>
+                <label>Change of Compliance Lawyer</label>
+            </value>
+            <value>
+                <fullName>Change of Designated Principal</fullName>
+                <default>false</default>
+                <label>Change of Designated Principal</label>
+            </value>
+            <value>
+                <fullName>Renewal of Compliance Lawyer</fullName>
+                <default>false</default>
+                <label>Renewal of Compliance Lawyer</label>
+            </value>
+            <value>
+                <fullName>Renewal of Designated Principal</fullName>
+                <default>false</default>
+                <label>Renewal of Designated Principal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

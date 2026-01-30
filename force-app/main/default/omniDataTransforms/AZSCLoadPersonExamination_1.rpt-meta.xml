@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CheckRequiredErrors&quot; : null,
+    &quot;ExamScheduleInformation&quot; : null,
+    &quot;ExamInstructions&quot; : null,
+    &quot;NavigateToRenewCRF&quot; : null,
+    &quot;RegistrantInformation&quot; : null,
+    &quot;SetExamSlotError&quot; : null,
+    &quot;DataMapperPostAction1&quot; : null,
+    &quot;AssignInitialValues&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;ExamScheduleInformation&quot; : {
+    &quot;HasAccommodationSpace&quot; : null,
+    &quot;SlotSelection&quot; : null,
+    &quot;ExamScheduleInformationSpace&quot; : null,
+    &quot;HasAccommodation&quot; : null
+  },
+  &quot;ExamInstructions&quot; : { },
+  &quot;NavigateToRenewCRF&quot; : { },
+  &quot;RegistrantInformation&quot; : {
+    &quot;RegistrantInformationSpace&quot; : null,
+    &quot;ExamTypeSpace&quot; : null,
+    &quot;ERPhone&quot; : null,
+    &quot;ExamType&quot; : null,
+    &quot;EREmail&quot; : null,
+    &quot;ERZip&quot; : null,
+    &quot;ERState&quot; : null,
+    &quot;ERCity&quot; : null,
+    &quot;ERFirstName&quot; : null,
+    &quot;ERStreet&quot; : null,
+    &quot;ERCountry&quot; : null,
+    &quot;ERLastName&quot; : null
+  },
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;AssignInitialValues&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;CheckRequiredErrors&quot; : { },
+  &quot;ContextId&quot; : null,
+  &quot;SetExamSlotError&quot; : { },
+  &quot;DataMapperPostAction1&quot; : { }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadPersonExamination</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5f429e2b-59d6-4418-9bfb-0f8982d2eb4b</globalKey>
+        <inputFieldName>ExamScheduleInformation:SlotSelection:SelectedId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Exam_Slot__c</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>70018da6-1f9f-4ddb-a1ed-7c36042f254b</globalKey>
+        <inputFieldName>ExamScheduleInformation:HasAccommodation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Accommodation__c</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Due</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>93f556e3-b367-4396-a6da-01bb4a6b4241</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_Status__c</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Payment Pending</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cf8e4b4c-b72f-4df2-840b-8ef355b91823</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status__c</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b7db65f7-0d87-44af-bf19-f95e3e1d87a3</globalKey>
+        <inputFieldName>ExamId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cefc49d0-2845-49a1-a2ee-495310f730fe</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c376e34c-8709-489b-bee7-6363b51df4cf</globalKey>
+        <inputFieldName>ExamScheduleInformation:SlotSelection:SelectedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>Examination_Date__c</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>6ce7320f-8322-4fbb-9142-962da53f2433</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c830dd73-b730-4a87-8b07-d0b1c59aeebd</globalKey>
+        <inputFieldName>RegistrantInformation:ExamBlock:ExamType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>Name</lookupByFieldName>
+        <lookupObjectName>Examination</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCLoadPersonExamination</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExaminationId</outputFieldName>
+        <outputObjectName>PersonExamination</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : true,
+  &quot;omniscriptId&quot; : &quot;0jNgP0000000kMDUAY&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Exam&quot;,
+  &quot;subType&quot; : &quot;Registration&quot;,
+  &quot;sId&quot; : &quot;0jNgP0000000kMDUAY&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1763630461917&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;bless1504498@mastek.com.dev01pss&quot;,
+  &quot;userId&quot; : &quot;005Oz00000QY6gk&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNgP0000000kMDUAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;FeeType&quot; : &quot;Exam Registration&quot;,
+  &quot;ApplnCategory&quot; : &quot;Standard&quot;,
+  &quot;appType&quot; : &quot;ExamRegistration&quot;,
+  &quot;RegistrantInformation&quot; : {
+    &quot;ERState1&quot; : null,
+    &quot;ERCountry1&quot; : null,
+    &quot;ERFirstName&quot; : null,
+    &quot;ERLastName&quot; : null,
+    &quot;EREmail&quot; : null,
+    &quot;ERPhone&quot; : null,
+    &quot;ERCountry&quot; : &quot;US&quot;,
+    &quot;ERStreet&quot; : null,
+    &quot;ERCity&quot; : null,
+    &quot;ERState&quot; : &quot;AZ&quot;,
+    &quot;ERZip&quot; : null,
+    &quot;ExamType&quot; : &quot;Certified Reporter Individual&quot;
+  },
+  &quot;ExamScheduleInformation&quot; : {
+    &quot;SlotSelection&quot; : {
+      &quot;SelectedDate&quot; : &quot;Thu Nov 20 00:00:00 GMT 2025&quot;,
+      &quot;SelectedSlot&quot; : &quot;9 AM - 12 PM&quot;,
+      &quot;SelectedId&quot; : &quot;a0egP000002PD2XQAW&quot;,
+      &quot;Registered&quot; : &quot;{Registered_Slots__c}&quot;
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadPersonExamination_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

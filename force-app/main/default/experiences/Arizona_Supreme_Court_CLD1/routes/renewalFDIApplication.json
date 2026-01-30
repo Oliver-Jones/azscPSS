@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "8b595642-ffb9-4fc2-ac70-498904449c4b",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_FDI_Application__c",
+  "id" : "2e6dcec6-1240-4e7f-99c2-729564045542",
+  "label" : "Renewal FDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-fdi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/renewal-fdi-application"
+}

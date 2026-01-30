@@ -1,0 +1,32 @@
+<template>
+    <lightning-quick-action-panel header="New ABS Application">
+        <lightning-radio-group
+            required
+            disabled
+            type="radio"
+            class="slds-p-around_medium"
+            data-field="ApplicationType"
+            name="ApplicationType"
+            label="Please select the type of application from the list below"
+            value={appRec.ApplicationType}
+            placeholder="Select Type"
+            options={applnTypes}
+            onchange={handleChange}>
+        </lightning-radio-group>
+        <lightning-radio-group
+            required
+            type="radio"
+            class="slds-p-horizontal_medium"
+            data-field="ApplicationCategory"
+            name="ApplicationCategory"
+            label="Please select your business type from the list below"
+            value={appRec.ApplicationCategory}
+            placeholder="Select Category"
+            options={applnCategories}
+            onchange={handleChange}>
+        </lightning-radio-group>
+        <div class="slds-p-around_medium" style="text-align:center;">
+            <lightning-button disabled={disableLaunch} label="Launch Application" onclick={openOmniScript} variant="brand"></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

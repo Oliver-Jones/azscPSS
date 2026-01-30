@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "18771293-07f4-42e5-9749-d9938c1c770a",
+  "label" : "Reinstate CRI Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CertifiedReportersBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "01767751-c9c4-44ee-abcb-3bcb52591536",
+          "columns" : [ {
+            "UUID" : "f544f29a-0ec9-4ea9-b671-4522bdc8cce2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "01767751-c9c4-44ee-abcb-3bcb52591536",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "RenewalApplication",
+            "theme" : "lightning",
+            "type" : "CRI"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "39c30661-fe82-4191-9c30-73853bfb6e26",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f544f29a-0ec9-4ea9-b671-4522bdc8cce2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "de805875-6251-4dae-a520-53f4223d799e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Reinstate Certified Reporters Individual Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "55d8d713-9667-4655-be68-6d7c8aae0961",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a24bb097-9b23-4b69-80c8-afa3065f8fa7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-reinstate-cri-application"
+}

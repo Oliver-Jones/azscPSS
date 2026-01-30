@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:56:38.264Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessState&quot; : &quot;AZ&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;BusinessZip&quot; : &quot;12345&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-08&quot;,
+    &quot;FederalTaxID&quot; : &quot;123213213&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Corporation&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004EvMAI&quot;,
+  &quot;DesignatedPrincipalInfo&quot; : {
+    &quot;Block4&quot; : null,
+    &quot;DPMiddleName&quot; : null,
+    &quot;DPDateofBirth&quot; : null,
+    &quot;DPBusinessTelephone&quot; : &quot;1232132132&quot;,
+    &quot;DPHomeTelephone&quot; : null,
+    &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+    &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+    &quot;DPHomeCountry&quot; : &quot;US&quot;,
+    &quot;DPHomeState&quot; : &quot;AZ&quot;,
+    &quot;DPFirstName&quot; : &quot;Tester&quot;,
+    &quot;DPLastName&quot; : &quot;QA&quot;,
+    &quot;DPSocialSecurityNumber&quot; : &quot;123123123&quot;,
+    &quot;DPEmail&quot; : &quot;big0@hye.com&quot;,
+    &quot;DPBusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPBusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPBusinessZip&quot; : &quot;12345&quot;,
+    &quot;DPHomeStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPHomeCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPHomeZip&quot; : &quot;12345&quot;,
+    &quot;IHaveEconomicInterest&quot; : &quot;No&quot;,
+    &quot;IHaveLegalRighttoExercise&quot; : &quot;No&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>ABSLoadDesignatedParticipant</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom2064</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom8778</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPDateofBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom9644</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SSN__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom5713</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom4648</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom1625</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom4918</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom1850</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessPosition</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Business_Position__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom5203</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom7183</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Designated Principal</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom8357</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom1663</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom8532</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom2914</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom5344</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom1401</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Social_Security_Number__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom1533</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonTitle</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom576</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom7061</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom447</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPHomeTelephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonHomePhone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom6034</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom8560</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom316</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPBusinessTelephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom5192</globalKey>
+        <inputFieldName>DesignatedPrincipalInfo:DPMiddleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MiddleName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>PersonAccount</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadDesignatedPrincipalCustom5426</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>ABSLoadDesignatedParticipant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ApplnId&quot; : &quot;0f0Ou000000021pIAA&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:56:38.264Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessState&quot; : &quot;AZ&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;BusinessZip&quot; : &quot;12345&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-08&quot;,
+    &quot;FederalTaxID&quot; : &quot;123213213&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Corporation&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004EvMAI&quot;,
+  &quot;DesignatedPrincipalInfo&quot; : {
+    &quot;Block4&quot; : null,
+    &quot;DPMiddleName&quot; : null,
+    &quot;DPDateofBirth&quot; : null,
+    &quot;DPBusinessTelephone&quot; : &quot;1232132132&quot;,
+    &quot;DPHomeTelephone&quot; : null,
+    &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+    &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+    &quot;DPHomeCountry&quot; : &quot;US&quot;,
+    &quot;DPHomeState&quot; : &quot;AZ&quot;,
+    &quot;DPFirstName&quot; : &quot;Tester&quot;,
+    &quot;DPLastName&quot; : &quot;QA&quot;,
+    &quot;DPSocialSecurityNumber&quot; : &quot;123123123&quot;,
+    &quot;DPEmail&quot; : &quot;big0@hye.com&quot;,
+    &quot;DPBusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPBusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPBusinessZip&quot; : &quot;12345&quot;,
+    &quot;DPHomeStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPHomeCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPHomeZip&quot; : &quot;12345&quot;,
+    &quot;IHaveEconomicInterest&quot; : &quot;No&quot;,
+    &quot;IHaveLegalRighttoExercise&quot; : &quot;No&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>ABSLoadDesignatedParticipant_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

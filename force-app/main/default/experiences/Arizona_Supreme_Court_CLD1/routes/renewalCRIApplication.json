@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "725b334e-56b3-4ef8-82e7-b5dc1a839c2a",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_CRI_Application__c",
+  "id" : "f1c0feef-83a6-4d48-a84b-2cd0661bb72e",
+  "label" : "Renewal CRI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-cri-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/renewal-cri-application"
+}

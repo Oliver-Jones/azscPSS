@@ -1,0 +1,10 @@
+runtime_omnistudio_common-radio-group > div > fieldset > div, slot > runtime_omnistudio_common-radio-group > div.slds-has-error > div {
+    text-align:-webkit-left;
+}
+article > div.omniscript-body.slds-card__body.slds-card__body_inner.slds-m-top_medium.slds-p-right_medium.slds-col.slds-grid.slds-grid_vertical.slds-size_1-of-1 {
+    margin:0px !important;
+    padding:0px !important;
+}
+div.custom-step-label.slds-page-header__title.slds-var-p-horizontal_medium.slds-text-heading_medium.slds-var-m-top_medium.os-step-label,  div.slds-grid.slds-wrap.slds-var-p-vertical_small.omniscript-step__body{
+    color:black;
+}

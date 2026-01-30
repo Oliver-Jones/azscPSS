@@ -1,0 +1,8 @@
+.omniscript-btn-save-for-later > button {
+    font-size:12px;
+    color:#002458;
+    border: 1px solid #ddd;
+    padding: 1px 30px;
+    font-weight: 500;
+    border-radius: 5px;
+}

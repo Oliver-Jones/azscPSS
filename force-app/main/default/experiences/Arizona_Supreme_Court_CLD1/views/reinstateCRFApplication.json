@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "dbca78c6-5b7b-45f7-8509-ec3e07c34f89",
+  "label" : "Reinstate CRF Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CertifiedReportersBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "b014f8ec-d4a2-4673-a6fb-d000850aa7e7",
+          "columns" : [ {
+            "UUID" : "766bcf23-b986-4006-bffc-6158675e1597",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "b014f8ec-d4a2-4673-a6fb-d000850aa7e7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "RenewalApplication",
+            "theme" : "lightning",
+            "type" : "CRF"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "c3b1d97f-d9da-4457-9940-b39de20060b3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "766bcf23-b986-4006-bffc-6158675e1597",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "45f1afb3-5c64-4b34-8d7c-c8c04ef0a52b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Reinstate Certified Reporting Firm Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1906ee45-61ba-4a70-be57-f63b0da65303",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "74884cb3-815b-4838-9561-940307837b7e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-reinstate-crf-application"
+}

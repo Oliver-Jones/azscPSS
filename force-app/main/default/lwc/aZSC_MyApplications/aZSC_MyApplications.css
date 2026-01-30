@@ -1,0 +1,8 @@
+.aZSCButton {
+    font-size: 1em;
+    display: grid;
+    position: relative;
+    width: 20em;
+    height: 3em;
+    font-weight: bold;
+}

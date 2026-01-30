@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "cffed195-a0e3-412d-94a8-a9bef7a28198",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_FDI_Application__c",
+  "id" : "ed002645-9736-42f8-8fde-3c76533d9ea7",
+  "label" : "New FDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-fdi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/new-fdi-application"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c7652257-f855-43b8-8b8a-e774291617ad",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Payment__c",
+  "id" : "289dcb7d-d3fd-4345-b097-912d4f9022ef",
+  "label" : "Payment",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-payment",
+  "type" : "route",
+  "urlPrefix" : "payment"
+}

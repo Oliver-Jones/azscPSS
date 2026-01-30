@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "6ac103ba-b293-42d8-8214-2034b454262c",
+  "label" : "New LPP Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/LegalParaprofessionalsBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "9571b414-8bcd-47aa-b579-42f00ee30dc8",
+          "columns" : [ {
+            "UUID" : "80f92c6f-1e97-4fbf-a8e5-f33e75b6b3d3",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "9571b414-8bcd-47aa-b579-42f00ee30dc8",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "",
+            "subType" : "",
+            "theme" : "",
+            "type" : ""
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "703d17af-8e86-453a-a4d3-b7180236ec3d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "80f92c6f-1e97-4fbf-a8e5-f33e75b6b3d3",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "05b564bb-a0fe-4e65-b7d1-a0af78ba5741",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Legal Paraprofessional Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7947c015-964c-4b84-b107-0828c32e845e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f57b2f41-0679-453d-8707-427157db6c98",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-lpp-application"
+}

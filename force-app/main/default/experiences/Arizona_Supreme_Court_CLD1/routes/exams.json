@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "2710bcf5-27dc-4b1b-999b-5903125666fa",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Exams__c",
+  "id" : "e6c94921-1620-4d62-8882-f740ea919e6b",
+  "label" : "Exams",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-exams",
+  "type" : "route",
+  "urlPrefix" : "exams"
+}

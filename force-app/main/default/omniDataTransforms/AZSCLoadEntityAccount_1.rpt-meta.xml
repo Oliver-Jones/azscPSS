@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:14:23.468Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;&quot;,
+  &quot;DPBusinessState&quot; : &quot;&quot;,
+  &quot;DPHomeCountry&quot; : &quot;&quot;,
+  &quot;DPHomeState&quot; : &quot;&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : {
+      &quot;documentName2&quot; : &quot;Draft Articles of Organization or Partnership Agreement&quot;
+    },
+    &quot;Block3&quot; : {
+      &quot;documentName3&quot; : &quot;Letter Not Submitted Entity&quot;
+    },
+    &quot;BusinessState&quot; : &quot;UT&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Whitetown&quot;,
+    &quot;BusinessZip&quot; : &quot;12314&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-02&quot;,
+    &quot;FederalTaxID&quot; : &quot;123131288&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Limited Liability Co.&quot;,
+    &quot;ApplicantRegisteredWithAZCommission&quot; : &quot;No&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004A5MAI&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadEntityAccount</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f2997b95-db2b-405a-a8f2-437cdd5ec0cf</globalKey>
+        <inputFieldName>FirmInfo:FirmTelephoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1b63cb24-f3c4-4a00-90cc-64161830c412</globalKey>
+        <inputFieldName>FirmInfo:FirmMailingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShippingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>45e1862a-a37e-4863-a57d-5de6f92b6574</globalKey>
+        <inputFieldName>FirmInfo:BusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List_Name_of_Business__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5aa3b720-db2a-4773-b134-891dea98a162</globalKey>
+        <inputFieldName>DBAName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List_ALL_assumed_DBA_s_or_trade_names__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3ace3f32-3aac-468c-94a8-12a11667c4ae</globalKey>
+        <inputFieldName>FirmInfo:FirmPhysicalState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1ed7069f-e8e9-4381-b572-6ac764547f38</globalKey>
+        <inputFieldName>FirmInfo:DBAName1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_1__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>08217bbd-f36a-4e61-a64f-8e3df4ea9779</globalKey>
+        <inputFieldName>FirmInfo:FirmMailingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShippingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>48516886-a601-483e-b217-688c86a64bf1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d8314310-d8ba-4278-9a97-7ff6332c19e6</globalKey>
+        <inputFieldName>FirmInfo:FirmPhysicalCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>aad6d760-d582-42ef-a5f9-1a1b36b7f284</globalKey>
+        <inputFieldName>FirmInfo:FirmMailingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShippingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2747ba25-2255-493e-aa5d-44b67f5ce48b</globalKey>
+        <inputFieldName>FirmInfo:BusinessDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Date_Business_Formed__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8747f9b9-ecaf-4896-a0af-e16a6b943321</globalKey>
+        <inputFieldName>FirmInfo:BusinessOrganization</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Organization_Type__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicantInfo:DBAName1 var:NULL != var:ApplicantInfo:DBAName1 &apos;&apos; IF | var:ApplicantInfo:DBAName1 var:NULL != var:ApplicantInfo:DBAName2 var:NULL != AND &apos;,/\/\/&apos; &apos;&apos; IF + | var:ApplicantInfo:DBAName2 var:NULL != var:ApplicantInfo:DBAName2 &apos;&apos; IF + | var:ApplicantInfo:DBAName2 var:NULL != var:ApplicantInfo:DBAName3 var:NULL != AND &apos;,/\/\/&apos; &apos;&apos; IF + | var:ApplicantInfo:DBAName3 var:NULL != var:ApplicantInfo:DBAName3 &apos;&apos; IF +</formulaConverted>
+        <formulaExpression>IF(%ApplicantInfo:DBAName1% != NULL, %ApplicantInfo:DBAName1%, &apos;&apos;) + IF(AND(%ApplicantInfo:DBAName1% != NULL, %ApplicantInfo:DBAName2% != NULL), &apos;, &apos;, &apos;&apos;) + IF(%ApplicantInfo:DBAName2% != NULL, %ApplicantInfo:DBAName2%, &apos;&apos;) + IF(AND(%ApplicantInfo:DBAName2% != NULL, %ApplicantInfo:DBAName3% != NULL), &apos;, &apos;, &apos;&apos;) + IF(%ApplicantInfo:DBAName3% != NULL, %ApplicantInfo:DBAName3%, &apos;&apos;)</formulaExpression>
+        <formulaResultPath>DBAName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>757d2a06-44de-47be-8122-30074bd426ed</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0c806fe8-aa12-4264-ad86-9faf53a8827b</globalKey>
+        <inputFieldName>FirmInfo:DBAName3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_3__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a32dbba3-e71a-41bb-ba73-90b36d27a99c</globalKey>
+        <inputFieldName>EntityType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Business_Account</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9d188fc8-0bba-4d06-bb99-bafa3e27c04c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>80d677ad-4e36-4978-b72c-309905121107</globalKey>
+        <inputFieldName>FirmInfo:FirmMailingZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShippingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ef5b1924-d8f8-4cd3-919a-639d7a2c74af</globalKey>
+        <inputFieldName>FirmInfo:FirmFaxNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cce2aef5-fe26-4af0-85ea-77bdea045a57</globalKey>
+        <inputFieldName>FirmInfo:FirmEmailAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>POC_Email__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>84dcff84-f155-48b7-829a-4bd662e33a9c</globalKey>
+        <inputFieldName>FirmInfo:DBAName2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DBA_Name_2__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a704ca8e-8ebb-449c-8725-55d8f8ba8bf1</globalKey>
+        <inputFieldName>FirmInfo:FederalTaxID</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Federal_Tax_ID_Number__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>62c513f1-2350-4305-af6e-9b57d263e40e</globalKey>
+        <inputFieldName>FirmInfo:StateTaxID</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>State_Tax_ID_Number__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>425aa065-ce4f-489a-98d6-0d2f7e4db986</globalKey>
+        <inputFieldName>FirmInfo:FirmName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1b5986e5-e373-4710-8adc-4fcb6a7d79ed</globalKey>
+        <inputFieldName>EntityId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4cf2e649-2bef-4070-b52b-24fc7f24280b</globalKey>
+        <inputFieldName>FirmInfo:FirmPhysicalStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b6624cfd-1188-4787-81df-76f605ce2f29</globalKey>
+        <inputFieldName>FirmInfo:FirmMailingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShippingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3690f55c-a6af-4f14-937e-e0e49c85a7b2</globalKey>
+        <inputFieldName>FirmInfo:FirmPhysicalCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1f090672-6361-425d-a6a2-48677191e514</globalKey>
+        <inputFieldName>FirmInfo:FirmPhysicalZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadEntityAccount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataMapperPostAction9&quot; : null,
+    &quot;InsertAuthorizedPersons&quot; : null,
+    &quot;LoadStatutoryAgentBusiness&quot; : null,
+    &quot;ReturnApplicationInfo&quot; : null,
+    &quot;LoadDraftApplication&quot; : null,
+    &quot;InitializeVariables&quot; : null,
+    &quot;LoadABSApplicationCase&quot; : null,
+    &quot;LoadStatutoryAgentIndividual&quot; : null,
+    &quot;LoadComplianceLawyer&quot; : null,
+    &quot;LoadBusinessLicenseApplication&quot; : null,
+    &quot;LoadDesignatedPrincipal&quot; : null,
+    &quot;LoadApplicantInfo&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadEntityAccount_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

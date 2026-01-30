@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6bbfc4a8-3719-4d86-b7d6-cef55b7c6c18",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_ABS_Application__c",
+  "id" : "40a30d6f-7b3e-4b26-a195-a1b2c82872d0",
+  "label" : "New ABS Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-abs-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/new-abs-application"
+}

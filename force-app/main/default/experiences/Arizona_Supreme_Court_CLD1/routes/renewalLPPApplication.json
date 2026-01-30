@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "e8f0c3b3-deed-46cf-9c89-1d93a7308983",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_LPP_Application__c",
+  "id" : "9e70a3fd-0bff-49a6-a97f-3ca49e61ecd2",
+  "label" : "Renewal LPP Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-lpp-application",
+  "type" : "route",
+  "urlPrefix" : "applications/lpp-program/renewal-lpp-application"
+}

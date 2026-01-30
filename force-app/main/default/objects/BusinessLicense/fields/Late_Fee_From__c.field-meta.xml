@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Late_Fee_From__c</fullName>
+    <formula>ADDMONTHS( DATE(
+    YEAR( DATEVALUE(PeriodEnd) ), MONTH( DATEVALUE (PeriodEnd) ), 1
+), (VALUE( RegulatoryAuthorizationType.Late_Fee_Duration__c ) - 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Late Fee From</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

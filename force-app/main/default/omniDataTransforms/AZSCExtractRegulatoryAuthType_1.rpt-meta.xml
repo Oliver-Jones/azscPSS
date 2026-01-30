@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCExtractRegulatoryAuthType</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>AuthCode</filterValue>
+        <globalKey>488f9d32-164d-4bd1-9aa6-84e20ff44e53</globalKey>
+        <inputFieldName>RegulatoryAuthCode</inputFieldName>
+        <inputObjectName>RegulatoryAuthorizationType</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractRegulatoryAuthType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RegulatoryAuthorizationType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d48875e4-9d7b-4244-b0e2-e18408c49302</globalKey>
+        <inputFieldName>RegulatoryAuthorizationType:Next_Expiration__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractRegulatoryAuthType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RegulatoryAuthorizationType:NextExpiration</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f0113ec0-ce6f-42f6-98c4-0f69aa8c9d9e</globalKey>
+        <inputFieldName>DaysDiff</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractRegulatoryAuthType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RegulatoryAuthorizationType:DaysDiff</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY | var:RegulatoryAuthorizationType:Next_Expiration__c &apos;yyyy-MM-dd&apos; FORMATDATETIME DATEDIFF</formulaConverted>
+        <formulaExpression>DATEDIFF(TODAY(), FORMATDATETIME(RegulatoryAuthorizationType:Next_Expiration__c, &apos;yyyy-MM-dd&apos;))</formulaExpression>
+        <formulaResultPath>DaysDiff</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>123195d4-1ef5-424d-ae76-b946913e1c56</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractRegulatoryAuthType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AuthCode&quot; : &quot;CRILicense&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>AZSCExtractRegulatoryAuthType_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

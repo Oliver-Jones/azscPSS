@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{BusinessLicense.LastModifiedDate}}}<br />
+<br />
+The program has opened its certification renewal application process and will end on {{{BusinessLicense.Expiration_Date__c}}}. Remaining days to renew: 60 Days.<br />
+<br />
+You can apply and pay online for your renewal application using your debit or credit card. To do so, please visit our website <a href="https://azcld--pssqa.sandbox.my.site.com/s/">click here</a> prior your certification is expiring.<br />
+<br />
+If you encounter difficulties renewing online, contact the Certification and Licensing Division at the email address below.<br />
+<br />
+You will not be able to renew the license after the date of expiration. In the event you fail to renew your license prior to the expiration date, you must contact the Division for next steps.<br />
+<br />
+Sincerely,<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+<br />
+Fiduciary Licensing- <a href="mailto:PFP@courts.az.gov">PFP@courts.az.gov</a><br />
+Certified Reporters- <a href="mailto:CourtRep@courts.az.gov">CourtRep@courts.az.gov</a><br />
+Legal Document Preparers- <a href="mailto:LDP@courts.az.gov">LDP@courts.az.gov</a><br />
+Defensive Driving- <a href="mailto:ddrive@courts.az.gov">ddrive@courts.az.gov</a><br />
+Alternative Business Structures- <a href="mailto:ABSProgram@courts.az.gov">ABSProgram@courts.az.gov</a></body>
+</html>

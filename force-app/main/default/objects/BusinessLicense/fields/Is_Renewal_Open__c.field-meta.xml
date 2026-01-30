@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Renewal_Open__c</fullName>
+    <formula>NOW() &gt;= ADDMONTHS(PeriodEnd,  - VALUE(RegulatoryAuthorizationType.Renewal_Open_Duration__c)) &amp;&amp; NOW() &lt;=  PeriodEnd</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Renewal Open</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

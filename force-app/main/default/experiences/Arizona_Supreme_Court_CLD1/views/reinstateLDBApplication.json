@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "7d134793-06a5-4518-b1df-09811cd5361c",
+  "label" : "Reinstate LDB Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDLegalDocumentPreparerBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "1b04ae6f-6cf1-43cb-a401-0d80fc616f52",
+          "columns" : [ {
+            "UUID" : "b11c69e6-af9b-4b24-8207-4fc36a4b88e2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "1b04ae6f-6cf1-43cb-a401-0d80fc616f52",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "RenewalApplication",
+            "theme" : "lightning",
+            "type" : "LDB"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "e8a6f68c-edda-4cf0-b3da-5cab9adf967d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b11c69e6-af9b-4b24-8207-4fc36a4b88e2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4eb932b8-6588-496a-ad76-6e0ba96c9161",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Reinstate Legal Document Preparer Business Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bb6c317b-e3dc-479b-bd0b-19f31f39b33f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f600f318-fecc-4a0f-816a-a0c2ce8ca330",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-reinstate-ldb-application"
+}

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{&quot;appType&quot;:&quot;ABSRenewalLicense&quot;,&quot;AuthorizedPersonInformation&quot;:{&quot;AuthorizedPersonBlock&quot;:[{},{&quot;AuthorizedPersonName&quot;:&quot;Pickachu&quot;}]},&quot;IsPortalEnabled&quot;:&quot;true&quot;,&quot;FeeType&quot;:&quot;Renewal Licensure&quot;,&quot;ApplicationName&quot;:&quot;Alternative Business Structure License&quot;,&quot;ApplicationId&quot;:&quot;0f0Ou0000000AiXIAU&quot;,&quot;ABSAccountId&quot;:&quot;001Ou00000QyjMhIAJ&quot;,&quot;Fee&quot;:&quot;6000&quot;,&quot;ApplnCategory&quot;:&quot;Equity ABS&quot;}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>English</language>
+    <name>Insert Regulatory Transaction Fees</name>
+    <omniProcessElements>
+        <description>Remote Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertFeesForAuthorizedPersons</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;insertFeesForAuthorizedPersons&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : [ ],
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%AuthorizedPersonInformation:AuthorizedPersonBlock:AuthorizedPersonName%) &amp;&amp; %appType% == \&quot;ABSRenewalLicense\&quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;%ABSAccountId%&quot;,
+    &quot;IsPortalEnabled&quot; : &quot;%UserInfo:IsPortalEnabled%&quot;,
+    &quot;ApplicationId&quot; : &quot;%ApplicationId%&quot;,
+    &quot;FeeList&quot; : &quot;=LIST(%LoopOutput:FeeData%)&quot;,
+    &quot;FeeId&quot; : &quot;%InsertRegulatoryTransactionFees:FeeId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Remote Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>InsertRegulatoryTransactionFees</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;remoteMethod&quot; : &quot;insertRegTrxnFeeItems&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : [ ],
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;%ABSAccountId%&quot;,
+    &quot;IsPortalEnabled&quot; : &quot;%UserInfo:IsPortalEnabled%&quot;,
+    &quot;ApplicationId&quot; : &quot;%ApplicationId%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Set Values Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoopInput</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;LoopVar&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%AuthorizedPersonInformation:AuthorizedPersonBlock:AuthorizedPersonName%) &amp;&amp; %appType% == \&quot;ABSRenewalLicense\&quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;LoopVar&quot; : &quot;=LIST(%AuthorizedPersonInformation:AuthorizedPersonBlock%)&quot;
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <description>Decision Matrix Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DecisionMatrix</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;remoteOptions&quot; : {
+    &quot;matrixName&quot; : &quot;AZSC Fee Data&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;matrix Input Parameters&quot; : [ {
+    &quot;value&quot; : &quot;ApplicationName&quot;,
+    &quot;name&quot; : &quot;ApplicationName&quot;
+  }, {
+    &quot;value&quot; : &quot;FeeType&quot;,
+    &quot;name&quot; : &quot;FeeType&quot;
+  }, {
+    &quot;value&quot; : &quot;ApplnCategory&quot;,
+    &quot;name&quot; : &quot;\&quot;Authorized Person Added\&quot;&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;result|1&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Matrix Action</type>
+        </childElements>
+        <childElements>
+            <description>Set Values Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoopResult</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;responseJSONPath&quot; : &quot;LoopVariable&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;LoopVariable&quot; : {
+      &quot;ApplnCategory&quot; : &quot;Authorized Person Added&quot;,
+      &quot;Fee&quot; : &quot;%DecisionMatrix:Fee%&quot;,
+      &quot;Function&quot; : &quot;%DecisionMatrix:Function%&quot;,
+      &quot;ProductCode&quot; : &quot;%DecisionMatrix:ProductCode%&quot;,
+      &quot;RevenueSource&quot; : &quot;%DecisionMatrix:RevenueSource%&quot;,
+      &quot;FeeType&quot; : &quot;=%FeeType%&quot;,
+      &quot;ApplicationName&quot; : &quot;=%ApplicationName%&quot;,
+      &quot;appType&quot; : &quot;=%appType%&quot;
+    }
+  },
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;chainOnStep&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <description>Loop Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoopOutput</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%appType% == \&quot;ABSRenewalLicense\&quot;&quot;,
+  &quot;loopList&quot; : &quot;LoopInput&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { },
+  &quot;loopOutput&quot; : {
+    &quot;FeeData&quot; : &quot;%LoopResult%&quot;
+  }
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Loop Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <description>Response Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Response</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : [ ],
+  &quot;responseFormat&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : {
+    &quot;FeeId&quot; : &quot;%InsertRegulatoryTransactionFees:FeeId%&quot;
+  },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>AZSC_SaveRegulatoryFees</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;transientValues&quot; : {
+    &quot;activateOrDeactivateConsent&quot; : false
+  }
+}</propertySetConfig>
+    <subType>SaveRegulatoryFees</subType>
+    <type>AZSC</type>
+    <uniqueName>AZSC_SaveRegulatoryFees_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

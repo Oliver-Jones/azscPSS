@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "21d1672c-3c44-4fdd-9e87-22c0faeb90bb",
+  "label" : "New CRF Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CertifiedReportersBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "061eaee6-1510-4023-816b-ec06763d78ab",
+          "columns" : [ {
+            "UUID" : "88bb4740-e586-40d5-ab42-0e3a012f18d4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "061eaee6-1510-4023-816b-ec06763d78ab",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "InitialApplication",
+            "theme" : "lightning",
+            "type" : "CRF"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "4d26803f-b251-4d76-b4bb-231b1451908a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "88bb4740-e586-40d5-ab42-0e3a012f18d4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "43a78205-30da-466f-9b2f-8f987820b030",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Certified Reporting Firm Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "10da5114-d39e-4378-b795-194296a86d2b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5caae1d3-6e8a-4d04-b27f-529a72879f64",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-crf-application"
+}

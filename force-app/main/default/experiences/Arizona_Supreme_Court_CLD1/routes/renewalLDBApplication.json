@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "334f055b-5932-41aa-93b7-6b1be598e801",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_LDB_Application__c",
+  "id" : "efb1d376-8820-4b64-b718-3976d5b52057",
+  "label" : "Renewal LDB Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-ldb-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/renewal-ldb-application"
+}

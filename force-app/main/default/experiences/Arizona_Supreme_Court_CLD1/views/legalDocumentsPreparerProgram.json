@@ -1,0 +1,93 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "7dbb9bd6-b789-40ad-a632-20e7d679d6ef",
+  "label" : "Legal Documents Preparer Program",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDLegalDocumentPreparerBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "75678a47-6b4f-4dfa-bd40-8acac159b3b6",
+          "columns" : [ {
+            "UUID" : "719a179d-c1a6-4d77-960f-fe1e9c3837c3",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "75678a47-6b4f-4dfa-bd40-8acac159b3b6",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"height:15vh;\"></div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "6f5f6c6f-5739-410d-a5a6-b6602ae5ad6e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 35,
+            "borderRadius" : 20,
+            "boxShadow" : true,
+            "haveBanner" : false,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(116,116,116)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "default",
+            "tileMenuEditor" : "Legal_Documents_Preparer_Program_Menu",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "5eaa4a00-8368-490e-863b-92fb166fa372",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "719a179d-c1a6-4d77-960f-fe1e9c3837c3",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "053b75d3-3c83-4f65-b599-b032e18067ff",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Legal Documents Preparer Program"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "165c6aae-fcc5-4a4a-bb4c-e3afef603821",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "434febdb-93b5-4c71-af38-216a7c42a728",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-ld-program"
+}

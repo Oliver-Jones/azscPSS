@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;IndividualApplication&quot; : {
+    &quot;ApplicantFirstName&quot; : &quot;Barry&quot;,
+    &quot;CertificationType&quot; : &quot;Standard&quot;,
+    &quot;ApplicantHomeZip&quot; : &quot;12312&quot;,
+    &quot;ApplicantEmail&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;ApplicantNumberOfYears&quot; : 2,
+    &quot;ApplicantLastName&quot; : &quot;Case&quot;,
+    &quot;ApplicantMailingState&quot; : &quot;AK&quot;,
+    &quot;Name&quot; : &quot;IA-0000000029&quot;,
+    &quot;OfficialOrFreelance&quot; : &quot;Freelance&quot;,
+    &quot;ApplicantHomeStreet&quot; : &quot;Airport City&quot;,
+    &quot;ApplicantMiddleName&quot; : &quot;F&quot;,
+    &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantDateOfBirth&quot; : &quot;1927-11-03&quot;,
+    &quot;ApplicantMailingZip&quot; : &quot;12312&quot;,
+    &quot;AliasName1&quot; : &quot;test1&quot;,
+    &quot;AliasName2&quot; : &quot;ets3&quot;,
+    &quot;ApplicantNameOnCertificate&quot; : &quot;Barry Case&quot;,
+    &quot;ApplicantFaxNumber&quot; : &quot;4234343152&quot;,
+    &quot;ApplicantSocialSecurityNumber&quot; : &quot;314214123&quot;,
+    &quot;ApplicantMailingCity&quot; : &quot;Bangalore&quot;,
+    &quot;AliasName3&quot; : &quot;test4&quot;,
+    &quot;ApplicantTelephoneNumber&quot; : &quot;3213213211&quot;,
+    &quot;ApplicantHomeCity&quot; : &quot;Bangalore&quot;,
+    &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingStreet&quot; : &quot;Airport City&quot;,
+    &quot;ApplicantCellphoneNumber&quot; : &quot;4234565465&quot;,
+    &quot;PublicDirectoryAddressStreet&quot; : &quot;Airport City&quot;,
+    &quot;PublicDirectoryAddressCity&quot; : &quot;Bangalore&quot;,
+    &quot;PublicDirectoryAddressZip&quot; : &quot;12312&quot;,
+    &quot;PublicDirectoryAddressState&quot; : &quot;AZ&quot;,
+    &quot;PublicDirectoryAddressCountry&quot; : &quot;US&quot;,
+    &quot;PublicDirectoryEmail&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;PublicDirectoryName&quot; : &quot;Test&quot;,
+    &quot;PublicDirectoryPhone&quot; : &quot;3213213211&quot;,
+    &quot;PublicDirectoryWebsite&quot; : &quot;www.www.www&quot;,
+    &quot;CountiesServed&quot; : &quot;Cochise;Coconino;Graham;Maricopa;Pinal&quot;,
+    &quot;EmployerName&quot; : &quot;Treat&quot;,
+    &quot;WorkStreet&quot; : &quot;Airport City&quot;,
+    &quot;WorkCity&quot; : &quot;Bangalore&quot;,
+    &quot;WorkZip&quot; : &quot;12312&quot;,
+    &quot;WorkState&quot; : &quot;AZ&quot;,
+    &quot;WorkCountry&quot; : &quot;US&quot;,
+    &quot;EmployerPhone&quot; : &quot;3213213211&quot;,
+    &quot;EmployerFax&quot; : &quot;3213213213&quot;,
+    &quot;EmployerEmail&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;HasCommittedMisrepresentation&quot; : true,
+    &quot;HasLegalOrderViolation&quot; : true,
+    &quot;HasMisdemeanorConviction&quot; : true,
+    &quot;PublicDirectoryFullConsent&quot; : true,
+    &quot;HasBeenAnAdult&quot; : true,
+    &quot;HasBusinessConductComplaint&quot; : true,
+    &quot;HiringPersonnelName&quot; : &quot;Test&quot;,
+    &quot;HasLicenseDisciplinaryAction&quot; : true,
+    &quot;HasCommittedBusinessFraud&quot; : true,
+    &quot;HasPetitionComplaintFiled&quot; : true,
+    &quot;HasBeenResidentOfArizona&quot; : true,
+    &quot;HasPendingJobOffer&quot; : true,
+    &quot;HasEmploymentDiscipline&quot; : true,
+    &quot;HasProbationOrParole&quot; : true,
+    &quot;HasFailedToRespond&quot; : true,
+    &quot;AdmittedToPracticeLaw&quot; : true,
+    &quot;HasCertifiedInOtherStates&quot; : true,
+    &quot;HiringPersonnelPhone&quot; : &quot;2124535345&quot;,
+    &quot;HasMadeFalseStatementToBoard&quot; : true,
+    &quot;HasCivilCaseInvolvement&quot; : true,
+    &quot;HasArizonaDriverLicense&quot; : true,
+    &quot;HasBeenAnUSCitizen&quot; : true,
+    &quot;HasFalseSupportStatement&quot; : true,
+    &quot;HasPublicHarmConduct&quot; : true,
+    &quot;HasRegulatoryViolation&quot; : true,
+    &quot;HasPassedAZKnowledgeExam&quot; : true,
+    &quot;HasFelonyConviction&quot; : true,
+    &quot;HiringPersonnelEmail&quot; : &quot;w5qjt@starmail.net&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;ApplicantFirstName&quot; : &quot;Barry&quot;,
+  &quot;CertificationType&quot; : &quot;Standard&quot;,
+  &quot;ApplicantHomeZip&quot; : &quot;12312&quot;,
+  &quot;ApplicantEmail&quot; : &quot;w5qjt@starmail.net&quot;,
+  &quot;ApplicantNumberOfYears&quot; : 2,
+  &quot;ApplicantLastName&quot; : &quot;Case&quot;,
+  &quot;ApplicantMailingState&quot; : &quot;AK&quot;,
+  &quot;Name&quot; : &quot;IA-0000000029&quot;,
+  &quot;OfficialOrFreelance&quot; : &quot;Freelance&quot;,
+  &quot;ApplicantHomeStreet&quot; : &quot;Airport City&quot;,
+  &quot;ApplicantMiddleName&quot; : &quot;F&quot;,
+  &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+  &quot;ApplicantDateOfBirth&quot; : &quot;1927-11-03&quot;,
+  &quot;ApplicantMailingZip&quot; : &quot;12312&quot;,
+  &quot;AliasName1&quot; : &quot;test1&quot;,
+  &quot;AliasName2&quot; : &quot;ets3&quot;,
+  &quot;ApplicantNameOnCertificate&quot; : &quot;Barry Case&quot;,
+  &quot;ApplicantFaxNumber&quot; : &quot;4234343152&quot;,
+  &quot;ApplicantSocialSecurityNumber&quot; : &quot;314214123&quot;,
+  &quot;ApplicantMailingCity&quot; : &quot;Bangalore&quot;,
+  &quot;AliasName3&quot; : &quot;test4&quot;,
+  &quot;ApplicantTelephoneNumber&quot; : &quot;3213213211&quot;,
+  &quot;ApplicantHomeCity&quot; : &quot;Bangalore&quot;,
+  &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+  &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+  &quot;ApplicantMailingStreet&quot; : &quot;Airport City&quot;,
+  &quot;ApplicantCellphoneNumber&quot; : &quot;4234565465&quot;,
+  &quot;PublicDirectoryAddressStreet&quot; : &quot;&quot;,
+  &quot;PublicDirectoryAddressCity&quot; : &quot;&quot;,
+  &quot;PublicDirectoryAddressZip&quot; : &quot;&quot;,
+  &quot;PublicDirectoryAddressState&quot; : &quot;&quot;,
+  &quot;PublicDirectoryAddressCountry&quot; : &quot;&quot;,
+  &quot;PublicDirectoryEmail&quot; : &quot;&quot;,
+  &quot;PublicDirectoryName&quot; : &quot;&quot;,
+  &quot;PublicDirectoryPhone&quot; : &quot;&quot;,
+  &quot;PublicDirectoryWebsite&quot; : &quot;&quot;,
+  &quot;CountiesServed&quot; : &quot;&quot;,
+  &quot;EmployerName&quot; : &quot;&quot;,
+  &quot;WorkCity&quot; : &quot;&quot;,
+  &quot;WorkZip&quot; : &quot;&quot;,
+  &quot;WorkState&quot; : &quot;&quot;,
+  &quot;WorkCountry&quot; : &quot;&quot;,
+  &quot;EmployerPhone&quot; : &quot;&quot;,
+  &quot;EmployerFax&quot; : &quot;&quot;,
+  &quot;EmployerEmail&quot; : &quot;&quot;,
+  &quot;HasCommittedMisrepresentation&quot; : true,
+  &quot;HasLegalOrderViolation&quot; : true,
+  &quot;HasMisdemeanorConviction&quot; : true,
+  &quot;PublicDirectoryFullConsent&quot; : true,
+  &quot;HasBeenAnAdult&quot; : true,
+  &quot;HasBusinessConductComplaint&quot; : true,
+  &quot;HiringPersonnelName&quot; : &quot;Test&quot;,
+  &quot;HasLicenseDisciplinaryAction&quot; : true,
+  &quot;HasCommittedBusinessFraud&quot; : true,
+  &quot;HasPetitionComplaintFiled&quot; : true,
+  &quot;HasBeenResidentOfArizona&quot; : true,
+  &quot;HasPendingJobOffer&quot; : true,
+  &quot;HasEmploymentDiscipline&quot; : true,
+  &quot;HasProbationOrParole&quot; : true,
+  &quot;HasFailedToRespond&quot; : true,
+  &quot;AdmittedToPracticeLaw&quot; : true,
+  &quot;HasCertifiedInOtherStates&quot; : true,
+  &quot;HiringPersonnelPhone&quot; : &quot;2124535345&quot;,
+  &quot;HasMadeFalseStatementToBoard&quot; : true,
+  &quot;HasCivilCaseInvolvement&quot; : true,
+  &quot;HasArizonaDriverLicense&quot; : true,
+  &quot;HasBeenAnUSCitizen&quot; : true,
+  &quot;HasFalseSupportStatement&quot; : true,
+  &quot;HasPublicHarmConduct&quot; : true,
+  &quot;HasRegulatoryViolation&quot; : true,
+  &quot;HasPassedAZKnowledgeExam&quot; : true,
+  &quot;HasFelonyConviction&quot; : true,
+  &quot;HiringPersonnelEmail&quot; : &quot;w5qjt@starmail.net&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ReporterType &apos;Stenographer&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ReporterType% == &apos;Stenographer&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_StenographerReporter</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>510a4696-0c22-4313-a20c-48cb51d55325</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>78a087cd-496e-4ae3-82d5-e634d927421a</globalKey>
+        <inputFieldName>AliasName1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AliasName1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>efef72f0-6275-401c-b7db-0bcba9f78a99</globalKey>
+        <inputFieldName>ApplicantCellphoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantCellphoneNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c7582061-2a93-4ecf-b4a1-b830e3d951a3</globalKey>
+        <inputFieldName>WorkState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WorkState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6f1590f4-bddd-4b26-8f00-3d15d8bab53e</globalKey>
+        <inputFieldName>IF_RenewalApplication</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_RenewalApplication</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>41983521-33ab-4566-a623-9ec4c39eb50d</globalKey>
+        <inputFieldName>PublicDirectoryState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>69630358-7aa5-484b-b422-58db1428e2cd</globalKey>
+        <inputFieldName>ApplicantNameOnCertificate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantNameOnCertificate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6d68fdac-502c-4f06-8918-b9abd51e6511</globalKey>
+        <inputFieldName>CountyStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountyStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a3d07b47-49ad-4fe4-8aa0-72643fccd97b</globalKey>
+        <inputFieldName>WorkStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WorkStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>30566a6c-a193-4a39-b236-b25632d75ba2</globalKey>
+        <inputFieldName>ApplicantHomeCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantHomeCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c6fe0a24-1e39-4320-8c43-398110e565c8</globalKey>
+        <inputFieldName>HasFailedToRespond</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasFailedToRespond</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6977baa5-4d53-475e-9d56-d893f0b8b5a6</globalKey>
+        <inputFieldName>PublicDirectoryStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8490709e-b422-442d-a54a-7c655b7e95da</globalKey>
+        <inputFieldName>IF_StenographerReporter</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_StenographerReporter</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dd7ce444-5bf4-45db-93e7-7e97e911a074</globalKey>
+        <inputFieldName>ApplicantNumberOfYears</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantNumberOfYears</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6bb9926a-f4bd-49a9-a50d-be66eaffb9c6</globalKey>
+        <inputFieldName>HasMisdemeanorConviction</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasMisdemeanorConviction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3064eb6e-6fca-418b-9e69-2ab743e5c8ea</globalKey>
+        <inputFieldName>WorkZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WorkZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>830037d4-7e9e-4cd6-b29e-a528aeefc107</globalKey>
+        <inputFieldName>ApplicantLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f85bf550-be44-4c6c-be0e-328fa27df007</globalKey>
+        <inputFieldName>ApplicantFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>394eb95e-bb0d-42d8-9809-8317f30ffeec</globalKey>
+        <inputFieldName>SignatureDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>ApplicantSignatureDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>94323b74-fa05-47b4-8018-047c9232c659</globalKey>
+        <inputFieldName>CertificationType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CertificationType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f7861e95-2618-4fcd-909f-645f54509aac</globalKey>
+        <inputFieldName>ApplicantFaxNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantFaxNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>367ffc64-9351-4bee-8915-d78d87ae39d1</globalKey>
+        <inputFieldName>PublicDirectoryPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>42f324d0-f3b3-4d5d-9052-e698740fcc34</globalKey>
+        <inputFieldName>IF_EmployerFreelance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_EmployerFreelance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1e875858-aa80-4d60-8d59-c2abf74c6245</globalKey>
+        <inputFieldName>ApplicantHomeState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantHomeState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9b94fdf4-7c61-4f22-87c8-b3d0fe7e7fad</globalKey>
+        <inputFieldName>ApplicantHomeStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantHomeStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c99af5c5-2521-43d0-8451-0463b41efe53</globalKey>
+        <inputFieldName>ApplicantTelephoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantTelephoneNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicationType &apos;Initial/\/\/Licensure&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ApplicationType% == &apos;Initial Licensure&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_InitialApplication</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>033114d8-49dd-47f2-8aec-737f64adc372</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ddb68307-1c1b-4571-a8d1-3f5876be2a6d</globalKey>
+        <inputFieldName>ApplicantDateOfBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>ApplicantDateOfBirth</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5fcfe790-e5a7-43f9-af82-65e748868515</globalKey>
+        <inputFieldName>HasPassedAZKnowledgeExam</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasPassedAZKnowledgeExam</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7177ec92-475f-4be2-9034-0642ce6c514b</globalKey>
+        <inputFieldName>PublicDirectoryWebsite</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryWebsite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>88064b4b-c8a0-4cd7-ac0d-2eb6b29d0963</globalKey>
+        <inputFieldName>HasBeenAnAdult</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasBeenAnAdult</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>895f59b6-bf5b-423a-b8c6-babc1b0b454f</globalKey>
+        <inputFieldName>ApplicantSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantSocialSecurityNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7f19bb42-3f17-40a7-bcf1-6cc6eb61dbdd</globalKey>
+        <inputFieldName>AdmittedToPracticeLaw</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_AdmittedToPracticeLaw</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4f5989fe-4921-43de-9f73-d8ce9d6d41d8</globalKey>
+        <inputFieldName>ApplicantHomeZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantHomeZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8d9e2e08-669f-4f6a-abbe-8a87676a764c</globalKey>
+        <inputFieldName>HasBusinessConductComplaint</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasBusinessConductComplaint</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>bc7abe71-ed51-4155-b1b3-2e9eb7fbd94a</globalKey>
+        <inputFieldName>IF_ApplicationStandardType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_ApplicationStandardType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4bf532f0-e589-47e2-a86b-6cd008c598fe</globalKey>
+        <inputFieldName>EmployerFax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmployerFax</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>96e4b27f-49e6-43e8-b5a9-48d94568b699</globalKey>
+        <inputFieldName>HasCivilCaseInvolvement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasCivilCaseInvolvement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3647d106-d3c7-45a8-aad1-cf36893811e0</globalKey>
+        <inputFieldName>IF_InitialApplication</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_InitialApplication</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fa7c5eea-c045-4963-9e2d-47882337726f</globalKey>
+        <inputFieldName>HasCertifiedInOtherStates</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasCertifiedInOtherStates</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e6f5db4b-09d5-48b8-9840-419b55076541</globalKey>
+        <inputFieldName>HasEmploymentDiscipline</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasEmploymentDiscipline</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6706dc76-86a7-47ba-8c03-69cdee90720f</globalKey>
+        <inputFieldName>HasBeenAnUSCitizen</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasBeenAnUSCitizen</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5cb7e5f4-99e6-461b-afa2-7aafe281d0c9</globalKey>
+        <inputFieldName>HasLicenseDisciplinaryAction</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasLicenseDisciplinaryAction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f596fb63-dde2-498a-917b-242e022d36a8</globalKey>
+        <inputFieldName>HasFelonyConviction</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasFelonyConviction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3e4ba120-96d1-4fb1-97d5-8bd6cccf8a53</globalKey>
+        <inputFieldName>HasCommittedMisrepresentation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasCommittedMisrepresentation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>000b79c5-3297-4047-95ac-174350e9de80</globalKey>
+        <inputFieldName>HiringPersonnelName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HiringPersonnelName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ea4ef7ed-425f-4093-ad19-26d11f97abf5</globalKey>
+        <inputFieldName>EmployerName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmployerName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>679db58e-2342-4e06-b900-1b1f873b85eb</globalKey>
+        <inputFieldName>PublicDirectoryCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cac8c566-42fe-4b98-a699-2cd20adf44c4</globalKey>
+        <inputFieldName>ArizonaResidencyDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>ArizonaResidencyDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicantOfficialFreelance &apos;Official&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ApplicantOfficialFreelance% == &apos;Official&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_ApplicantOfficial</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>8c2b13ae-b3b0-494e-9560-5b0c3619c4c7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2382d8f9-f89e-464f-a68b-c76531b318f5</globalKey>
+        <inputFieldName>PublicDirectoryEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7f495573-40d9-44ce-a0b9-8cbc32150c40</globalKey>
+        <inputFieldName>HasPendingJobOffer</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasPendingJobOffer</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2af21eda-7147-4414-9afe-f2edafa058a0</globalKey>
+        <inputFieldName>IF_ApplicationReciprocalType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_ApplicationReciprocalType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f42794ab-c9fa-495a-a771-673ed6709dc9</globalKey>
+        <inputFieldName>CountyCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountyCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ec4be5d9-e0ee-45ed-82a2-34b8ec725ed0</globalKey>
+        <inputFieldName>HasPassedExamsCVRorRPR</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasPassedExamsCVRorRPR</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f2605d4c-c063-47a2-a732-d2ee3f22dca9</globalKey>
+        <inputFieldName>ApplicantMailingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMailingCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fcd3fdc9-ebf4-4ca2-a864-d6eb4d4d4505</globalKey>
+        <inputFieldName>HasProbationOrParole</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasProbationOrParole</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>49e5297a-9723-4b7f-82ac-1d7bf757249c</globalKey>
+        <inputFieldName>CountyZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountyZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>48528803-65ee-4ca8-8884-130869503a72</globalKey>
+        <inputFieldName>ApplicantMailingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMailingState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c7456b7e-2e9e-4db7-833e-e0e091b5f165</globalKey>
+        <inputFieldName>CountiesServed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountiesServed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CertificationType &apos;Standard&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%CertificationType% == &apos;Standard&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_ApplicationStandardType</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>878ef89b-6305-449a-9099-047a3ca77ae2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicantOfficialFreelance &apos;Freelance&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ApplicantOfficialFreelance% == &apos;Freelance&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_ApplicantFreelance</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>2d9115da-c3e1-4180-9094-8f56ee525a70</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>512087eb-aaa8-45fd-bf17-56a2196a0de1</globalKey>
+        <inputFieldName>CountyState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountyState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>58f73f88-6cd8-400f-8093-3ce84bfe4822</globalKey>
+        <inputFieldName>ApplicantMiddleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMiddleName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7f8f5ba5-bedf-439b-8ee2-11e51a10b019</globalKey>
+        <inputFieldName>IF_ApplicantFreelance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_ApplicantFreelance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>223b65ec-b953-43ad-9259-e56f6fe7ca4a</globalKey>
+        <inputFieldName>HasArizonaDriverLicense</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasArizonaDriverLicense</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>26841c75-7324-425d-8141-57e010a35459</globalKey>
+        <inputFieldName>HasPublicHarmConduct</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasPublicHarmConduct</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:EmployerOfficialFreelance &apos;Freelance&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%EmployerOfficialFreelance% == &apos;Freelance&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_EmployerFreelance</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>386570ce-01ab-40d4-80e1-9453cb99cfeb</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>15254452-fca1-4d6a-b717-6f9939900c15</globalKey>
+        <inputFieldName>PublicDirectoryFullConsent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_PublicDirectoryFullConsent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e4af0070-1b29-4377-b80a-e9837b4adba1</globalKey>
+        <inputFieldName>ApplicantMailingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMailingStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9bca02f1-1077-4f39-b5ad-df4ca1b755b6</globalKey>
+        <inputFieldName>HasVerifiedStatementOfCourse</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasVerifiedStatementOfCourse</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ReporterType &apos;Voice/\/\/Writer&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ReporterType% == &apos;Voice Writer&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_VoiceWriterReporter</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>80e9b4ca-81af-4dd7-ab08-55dbf41b4a23</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>483c9b0e-9c43-49f3-b806-517cb1ffe0e9</globalKey>
+        <inputFieldName>HasCompletedHours</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasCompletedHours</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dffd6d2a-ab94-489e-a5b9-f930934f76b5</globalKey>
+        <inputFieldName>PublicDirectoryName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c8c6161b-8a89-4248-aece-f0f5fa913ef2</globalKey>
+        <inputFieldName>OfficialOrFreelance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OfficialOrFreelance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a91499dc-4c66-485b-b07a-4c9ac8dfc428</globalKey>
+        <inputFieldName>ApplicantHomeCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantHomeCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>859b062d-79ac-4843-aa24-9b191c48abb7</globalKey>
+        <inputFieldName>HiringPersonnelEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HiringPersonnelEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c1195e4d-b891-41d5-acf6-8113fe0e6956</globalKey>
+        <inputFieldName>EmployerEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmployerEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>324756a5-d6b5-4bfd-a5ac-b44a8c357bc2</globalKey>
+        <inputFieldName>PublicDirectoryZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>333a3160-6968-4810-9612-83ef9c7c8627</globalKey>
+        <inputFieldName>TotalFeeAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalFeeAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2849650d-ff98-47f0-ac05-efb48ae55220</globalKey>
+        <inputFieldName>IF_VoiceWriterReporter</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_VoiceWriterReporter</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>410c4168-6823-4280-b81d-5a057e753a82</globalKey>
+        <inputFieldName>IF_ApplicantOfficial</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_ApplicantOfficial</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6cbf586c-3e42-45dd-af40-490afc2835d5</globalKey>
+        <inputFieldName>HiringPersonnelPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HiringPersonnelPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>03a3c3c8-4059-449e-ba39-c4b69de37430</globalKey>
+        <inputFieldName>HasRegulatoryViolation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasRegulatoryViolation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>35134f8e-f34b-41ab-a769-028f91fb7793</globalKey>
+        <inputFieldName>HasBeenResidentOfArizona</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasBeenResidentOfArizona</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3af0ee26-edf6-4bad-80c3-0a61172332f8</globalKey>
+        <inputFieldName>ApplicantEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a4a418bb-0950-4563-a182-b176ea5b412d</globalKey>
+        <inputFieldName>ApplicantMailingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMailingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4b62ab99-0eed-4648-b4fb-82663d17b83d</globalKey>
+        <inputFieldName>HasFalseSupportStatement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasFalseSupportStatement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:EmployerOfficialFreelance &apos;Official&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%EmployerOfficialFreelance% == &apos;Official&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_EmployerOfficial</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>8736e51c-e076-4897-9949-349e991d2047</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c99c4029-28d6-49da-9197-3dc326b3620e</globalKey>
+        <inputFieldName>HasMadeFalseStatementToBoard</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasMadeFalseStatementToBoard</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b5e6c8ec-0b06-4c66-b03f-88784c8da5e3</globalKey>
+        <inputFieldName>AliasName2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AliasName2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>49998835-0549-4f67-b57e-4657ce5d17cf</globalKey>
+        <inputFieldName>HasHighSchoolDiplomaOrGED</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasHighSchoolDiplomaOrGED</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f6dc1b21-6109-48cb-888a-465ae6a047d5</globalKey>
+        <inputFieldName>PublicDirectoryCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicDirectoryCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>74ff3d5a-43bd-4e13-9224-ab217219d627</globalKey>
+        <inputFieldName>WorkCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WorkCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CertificationType &apos;Reciprocal&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%CertificationType% == &apos;Reciprocal&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_ApplicationReciprocalType</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>50cc26a4-ddb1-47c8-9fe8-bc73d313e447</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a509f3e2-61ae-4bdf-b252-92845b7d1732</globalKey>
+        <inputFieldName>WorkCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WorkCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7b9163f3-20b3-4dc8-9970-72182ddb7503</globalKey>
+        <inputFieldName>CountyCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CountyCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>aba9d3bb-5261-48ce-97f0-32e50afab18f</globalKey>
+        <inputFieldName>IF_EmployerOfficial</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_EmployerOfficial</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>80416135-1786-4d40-8095-327c5bbf2644</globalKey>
+        <inputFieldName>EmployerPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmployerPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b9772aaf-6710-43aa-97f4-6bd73b1102ad</globalKey>
+        <inputFieldName>ApplicantMailingZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantMailingZip</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d003f8bb-75ec-4de6-85d3-fc0b390ad35f</globalKey>
+        <inputFieldName>HasLegalOrderViolation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasLegalOrderViolation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a9eb6434-7329-4ddf-84cf-4388c669b58c</globalKey>
+        <inputFieldName>SignatureName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantSignatureName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>59e2b165-34a5-4ec7-a692-eb02a00557fa</globalKey>
+        <inputFieldName>HasCommittedBusinessFraud</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasCommittedBusinessFraud</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ApplicationType &apos;Renewal/\/\/Licensure&apos; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ApplicationType% == &apos;Renewal Licensure&apos;, true, false)</formulaExpression>
+        <formulaResultPath>IF_RenewalApplication</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>b4f10166-5118-4e69-a503-77e9cdfcac5f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>27e19e46-0361-4512-a8ce-636b99d19cb9</globalKey>
+        <inputFieldName>HasPetitionComplaintFiled</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IF_HasPetitionComplaintFiled</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2b2efcf9-7d46-4bdb-9e78-afa94bdc350c</globalKey>
+        <inputFieldName>AliasName3</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCTransformIndividualApplicationPDFGeneration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AliasName3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;TotalFeeAmount&quot; : &quot;$372.00&quot;,
+  &quot;CertificationType&quot; : &quot;Reciprocal&quot;,
+  &quot;ApplicantFirstName&quot; : &quot;CR Test USER&quot;,
+  &quot;CountyCity&quot; : &quot;Chandler&quot;,
+  &quot;HasCommittedMisrepresentation&quot; : true,
+  &quot;PublicDirectoryStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+  &quot;CountyState&quot; : &quot;AZ&quot;,
+  &quot;CountiesServed&quot; : &quot;All Counties&quot;,
+  &quot;HasLegalOrderViolation&quot; : true,
+  &quot;ApplicantMailingState&quot; : &quot;AZ&quot;,
+  &quot;Name&quot; : &quot;IA-0000000010&quot;,
+  &quot;PublicDirectoryWebsite&quot; : &quot;www.cretesfgewf.com&quot;,
+  &quot;HasMisdemeanorConviction&quot; : true,
+  &quot;WorkZip&quot; : &quot;85224&quot;,
+  &quot;ApplicantOfficialFreelance&quot; : &quot;Official&quot;,
+  &quot;PublicDirectoryFullConsent&quot; : true,
+  &quot;SignatureName&quot; : &quot;Test User&quot;,
+  &quot;HasBeenAnAdult&quot; : true,
+  &quot;HasBusinessConductComplaint&quot; : true,
+  &quot;ArizonaResidencyDate&quot; : &quot;2025-12-11&quot;,
+  &quot;HiringPersonnelName&quot; : &quot;Person Name 1&quot;,
+  &quot;ApplicantMiddleName&quot; : &quot;cr&quot;,
+  &quot;HasHighSchoolDiplomaOrGED&quot; : false,
+  &quot;HasVerifiedStatementOfCourse&quot; : false,
+  &quot;HasLicenseDisciplinaryAction&quot; : true,
+  &quot;HasCommittedBusinessFraud&quot; : true,
+  &quot;ApplicantDateOfBirth&quot; : &quot;1981-12-01&quot;,
+  &quot;ApplicantNameOnCertificate&quot; : &quot;testuser&quot;,
+  &quot;WorkState&quot; : &quot;AZ&quot;,
+  &quot;PublicDirectoryPhone&quot; : &quot;8579325600&quot;,
+  &quot;ApplicantSocialSecurityNumber&quot; : &quot;357683237&quot;,
+  &quot;ApplicantMailingCity&quot; : &quot;Chandler&quot;,
+  &quot;ApplicantTelephoneNumber&quot; : &quot;3672843743&quot;,
+  &quot;HasPetitionComplaintFiled&quot; : false,
+  &quot;PublicDirectoryCity&quot; : &quot;Chandler&quot;,
+  &quot;HasBeenResidentOfArizona&quot; : true,
+  &quot;ApplicationType&quot; : &quot;Initial Licensure&quot;,
+  &quot;PublicDirectoryEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+  &quot;SignatureDate&quot; : &quot;2025-12-22&quot;,
+  &quot;PublicDirectoryCountry&quot; : &quot;US&quot;,
+  &quot;CountyStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+  &quot;HasPendingJobOffer&quot; : true,
+  &quot;ApplicantMailingStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+  &quot;ApplicantCellphoneNumber&quot; : &quot;4756984235&quot;,
+  &quot;HasEmploymentDiscipline&quot; : true,
+  &quot;ApplicantHomeZip&quot; : &quot;85224&quot;,
+  &quot;CountyZip&quot; : &quot;85224&quot;,
+  &quot;ApplicantEmail&quot; : &quot;testuser@yopmail.com&quot;,
+  &quot;ApplicantNumberOfYears&quot; : 2,
+  &quot;HasFailedToRespond&quot; : true,
+  &quot;HasProbationOrParole&quot; : true,
+  &quot;ApplicantLastName&quot; : &quot;Mastek QA&quot;,
+  &quot;AdmittedToPracticeLaw&quot; : true,
+  &quot;WorkStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+  &quot;HasCertifiedInOtherStates&quot; : false,
+  &quot;HasCompletedHours&quot; : false,
+  &quot;HiringPersonnelPhone&quot; : &quot;3873849423&quot;,
+  &quot;HasMadeFalseStatementToBoard&quot; : true,
+  &quot;WorkCountry&quot; : &quot;US&quot;,
+  &quot;HasCivilCaseInvolvement&quot; : true,
+  &quot;HasArizonaDriverLicense&quot; : true,
+  &quot;ApplicantHomeStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+  &quot;HasFalseSupportStatement&quot; : true,
+  &quot;HasBeenAnUSCitizen&quot; : true,
+  &quot;PublicDirectoryZip&quot; : &quot;85224&quot;,
+  &quot;WorkCity&quot; : &quot;Chandler&quot;,
+  &quot;EmployerPhone&quot; : &quot;8579325600&quot;,
+  &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+  &quot;AliasName1&quot; : &quot;CR Test USER&quot;,
+  &quot;ApplicantMailingZip&quot; : &quot;85224&quot;,
+  &quot;AliasName2&quot; : &quot;CR Test USER&quot;,
+  &quot;HasPassedExamsCVRorRPR&quot; : false,
+  &quot;HasPublicHarmConduct&quot; : true,
+  &quot;AliasName3&quot; : &quot;CR Test USER&quot;,
+  &quot;CountyCountry&quot; : &quot;US&quot;,
+  &quot;PublicDirectoryName&quot; : &quot;CRTestUser&quot;,
+  &quot;HasRegulatoryViolation&quot; : true,
+  &quot;ApplicantHomeCity&quot; : &quot;Chandler&quot;,
+  &quot;HasPassedAZKnowledgeExam&quot; : true,
+  &quot;EmployerEmail&quot; : &quot;testuser@yopmail.com&quot;,
+  &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+  &quot;HasFelonyConviction&quot; : true,
+  &quot;HiringPersonnelEmail&quot; : &quot;person.name@yopmail.com&quot;,
+  &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+  &quot;EmployerName&quot; : &quot;Overto&quot;,
+  &quot;PublicDirectoryState&quot; : &quot;AZ&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>CRI Application Template(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>AZSCTransformIndividualApplicationPDFGeneration_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

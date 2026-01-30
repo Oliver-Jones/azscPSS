@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "3a176599-961d-43ce-b9fa-136a36da2fed",
+  "label" : "Renewal DDI Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/DDdrive?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "5bb5e25b-8203-4bae-8d1f-0f63264d2b9b",
+          "columns" : [ {
+            "UUID" : "21ea3a1b-e394-4229-8a0f-ed2ed8935822",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "5bb5e25b-8203-4bae-8d1f-0f63264d2b9b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "",
+            "subType" : "",
+            "theme" : "",
+            "type" : ""
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "b59d7dc7-fff4-4cf6-8a3e-60d9aa9f84fa",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "21ea3a1b-e394-4229-8a0f-ed2ed8935822",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "76064200-4861-4f47-80c2-3c5a45f5fec2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Renew Defensive Driving Instructor Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "928b0a09-2ca8-4943-8a68-4e0ef9ad4d6d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d4984fba-7fae-4ec1-bbe6-2109d5de5dfa",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-renewal-ddi-application"
+}

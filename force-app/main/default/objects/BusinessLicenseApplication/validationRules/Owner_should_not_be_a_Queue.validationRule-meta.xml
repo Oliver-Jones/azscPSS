@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_should_not_be_a_Queue</fullName>
+    <active>true</active>
+    <description>This validation rule fires if a user tries to make any changes to the record without taking the ownership.</description>
+    <errorConditionFormula>AND(  $Permission.EnforceApplicationOwnerValidation, BEGINS(PRIORVALUE(OwnerId),&apos;00G&apos;),NOT(BEGINS(OwnerId ,&apos;005&apos;)))</errorConditionFormula>
+    <errorMessage>Please take the ownership for the record before making the changes.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "27a860f9-407f-45a0-b660-67148b602348",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Fiduciary_Program__c",
+  "id" : "60174284-14f7-41a5-b975-132cb75569ec",
+  "label" : "Fiduciary Program",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-fiduciary-program",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program"
+}

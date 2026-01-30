@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Recipient.Name}}}<br />
+{{{Recipient.MailingStreet}}}<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}} {{{Recipient.MailingPostalCode}}}<br />
+<br />
+<br />
+Re: Arizona {{{PersonExamination.Certification_Type__c}}} Examination Results - Third Attempt<br />
+<br />
+<br />
+Dear <strong>{{{Recipient.FirstName}}}</strong>,<br />
+<br />
+Under the Arizona Code of Judicial Administration (ACJA) § 7-201(E)(1)(f)(1)(g), this letter is notification of a third non-passing score on your recent certification or licensure examination. Reexamination with a passing result is required to meet the qualifications for certification or licensure.<br />
+<br />
+Passing Score for {{{PersonExamination.Certification_Type__c}}} Exam:&nbsp;{{{PersonExamination.Passing_Program_Score__c}}}<br />
+<br />
+Your Score for {{{PersonExamination.Certification_Type__c}}} Exam:&nbsp;{{{PersonExamination.Score}}}<br />
+<br />
+An applicant who fails the examination three times must submit a request to the&nbsp;{{{PersonExamination.Certification_Type__c}}} Board for permission to sit for a subsequent examination. The request must include a statement explaining the additional study and preparation the applicant has made to qualify for a subsequent examination and provide supporting documentation demonstrating the circumstances and reasons for believing the applicant now possesses the knowledge of the minimum competencies of the profession or occupation to pass the subsequent examination.<br />
+<br />
+If permission is granted by the {{{PersonExamination.Certification_Type__c}}} Board to sit for a subsequent examination, an applicant must file a new application and pay the applicable examination fee. Registration for reexamination must be submitted through the Arizona Judicial Branch’s Certification &amp; Licensing Portal at&nbsp;<a href="https://azcld--partial.sandbox.my.site.com/s/">https://azcld--partial.sandbox.my.site.com/s/</a>.<br />
+<br />
+The request for permission to sit for the examination and the statement noted above must be submitted to the program email at:<br />
+<br />
+Certified Court Reporter:&nbsp;<a href="mailto:CourtRep@courts.az.gov">CourtRep@courts.az.gov</a><br />
+Defensive Driving:&nbsp;<a href="mailto:DDrive@courts.az.gov">DDrive@courts.az.gov</a><br />
+Certified Legal Document Preparer:&nbsp;<a href="mailto:LDP@courts.az.gov">LDP@courts.az.gov</a><br />
+Legal Paraprofessional:&nbsp;<a href="mailto:LPProgram@courts.az.gov">LPProgram@courts.az.gov</a><br />
+Fiduciary:&nbsp;<a href="mailto:PFP@courts.az.gov">PFP@courts.az.gov</a><br />
+<br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division<br />
+Arizona Supreme Court</body>
+</html>

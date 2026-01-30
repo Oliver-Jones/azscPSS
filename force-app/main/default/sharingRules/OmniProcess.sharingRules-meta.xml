@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>OmniProcess_Guest_User_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>OmniProcess Guest User Rule</label>
+        <sharedTo>
+            <guestUser>Arizona_Supreme_Court_CLD</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

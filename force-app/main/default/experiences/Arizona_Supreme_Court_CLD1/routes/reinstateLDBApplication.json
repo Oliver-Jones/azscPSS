@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "7d134793-06a5-4518-b1df-09811cd5361c",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Reinstate_LDB_Application__c",
+  "id" : "7492e5e4-cbc9-49bf-b8bf-1eb69cff51ef",
+  "label" : "Reinstate LDB Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-reinstate-ldb-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/reinstate-ldb-application"
+}

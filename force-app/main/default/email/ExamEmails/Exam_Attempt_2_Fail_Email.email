@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Recipient.Name}}}<br />
+{{{Recipient.MailingStreet}}}<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}} {{{Recipient.MailingPostalCode}}}<br />
+<br />
+<br />
+Re: Arizona {{{PersonExamination.Certification_Type__c}}} Examination Results - Second Attempt<br />
+<br />
+Dear <strong>{{{Recipient.FirstName}}}</strong>,<br />
+<br />
+Under the Arizona Code of Judicial Administration (ACJA) § 7-201(E)(1)(f)(1)(g), this letter is notification of a second non-passing score on your recent certification/licensure examination. Reexamination with a passing result is required to meet the qualifications for certification/licensure.<br />
+<br />
+Passing Score for {{{PersonExamination.Certification_Type__c}}} Exam: {{{PersonExamination.Passing_Program_Score__c}}}<br />
+<br />
+Your Score for {{{PersonExamination.Certification_Type__c}}} Exam: {{{PersonExamination.Score}}}<br />
+<br />
+To retake the examination, submit a written request to the program email below. Additionally, an applicant must file a new application and pay the applicable examination fee. Registration for reexamination must be submitted through the Arizona Judicial Branch’s Certification &amp; Licensing Portal at&nbsp;<a href="https://azcld--partial.sandbox.my.site.com/s/">https://azcld--partial.sandbox.my.site.com/s/</a>. An applicant who fails the examination third time must obtain permission from the Board to take any subsequent examination.<br />
+<br />
+The request to retake the examination must be submitted to the program email at:<br />
+<br />
+Certified Court Reporter:&nbsp;<a href="mailto:CourtRep@courts.az.gov">CourtRep@courts.az.gov</a><br />
+Defensive Driving:&nbsp;<a href="mailto:DDrive@courts.az.gov">DDrive@courts.az.gov</a><br />
+Certified Legal Document Preparer:&nbsp;<a href="mailto:LDP@courts.az.gov">LDP@courts.az.gov</a><br />
+Legal Paraprofessional:&nbsp;<a href="mailto:LPProgram@courts.az.gov">LPProgram@courts.az.gov</a><br />
+Fiduciary:&nbsp;<a href="mailto:PFP@courts.az.gov">PFP@courts.az.gov</a><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division<br />
+Arizona Supreme Court</body>
+</html>

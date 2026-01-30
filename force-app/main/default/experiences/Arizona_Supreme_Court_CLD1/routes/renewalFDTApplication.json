@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "236cf6a9-0f9b-4b0f-a482-9ff92901bd91",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_FDT_Application__c",
+  "id" : "8d8afa85-c86d-48e3-b75c-2bacb8726700",
+  "label" : "Renewal FDT Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-fdt-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/renewal-fdt-application"
+}

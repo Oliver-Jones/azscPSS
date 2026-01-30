@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "db64d318-ed5a-466f-bceb-c08d84434192",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_FDB_Application__c",
+  "id" : "a0e8b85c-ef68-4b61-a10b-c1fdde782e26",
+  "label" : "Renewal FDB Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-fdb-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/renewal-fdb-application"
+}

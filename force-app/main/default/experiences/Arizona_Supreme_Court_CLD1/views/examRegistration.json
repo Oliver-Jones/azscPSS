@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "5651bc08-07e5-45ea-8354-90cd62c36eb3",
+  "label" : "Exam Registration",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "10c97428-58af-41e3-a916-f3973e70eb85",
+          "columns" : [ {
+            "UUID" : "77a8230d-d1b5-4647-b377-d8ab7fd112d9",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "10c97428-58af-41e3-a916-f3973e70eb85",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "Registration",
+            "theme" : "lightning",
+            "type" : "Exam"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "a147c896-f58d-4a4e-bb3c-a7fcfd0fe46c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "77a8230d-d1b5-4647-b377-d8ab7fd112d9",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "09dbf052-1243-4634-a497-436d31bb2b8a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Exam Registration"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f759b608-61e1-451d-ab29-795e2c689563",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d3b29454-b343-4c2f-9c13-57d661e86339",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-exam-registration"
+}

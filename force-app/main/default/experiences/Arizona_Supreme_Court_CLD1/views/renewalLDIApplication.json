@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "44e58031-b615-4661-9885-61a5d6aa733f",
+  "label" : "Renewal LDI Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDLegalDocumentPreparerBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e609e18a-64dc-4f93-8c24-c8da2da73c65",
+          "columns" : [ {
+            "UUID" : "dff1eb44-fd6d-4c92-8266-3089b04e29ff",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e609e18a-64dc-4f93-8c24-c8da2da73c65",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "RenewalApplication",
+            "theme" : "lightning",
+            "type" : "LDI"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "fb28b71c-343e-416e-aef0-a54e8aaed72a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "dff1eb44-fd6d-4c92-8266-3089b04e29ff",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9df1a336-97d9-46dc-bf75-9a15dafa5d34",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Renew Legal Document Preparer Individual Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "dc41943d-c949-44a3-bc59-58172e766761",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "17fb27f4-5a00-43c9-9a4d-699c5d5bc010",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-renewal-ldi-application"
+}

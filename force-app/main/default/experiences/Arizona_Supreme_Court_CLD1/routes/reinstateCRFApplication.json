@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "dbca78c6-5b7b-45f7-8509-ec3e07c34f89",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Reinstate_CRF_Application__c",
+  "id" : "f10e4c38-1686-4014-b0e2-1bb4d31a91c0",
+  "label" : "Reinstate CRF Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-reinstate-crf-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/reinstate-crf-application"
+}

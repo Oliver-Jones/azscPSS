@@ -1,0 +1,66 @@
+<template>
+    <template if:false={showMessage}>
+        <!--
+        <div class="slds-m-around_x-small" style="background:white; border-radius: 0.25rem;">
+            <lightning-radio-group type="button" class="radioCls slds-p-around_small" required onchange={handleChange} data-field="accessType" name="accessType" label="Customer Type" options={options} value={usr.accessType} ></lightning-radio-group>
+        </div>
+        <div class="slds-m-around_x-small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;height: 3.2em;">
+                    <lightning-icon icon-name="utility:user" style="position: absolute;padding: 1em;" size="x-small" alternative-text="Search Icon"></lightning-icon>
+                    <input type="text" required id="firstName" style="padding-left: 2.8em" class="slds-input" placeholder="Enter First Name"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-m-around_x-small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;height: 3.2em;">
+                    <lightning-icon icon-name="utility:user" style="position: absolute;padding: 1em;" size="x-small" alternative-text="Search Icon"></lightning-icon>
+                    <input type="text" required id="lastName" style="padding-left: 2.8em" class="slds-input" placeholder="Enter Last Name"/>
+                </div>
+            </div>
+        </div>
+        <template if:true={isBusiness}>
+            <div class="slds-m-around_x-small">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;height: 3.2em;">
+                        <lightning-icon icon-name="utility:company" style="position: absolute;padding: 1em;" size="x-small" alternative-text="Search Icon"></lightning-icon>
+                        <input type="text" required id="businessName" style="padding-left: 2.8em" class="slds-input" placeholder="Enter Business Name"/>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <div class="slds-m-around_x-small">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control slds-input-icon" style="display: flex;position: relative;height: 3.2em;">
+                    <lightning-icon icon-name="utility:email" style="position: absolute;padding: 1em;" size="x-small" alternative-text="Search Icon"></lightning-icon>
+                    <input type="text" required id="email" style="padding-left: 2.8em" class="slds-input" placeholder="Enter Email"/>
+                </div>
+            </div>
+        </div>
+        <div class="slds-p-top_x-large" style="text-align:center;">
+            <lightning-button variant="brand" label="Register" title="register" onclick={handleClick}></lightning-button>
+        </div>
+        !-->
+        <lightning-card>
+            <div class="slds-m-around_medium">
+                <lightning-radio-group class="radioCls" required onchange={handleChange} data-field="accessType" name="accessType" label="Customer Type" options={options} value={usr.accessType} type="radio"></lightning-radio-group>
+                <lightning-input class="slds-p-top_small" required type="text" onchange={handleChange} data-field="FirstName" label="First Name" value={usr.FirstName}></lightning-input>
+                <lightning-input class="slds-p-top_small" required type="text" onchange={handleChange} data-field="LastName" label="Last Name" value={usr.LastName}></lightning-input>
+                <template if:true={isBusiness}>
+                    <lightning-input class="slds-p-top_small" required type="text" onchange={handleChange} data-field="CompanyName" label="Company Name" value={usr.CompanyName}></lightning-input>
+                </template>
+                <lightning-input class="slds-p-top_small" required type="email" onchange={handleChange} data-field="Email" label="Email" value={usr.Email}></lightning-input>
+                <div class="slds-p-top_x-large" style="text-align:center;">
+                    <lightning-button variant="brand" label="Register" title="register" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:true={showMessage}>
+        <h2 style="color:white;">Registered successfully! Kindly check your inbox to login and set password.</h2>
+        <div class="slds-p-top_x-large" style="text-align:center;">
+            <lightning-button variant="brand" label="Login" title="login" onclick={handleLogin}></lightning-button>
+        </div>
+    </template>
+</template>

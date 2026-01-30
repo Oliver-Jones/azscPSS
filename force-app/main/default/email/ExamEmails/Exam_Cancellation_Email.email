@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{PersonExamination.LastModifiedDate}}}<br />
+<br />
+Dear {{{Recipient.FirstName}}},<br />
+<br />
+The Certification exam you scheduled for at has been cancelled.<br />
+<br />
+Please visit the AZ Courts portal to select a different exam date and time.<br />
+<br />
+<p style="margin-bottom: 16px;">Sincerely,</p>
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958</body>
+</html>

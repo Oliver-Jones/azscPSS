@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Statutory Agent</fullName>
+        <default>false</default>
+        <label>Statutory Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Designated Principal</fullName>
+        <default>false</default>
+        <label>Designated Principal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance Lawyer</fullName>
+        <default>false</default>
+        <label>Compliance Lawyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Authorized Person</fullName>
+        <default>false</default>
+        <label>Authorized Person</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Authorized Entity</fullName>
+        <default>false</default>
+        <label>Authorized Entity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual</fullName>
+        <default>false</default>
+        <label>Individual</label>
+    </standardValue>
+</StandardValueSet>

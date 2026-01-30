@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{}</customJavaScript>
+    <elementTypeComponentMapping>{"ElementTypeToHTMLTemplateList":[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Save Main Application (BusinessLicenseApplication)</name>
+
+    <!-- Step: Load Business License Application via DataRaptor Load -->
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadBusinessLicenseApplication</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "sendOnlyAdditionalInput" : false,
+  "returnOnlyAdditionalOutput" : false,
+  "elementValueMap" : { },
+  "failOnStepError" : true,
+  "isActive" : true,
+  "chainOnStep" : false,
+  "returnOnlyFailureResponse" : false,
+  "responseJSONPath" : "BusinessLicenseApplication_1|1",
+  "responseJSONNode" : "",
+  "executionConditionalFormula" : "",
+  "actionMessage" : "",
+  "additionalOutput" : { },
+  "sendJSONPath" : "",
+  "disOnTplt" : false,
+  "failureConditionalFormula" : "",
+  "failureResponse" : { },
+  "id" : "",
+  "additionalInput" : {
+    "RecordType" : "%RecordType%",
+    "RegAuthTypeCode" : "%RegAuthTypeCode%",
+    "ApplnType" : "%ApplnType%",
+    "UserInfo:AccountId" : "%UserInfo:AccountId%",
+    "CRIApplicantInfo:CRIFirstName" : "%CRIApplicantInfo:CRIFirstName%",
+    "CRIApplicantInfo:CRILastName" : "%CRIApplicantInfo:CRILastName%"
+  },
+  "useFormulas" : true,
+  "restOptions" : { },
+  "bundle" : "CRFLoadBusinessLicenseApplication",
+  "sendJSONNode" : ""
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+
+    <!-- Step: Return Id and any outputs -->
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ReturnResult</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  "vlcResponseHeaders" : { },
+  "returnFullDataJSON" : false,
+  "returnOnlyAdditionalOutput" : true,
+  "elementValueMap" : { },
+  "responseFormat" : "JSON",
+  "isActive" : true,
+  "responseJSONPath" : "",
+  "responseJSONNode" : "",
+  "executionConditionalFormula" : "",
+  "additionalOutput" : {
+    "BusinessLicenseApplicationId" : "=%LoadBusinessLicenseApplication:Id%"
+  },
+  "sendJSONPath" : "",
+  "disOnTplt" : false,
+  "id" : "",
+  "useFormulas" : true,
+  "restOptions" : { },
+  "sendJSONNode" : ""
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+
+    <omniProcessKey>CRF_SaveMainApplication</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  "transientValues" : { }
+}</propertySetConfig>
+    <subType>SaveMainApplication</subType>
+    <type>CRF</type>
+    <uniqueName>CRF_SaveMainApplication_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniIntegrationProcedure>

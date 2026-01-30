@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{PersonExamination.LastModifiedDate}}}<br />
+<br />
+Dear {{{Recipient.FirstName}}},<br />
+<br />
+This email confirms you are scheduled to take the&nbsp;{{{PersonExamination.Certification_Type__c}}} exam on&nbsp;{{{PersonExamination.Formula_Schedule_Date__c}}}{{{PersonExamination.Formula_Schedule_Date__c}}} at&nbsp;{{{PersonExamination.Formula_Schedule_Time__c}}}.<br />
+<br />
+<strong>ADDRESS OF TEST LOCATION: </strong>Arizona State Courts Building 1501 West Washington Phoenix, Arizona 85007. Once you arrive at the building, proceed through the security checkpoint on the 2nd floor. You will be directed to the exam room from there. <strong>Please arrive at least 15 minutes early to allow time to register for the exam. Registration will begin one half hour prior to the scheduled exam time.</strong><br />
+<br />
+<strong>ADDITIONAL INFORMATION:</strong> You will be required to present one form of personal identification must be government issued, picture I.D. indicating your date of birth. For directions and parking: <a href="https://www.azcourts.gov/Portals/0/26/Parking%20Map%20for%20Supreme%20Court.pdf?ver=2018-10-30-085219-190">Click here.</a><br />
+<br />
+If you need to reschedule your exam, please do so on the AZ Courts website no later than 24 hours prior to the scheduled exam date/time. If you have previously rescheduled, please note the system will not allow you to reschedule more than three times. If you have already rescheduled to take an exam three times, you will need to contact Certification and Licensing Division staff for further instruction.<br />
+<br />
+A re-registration fee will apply for any applicant who registers for an examination date and fails to appear at the designated site on the scheduled date and time.<br />
+<br />
+Subsequent to your participation in the exam, you will receive notice of your results via Email. Exam results are released by mail to the examinee only. If you are unsuccessful in your attempt to complete the examination requirement, the notice forwarded to you will provide instructions for registering to retake the exam.<br />
+<br />
+<p style="margin-bottom: 16px;">Sincerely,</p>
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958</body>
+</html>

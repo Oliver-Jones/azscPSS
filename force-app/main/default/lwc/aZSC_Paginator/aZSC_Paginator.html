@@ -1,0 +1,25 @@
+<template>
+    <lightning-layout horizontal-align="center" class="slds-m-top_xx-large">
+        <lightning-layout-item>
+            <lightning-icon icon-name="utility:left"
+                alternative-text="left" 
+                size="small" 
+                title="Shopping Cart"
+                class="cartIcon"
+                onclick={previousHandler}
+                disabled={disablePrevious}></lightning-icon>
+        </lightning-layout-item>
+        <lightning-layout-item>
+            <p class="slds-text-align_center slds-p-left_small slds-p-right_small">Page {currentPage} of {totalPage}</p>
+        </lightning-layout-item>
+        <lightning-layout-item>
+            <lightning-icon icon-name="utility:right" 
+                alternative-text="right" 
+                size="small" 
+                title="Shopping Cart"
+                class="cartIcon"
+                onclick={nextHandler}
+                disabled={disableNext}></lightning-icon>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

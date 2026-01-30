@@ -1,0 +1,83 @@
+{
+  "appPageId" : "1e250e4a-de60-4148-a4d7-6a4a6e191f86",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "8aad9404-d8ce-4cc4-b983-16cb5a6f1462",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "8ae1f900-6484-4579-b3ef-be818ce3df43",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/ForgotPassword",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "Not a member?",
+        "selfRegisterUrl" : "/SelfRegister",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "b91e6f46-a6ec-461b-96a6-fecd3cdc9015",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : true
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "55e8cfd2-9928-4779-8774-e990d8ff43f9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "employeeLoginLinkLabel" : "Are you an employee? Login here"
+      },
+      "componentName" : "salesforceIdentity:employeeLoginLink2",
+      "id" : "6f1811f6-6ac7-4aae-bb6d-982bf3eda796",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color: transparent; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px 0px; position: relative; text-align: left;\" class=\"custom-footer\" data-aura-rendered-by=\"85:0\">\n <div style=\"float: left; display: inline-block; vertical-align: top; line-height: 2;\" class=\"footer-column\">\n  <h2 style=\"font-size: 16px; margin-top: 34px; margin-bottom: 10px; color: #d1a617;\">CONTACT US</h2>\n  <p>For general inquiries, please contact</p>\n  <p>Hotline: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"tel:602-452-3378\">(602) 452-3378</a></p>\n  <p>TTY/TTD: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"tel:602-452-3545\">(602) 452-3545</a></p>\n     <div style=\"font-size: 12.5px;\">\n  <p>Alternative Business Structure: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:ABSProgram@courts.az.gov\">ABSProgram@courts.az.gov</a></p>\n  <p>Certified Court Reporter: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:CourtRep@courts.az.gov\">CourtRep@courts.az.gov</a></p>\n  <p>Defensive Driving: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:DDrive@courts.az.gov\">DDrive@courts.az.gov</a></p>\n  <p>Certified Legal Document Preparer: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:LDP@courts.az.gov\">LDP@courts.az.gov</a></p>\n  <p>Legal Paraprofessional: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:PFP@courts.az.gov\">LPProgram@courts.az.gov</a></p>\n  <p>Fiduciary: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:PFP@courts.az.gov\">PFP@courts.az.gov</a></p>\n     </div>\n </div>\n <div style=\"background-color: #893942; height: 10px; width: 100%; position: absolute; bottom: 0; left: 0;\" class=\"bottom-border\"></div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "416cfa32-8ce7-4730-bbba-fea6d98a8874",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9d094f7f-580c-4b60-b565-9513b728adb5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "706455ad-8b1d-4c7d-bc22-67ebd93d2635",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bb76afff-cc35-49cb-907a-ded3edce65d2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

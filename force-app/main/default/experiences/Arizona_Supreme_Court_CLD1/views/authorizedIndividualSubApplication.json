@@ -1,0 +1,54 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "af426530-4981-4735-9748-2b304975d219",
+  "label" : "Authorized Individual Sub Application",
+  "regions" : [ {
+    "id" : "0db4ed18-49e9-4ec2-8595-da4d3e5b71ca",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "direction" : "ltr",
+        "display" : "Display OmniScript on page",
+        "inlineVariant" : "brand",
+        "language" : "English",
+        "subType" : "AuthorizedIndividualAppln",
+        "theme" : "lightning",
+        "type" : "ABS"
+      },
+      "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+      "id" : "1096e5b7-1dc1-42ca-8b72-7a2bea667774",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "98f132e2-d596-4f10-ae4c-0f2bf2b3ed71",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0fd96ddc-3848-4aba-b5d3-97084cfb4e68",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Authorized Individual Sub Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "531d2e7f-037e-4de8-9ae0-a507c28f1be0",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "650be6f8-efe7-45ab-9b44-fc593d255ebf",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-authorized-individual-sub-application"
+}

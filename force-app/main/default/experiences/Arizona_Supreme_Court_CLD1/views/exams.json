@@ -1,0 +1,72 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "2710bcf5-27dc-4b1b-999b-5903125666fa",
+  "label" : "Exams",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "db20126a-624b-472e-8d6e-4a9d671837a5",
+          "columns" : [ {
+            "UUID" : "14b6afd8-b68f-4dca-82a4-b6a545f0d48a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "db20126a-624b-472e-8d6e-4a9d671837a5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flexcardName" : "Exams",
+            "objectApiName" : "{!objectApiName}",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_omnistudio:flexcard",
+          "id" : "1da2d97a-a3ba-44b3-9d85-c054c5c49ba1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "14b6afd8-b68f-4dca-82a4-b6a545f0d48a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c5684125-63c9-4746-96a9-f5ff38f87a73",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Exams"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "806b8aac-aa55-454e-b55d-b759991170ed",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6066fb6e-f35a-4273-867a-c518235a6d37",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-exams"
+}

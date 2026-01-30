@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;RenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764722514509&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@mastek.com.krishdev&quot;,
+  &quot;userId&quot; : &quot;005O200000RJb18&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ApplicantionInformation&quot; : {
+    &quot;CRIR_HomePhone&quot; : &quot;3213213211&quot;,
+    &quot;CRIR_MailState&quot; : &quot;AZ&quot;,
+    &quot;CRIR_LastName&quot; : &quot;Thaya&quot;,
+    &quot;CRIR_MailZip&quot; : &quot;99999&quot;,
+    &quot;RenewalLicenseStatus&quot; : &quot;Active - Renewal Pending&quot;,
+    &quot;CRIR_HomeState&quot; : &quot;AZ&quot;,
+    &quot;CRIR_EmailAddr&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;CRIR_FirstName&quot; : &quot;Blessing&quot;,
+    &quot;CRIR_MailCity&quot; : &quot;TEST CITY&quot;,
+    &quot;CRIR_MailAddr&quot; : &quot;TEST SITE ADDRESS&quot;,
+    &quot;CRIR_HomeFax&quot; : &quot;1232131232&quot;,
+    &quot;CRIR_MI&quot; : &quot;R&quot;,
+    &quot;CRIR_HomeCity&quot; : &quot;Bangalore&quot;,
+    &quot;CRIR_HomeAddr&quot; : &quot;Airport City&quot;,
+    &quot;CRIR_MobileNo&quot; : &quot;1232131232&quot;,
+    &quot;CRIR_HomeZip&quot; : &quot;12312&quot;
+  },
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;c__licenseId&quot; : &quot;0cEOz0000006rUfMAI&quot;,
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+  &quot;FeeType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicantFirstName&quot; : &quot;&quot;,
+  &quot;ApplicantLastName&quot; : &quot;&quot;,
+  &quot;BusinessCountry&quot; : &quot;US&quot;,
+  &quot;BusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRI_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRILicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;0cEOz0000006rUfMAI&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;CurrentDate&quot; : &quot;2025-12-02T18:30:00.000Z&quot;,
+  &quot;CurrentMonth&quot; : 12,
+  &quot;ApplnBusinessType&quot; : &quot;Standard&quot;,
+  &quot;sInstanceId&quot; : &quot;0kTO2000000C8HxMAK&quot;,
+  &quot;IsRenewalAppln&quot; : true,
+  &quot;ApplnRecId&quot; : &quot;0iTOz0000002bzZMAQ&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadIndApplicationInformation</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>81425ae4-2435-4544-ba01-45021539aca8</globalKey>
+        <inputFieldName>Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Email_Address__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>20c59b99-41b8-48f0-aa57-9f8d25a55ec1</globalKey>
+        <inputFieldName>To</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employment_To__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9647528c-61eb-4bec-86a1-2fae491c9d8c</globalKey>
+        <inputFieldName>Mobile</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Mobile_Phone__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c6362d5a-1ad3-4b73-917c-2fdc5310e401</globalKey>
+        <inputFieldName>EmploymentZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Work_Address__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>89aa40e9-3a48-43f5-ba71-5a51e6881234</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>27e28456-3c41-4452-8d2f-9507e86aa135</globalKey>
+        <inputFieldName>EmploymentStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Work_Address__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2c5921d9-6efb-4f25-8337-d8d1b2fa61d0</globalKey>
+        <inputFieldName>CompanyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Name__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e3677503-d9ce-4b27-9b47-3db3a88d8c87</globalKey>
+        <inputFieldName>DirectoryEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Email__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>24ce72e0-39a1-4d2c-84ae-a6806037fd02</globalKey>
+        <inputFieldName>DirectoryCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__CountryCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8ae3e736-188b-4f30-a657-84a074598921</globalKey>
+        <inputFieldName>SupervisorTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Supervisor_Title__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d305712a-f440-4031-bc77-0241ac71d69b</globalKey>
+        <inputFieldName>Country</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__CountryCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>828bfd89-2788-419f-8ea8-9f6ea88b0a00</globalKey>
+        <inputFieldName>ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contact__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>330845f6-c557-4205-9dd8-7a2f518ca807</globalKey>
+        <inputFieldName>DirectoryCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9e63ca33-8ff3-4129-8c00-83b8bd27c5ac</globalKey>
+        <inputFieldName>EmploymentCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Work_Address__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>370ee14a-aefc-4a53-9363-37efa240de3b</globalKey>
+        <inputFieldName>DirectoryState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fec3184d-5592-4554-9003-2c4f969ddef6</globalKey>
+        <inputFieldName>EntityName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certifying_Entity_Name__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fb9ccd44-9e5a-451a-9488-4a4b7f9d5504</globalKey>
+        <inputFieldName>City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e472e1bd-9b89-4cc8-803e-46d7779d65f2</globalKey>
+        <inputFieldName>State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b931947b-b52c-43de-8eae-f9961fc1d3ec</globalKey>
+        <inputFieldName>Position</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Business_Position__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3b59d420-e0e3-4b79-96e8-a21e61370035</globalKey>
+        <inputFieldName>ExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Expiration_Date__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>986b0fa8-430c-4bcb-b1fb-e41c4d3edcb0</globalKey>
+        <inputFieldName>CertifiedState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certified_State__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>22af2cb9-abaa-4de1-9c76-95d06f6bf5c4</globalKey>
+        <inputFieldName>EmploymentCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Work_Address__CountryCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>75e2d5de-738f-41bc-abf9-44d9e505012c</globalKey>
+        <inputFieldName>Street</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7a7326f5-db93-4cb1-9126-e72ed78ac580</globalKey>
+        <inputFieldName>ApplicationId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IndApplication__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0a6a3caa-e9f7-4f36-9ac2-f6521697bdad</globalKey>
+        <inputFieldName>SSN</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Entity_SSN__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Personal or Home (Residence)</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ae24d299-fca0-4c86-8c88-b14953d66ec8</globalKey>
+        <inputFieldName>InformationType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Information_Type__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2d965e09-aba6-4f96-a2c9-adb9cb848657</globalKey>
+        <inputFieldName>SupervisorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Verifying_Reference_Name__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>46599ecc-4856-456c-8ba3-1ab92bb4ace1</globalKey>
+        <inputFieldName>DirectoryName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Name__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>19375d6b-4d4f-45af-9a15-585262ec2405</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f146eee9-3755-44fa-8af4-b35b26af89b8</globalKey>
+        <inputFieldName>Phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>abe3730b-cef8-4ca3-bcef-b89c5d053eea</globalKey>
+        <inputFieldName>From</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employment_From__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RecordType/\/\/WHERE/\/\/sObjectType/\/\/=/\/\/&apos;Application_Information__c&apos;/\/\/AND/\/\/DeveloperName/\/\/=/\/\/&apos;{0}&apos;&quot; var:RecordTypeName QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RecordType WHERE sObjectType = &apos;Application_Information__c&apos; AND DeveloperName = &apos;{0}&apos;&quot;, %RecordTypeName%)</formulaExpression>
+        <formulaResultPath>RecordTypeId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>08ccaaba-6b7e-4f69-b53b-276bab059138</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>297eac17-a865-48c8-ab8f-660c56783d8a</globalKey>
+        <inputFieldName>Fax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8337d22f-c630-4de1-9ca8-b624d781ab08</globalKey>
+        <inputFieldName>SupervisorPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Verifying_Ref_Phone_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>13a6707d-4741-46df-8d40-7917578d55e0</globalKey>
+        <inputFieldName>CertificationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certification_Date__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>56521070-1473-4dfb-9373-7e57cd9b1b9f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2de2c8e0-6b43-4ca8-8d49-7523743ca17e</globalKey>
+        <inputFieldName>Zip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4b595db2-d93b-423e-8f6f-e996c07b5559</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Active__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cb0ea392-cbfe-4ef6-a7f7-de5061e10c7f</globalKey>
+        <inputFieldName>JobDuty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Detailed_Description_of_Responsibilities__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c5718d8a-c4cb-4d5d-9733-b33598eef5c8</globalKey>
+        <inputFieldName>EmploymentState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employer_Work_Address__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8af64817-bce9-4e9f-8c60-d86b23b36ec7</globalKey>
+        <inputFieldName>DirectoryStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>25826e72-d92e-489e-afbd-d415d918feb7</globalKey>
+        <inputFieldName>DirectoryZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadIndApplicationInformation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;InformationType&quot; : &quot;Personal or Home (Residence)&quot;,
+  &quot;AccpuntId&quot; : &quot;001gP000009201yQAA&quot;,
+  &quot;ContactId&quot; : &quot;003gP00000CnxjCQAR&quot;,
+  &quot;ApplicationId&quot; : &quot;0iTgP0000001A3lUAE&quot;,
+  &quot;RecordTypeName&quot; : &quot;Contact_Address_Info&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadIndApplicationInformation_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

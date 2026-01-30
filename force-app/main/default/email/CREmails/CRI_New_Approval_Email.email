@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title> 
+</head>
+<body style="height: auto; min-height: auto;">{{{IndividualApplication.LastModifiedDate}}}<br />
+<br />
+Dear {{{Recipient.Name}}},<br />
+<br />
+Congratulations! The Board approved your application for&nbsp;{{{IndividualApplication.License_Name__c}}} - {{{IndividualApplication.ApplicationType}}} certification on {{{IndividualApplication.LastModifiedDate}}}. Your new license number is {{{IndividualApplication.License_Number__c}}},&nbsp;and you will be receiving pertinent certificate documentation in the mail soon, including a 8” x 11” certificate and a letter containing your certification information.<br />
+<br />
+Sincerely,<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+PFP@courts.az.gov<br />
+CourtRep@courts.az.gov<br />
+ddrive@courts.az.gov<br />
+ABSProgram@courts.az.gov<br />
+LPProgram@courts.az.gov</body>
+</html>

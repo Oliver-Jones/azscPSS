@@ -1,0 +1,93 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "f1d87b57-d03d-4267-a296-70bb17c051bc",
+  "label" : "Alternative Business Structures Program",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/AlternativeBusinessStructure?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "1ce59549-81a9-4d16-8985-b0f538d7cbc4",
+          "columns" : [ {
+            "UUID" : "64318b8f-0de6-4f66-9479-bcda82b2e471",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "1ce59549-81a9-4d16-8985-b0f538d7cbc4",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"height:30vh;\"></div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "b911b9d1-45e6-403e-af1d-bd7a16b45c60",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 35,
+            "borderRadius" : 20,
+            "boxShadow" : true,
+            "haveBanner" : false,
+            "iconBackgroundColor" : "rgb(255,255,255)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(116,116,116)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "default",
+            "tileMenuEditor" : "Alternative_Business_Structure_Program_Menu",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "d70cdd00-bdb8-4cc8-8a2a-401e2fdba999",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "64318b8f-0de6-4f66-9479-bcda82b2e471",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c00aba34-7162-4543-9a13-06b6a3aaac12",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Alternative Business Structures Program"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8c76830e-e9b6-4632-887a-d5755aff77aa",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "64d16ecb-7598-4c9c-a571-e3cf736f2fc8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-abs-program"
+}

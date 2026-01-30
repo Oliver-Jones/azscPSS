@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "acc43d59-40ea-479a-90c5-238dfd8c94f1",
+  "headMarkup" : "<link rel=\"shortcut icon\" href=\"/file-asset/favicon?v=1\" type=\"image/png\" />",
+  "id" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : false,
+  "label" : "main",
+  "templateName" : "Starter Template",
+  "type" : "appPage"
+}

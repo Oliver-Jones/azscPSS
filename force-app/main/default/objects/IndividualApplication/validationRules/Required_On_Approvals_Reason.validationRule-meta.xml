@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_On_Approvals_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status) &amp;&amp; TEXT(Status) == &apos;Approved&apos; &amp;&amp; ISBLANK( Status_Change_Reason__c )</errorConditionFormula>
+    <errorDisplayField>Status_Change_Reason__c</errorDisplayField>
+    <errorMessage>Reason for Status Change is required upon Approval of Application</errorMessage>
+</ValidationRule>

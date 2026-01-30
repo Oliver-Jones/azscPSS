@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certified_Date_Required_On_Approvals</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status) &amp;&amp; TEXT(Status) == &apos;Approved&apos; &amp;&amp; ISBLANK(Certified_Date__c)</errorConditionFormula>
+    <errorDisplayField>Certified_Date__c</errorDisplayField>
+    <errorMessage>Certified Date is required upon Approval of Application</errorMessage>
+</ValidationRule>

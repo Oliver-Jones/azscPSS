@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "7dbb9bd6-b789-40ad-a632-20e7d679d6ef",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Legal_Documents_Preparer_Program__c",
+  "id" : "d9d86303-f335-4ed0-903a-de8b4a4eaeef",
+  "label" : "Legal Documents Preparer Program",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-ld-program",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program"
+}

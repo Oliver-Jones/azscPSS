@@ -1,0 +1,72 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "b56bf349-1cd8-4aa0-b612-5d09e8696c0d",
+  "label" : "Licenses",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "9105efc5-e294-491b-a424-b545402d53e7",
+          "columns" : [ {
+            "UUID" : "8ab855c6-3005-483b-9555-5d27cb1709bd",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "9105efc5-e294-491b-a424-b545402d53e7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flexcardName" : "Licenses",
+            "objectApiName" : "{!objectApiName}",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_omnistudio:flexcard",
+          "id" : "481e2660-82bb-4f18-aeca-f22738f5c59e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8ab855c6-3005-483b-9555-5d27cb1709bd",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c3eb5483-a098-4bb8-af3e-834f23025d68",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Licenses"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a2a02ba5-57f9-4c05-b547-9ef51ee2f668",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "09a1897d-8be0-4b33-a5a6-f37d79db4b6d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-licenses"
+}

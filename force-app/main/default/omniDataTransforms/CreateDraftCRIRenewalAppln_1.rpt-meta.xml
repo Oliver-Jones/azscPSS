@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;RenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1762798606785&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@azcld.com.dev02pss&quot;,
+  &quot;userId&quot; : &quot;005Oz00000QY1JJ&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ApplicantInfo&quot; : null,
+  &quot;RenewalBusinessInformation&quot; : null,
+  &quot;CRRenewalApplicantInfo&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+  &quot;FeeType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;&quot;,
+  &quot;RecordType&quot; : &quot;ABS_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;sInstanceId&quot; : &quot;0kTO40000005OhdMAE&quot;,
+  &quot;DRId_OmniScriptSavedSession&quot; : &quot;0kTO40000005OhdMAE&quot;,
+  &quot;BackgroundInformation&quot; : {
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;Block4&quot; : null,
+    &quot;Block5&quot; : null,
+    &quot;Block6&quot; : null,
+    &quot;Block7&quot; : null,
+    &quot;Block8&quot; : null,
+    &quot;Block9&quot; : null,
+    &quot;Block10&quot; : null,
+    &quot;Block11&quot; : null,
+    &quot;Block12&quot; : null,
+    &quot;Block13&quot; : null,
+    &quot;Block14&quot; : null,
+    &quot;Block15&quot; : null,
+    &quot;Block16&quot; : null,
+    &quot;BgInfoQues17&quot; : null,
+    &quot;BgInfoQ1&quot; : false,
+    &quot;BgInfoQ2&quot; : false,
+    &quot;BgInfoQ3&quot; : false,
+    &quot;BgInfoQ4&quot; : false,
+    &quot;BgInfoQ5&quot; : false,
+    &quot;BgInfoQ6&quot; : false,
+    &quot;BgInfoQ7&quot; : false,
+    &quot;BgInfoQ8&quot; : false,
+    &quot;BgInfoQ9&quot; : false,
+    &quot;BgInfoQ10&quot; : false,
+    &quot;BgInfoQ11&quot; : false,
+    &quot;BgInfoQ12&quot; : false,
+    &quot;BgInfoQ13&quot; : false,
+    &quot;BgInfoQ14&quot; : false,
+    &quot;BgInfoQ15&quot; : false,
+    &quot;BgInfoQ16&quot; : false,
+    &quot;BgInfoQ17&quot; : false,
+    &quot;BgInfoQues16&quot; : &quot;No&quot;,
+    &quot;BgInfoQues15&quot; : &quot;No&quot;,
+    &quot;BgInfoQues14&quot; : &quot;No&quot;,
+    &quot;BgInfoQues13&quot; : &quot;No&quot;,
+    &quot;BgInfoQues12&quot; : &quot;No&quot;,
+    &quot;BgInfoQues11&quot; : &quot;No&quot;,
+    &quot;BgInfoQues10&quot; : &quot;No&quot;,
+    &quot;BgInfoQues9&quot; : &quot;No&quot;,
+    &quot;BgInfoQues8&quot; : &quot;No&quot;,
+    &quot;BgInfoQues7&quot; : &quot;No&quot;,
+    &quot;BgInfoQues6&quot; : &quot;No&quot;,
+    &quot;BgInfoQues5&quot; : &quot;No&quot;,
+    &quot;BgInfoQues4&quot; : &quot;No&quot;,
+    &quot;BgInfoQues3&quot; : &quot;No&quot;,
+    &quot;BgInfoQues2&quot; : &quot;No&quot;,
+    &quot;BgInfoQues1&quot; : &quot;No&quot;
+  },
+  &quot;CRIR_ApplicantAffidavit&quot; : {
+    &quot;CRIR_AffidavitCheck&quot; : false,
+    &quot;CRIR_SignApplicantDate&quot; : &quot;2025-11-10&quot;,
+    &quot;CRIR_SignApplicantAffidavit&quot; : &quot;eqqe&quot;
+  },
+  &quot;CRIR_AuthReleaseAffirm&quot; : {
+    &quot;CRIR_AuthReleaseAffirmCheck&quot; : false
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>CreateDraftCRIRenewalAppln</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7580dad5-264d-47e0-84ab-673fe3f52c82</globalKey>
+        <inputFieldName>RenewalLicenseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LicensePermitNameId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1ac6a1d5-ea2c-4136-81c7-989795a5422f</globalKey>
+        <inputFieldName>RecordType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Pending Submission</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>12bddf4d-94af-4a7d-af46-97ca9dcee88d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7eef9a3b-549d-45f2-b709-1aa1058401c1</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>65d636d3-28c9-46a2-b94d-2f9537796bfb</globalKey>
+        <inputFieldName>RegAuthTypeCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>RegulatoryAuthCode</lookupByFieldName>
+        <lookupObjectName>RegulatoryAuthorizationType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LicenseTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dc2aecb2-2fd3-4edf-9869-4d56b889e5ef</globalKey>
+        <inputFieldName>RegAuthTypeCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>RegulatoryAuthCode</lookupByFieldName>
+        <lookupObjectName>RegulatoryAuthorizationType</lookupObjectName>
+        <lookupReturnedFieldName>Description</lookupReturnedFieldName>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>ceead681-bf5e-4342-86e9-3fc420609cd7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Renewal Licensure</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2870a9ec-9f31-4046-bf31-3c54f2d9ee43</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicationType</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4bd1326f-ffb4-47af-b887-7c26b9b9f38d</globalKey>
+        <inputFieldName>ApplnBusinessType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certification_Type__c</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>License</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a48385b5-d468-4383-bc22-0c4450efd5a5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRIRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Category</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;FeeData&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;RenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1762798606785&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@azcld.com.dev02pss&quot;,
+  &quot;userId&quot; : &quot;005Oz00000QY1JJ&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ApplicantInfo&quot; : null,
+  &quot;RenewalBusinessInformation&quot; : null,
+  &quot;CRRenewalApplicantInfo&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+  &quot;FeeType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;&quot;,
+  &quot;RecordType&quot; : &quot;ABS_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;sInstanceId&quot; : &quot;0kTO40000005OhdMAE&quot;,
+  &quot;DRId_OmniScriptSavedSession&quot; : &quot;0kTO40000005OhdMAE&quot;,
+  &quot;BackgroundInformation&quot; : {
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;Block4&quot; : null,
+    &quot;Block5&quot; : null,
+    &quot;Block6&quot; : null,
+    &quot;Block7&quot; : null,
+    &quot;Block8&quot; : null,
+    &quot;Block9&quot; : null,
+    &quot;Block10&quot; : null,
+    &quot;Block11&quot; : null,
+    &quot;Block12&quot; : null,
+    &quot;Block13&quot; : null,
+    &quot;Block14&quot; : null,
+    &quot;Block15&quot; : null,
+    &quot;Block16&quot; : null,
+    &quot;BgInfoQues17&quot; : null,
+    &quot;BgInfoQ1&quot; : false,
+    &quot;BgInfoQ2&quot; : false,
+    &quot;BgInfoQ3&quot; : false,
+    &quot;BgInfoQ4&quot; : false,
+    &quot;BgInfoQ5&quot; : false,
+    &quot;BgInfoQ6&quot; : false,
+    &quot;BgInfoQ7&quot; : false,
+    &quot;BgInfoQ8&quot; : false,
+    &quot;BgInfoQ9&quot; : false,
+    &quot;BgInfoQ10&quot; : false,
+    &quot;BgInfoQ11&quot; : false,
+    &quot;BgInfoQ12&quot; : false,
+    &quot;BgInfoQ13&quot; : false,
+    &quot;BgInfoQ14&quot; : false,
+    &quot;BgInfoQ15&quot; : false,
+    &quot;BgInfoQ16&quot; : false,
+    &quot;BgInfoQ17&quot; : false,
+    &quot;BgInfoQues16&quot; : &quot;No&quot;,
+    &quot;BgInfoQues15&quot; : &quot;No&quot;,
+    &quot;BgInfoQues14&quot; : &quot;No&quot;,
+    &quot;BgInfoQues13&quot; : &quot;No&quot;,
+    &quot;BgInfoQues12&quot; : &quot;No&quot;,
+    &quot;BgInfoQues11&quot; : &quot;No&quot;,
+    &quot;BgInfoQues10&quot; : &quot;No&quot;,
+    &quot;BgInfoQues9&quot; : &quot;No&quot;,
+    &quot;BgInfoQues8&quot; : &quot;No&quot;,
+    &quot;BgInfoQues7&quot; : &quot;No&quot;,
+    &quot;BgInfoQues6&quot; : &quot;No&quot;,
+    &quot;BgInfoQues5&quot; : &quot;No&quot;,
+    &quot;BgInfoQues4&quot; : &quot;No&quot;,
+    &quot;BgInfoQues3&quot; : &quot;No&quot;,
+    &quot;BgInfoQues2&quot; : &quot;No&quot;,
+    &quot;BgInfoQues1&quot; : &quot;No&quot;
+  },
+  &quot;CRIR_ApplicantAffidavit&quot; : {
+    &quot;CRIR_AffidavitCheck&quot; : false,
+    &quot;CRIR_SignApplicantDate&quot; : &quot;2025-11-10&quot;,
+    &quot;CRIR_SignApplicantAffidavit&quot; : &quot;eqqe&quot;
+  },
+  &quot;CRIR_AuthReleaseAffirm&quot; : {
+    &quot;CRIR_AuthReleaseAffirmCheck&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateDraftCRIRenewalAppln_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

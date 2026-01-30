@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:56:38.264Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessState&quot; : &quot;AZ&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;BusinessZip&quot; : &quot;12345&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-08&quot;,
+    &quot;FederalTaxID&quot; : &quot;123213213&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Corporation&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004EvMAI&quot;,
+  &quot;DesignatedPrincipalInfo&quot; : {
+    &quot;Block4&quot; : null,
+    &quot;DPMiddleName&quot; : null,
+    &quot;DPDateofBirth&quot; : null,
+    &quot;DPBusinessTelephone&quot; : &quot;1232132132&quot;,
+    &quot;DPHomeTelephone&quot; : null,
+    &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+    &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+    &quot;DPHomeCountry&quot; : &quot;US&quot;,
+    &quot;DPHomeState&quot; : &quot;AZ&quot;,
+    &quot;DPFirstName&quot; : &quot;Tester&quot;,
+    &quot;DPLastName&quot; : &quot;QA&quot;,
+    &quot;DPSocialSecurityNumber&quot; : &quot;123123123&quot;,
+    &quot;DPEmail&quot; : &quot;big0@hye.com&quot;,
+    &quot;DPBusinessStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPBusinessCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPBusinessZip&quot; : &quot;12345&quot;,
+    &quot;DPHomeStreet&quot; : &quot;123N, Charleston Street&quot;,
+    &quot;DPHomeCity&quot; : &quot;Bountyard&quot;,
+    &quot;DPHomeZip&quot; : &quot;12345&quot;,
+    &quot;IHaveEconomicInterest&quot; : &quot;No&quot;,
+    &quot;IHaveLegalRighttoExercise&quot; : &quot;No&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadComplianceLawyer</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem13</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem12</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessTelephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom8541</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonTitle</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Compliance Lawyer</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom318</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom2159</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLPendingAdmissionDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Pending_Admission_Date__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplianceLawyerInfo:CLPendingAdmission &quot;Yes&quot; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ComplianceLawyerInfo:CLPendingAdmission% == &quot;Yes&quot;, true, false)</formulaExpression>
+        <formulaResultPath>CLHasPendingAdmission</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>AZSCLoadComplianceLawyerCustom3377</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplianceLawyerInfo:CLIHaveLegalRightToExercise &quot;Yes&quot; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ComplianceLawyerInfo:CLIHaveLegalRightToExercise% == &quot;Yes&quot;, true, false)</formulaExpression>
+        <formulaResultPath>CLHasRightToDecisionMaking</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>AZSCLoadComplianceLawyerCustom6688</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadComplianceLawyerCustom7026</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Person_Account__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadComplianceLawyerCustom1894</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom8801</globalKey>
+        <inputFieldName>CLHasPreviouslySubmitted</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Has_Previously_Submitted__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/Case_Relationship__c/\/\/WHERE/\/\/Person_Account__c/\/\/=/\/\/&apos;{0}&apos;/\/\/AND/\/\/Business_License_Application__c/\/\/=/\/\/&apos;{1}&apos;/\/\/AND/\/\/Role__c/\/\/=/\/\/&apos;Compliance/\/\/Lawyer&apos;&quot; var:UserInfo:AccountId var:ABSApplicationId QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM Case_Relationship__c WHERE Person_Account__c = &apos;{0}&apos; AND Business_License_Application__c = &apos;{1}&apos; AND Role__c = &apos;Compliance Lawyer&apos;&quot;, %UserInfo:AccountId%, %ABSApplicationId%)</formulaExpression>
+        <formulaResultPath>ParticipantId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>AZSCLoadComplianceLawyerCustom4977</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem9</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeTelephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonHomePhone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem7</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom4091</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom6717</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLIHaveEconomicInterestPercent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Ownership__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom4841</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem5</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLDateofBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem4</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom6155</globalKey>
+        <inputFieldName>CLHasEconomicInterest</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Has_Economic_Interest__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom7392</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SSN__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem6</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom4337</globalKey>
+        <inputFieldName>ParticipantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom6233</globalKey>
+        <inputFieldName>CLHasPendingAdmission</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Has_Pending_Admission__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplianceLawyerInfo:CLPreviousApplicationSubmitted &quot;Yes&quot; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ComplianceLawyerInfo:CLPreviousApplicationSubmitted% == &quot;Yes&quot;, true, false)</formulaExpression>
+        <formulaResultPath>CLHasPreviouslySubmitted</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>AZSCLoadComplianceLawyerCustom2203</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom4257</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom3284</globalKey>
+        <inputFieldName>CLHasRightToDecisionMaking</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Has_Right_to_Decision_Making__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ComplianceLawyerInfo:CLIHaveEconomicInterest &quot;Yes&quot; == true false IF</formulaConverted>
+        <formulaExpression>IF(%ComplianceLawyerInfo:CLIHaveEconomicInterest% == &quot;Yes&quot;, true, false)</formulaExpression>
+        <formulaResultPath>CLHasEconomicInterest</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>AZSCLoadComplianceLawyerCustom4089</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>PersonAccount</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom8928</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom7225</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem10</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom7705</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessPosition</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Business_Position__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem8</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem11</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom7732</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom3918</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLBusinessCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem3</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLHomeCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom425</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLPreviousApplicationSubmittedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Previously_Submitted_Date__c</outputFieldName>
+        <outputObjectName>Case_Relationship__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem2</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLMiddleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MiddleName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadComplianceLawyerCustom0jIOu0000000FS5MAMItem1</globalKey>
+        <inputFieldName>ComplianceLawyerInfo:CLSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadComplianceLawyer</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Social_Security_Number__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ComplianceLawyerInfo&quot; : {
+    &quot;CLPendingAdmissionDate&quot; : &quot;01/13/1995&quot;,
+    &quot;CLPendingAdmission&quot; : &quot;Yes&quot;,
+    &quot;CLPreviousApplicationSubmitted&quot; : &quot;Yes&quot;
+  },
+  &quot;ABSApplicationId&quot; : &quot;0f0Ou00000008jxIAA&quot;,
+  &quot;UserInfo&quot; : {
+    &quot;AccountId&quot; : &quot;001Ou00000RgI10IAF&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadComplianceLawyer_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

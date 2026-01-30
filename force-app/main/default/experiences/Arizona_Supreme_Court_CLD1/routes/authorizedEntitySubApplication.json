@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "966dab03-98ac-4fb1-a143-6d659a38901e",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Authorized_Entity_Sub_Application__c",
+  "id" : "ad3131fa-4e2d-4434-ad7b-1708ea99785e",
+  "label" : "Authorized Entity Sub Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-authorized-entity-sub-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/authorized-entity-sub-application"
+}

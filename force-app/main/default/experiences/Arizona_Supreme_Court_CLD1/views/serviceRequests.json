@@ -1,0 +1,126 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "a93074bf-beba-43c5-8b29-a3c0334ccf34",
+  "label" : "Service Requests",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4d027f16-2f66-475b-bb44-c5ec8bf12570",
+          "columns" : [ {
+            "UUID" : "6ce078b5-cbe8-4b1c-8328-51ce5e5defd2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4d027f16-2f66-475b-bb44-c5ec8bf12570",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "b7be64e2-722a-4ada-88a6-2706b6773e37",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "f38e3286-40c0-480a-b8db-316beabcd4da",
+                "allowGuestUser" : false,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "Service Requests"
+              }, {
+                "UUID" : "be6dfb11-939f-4f14-87a8-941f539553da",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Complaints"
+              } ],
+              "useOverflowMenu" : true
+            }
+          },
+          "componentName" : "forceCommunity:tabLayout",
+          "id" : "b7be64e2-722a-4ada-88a6-2706b6773e37",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "flexcardName" : "Applications",
+                "objectApiName" : "{!objectApiName}",
+                "recordId" : "{!recordId}"
+              },
+              "componentName" : "runtime_omnistudio:flexcard",
+              "id" : "be3cb08e-0a2a-4f46-b547-c392d4891a66",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "f38e3286-40c0-480a-b8db-316beabcd4da",
+            "regionLabel" : "Service Requests",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "flexcardName" : "Licenses",
+                "objectApiName" : "{!objectApiName}",
+                "recordId" : "{!recordId}"
+              },
+              "componentName" : "runtime_omnistudio:flexcard",
+              "id" : "bef31c8b-21f5-41c9-b794-633734dba202",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "be6dfb11-939f-4f14-87a8-941f539553da",
+            "regionLabel" : "Complaints",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6ce078b5-cbe8-4b1c-8328-51ce5e5defd2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "35390cb5-e956-43a3-9697-8edd5b12ea6e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Service Requests"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bc182973-98bc-4a41-9605-b0928677027b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b90ee3c9-6b6a-49bb-b038-cdbf1ec5f062",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-service-requests"
+}

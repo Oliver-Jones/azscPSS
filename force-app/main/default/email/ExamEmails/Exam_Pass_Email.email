@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{Recipient.Name}}}<br />
+{{{Recipient.MailingStreet}}}<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}} {{{Recipient.MailingPostalCode}}}<br />
+<br />
+<br />
+Re: Arizona {{{PersonExamination.Certification_Type__c}}}&nbsp;Written Examination Results<br />
+<br />
+<br />
+Dear {{{Recipient.FirstName}}},<br />
+<br />
+This email is confirmation of your <strong>passing score</strong> on the Arizona written examination for certification or licensure. This is NOT a final determination or approval of certification or licensure. Legal Paraprofessional candidates must pass a core knowledge exam and a subject matter endorsement exam before applying for licensure. To apply for initial certification or licensure, log on to the Arizona Judicial Branch Certification &amp; Licensing Portal at&nbsp;<a href="https://azcld--dev04pss.sandbox.my.salesforce-setup.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2Fazcourts2020.my.site.com%2Fcldlicensing%2Fs%2F">https://azcld--pssqa.sandbox.my.site.com/s/</a>, select the “Apply for a New License” tile and then the "Individual Application" tile; complete and submit the application, including supporting documents.<br />
+<br />
+Applicants applying for individual fiduciary, individual legal document preparer, certified reporter and confidential intermediary&nbsp;will receive a fingerprint card in the mail from the Division. Complete the card and have fingerprints taken at a fingerprint service entity or law enforcement agency. All fields must be completed except Employer, Address, ORI, OCA, FBI and MNU, and any field marked "Leave Blank." The entity where the fingerprints are taken must complete their portion of the card. The fingerprint fee is included with payment for the online application. Once complete, the card must be returned<strong> with a copy of this correspondence</strong> to the Certification and Licensing Division, 1501 W. Washington Street, Suite 104, Phoenix, Arizona 85007-3222.<br />
+<br />
+Passing Score for {{{PersonExamination.Certification_Type__c}}} Exam: {{{PersonExamination.Passing_Program_Score__c}}}<br />
+<br />
+Your Score for {{{PersonExamination.Certification_Type__c}}} Exam:&nbsp;{{{PersonExamination.Score}}}<br />
+<br />
+Your fingerprints will be used to conduct an FBI criminal history records check. If you have a criminal history record, you will have an opportunity to complete, correct, or challenge the accuracy of the criminal history record (or decline to do so). The procedures for obtaining a change or correction or for updating your FBI criminal history record are set forth in Title 28, Code of Federal Regulations (CFR), Section 16.30 through 16.34. Information on how to review and challenge your FBI criminal history record (Federal and states other than Arizona) can be found at&nbsp;<a href="https://azcld--dev04pss.sandbox.my.salesforce-setup.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2Fwww.fbi.gov">www.fbi.gov</a>&nbsp;under “Identity History Summary Checks” or by calling (304) 625-5590. To obtain a copy of your Arizona criminal history to review, update, or correct the record, you may contact the Arizona Department of Public Safety Criminal History Records Unit at (602) 223-2222 and request a fingerprint card and a Review and Challenge packet. Information on the review and challenge process is located at&nbsp;<a href="https://azcld--dev04pss.sandbox.my.salesforce-setup.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2Fwww.dps.gov">www.dps.gov</a>.<br />
+<br />
+Email questions or comments about your exam or application to the program email inbox:<br />
+<br />
+Certified Court Reporter:&nbsp;<a href="mailto:CourtRep@courts.az.gov">CourtRep@courts.az.gov</a><br />
+Defensive Driving:&nbsp;<a href="mailto:DDrive@courts.az.gov">DDrive@courts.az.gov</a><br />
+Certified Legal Document Preparer:&nbsp;<a href="mailto:LDP@courts.az.gov">LDP@courts.az.gov</a><br />
+Legal Paraprofessional:&nbsp;<a href="mailto:LPProgram@courts.az.gov">LPProgram@courts.az.gov</a><br />
+Fiduciary:&nbsp;<a href="mailto:PFP@courts.az.gov">PFP@courts.az.gov</a><br />
+<br />
+<br />
+<p style="margin-bottom: 16px;">Sincerely,</p>
+Certification and Licensing Division</body>
+</html>

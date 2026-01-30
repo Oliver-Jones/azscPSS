@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "595b3ae2-60da-44ed-8354-b1c5703ce39a",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_CRF_Application__c",
+  "id" : "ca34ed9c-31a1-4ad2-a095-74d136466c08",
+  "label" : "Renewal CRF Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-crf-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/renewal-crf-application"
+}

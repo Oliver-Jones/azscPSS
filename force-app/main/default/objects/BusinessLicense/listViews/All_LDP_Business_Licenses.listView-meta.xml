@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_LDP_Business_Licenses</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>PeriodStart</columns>
+    <columns>PeriodEnd</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RegulatoryAuthorizationType</field>
+        <operation>equals</operation>
+        <value>Legal Document Preparer Business</value>
+    </filters>
+    <label>All LDP Business Licenses</label>
+</ListView>

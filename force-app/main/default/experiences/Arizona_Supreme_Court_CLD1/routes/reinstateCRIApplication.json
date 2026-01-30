@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "18771293-07f4-42e5-9749-d9938c1c770a",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Reinstate_CRI_Application__c",
+  "id" : "9ed00194-a966-46a0-81b0-6e5b09419f4c",
+  "label" : "Reinstate CRI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-reinstate-cri-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/reinstate-cri-application"
+}

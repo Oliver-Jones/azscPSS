@@ -1,0 +1,15 @@
+{
+  "componentVariants" : [ {
+    "id" : "207011b3-c238-452c-a103-ee8e576e44be",
+    "propertyOverrides" : {
+      "componentAttributes" : {
+        "tileMenuEditor" : "Portal_Menu"
+      }
+    },
+    "targetId" : "423d9da2-df39-451e-b86d-084a72b6877d",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "ABS_Homepage_Tile_Menu_Component_Properties",
+  "id" : "977e5c10-7ead-4eb9-b73b-db37c4775373",
+  "type" : "experienceVariation"
+}

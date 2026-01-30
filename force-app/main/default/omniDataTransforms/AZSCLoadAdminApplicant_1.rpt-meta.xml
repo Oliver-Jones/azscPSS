@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-06-11T06:14:23.468Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcourtspssdev&quot;,
+  &quot;userId&quot; : &quot;005Ou00000Dmz0CIAR&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOu00000017HBMAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;StatutoryAgentInfo&quot; : { },
+  &quot;appType&quot; : &quot;InitialLicenseAppln&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;&quot;,
+  &quot;DPBusinessState&quot; : &quot;&quot;,
+  &quot;DPHomeCountry&quot; : &quot;&quot;,
+  &quot;DPHomeState&quot; : &quot;&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;Block0&quot; : null,
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : {
+      &quot;documentName2&quot; : &quot;Draft Articles of Organization or Partnership Agreement&quot;
+    },
+    &quot;Block3&quot; : {
+      &quot;documentName3&quot; : &quot;Letter Not Submitted Entity&quot;
+    },
+    &quot;BusinessState&quot; : &quot;UT&quot;,
+    &quot;BusinessFax&quot; : &quot;(123) 123-1231&quot;,
+    &quot;ApplicantName&quot; : &quot;Mark&quot;,
+    &quot;OrgLegalName&quot; : &quot;ABC&quot;,
+    &quot;BusinessName&quot; : &quot;Test&quot;,
+    &quot;DBAName1&quot; : &quot;DB1&quot;,
+    &quot;DBAName2&quot; : &quot;DB2&quot;,
+    &quot;DBAName3&quot; : &quot;DB3&quot;,
+    &quot;BusinessStreet&quot; : &quot;123N, Street&quot;,
+    &quot;BusinessCity&quot; : &quot;Whitetown&quot;,
+    &quot;BusinessZip&quot; : &quot;12314&quot;,
+    &quot;BusinessTelephone&quot; : &quot;1231231231&quot;,
+    &quot;BusinessEmail&quot; : &quot;test@azsc.com&quot;,
+    &quot;BusinessDate&quot; : &quot;2025-06-02&quot;,
+    &quot;FederalTaxID&quot; : &quot;123131288&quot;,
+    &quot;StateTaxID&quot; : &quot;1231312&quot;,
+    &quot;BusinessCountry&quot; : &quot;US&quot;,
+    &quot;BusinessOrganization&quot; : &quot;Limited Liability Co.&quot;,
+    &quot;ApplicantRegisteredWithAZCommission&quot; : &quot;No&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTOu00000004A5MAI&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadAdminApplicant</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>AZSCLoadAdminApplicant7341868772656714</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadAdminApplicant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>06ac934b-b81e-46f9-be43-d7c111d1fecd</globalKey>
+        <inputFieldName>ApplicantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadAdminApplicant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadAdminApplicant6600844201241344</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadAdminApplicant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadAdminApplicant38689490150870387</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadAdminApplicant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AZSCLoadAdminApplicant8865609360019278</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadAdminApplicant</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataMapperPostAction1&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadAdminApplicant_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

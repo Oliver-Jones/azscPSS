@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Aptos,sans-serif">Dear {{{Recipient.FirstName}}},</span></span></span><br />
+<br />
+<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Aptos,sans-serif">Thank you for submitting a request for accommodations for your&nbsp;{{{PersonExamination.Certification_Type__c}}}&nbsp;exam. After careful consideration, the Certification &amp; Licensing Division is unable to approve your request at this time.</span></span></span><br />
+<br />
+<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Aptos,sans-serif">Please note that this decision was reached following a review process consistent with our standard procedures. You are welcome to proceed with the exam under the usual conditions.</span></span></span><br />
+<br />
+<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Aptos,sans-serif">If you would like to discuss this matter further or have additional questions, please feel free to reach out to division staff at: <a href="mailto:cldexams@courts.az.gov" style="color:#467886; text-decoration:underline">cldexams@courts.az.gov</a> or 602-452-3378.</span></span></span><br />
+<br />
+<br />
+<span style="font-size:12pt"><span style="line-height: 4"><span style="font-family:Aptos,sans-serif;">Thank you,</span></span></span><br />
+<span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Aptos&quot;,sans-serif">Certification and Licensing Division</span></span></span></body>
+</html>

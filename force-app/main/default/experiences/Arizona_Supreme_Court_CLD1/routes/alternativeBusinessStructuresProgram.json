@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "f1d87b57-d03d-4267-a296-70bb17c051bc",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Alternative_Business_Structures_Program__c",
+  "id" : "0d5f7204-c5d5-4be3-b703-c58cd06d3fe2",
+  "label" : "Alternative Business Structures Program",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-abs-program",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program"
+}

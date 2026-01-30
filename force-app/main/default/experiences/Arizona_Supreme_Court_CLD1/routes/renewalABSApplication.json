@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "750557c0-fe98-4f4a-aa56-2255d1b89586",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_ABS_Application__c",
+  "id" : "df2b584b-0b7e-4b18-9c2b-40922750d997",
+  "label" : "Renewal ABS Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-abs-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/renewal-abs-application"
+}

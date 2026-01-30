@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "f601173b-e171-4f9f-88be-1ba8cfd73836",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Reinstate_LDI_Application__c",
+  "id" : "0a82443f-84e8-41eb-82ce-9c06cd2ab1e3",
+  "label" : "Reinstate LDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-reinstate-ldi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/reinstate-ldi-application"
+}

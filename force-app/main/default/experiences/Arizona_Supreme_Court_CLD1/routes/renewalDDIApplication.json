@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "3a176599-961d-43ce-b9fa-136a36da2fed",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Renewal_DDI_Application__c",
+  "id" : "dc4e6b22-703c-44ac-8d8e-816bacf01167",
+  "label" : "Renewal DDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-renewal-ddi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/dd-program/renewal-ddi-application"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "3722312c-9e20-4070-a8ad-e33eb20f32bd",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_FDB_Application__c",
+  "id" : "06480f0b-2af7-479a-81d7-0dd942e98687",
+  "label" : "New FDB Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-fdb-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/new-fdb-application"
+}

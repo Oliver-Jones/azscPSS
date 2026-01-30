@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "5651bc08-07e5-45ea-8354-90cd62c36eb3",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Exam_Registration__c",
+  "id" : "e63d7a32-eac5-4f80-8b91-0897b263a393",
+  "label" : "Exam Registration",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-exam-registration",
+  "type" : "route",
+  "urlPrefix" : "exams/exam-registration"
+}

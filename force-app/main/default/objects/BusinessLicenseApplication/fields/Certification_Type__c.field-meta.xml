@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_Type__c</fullName>
+    <label>Certification Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>Partial</fullName>
+                <default>false</default>
+                <label>Partial</label>
+            </value>
+            <value>
+                <fullName>Standard (&gt;1 Year)</fullName>
+                <default>false</default>
+                <label>Standard (&gt;1 Year)</label>
+            </value>
+            <value>
+                <fullName>Standard (&lt;1 Year)</fullName>
+                <default>false</default>
+                <label>Standard (&lt;1 Year)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

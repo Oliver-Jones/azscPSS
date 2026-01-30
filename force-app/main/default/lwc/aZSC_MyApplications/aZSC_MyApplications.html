@@ -1,0 +1,93 @@
+<template>
+    <template lwc:if={showPaymentRedirect}>
+        <div class="">Redirecting to Payment Portal...</div>
+    </template>
+    <template if:false={showPaymentRedirect}>
+        <c-cf-appln-tiles-_-1-_-a-z-s-c user-id={userId}></c-cf-appln-tiles-_-1-_-a-z-s-c>
+        <!--<template if:true={showNewAppln}>
+            <div class="slds-grid slds-grid_align-center slds-p-vertical_x-large">
+                <lightning-button class="aZSCButton" variant="brand" title="Click here to Start a New Application" label="New ABS Application" onclick={newAppln}></lightning-button>
+            </div>
+        </template>
+        <template for:each={applnData} for:item="item">
+            <lightning-card key={item.ApplnId} class="slds-p-around_x-small">
+                <div class="slds-grid slds-p-horizontal_x-small slds-wrap">
+                    <div class="slds-grid slds-p-horizontal_x-small slds-col slds-size_2-of-3 slds-wrap">
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            Application Name
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-1 slds-text-heading_medium">
+                            <strong>{item.ApplnName}</strong>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-col slds-size_1-of-3 slds-grid_align-end slds-p-right_small">
+                        <template if:true={item.IsResume}>
+                            <lightning-button variant="brand" title="Click here to Resume a saved Application" data-appln-id={item.Identifier} name="resume" label="Resume Application" onclick={handleRowAction}></lightning-button>
+                        </template>
+                        <template if:true={item.IsPayDue}>
+                            <lightning-button variant="brand" title="Click here to Pay an Application" data-appln-id={item.Identifier} name="paynow" label="Pay Now" onclick={handleRowAction}></lightning-button>
+                        </template>
+                        <template if:true={item.HasSubApplnDue}>
+                            <lightning-button variant="brand" title="Click here to Start sub Application" data-appln-id={item.Identifier} name="sub" label="Launch Sub Application" onclick={handleRowAction}></lightning-button>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-p-horizontal_x-small slds-col slds-size_1-of-1 slds-wrap slds-p-top_large">
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Application Number
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Application Type
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Application Status
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Organization Name
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Business Type
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            Received Date
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.ApplnNum}</strong>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.ApplnType}</strong>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.ApplnStatus}</strong>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.Business}</strong>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.BusinessType}</strong>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-6">
+                            <strong>{item.AppliedDate}</strong>
+                        </div>
+                        <template if:true={isSub}>
+                            <div class="slds-grid slds-col slds-size_1-of-1 slds-p-top_large">
+                                Role
+                            </div>
+                            <div class="slds-grid slds-col slds-size_1-of-1">
+                                <strong>{item.Role}</strong>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </lightning-card>
+        </template>
+        <template lwc:if={showNoDataMessage}>
+            <div class="slds-box slds-page-header slds-text-heading_medium slds-align_absolute-center noData">No Data</div>
+        </template>
+        <template lwc:else>
+            <div class="slds-var-m-around_medium" style="width: -webkit-fill-available;">
+                <c-a-z-s-c-_-paginator record-size={recordSize} records={allApplnData} onupdate={updatePaginatorHandler}></c-a-z-s-c-_-paginator>
+            </div>
+        </template>
+        -->
+    </template>
+</template>

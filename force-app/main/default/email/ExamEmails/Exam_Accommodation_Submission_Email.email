@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{Recipient.Name}}},<br />
+<br />
+This email confirms you have requested an accommodation to take the&nbsp;{{{PersonExamination.Certification_Type__c}}} exam on {{{PersonExamination.Schedule_Date__c}}} at {{{PersonExamination.Schedule_Time__c}}}.<br />
+<br />
+Once staff have approved this request, you will receive a separate <strong>Exam Schedule Confirmation</strong> email. If there are any questions, the Certification and Licensing Division staff will contact you directly.<br />
+<br />
+<br />
+<p style="margin-bottom: 16px;">Sincerely,</p>
+Certification and Licensing Division<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958</body>
+</html>

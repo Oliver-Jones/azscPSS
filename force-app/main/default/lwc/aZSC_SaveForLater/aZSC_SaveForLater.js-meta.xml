@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<masterLabel>Save for Later</masterLabel>
+	<apiVersion>62.0</apiVersion>
+	<description>Save for Later Screen for ABS Application Override</description>
+	<isExposed>false</isExposed>
+</LightningComponentBundle>

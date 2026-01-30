@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNgP0000000cTVUAY&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CRI&quot;,
+  &quot;subType&quot; : &quot;InitialApplication&quot;,
+  &quot;sId&quot; : &quot;0jNgP0000000cTVUAY&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764064657262&quot;,
+  &quot;userTimeZoneName&quot; : &quot;16&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.azcld.dev01pss&quot;,
+  &quot;userId&quot; : &quot;005PY00000LqomD&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Phoenix\&quot;,offset=-25200000,dstSavings=0,useDaylight=false,transitions=12,lastRule=null]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNgP0000000cTVUAY&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ApplicantInfo&quot; : {
+    &quot;ApplicantMailingInputCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingInputStreet&quot; : &quot;wq&quot;,
+    &quot;ApplicantMailingInputCity&quot; : &quot;qw&quot;,
+    &quot;ApplicantMailingInputState&quot; : &quot;AL&quot;,
+    &quot;ApplicantMailingInputZip&quot; : &quot;12221&quot;,
+    &quot;ApplicantHomeCloneCountry&quot; : null,
+    &quot;ApplicantHomeCloneStreet&quot; : null,
+    &quot;ApplicantHomeCloneCity&quot; : null,
+    &quot;ApplicantHomeCloneState&quot; : null,
+    &quot;ApplicantHomeCloneZip&quot; : null,
+    &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingStreet&quot; : &quot;wq&quot;,
+    &quot;ApplicantMailingCity&quot; : &quot;qw&quot;,
+    &quot;ApplicantMailingState&quot; : &quot;AL&quot;,
+    &quot;ApplicantMailingZip&quot; : &quot;12221&quot;,
+    &quot;HasDriverLicense&quot; : true,
+    &quot;HasDriverLicenseInput&quot; : &quot;Yes&quot;,
+    &quot;DriverLicenseBlock&quot; : {
+      &quot;CRIDriverLicenseName&quot; : &quot;Arizona Driver&apos;s License&quot;
+    },
+    &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantFirstName&quot; : &quot;Barry&quot;,
+    &quot;ApplicantLastName&quot; : &quot;Case&quot;,
+    &quot;ApplicantEmail&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;ApplicantTelephoneNumber&quot; : &quot;3213213211&quot;,
+    &quot;CertificationType&quot; : &quot;Reciprocal&quot;,
+    &quot;ApplicantAliasName1&quot; : &quot;alias1&quot;,
+    &quot;ApplicantAliasName2&quot; : &quot;alias2&quot;,
+    &quot;ApplicantAliasName3&quot; : &quot;alias3&quot;,
+    &quot;ApplicantSocialSecurityNumber&quot; : &quot;311532424&quot;,
+    &quot;ApplicantDateOfBirth&quot; : &quot;1942-10-01&quot;,
+    &quot;ApplicantFaxNumber&quot; : &quot;5345436634&quot;,
+    &quot;ApplicantCellPhoneNumber&quot; : &quot;6345454354&quot;,
+    &quot;OfficialOrFreeLance&quot; : &quot;Official&quot;,
+    &quot;ApplicantNumberOfYears&quot; : 1,
+    &quot;ApplicantNameOnCertificate&quot; : &quot;Barry Case&quot;,
+    &quot;ApplicantHomeStreet&quot; : &quot;Airport City&quot;,
+    &quot;ApplicantHomeCity&quot; : &quot;Bangalore&quot;,
+    &quot;ApplicantHomeZip&quot; : &quot;12312&quot;,
+    &quot;ApplicantMailingSameAsHome&quot; : &quot;No&quot;
+  },
+  &quot;RenewalApplicantInfo&quot; : null,
+  &quot;EmployerInfo&quot; : { },
+  &quot;ReportingFirmInformation&quot; : null,
+  &quot;EmploymentInformation&quot; : null,
+  &quot;ProfessionalSkillProficiency&quot; : { },
+  &quot;ApplicantAffidavit&quot; : null,
+  &quot;InitialBackgroundInformation&quot; : { },
+  &quot;RenewalBackgroundInformation&quot; : null,
+  &quot;CRIDocumentUploads&quot; : { },
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRIInitialLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+  &quot;FeeType&quot; : &quot;Initial Licensure&quot;,
+  &quot;ApplnType&quot; : &quot;Initial Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRI_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRILicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;IsIndividualApplication&quot; : true,
+  &quot;RegulatoryAuthorizationType&quot; : {
+    &quot;NextExpiration&quot; : &quot;Feb 28, 2026 7:00:00 AM&quot;,
+    &quot;DaysDiff&quot; : 95
+  },
+  &quot;sInstanceId&quot; : &quot;0kTgP0000000N6HUAU&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadApplicantInfo</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>584ae45f-e8a7-4f97-89d4-b6f6d4f25336</globalKey>
+        <inputFieldName>ApplicantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>979e981b-59ee-410e-adeb-02fec4a6d891</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d4ec9a3c-bfd9-4b18-930d-e4b421722a5e</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMailingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8989fba2-5af0-43bf-84a9-6a6b47134a2a</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMailingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f7e0c879-2ecc-41a0-bbc6-161c4e8609e8</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>85f9cc5e-4cf8-4530-b7e9-cbc9bc82f649</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMailingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>815726d0-5ee8-443f-9d91-ea8aa5816759</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantDateOfBirth</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>260383f7-6089-40d9-9088-2c1be56ffbb9</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantSocialSecurityNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Social_Security_Number__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b31a21dc-b9f6-4f5c-8955-21cef33c7604</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantHomeState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2db8a011-ca32-47c5-bebc-cb6ef61f91f2</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantHomeCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5ab8ce78-9456-4ef0-9e9b-decc6d19f4f9</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>f4a882ca-e052-419f-b9c4-bbffb65edac4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a992fa9f-f85e-4b38-a870-4cd72ce953d8</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantHomeZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>24655bfe-f877-485f-a757-5582b7ea5b0c</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMailingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingStateCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2a06dda7-3ca3-4a77-8e7b-17130b4a51b6</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantHomeStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>00592883-b2f4-4b07-82e0-ac5f7f6af303</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantHomeCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountryCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3087db69-86f6-4fcd-b948-109356ed00be</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMiddleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MiddleName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d7d62c1b-8006-48d6-b312-577be3bf517d</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantTelephoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonHomePhone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ea0176d0-7d7a-422f-965a-523b59be4009</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantCellPhoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMobilePhone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>83e23a50-c4b8-470a-a77e-f8ba35522893</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantFaxNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a4b5fda4-2d76-49e0-b9fb-04efbe90cff0</globalKey>
+        <inputFieldName>ApplicantInfo:ApplicantMailingZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadApplicantInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonMailingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataMapperPostAction9&quot; : null,
+    &quot;InsertAuthorizedPersons&quot; : null,
+    &quot;LoadStatutoryAgentBusiness&quot; : null,
+    &quot;ReturnApplicationInfo&quot; : null,
+    &quot;LoadDraftApplication&quot; : null,
+    &quot;InitializeVariables&quot; : null,
+    &quot;LoadABSApplicationCase&quot; : null,
+    &quot;LoadStatutoryAgentIndividual&quot; : null,
+    &quot;LoadComplianceLawyer&quot; : null,
+    &quot;LoadBusinessLicenseApplication&quot; : null,
+    &quot;LoadDesignatedPrincipal&quot; : null,
+    &quot;LoadApplicantInfo&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadApplicantInfo_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

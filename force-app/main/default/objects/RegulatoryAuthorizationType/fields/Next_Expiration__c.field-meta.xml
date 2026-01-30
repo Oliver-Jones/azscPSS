@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Expiration__c</fullName>
+    <formula>IF(
+ OR(
+  TEXT(Expiration_Type__c) == &apos;Static (Even Numbered Years)&apos;, 
+  TEXT(Expiration_Type__c) == &apos;Static (Odd Numbered Years)&apos;
+ ), 
+ DATETIMEVALUE(
+  TEXT(
+   DATE( 
+    IF(
+     AND(
+      MOD(
+       YEAR( TODAY()), 2
+      ) == 0,
+      TEXT(Expiration_Type__c) == &apos;Static (Even Numbered Years)&apos;
+     ),
+     YEAR( TODAY()),
+     IF(
+      AND(
+       MOD(
+        YEAR( TODAY()), 2
+       ) == 1,
+       TEXT(Expiration_Type__c) == &apos;Static (Odd Numbered Years)&apos;
+      ),
+      YEAR( TODAY()),
+      YEAR( TODAY())+ 1
+     )
+    ),
+    VALUE(TEXT(Expiration_Month__c)),
+    VALUE(TEXT(Expiration_Day__c)) 
+   )
+  ) &amp; &apos; 00:00:00&apos;
+ ) + VALUE( $CustomMetadata.AZSC_Constant__mdt.TimeZoneOffset.Value__c )/24,
+ NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Expiration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

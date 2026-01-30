@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "19b3b3b7-5705-4054-b2ef-e0bee0267573",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Designated_Principal_Sub_Application__c",
+  "id" : "6bd6dd01-a90c-458b-941f-42dbdeddce27",
+  "label" : "Designated Principal Sub Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-designated-principal-sub-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/designated-principal-sub-application"
+}

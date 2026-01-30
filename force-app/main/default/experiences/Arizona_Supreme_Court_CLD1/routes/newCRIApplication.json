@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "5ab4457d-2771-49bb-a5af-896e754357b8",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_CRI_Application__c",
+  "id" : "2ab14df2-e504-4a72-9239-5a92d6c7a04f",
+  "label" : "New CRI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-cri-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/new-cri-application"
+}

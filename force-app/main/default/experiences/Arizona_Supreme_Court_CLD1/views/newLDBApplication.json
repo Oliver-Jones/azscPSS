@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "1d596f19-f443-4e01-aa98-4646694ea681",
+  "label" : "New LDB Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/CLDLegalDocumentPreparerBanner?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a71de9de-946c-45c8-951a-3c9e530ed2e5",
+          "columns" : [ {
+            "UUID" : "02203652-8175-4f18-acb0-34ecc4d62e2e",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a71de9de-946c-45c8-951a-3c9e530ed2e5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "InitialApplication",
+            "theme" : "lightning",
+            "type" : "LDB"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "64a20c25-79d0-42b9-8af0-062608b7ed67",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "02203652-8175-4f18-acb0-34ecc4d62e2e",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "888ec593-4bba-45ae-bae4-90f37bde3aa5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Legal Document Preparer Business Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6181f6b0-6f78-450b-ba5f-eb02e57e9025",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "03f03bf2-44e6-4fe9-a616-d0bdc01e15ef",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-ldb-application"
+}

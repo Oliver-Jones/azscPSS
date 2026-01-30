@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;insertRegTrxnFeeItems&quot; : null,
+    &quot;ExamScheduleInformation&quot; : null,
+    &quot;ExamInstructions&quot; : null,
+    &quot;RegistrantInformation&quot; : null,
+    &quot;ExtractUserInformation&quot; : null,
+    &quot;ApplicationFeeCalculation&quot; : null,
+    &quot;AssignInitialValues&quot; : null,
+    &quot;CheckRequiredErrors&quot; : null,
+    &quot;NavigateToPayment&quot; : null,
+    &quot;PaymentOverview&quot; : null,
+    &quot;LoadPersonExamination&quot; : null,
+    &quot;SetExamSlotError&quot; : null,
+    &quot;DataMapperPostAction1&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;insertRegTrxnFeeItems&quot; : { },
+  &quot;ExamScheduleInformation&quot; : {
+    &quot;HasAccommodationSpace&quot; : null,
+    &quot;SlotSelection&quot; : null,
+    &quot;ExamScheduleInformationSpace&quot; : null,
+    &quot;HasAccommodation&quot; : null
+  },
+  &quot;ExamInstructions&quot; : { },
+  &quot;RegistrantInformation&quot; : {
+    &quot;RegistrantInformationSpace&quot; : null,
+    &quot;ExamTypeSpace&quot; : null,
+    &quot;ERPhone&quot; : null,
+    &quot;ExamType&quot; : null,
+    &quot;EREmail&quot; : null,
+    &quot;ERZip&quot; : null,
+    &quot;ERState&quot; : null,
+    &quot;ERCity&quot; : null,
+    &quot;ERFirstName&quot; : null,
+    &quot;ERStreet&quot; : null,
+    &quot;ERCountry&quot; : null,
+    &quot;ERLastName&quot; : null
+  },
+  &quot;ExtractUserInformation&quot; : { },
+  &quot;ApplicationFeeCalculation&quot; : { },
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;AssignInitialValues&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;CheckRequiredErrors&quot; : { },
+  &quot;NavigateToPayment&quot; : { },
+  &quot;PaymentOverview&quot; : {
+    &quot;FeeTableSpace&quot; : null,
+    &quot;FeeTable&quot; : null,
+    &quot;PaymentOverviewSpace&quot; : null,
+    &quot;PaymentMessageSpace&quot; : null,
+    &quot;PaymentButtons&quot; : null
+  },
+  &quot;ContextId&quot; : null,
+  &quot;LoadPersonExamination&quot; : { },
+  &quot;SetExamSlotError&quot; : { },
+  &quot;DataMapperPostAction1&quot; : { }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCLoadExamSlot</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:RegisteredSlots &quot;&quot; == | var:RegisteredSlots ISBLANK || 0 var:RegisteredSlots IF | var:Mode &quot;Add&quot; == 1 -1 IF SUM</formulaConverted>
+        <formulaExpression>SUM(IF(%RegisteredSlots% == &quot;&quot; || ISBLANK(%RegisteredSlots%), 0, %RegisteredSlots%), IF(%Mode% == &quot;Add&quot;, 1, -1))</formulaExpression>
+        <formulaResultPath>NewRegisteredSlots</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>d380d02d-b995-48c4-b5a5-5874e8430e59</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadExamSlot</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>df68e70b-d661-49aa-8f06-cf3f45b4846f</globalKey>
+        <inputFieldName>NewRegisteredSlots</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadExamSlot</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registered_Slots__c</outputFieldName>
+        <outputObjectName>Exam_Slot__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>458e6484-ed39-4ee3-b303-443d31b2fd2d</globalKey>
+        <inputFieldName>SlotId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadExamSlot</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Exam_Slot__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>8c80c9ea-c3c4-483a-b809-5cb6981ef5e6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadExamSlot</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Exam_Slot__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Registered_Slots__c/\/\/FROM/\/\/Exam_Slot__c/\/\/WHERE/\/\/Id/\/\/=/\/\/&apos;{0}&apos;&quot; var:SlotId QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Registered_Slots__c FROM Exam_Slot__c WHERE Id = &apos;{0}&apos;&quot;, %SlotId%)</formulaExpression>
+        <formulaResultPath>RegisteredSlots</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>6ef128f7-caa6-4f36-bfb4-e49e1ce176e0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadExamSlot</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;SlotId&quot; : &quot;a0egP000002PB5ZQAW&quot;,
+  &quot;Mode&quot; : &quot;Subtract&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCLoadExamSlot_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

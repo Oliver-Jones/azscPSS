@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "69eefb37-bfee-4093-920d-3b949ff21729",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Compliance_Lawyer_Sub_Application__c",
+  "id" : "4985de05-09ec-4ced-8e62-7d6242b2863c",
+  "label" : "Compliance Lawyer Sub Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-compliance-lawyer-sub-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/compliance-lawyer-sub-application"
+}

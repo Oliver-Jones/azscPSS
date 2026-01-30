@@ -1,0 +1,67 @@
+<template>
+    <lightning-modal-header>
+        <h2 class="slds-text-heading_medium slds-hyphenate">
+            {modalTitle}
+        </h2>
+    </lightning-modal-header>
+    <lightning-modal-body>
+        <div style="text-align: left;">
+            <div style="padding:10px; background:lightgray;">
+                <template if:false={isRenewal}>
+                    In alignment with code section 7-209 an ABS is classified as one of the following:<br/><br/>
+                    a. “Nonprofit ABS” means an ABS that is a domestic or foreign nonprofit corporation in good standing that is authorized to conduct business in this state.<br/>
+                    b. “Equity ABS” means an ABS created and operated solely as a means of providing for law firm ownership to those persons listed in (E)(1)(a).<br/>
+                    c. “Regular ABS” means an ABS that is not exclusively a Nonprofit or Equity ABS.
+                </template>
+                <template if:true={isRenewal}>
+                    Pursuant to Arizona Code of Judicial Administration §7-209(E)(2), failure to provide or fully disclose information may result in denial of the application, delay in processing, or other disciplinary action. 
+                </template>
+            </div>
+            <lightning-radio-group
+                required
+                disabled
+                type="radio"
+                class="slds-p-around_medium"
+                data-field="ApplicationType"
+                name="ApplicationType"
+                label="Please select the type of application from the list below"
+                value={appRec.ApplicationType}
+                placeholder="Select Type"
+                options={applnTypes}
+                onchange={handleChange}>
+            </lightning-radio-group>
+            <template if:false={isRenewal}>
+                <lightning-radio-group
+                    required
+                    type="radio"
+                    class="slds-p-horizontal_medium"
+                    data-field="ApplicationCategory"
+                    name="ApplicationCategory"
+                    label="Please select your classification from the list below"
+                    value={appRec.ApplicationCategory}
+                    placeholder="Select Category"
+                    options={applnCategories}
+                    onchange={handleChange}>
+                </lightning-radio-group>
+            </template>
+            <template if:true={isRenewal}>
+                <lightning-radio-group
+                    required
+                    type="radio"
+                    class="slds-p-horizontal_medium"
+                    data-field="ApplicationCategory"
+                    name="ApplicationCategory"
+                    label="Please select one"
+                    value={appRec.RenewalType}
+                    placeholder="Select Category"
+                    options={applnRenewalTypes}
+                    onchange={handleChange}>
+                </lightning-radio-group>
+            </template>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button class="slds-p-right_small" label="Cancel" onclick={closeModal} variant="neutral"></lightning-button>
+        <lightning-button disabled={disableLaunch} label="Launch Application" onclick={confirmClose} variant="brand"></lightning-button>
+    </lightning-modal-footer>
+</template>

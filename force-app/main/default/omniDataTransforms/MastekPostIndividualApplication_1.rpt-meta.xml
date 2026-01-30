@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNf6000000DIvBEAW&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Mastek&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNf6000000DIvBEAW&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;StandardLicenseAppln&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-08-01T11:43:30.489Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
+  &quot;userTimeZone&quot; : &quot;330&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.mastekltd&quot;,
+  &quot;userId&quot; : &quot;005f6000000kKLVAA2&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNf6000000DIvBEAW&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;sInstanceId&quot; : &quot;0kTf60000003GTFEA2&quot;,
+  &quot;ApplicantInformation&quot; : {
+    &quot;ApplicantFirstName&quot; : &quot;FirstName&quot;,
+    &quot;ApplicantLastName&quot; : &quot;LastName&quot;,
+    &quot;ApplicantEmail&quot; : &quot;email@email.com&quot;,
+    &quot;ApplicantBirthDate&quot; : &quot;1940-06-06&quot;,
+    &quot;ApplicantPhone&quot; : &quot;9879879123&quot;,
+    &quot;ApplicantSSN&quot; : &quot;123412312&quot;,
+    &quot;ApplicantFax&quot; : &quot;4123123123&quot;,
+    &quot;ApplicantSteet&quot; : &quot;123, North Street&quot;,
+    &quot;ApplicantCity&quot; : &quot;Black Hills&quot;,
+    &quot;ApplicanZip&quot; : &quot;12312&quot;,
+    &quot;ApplicantCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantState&quot; : &quot;AK&quot;
+  },
+  &quot;EducationHistory&quot; : {
+    &quot;EducationHistoryBlock&quot; : [ {
+      &quot;CoursesEnrolled&quot; : &quot;Chemistry;Physics&quot;,
+      &quot;CourseName&quot; : &quot;Stanford Universoty&quot;,
+      &quot;CourseDate&quot; : &quot;2025-07-29&quot;
+    }, {
+      &quot;CoursesEnrolled&quot; : &quot;Mathematics;Business Administration&quot;,
+      &quot;CourseName&quot; : &quot;National Institute&quot;,
+      &quot;CourseDate&quot; : &quot;2025-07-08&quot;
+    } ]
+  },
+  &quot;DocumentUploads&quot; : {
+    &quot;Block1&quot; : {
+      &quot;DocumentName1&quot; : &quot;Document Title&quot;
+    },
+    &quot;Block2&quot; : {
+      &quot;DocumentName2&quot; : &quot;Evidence Title&quot;
+    },
+    &quot;HasDocumentsToUpload&quot; : &quot;Yes&quot;,
+    &quot;HasEvidencesToUpload&quot; : &quot;Yes&quot;
+  },
+  &quot;BackgroundVerification&quot; : {
+    &quot;BackgroundVerificationExplanation&quot; : &quot;Provide explanation for Background Verification&quot;
+  },
+  &quot;Acknowledgement&quot; : {
+    &quot;ApplicantAcknowledgement&quot; : true
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>MastekPostIndividualApplication</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RegulatoryAuthorizationType/\/\/WHERE/\/\/Name/\/\/LIKE/\/\/&apos;{0}&apos;&quot; var:RegAuthType QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RegulatoryAuthorizationType WHERE Name LIKE &apos;{0}&apos;&quot;, %RegAuthType%)</formulaExpression>
+        <formulaResultPath>RegAuthTypeId</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>MastekPostIndividualApplication021420591973430048</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication7051626373769722</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication3972022840776004</globalKey>
+        <inputFieldName>TodayDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AppliedDate</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>MastekPostIndividualApplication7565222182138499</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication4000414631753757</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplicationCustom9570</globalKey>
+        <inputFieldName>ApplicationId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | NOW &quot;MM/dd/YYYY&quot; FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(NOW(), &quot;MM/dd/YYYY&quot;)</formulaExpression>
+        <formulaResultPath>TodayDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>MastekPostIndividualApplication15122620183684377</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SELECT/\/\/Id/\/\/FROM/\/\/RecordType/\/\/WHERE/\/\/sObjectType/\/\/=/\/\/&apos;BusinessLicenseApplication&apos;/\/\/AND/\/\/DeveloperName/\/\/LIKE/\/\/&apos;{0}&apos;&quot; var:RecordType QUERY</formulaConverted>
+        <formulaExpression>QUERY(&quot;SELECT Id FROM RecordType WHERE sObjectType = &apos;BusinessLicenseApplication&apos; AND DeveloperName LIKE &apos;{0}&apos;&quot;, %RecordType%)</formulaExpression>
+        <formulaResultPath>RecordTypeId</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>MastekPostIndividualApplication8171878113334535</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication13743691291708848</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication14979279968978854</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication9340410253521061</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicationType</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>License</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication7839822535257766</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Category</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>MastekPostIndividualApplication13220508928163066</globalKey>
+        <inputFieldName>RegAuthTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>MastekPostIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LicenseTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;type&quot; : &quot;Mastek&quot;,
+  &quot;subType&quot; : &quot;StandardLicenseAppln&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;tabIcon&quot; : &quot;custom:custom18&quot;,
+  &quot;tabLabel&quot; : &quot;Standard License Application&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-08-04T12:34:51.473Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
+  &quot;userTimeZone&quot; : &quot;330&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.mastekltd&quot;,
+  &quot;userId&quot; : &quot;005f6000000kKLVAA2&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNf6000000DIvBEAW&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;AppType&quot; : &quot;StandardLicenseAppln&quot;,
+  &quot;sInstanceId&quot; : &quot;0kTf60000003JNtEAM&quot;,
+  &quot;ApplicantInformation&quot; : {
+    &quot;ApplicantLastName&quot; : &quot;May&quot;,
+    &quot;ApplicantFirstName&quot; : &quot;Sammy&quot;,
+    &quot;ApplicantEmail&quot; : &quot;asd@asd.com&quot;,
+    &quot;ApplicantPhone&quot; : &quot;0123123123&quot;,
+    &quot;ApplicantSSN&quot; : null,
+    &quot;ApplicantFax&quot; : null,
+    &quot;ApplicantSteet&quot; : &quot;123, North Street&quot;,
+    &quot;ApplicantCity&quot; : &quot;Black Hills&quot;,
+    &quot;ApplicanZip&quot; : &quot;12312&quot;
+  },
+  &quot;DocumentUploads&quot; : {
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;HasDocumentsToUpload&quot; : &quot;No&quot;,
+    &quot;HasEvidencesToUpload&quot; : &quot;No&quot;
+  },
+  &quot;BackgroundVerification&quot; : {
+    &quot;BackgroundVerificationExplanation&quot; : &quot;test&quot;
+  },
+  &quot;Acknowledgement&quot; : {
+    &quot;ApplicantAcknowledgement&quot; : true
+  },
+  &quot;omniScriptId&quot; : &quot;0jNf6000000DIvBEAW&quot;,
+  &quot;elementName&quot; : &quot;ApplicationSubmission&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>MastekPostIndividualApplication_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

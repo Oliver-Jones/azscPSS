@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;FirmRenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764577256581&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.pssqa&quot;,
+  &quot;userId&quot; : &quot;005gP0000089K1N&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRFRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter - Registered Reporting Firm&quot;,
+  &quot;FeeType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;ApplicantFirstName&quot; : &quot;&quot;,
+  &quot;ApplicantLastName&quot; : &quot;&quot;,
+  &quot;BusinessCountry&quot; : &quot;US&quot;,
+  &quot;BusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRF_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRFLicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;CurrentDate&quot; : &quot;2025-11-30T18:30:00.000Z&quot;,
+  &quot;CurrentMonth&quot; : 12,
+  &quot;ReportFirmInfo&quot; : {
+    &quot;DocBlock1&quot; : {
+      &quot;DocName1&quot; : &quot;Letter of Good Standing&quot;
+    },
+    &quot;CRFR_FirmName&quot; : &quot;Overton Enterprises&quot;,
+    &quot;CRFR_PhysicalAddr&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;CRFR_ACANumber&quot; : &quot;MARICOPA&quot;,
+    &quot;CRFR_PhysicalCity&quot; : &quot;Chandler&quot;,
+    &quot;CRFR_PhysicalZip&quot; : &quot;85224&quot;,
+    &quot;CRFR_PhysicalState&quot; : &quot;AZ&quot;,
+    &quot;CRFR_MailingAddr&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;CRFR_MailingCity&quot; : &quot;Chandler&quot;,
+    &quot;CRFR_MailingZip&quot; : &quot;85224&quot;,
+    &quot;CRFR_PhoneNo&quot; : &quot;8579325600&quot;,
+    &quot;CRFR_EmailAddr&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;CRFR_MailingState&quot; : &quot;AZ&quot;
+  },
+  &quot;sInstanceId&quot; : &quot;0kTgP0000000Of3UAE&quot;,
+  &quot;DRId_OmniScriptSavedSession&quot; : &quot;0kTgP0000000Of3UAE&quot;,
+  &quot;CRFR_IndividualContactInfo&quot; : {
+    &quot;CRFR_IndFirstName&quot; : &quot;John&quot;,
+    &quot;CRFR_IndLastName&quot; : &quot;SHelby&quot;,
+    &quot;CRFR_IndPhysicalAddr&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;CRFR_IndPhysicalCity&quot; : &quot;Chandler&quot;,
+    &quot;CRFR_IndPhysicalZip&quot; : &quot;85224&quot;,
+    &quot;CRFR_IndPhysicalState&quot; : &quot;AZ&quot;,
+    &quot;CRFR_IndMailingAddr&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;CRFR_IndMailingCity&quot; : &quot;Chandler&quot;,
+    &quot;CRFR_IndMailingZip&quot; : &quot;85224&quot;,
+    &quot;CRFR_IndPhoneNo&quot; : &quot;8579325600&quot;,
+    &quot;CRFR_IndEmailAddr&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;CRFR_IndMailingState&quot; : &quot;AZ&quot;,
+    &quot;CRFR_AuthContactAddr&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;CRFR_AuthContactCity&quot; : &quot;Chandler&quot;,
+    &quot;CRFR_AuthContactZip&quot; : &quot;85224&quot;,
+    &quot;CRFR_AuthContactEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;CRFR_AuthContactPhone&quot; : &quot;8579325600&quot;,
+    &quot;CRFR_AuthContactState&quot; : &quot;AZ&quot;
+  },
+  &quot;CRFirmAffirm&quot; : {
+    &quot;CRFirmAffirmDisclosure&quot; : true,
+    &quot;AffirmAuthDate&quot; : &quot;2025-12-01&quot;,
+    &quot;SignAuthAgent&quot; : &quot;ceqwcvewq&quot;
+  },
+  &quot;PaymentOption&quot; : {
+    &quot;PayOption&quot; : &quot;Standard&quot;
+  },
+  &quot;ApplnCategory&quot; : &quot;Standard&quot;,
+  &quot;LateAppType&quot; : &quot;Late Fee&quot;,
+  &quot;LateFeeApplicable&quot; : true
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>CreateDraftCRFirmRenewalAppln</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>de3c145b-277e-414b-8f6b-c80145733b9a</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicantId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7ab47a79-7d6e-43f6-95bb-20ba819abd1d</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryOwnerId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Pending Submission</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1a984d4d-f24c-4700-a01e-f979a826f5e0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d7ded252-f0b7-41c0-870f-5528e2ede708</globalKey>
+        <inputFieldName>CurrentDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AppliedDate</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d57ceb4b-b8dc-4604-a7e4-ee8d4d28a012</globalKey>
+        <inputFieldName>RecordType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>37494059-7dc3-4794-a56c-166f1094f152</globalKey>
+        <inputFieldName>RegAuthTypeCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>RegulatoryAuthCode</lookupByFieldName>
+        <lookupObjectName>RegulatoryAuthorizationType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LicenseTypeId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>c040ff31-e1ee-4b64-b9c1-4c2908ee797a</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Renewal Licensure</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c4915ba1-9908-4d5e-ad79-5a58ba8c147c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicationType</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>23842740-d87f-4e21-8c96-6078aa94df2a</globalKey>
+        <inputFieldName>RegAuthTypeCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>RegulatoryAuthCode</lookupByFieldName>
+        <lookupObjectName>RegulatoryAuthorizationType</lookupObjectName>
+        <lookupReturnedFieldName>Description</lookupReturnedFieldName>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cec8e745-9d98-469a-8cb0-2bdcdbfb25a8</globalKey>
+        <inputFieldName>RenewalLicenseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LicensePermitNameId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>License</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2f1c9106-9868-4c0f-bc10-5e7bdd56a7b5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Category</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dc9a4ae6-8a0d-484f-830c-a2e7c8889bac</globalKey>
+        <inputFieldName>CRFirmOrgAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>da8282d4-3fe3-4eee-ae45-af614522b76b</globalKey>
+        <inputFieldName>ApplnBusinessType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateDraftCRFirmRenewalAppln</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certification_Type__c</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;FirmRenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764577663602&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;oliver.daniel@mastek.com.pssqa&quot;,
+  &quot;userId&quot; : &quot;005gP0000089K1N&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNgP0000000kcNUAQ&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRFRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter - Registered Reporting Firm&quot;,
+  &quot;FeeType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;ApplicantFirstName&quot; : &quot;&quot;,
+  &quot;ApplicantLastName&quot; : &quot;&quot;,
+  &quot;BusinessCountry&quot; : &quot;US&quot;,
+  &quot;BusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRF_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRFLicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;CurrentDate&quot; : &quot;2025-11-30T18:30:00.000Z&quot;,
+  &quot;CurrentMonth&quot; : 12
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateDraftCRFirmRenewalAppln_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

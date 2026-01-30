@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6536f59c-523c-4aac-ad96-e47989ec4808",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_DDI_Application__c",
+  "id" : "94872f2c-bf21-44f5-afe3-d1b178378e06",
+  "label" : "New DDI Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-ddi-application",
+  "type" : "route",
+  "urlPrefix" : "applications/dd-program/new-ddi-application"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "1d596f19-f443-4e01-aa98-4646694ea681",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_LDB_Application__c",
+  "id" : "44196d58-1e20-4b7a-a40a-5045756a455c",
+  "label" : "New LDB Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-ldb-application",
+  "type" : "route",
+  "urlPrefix" : "applications/ld-program/new-ldb-application"
+}

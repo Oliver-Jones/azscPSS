@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Active - Renewal Pending</fullName>
+        <default>false</default>
+        <label>Active - Renewal Pending</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Expired</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Good Cause Exception</fullName>
+        <default>false</default>
+        <label>Good Cause Exception</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Revoked</fullName>
+        <default>false</default>
+        <label>Revoked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suspended</fullName>
+        <default>false</default>
+        <label>Suspended</label>
+    </standardValue>
+</StandardValueSet>

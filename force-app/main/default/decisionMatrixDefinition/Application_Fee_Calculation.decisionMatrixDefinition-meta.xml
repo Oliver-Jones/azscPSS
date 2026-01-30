@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionMatrixDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Application Fee Calculation</label>
+    <processType>Bre</processType>
+    <type>Standard</type>
+    <versions>
+        <fullName>Application_Fee_Calculation_V1</fullName>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Text</dataType>
+            <displaySequence>1</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>FeeType</name>
+        </columns>
+        <columns>
+            <columnType>Output</columnType>
+            <dataType>Currency</dataType>
+            <displaySequence>2</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>Amount</name>
+        </columns>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Text</dataType>
+            <displaySequence>2</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>AppType</name>
+        </columns>
+        <decisionMatrixDefinition>Application_Fee_Calculation</decisionMatrixDefinition>
+        <label>Application Fee Calculation V1</label>
+        <rank>1</rank>
+        <startDate>2025-08-05T09:30:35.000Z</startDate>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </versions>
+</DecisionMatrixDefinition>

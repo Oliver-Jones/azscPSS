@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Welcome Email for AZ Courts Portal users after registration.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>AZSC Portal Welcome Email</name>
+    <style>none</style>
+    <subject>Complete Your Arizona Courts Licensing Application Today</subject>
+    <textOnly>Dear {!Receiving_User.FirstName} {!Receiving_User.LastName},
+
+Thank you for your interest in obtaining an Arizona Courts license. To move forward with your application process please follow these steps.
+
+1. Complete the Arizona Courts application form.
+
+2. Gather and attach any required supporting materials.
+
+3. Submit your application along with payment.
+
+You can access the application here:  Set Password
+
+4. Your username for your reference - {!Receiving_User.Username}
+
+5. You will receive a fingerprint card in the mail from the Division. Complete the card and have fingerprints taken at a fingerprint service entity or law enforcement agency. All fields must be completed except Employer, Address, ORI, OCA, FBI and MNU, and any field marked &quot;Leave Blank.&quot; The entity where the fingerprints are taken must complete their portion of the card. The fingerprint fee is included with payment for the online application. Once complete, the card must be returned with a copy of this correspondence to
+     Certification and Licensing Division,
+     1501 W. Washington Street, Suite 104,
+     Phoenix, Arizona 85007-3222.
+
+If you have any questions or need assistance, feel free to reach out to courtrep@courts.az.gov.
+
+Sincerely,
+Certification and Licensing Division</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,93 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "90e5d54d-c37f-462f-8b8f-a98712d089a1",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "9e76b671-3c8d-472e-8119-5a04c4260d4a",
+          "columns" : [ {
+            "UUID" : "0b6e83df-404e-4251-8ce4-7ffb4e148a5b",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 361
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "9e76b671-3c8d-472e-8119-5a04c4260d4a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"headerContainer\" style=\"position: relative; background-color: transparent;\">\n  <div class=\"headerText\" style=\"font-family: 'Montserrat', Arial, sans-serif; font-size: 46pt; font-weight: 600; color: #002458; text-align: center; padding: 20px;\">\n    <br>\n      ARIZONA SUPREME COURT\n  </div>\n  <div style=\"font-family: 'Montserrat', Arial, sans-serif; font-size: 20pt; font-weight: 600; color: #002458; text-align: center; padding: 5px;\">\n      AZCOURTS.GOV ARIZONA JUDICIAL BRANCH CERTIFICATIONS AND LICENSING PORTAL\n  </div>\n  <div style=\"font-family: 'Montserrat', Arial, sans-serif; font-size: 12pt; color: #002458; text-align: center; padding: 5px;\">\n      The Certification and Licensing Division is responsible for developing and administering certification and licensing programs on behalf of the Arizona Supreme Court. In collaboration with its boards and committees, the Division also establishes rules and policies governing  registration procedures, eligibility requirements, continuing education, professional codes of conduct, and disciplinary protocols.\n  </div>\n  <div style=\"font-family: 'Montserrat', Arial, sans-serif; font-size: 12pt; color: #002458; text-align: center; padding: 5px;\">\n      This Portal allows you to conveniently apply for new licenses/certificates, maintain your existing license/certificate and other services for the Certified Reporter, Defensive Driving, Fiduciary, Legal Document Preparer, and Alternative Business Structure programs. Information pertaining to Attorney Admissions can be found at <a href=\"www.azcourts.gov/cld/AttorneyAdmissions\">www.azcourts.gov/cld/AttorneyAdmissions</a>. \n  </div>\n  <div style=\"font-family: 'Montserrat', Arial, sans-serif; font-size: 12pt; color: #002458; text-align: center; padding: 5px;\">\n      Certified Court Reporters Only: Pursuant to section 32-4302, Arizona Revised Statutes, a person shall be granted an occupational or professional license or certificate if the person has been licensed or certified in another state for at least twelve months, the license or certificate is in the same discipline and at the same practice level as the license or certificate for which the person is applying in this state and the person meets other conditions prescribed by A.R.S. section 32-4302, Arizona Revised Statutes.\n  </div>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "5c446f1f-9406-41f9-a84c-08be1924ce54",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bannerBackgroundColor" : "",
+            "bannerPosition" : "top",
+            "bannerSizePercent" : 35,
+            "borderRadius" : 20,
+            "boxShadow" : true,
+            "haveBanner" : false,
+            "iconBackgroundColor" : "rgb(137, 57, 66)",
+            "iconSize" : "medium",
+            "noImageColor" : "rgb(116,116,116)",
+            "overlay" : "rgba(0,0,0,0.01)",
+            "templateType" : "default",
+            "tileMenuEditor" : "Default_Navigation",
+            "titleColor" : "",
+            "titleFontSize" : "medium",
+            "titleHorizontalAlign" : "center"
+          },
+          "componentName" : "community_navigation:tileMenu",
+          "id" : "423d9da2-df39-451e-b86d-084a72b6877d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0b6e83df-404e-4251-8ce4-7ffb4e148a5b",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dc8611f9-f145-4978-a915-5a63deb5cbd6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "8243bf07-4059-4478-a96b-1c7c1c161753",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "00e405a0-d2cb-411c-9848-365f742ae688",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

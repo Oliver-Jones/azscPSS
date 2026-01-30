@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "07d96c8f-5dc2-4614-af39-bd0ec837ec3c",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Legal_Paraprofessional_Program__c",
+  "id" : "4a9dfbeb-128c-49f1-940d-b9f9adf0272a",
+  "label" : "Legal Paraprofessional Program",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-lpp-program",
+  "type" : "route",
+  "urlPrefix" : "applications/lpp-program"
+}

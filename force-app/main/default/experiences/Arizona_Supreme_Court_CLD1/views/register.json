@@ -1,0 +1,91 @@
+{
+  "appPageId" : "1e250e4a-de60-4148-a4d7-6a4a6e191f86",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "26403089-48c2-4a76-8739-3a36ed79b79b",
+  "label" : "Register",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "51287773-298e-48ab-8bef-e86815de9902",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"color: white; padding: 10px;\">Join the community to receive personalized information and customer support.</p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "7238e3ca-060f-464d-a78e-a52d06373c01",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "direction" : "ltr",
+        "display" : "Display OmniScript on page",
+        "inlineVariant" : "brand",
+        "language" : "English",
+        "subType" : "Registration",
+        "theme" : "lightning",
+        "type" : "AZSC"
+      },
+      "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+      "id" : "5af46bd3-e5b8-4c0e-94a5-07387393e9ec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : true
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "7484abec-0654-499d-bbc8-8b1d4d5531a7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><a href=\"./\" rel=\"noopener noreferrer\" target=\"_self\" style=\"color: rgb(255, 255, 255);\">﻿Already have an account?</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d321c6c4-ec52-44c9-b9c5-313572460964",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"background-color: transparent; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 10px 0px; position: relative; text-align: left;\" class=\"custom-footer\" data-aura-rendered-by=\"85:0\">\n <div style=\"float: left; display: inline-block; vertical-align: top; line-height: 2;\" class=\"footer-column\">\n  <h2 style=\"font-size: 16px; margin-top: 34px; margin-bottom: 10px; color: #d1a617;\">CONTACT US</h2>\n  <p>For general inquiries, please contact</p>\n  <p>Hotline: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"tel:602-452-3378\">(602) 452-3378</a></p>\n  <p>TTY/TTD: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"tel:602-452-3545\">(602) 452-3545</a></p>\n  <p>Alternative Business Structure: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:ABSProgram@courts.az.gov\">ABSProgram@courts.az.gov</a></p>\n  <p>Certified Court Reporter: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:CourtRep@courts.az.gov\">CourtRep@courts.az.gov</a></p>\n  <p>Defensive Driving: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:DDrive@courts.az.gov\">DDrive@courts.az.gov</a></p>\n  <p>Certified Legal Document Preparer: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:LDP@courts.az.gov\">LDP@courts.az.gov</a></p>\n  <p>Legal Paraprofessional: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:PFP@courts.az.gov\">LPProgram@courts.az.gov</a></p>\n  <p>Fiduciary: <a style=\"color: #d1a617; text-decoration: underline;\" href=\"mailto:PFP@courts.az.gov\">PFP@courts.az.gov</a></p>\n </div>\n <div style=\"background-color: #893942; height: 10px; width: 100%; position: absolute; bottom: 0; left: 0;\" class=\"bottom-border\"></div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "d6d2c061-02cf-4b14-b6d4-683df18efbcd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "963871a7-0d27-433f-8f92-bbefcc526a48",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Register"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f744284d-57f6-428c-abba-899525f1e28f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "334bd3ef-56d6-4141-8ccf-1421323e5a96",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "self-register"
+}

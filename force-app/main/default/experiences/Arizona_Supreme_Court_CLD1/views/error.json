@@ -1,0 +1,48 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "8a1b3abc-9d33-4c4b-8d45-78a85d693a73",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "793b689c-6a52-4b6f-8f39-2bf23c6bd0c6",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 24px;\">There was an error processing your request, kindly contact admin.</span></p><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\"><a href=\"./\" rel=\"noopener noreferrer\" target=\"_self\">Back to Home</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "918e60d9-63fa-49b9-b3d7-a1cff659a56b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4b104745-bfea-41a0-83a3-aba83efdf7e5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7c9e066e-9f51-40eb-8f8d-3cf1e01734b6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "eb4eb901-842c-4cb2-85c8-7adecb7eebe8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "27562e0a-9b23-4fdd-a693-8d81829c0a49",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "error"
+}

@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>ABS Renewal Application</name>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>ABS|ApplicantInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ABS Applicant Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;Type&quot; : &quot;ABS&quot;,
+  &quot;Sub Type&quot; : &quot;ApplicantInformation&quot;,
+  &quot;Language&quot; : &quot;English&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AcknowledgmentCheckbox</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;As a Designated Principal, I acknowledge the following statement:&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;padding: 10px; line-height: 2; font-size: 16px;\&quot;&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;&lt;strong&gt;CONFLICT OF INTEREST STATEMENT&lt;/strong&gt;&lt;br&gt;Pursuant to Arizona Code of Judicial Administration (ACJA) &amp;sect; 7-209(K)(1), I certify that the business entity named in this application and seeking a license to operate as an Alternative Business Structure in the state of Arizona, shall not take any action or engage in any activity that interferes with the professional independence of lawyers or others authorized to provide legal services, or allow the legal representation of clients, if the representation involves a conflict of interest as governed by Supreme Court Rule 42, ERs 1.7, 1.8, 1.9, 1.10, 1.11, 1.13 and 1.18.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;&lt;strong&gt;INDEMNIFICATION STATEMENT&lt;/strong&gt;&lt;br&gt;Pursuant to ACJA &amp;sect; 7-209 (G), I certify that the business entity named in this application agrees to indemnify, defend, and hold harmless the Arizona Supreme Court, its Committees, Committee members, and employees from any and all claims, demands, suits, actions, proceedings, loss, cost and damages of every kind and description. This includes any reasonable attorney&apos;s fees and or litigation expenses which may be brought or made against or incurred by the court&amp;cedil; its Committees, Committee members, and employees on account of loss or damage arising out of, or contributed to, in whole or in part, by reason of the operation of the business entity.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;&lt;strong&gt;AUTHORIZATION AND RELEASE&lt;/strong&gt;&lt;br&gt;Having filed this application, I hereby consent to having an investigation made of the businesses character, professional reputation, and fitness for Alternative Business Structure license. I agree to give any further information which may be required in reference to the past record of the business.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;I also authorize and request every person, firm, company, corporation, governmental agency, court, association, or institution having control of any documents, records, and other information including documents, records, charges or complaints filed against the business, formal or informal, pending or closed, or any other pertinent data, and to permit the Arizona Supreme Court, or any of its agents or representatives to inspect and make copies of such documents, records, and other information.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;I release, discharge, and exonerate the Arizona Supreme Court, its agents and representatives, the State of Arizona, and any&amp;nbsp;&lt;br&gt;person furnishing information pursuant to this Authorization and Release from all liability which may arise from the&amp;nbsp;&lt;br&gt;investigation made by the Arizona Supreme Court.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;I acknowledge that I have read this application form and that all statements are true and complete to the best of my&lt;br&gt;knowledge and belief and that this Authorization and Release is freely given.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;I understand willful omission or misrepresentation of any fact required to be disclosed in this application, or any accompanying&amp;nbsp;&lt;br&gt;statement, is grounds for refusing to issue or renew a license or for revoking or suspending a license.&lt;/p&gt;\n&lt;p style=\&quot;padding-bottom: 10px; padding-left: 7px;\&quot;&gt;I also declare under penalty of perjury under the laws of the State of Arizona that the foregoing is true and correct.&lt;/p&gt;\n&lt;/div&gt;&quot;,
+  &quot;required&quot; : true,
+  &quot;readOnly&quot; : false,
+  &quot;checkLabel&quot; : &quot;By checking this box I, the designated principal, on behalf of the business, affirm that I have read the foregoing, and each statement and answer made, together with the Authorization and Release and affirm that all answers, statements and data attached to this application are true and correct. Willful misrepresentation of any fact required to be disclosed in any application, or accompanying statement, is grounds for refusing to issue or renew a license, or for revoking or suspending a license.&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Disclosure</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AcknowledgmentDate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 6.0,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;defaultValue&quot; : &quot;TODAY&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : true,
+  &quot;label&quot; : &quot;Date&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;required&quot; : false,
+  &quot;help&quot; : false,
+  &quot;hide&quot; : false,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;repeat&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;maxDate&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Date</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AcknowledgmentName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Name of the Designated Principal&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AcknowledgmentSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 100.0,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Acknowledgment</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;nextWidth&quot; : 3,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;ssm&quot; : false,
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;pubsub&quot; : false,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;previousWidth&quot; : 3,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;label&quot; : &quot;Acknowledgment&quot;,
+  &quot;message&quot; : { },
+  &quot;wpm&quot; : false,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;nextLabel&quot; : &quot;Submit&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;ariaLevel&quot; : 2,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;lwcComponentOverride&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>11.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>ABS|PaymentInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Application Payment Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;Type&quot; : &quot;ABS&quot;,
+  &quot;Sub Type&quot; : &quot;PaymentInformation&quot;,
+  &quot;Language&quot; : &quot;English&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>12.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignInitialValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Assign Initial Values&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;appType&quot; : &quot;ABSRenewalLicense&quot;,
+    &quot;ApplicationName&quot; : &quot;Alternative Business Structure License&quot;,
+    &quot;FeeType&quot; : &quot;=IF(%reinstate% == true, \&quot;Reinstatement Licensure\&quot;, \&quot;Renewal Licensure\&quot;)&quot;,
+    &quot;PDMailingState&quot; : &quot;=&apos;AZ&apos;&quot;,
+    &quot;RenewFirstName&quot; : &quot;=%Contact:FirstName%&quot;,
+    &quot;RenewMiddleName&quot; : &quot;=%Contact:MiddleName%&quot;,
+    &quot;RenewLastName&quot; : &quot;=%Contact:LastName%&quot;,
+    &quot;RenewBusinessCountry&quot; : &quot;=IF(%Account:BillingCountryCode% == null || %Account:BillingCountryCode% == &apos;&apos;, &apos;US&apos;, %Account:BillingCountryCode%)&quot;,
+    &quot;RenewBusinessState&quot; : &quot;=IF(%Account:BillingStateCode% == null || %Account:BillingStateCode% == &apos;&apos;, &apos;AZ&apos;, %Account:BillingStateCode%)&quot;,
+    &quot;RenewBusinessStreet&quot; : &quot;=%Account:BillingStreet%&quot;,
+    &quot;RenewHomeCountry&quot; : &quot;=IF(%Contact:MailingCountryCode% == null || %Contact:MailingCountryCode% == &apos;&apos;, &apos;US&apos;, %Contact:MailingCountryCode%)&quot;,
+    &quot;RenewHomeState&quot; : &quot;=IF(%Contact:MailingStateCode% == null || %Contact:MailingStateCode% == &apos;&apos;, &apos;AZ&apos;, %Contact:MailingStateCode%)&quot;,
+    &quot;RenewBusinessCity&quot; : &quot;=%Account:BillingCity%&quot;,
+    &quot;RenewBusinessZip&quot; : &quot;=%Account:BillingPostalCode%&quot;,
+    &quot;RenewHomeStreet&quot; : &quot;=%Contact:MailingStreet%&quot;,
+    &quot;RenewHomeCity&quot; : &quot;=%Contact:MailingCity%&quot;,
+    &quot;RenewHomeZip&quot; : &quot;=%Contact:MailingPostalCode%&quot;,
+    &quot;RenewDateOfBirth&quot; : &quot;=%Contact:DateOfBirth%&quot;,
+    &quot;RenewSocialSecurityNumber&quot; : &quot;=%Contact:Social_Security_Number__c%&quot;,
+    &quot;RenewEmail&quot; : &quot;=%Contact:Email%&quot;,
+    &quot;RenewBusinessTitle&quot; : &quot;=%Contact:Title%&quot;,
+    &quot;RenewBusinessPosition&quot; : &quot;=%Contact:Business_Position__c%&quot;,
+    &quot;RenewDBAName1&quot; : &quot;=%BusinessLicense:DBAName1%&quot;,
+    &quot;RenewDBAName2&quot; : &quot;=%BusinessLicense:DBAName2%&quot;,
+    &quot;RenewDBAName3&quot; : &quot;=%BusinessLicense:DBAName3%&quot;,
+    &quot;RenewBusinessName&quot; : &quot;=%BusinessLicense:AccountName%&quot;,
+    &quot;RenewHomePhone&quot; : &quot;=%Contact:Phone%&quot;,
+    &quot;RenewBusinessPhone&quot; : &quot;=%Account:Phone%&quot;,
+    &quot;PDMailingCountry&quot; : &quot;=&apos;US&apos;&quot;,
+    &quot;ABSAccountId&quot; : &quot;=%BusinessLicense:AccountId%&quot;,
+    &quot;ApplnCategory&quot; : &quot;=%BusinessLicense:BusinessType%&quot;,
+    &quot;RenewalByDP&quot; : &quot;=IF(%role% == &apos;Designated Principal&apos;, true, false)&quot;,
+    &quot;RenewalByCL&quot; : &quot;=IF(%role% == &apos;Compliance Lawyer&apos;, true, false)&quot;,
+    &quot;RecordType&quot; : &quot;ABS_Application&quot;,
+    &quot;RegAuthTypeCode&quot; : &quot;ABSLicense&quot;,
+    &quot;ApplnType&quot; : &quot;=IF(%reinstate% == true, \&quot;Reinstatement Licensure\&quot;, \&quot;Renewal Licensure\&quot;)&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;lwcComponentOverride&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>false</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignTestValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Assign Test Values&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;c__licenseId&quot; : &quot;0cEOu00000005AzMAI&quot;,
+    &quot;c__applnCategory&quot; : &quot;Equity ABS&quot;,
+    &quot;c__applnType&quot; : &quot;Renewal Licensure&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>ABS|AuthorizedInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Authorized Person Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;Type&quot; : &quot;ABS&quot;,
+  &quot;Sub Type&quot; : &quot;AuthorizedInformation&quot;,
+  &quot;Language&quot; : &quot;English&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>ABS|BackgroundInformation|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Background Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;Type&quot; : &quot;ABS&quot;,
+  &quot;Sub Type&quot; : &quot;BackgroundInformation&quot;,
+  &quot;Language&quot; : &quot;English&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DesignatedPrincipalResponsibilitiesSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 100,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DPResponsibilitiesCheckbox</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;As a Designated Principal, pursuant to ACJA §7-209(K)(1), agree to ensure that the Alternative Business Structure&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;padding: 10px; line-height: 2; font-size: 16px;\&quot;&gt;\n&lt;p&gt;1) Shall not allow the legal representation of clients, if the representation involves a conflict of interest as governed by Supreme Court Rule 42, ERs 1.7, 1.8, 1.9, 1.10, 1.11, 1.13 and 1.18.&lt;br&gt;2) Shall not take any action or engage in activity that interferes with the professional independence of lawyers or others authorized to provide legal services.&lt;br&gt;3) Shall ensure that legal services are delivered with reasonable diligence and promptness.&lt;br&gt;4) Shall not take an action or engage in any activity that misleads or attempts to mislead a client, a court, or others, either by the ABS&amp;rsquo;s own acts or omissions, or those of its members or employees, or by allowing or being complicit in the acts or omissions of others.&lt;br&gt;5) Shall maintain effective governance structures, arrangements, systems, and controls to ensure:&lt;br&gt;(i)Compliance with the requirements of Supreme Court rules and this section; and&amp;nbsp;&lt;br&gt;(ii)Managers, economic interest holders, decision-makers, employees, or anyone employed, associated with, or engaged do not cause or substantially contribute to a breach of the ethical rules of Supreme Court Rule 42 or ACJA &amp;sect;7-209(K).&lt;br&gt;6) Must maintain records to demonstrate compliance with its obligations under the Supreme Court rules and ACJA &amp;sect;7-209(K).&amp;nbsp;&lt;br&gt;7) Must monitor financial stability and business viability. When an ABS becomes aware it will cease to operate, it must affect an orderly wind-down of business activities and comply with the requirements for surrender of an ABS license.&lt;br&gt;8) Must monitor and manage all material risks to the business, including those which arise from connected businesses or connected services.&amp;nbsp;&lt;br&gt;9) Must hold property of legal services clients separate from the property of the ABS. The requirements of Supreme Court Rules 42, ER 1.15 and Rule 43 are applicable to all legal services-related client property.&lt;br&gt;10) An ABS, its Authorized Persons and employees must cooperate with the Administrative Office of Courts, Committee on Alternative Business Structures, the State Bar of Arizona, the presiding disciplinary judge, and any court who oversees and investigates concerns related to its delivery of legal services.&lt;br&gt;11) Must respond promptly to the Administrative Office of Courts, Committee on Alternative Business Structures, the State Bar, the presiding disciplinary judge, and the Supreme Court and provide full and accurate information and documentation in response to any request or investigation.&lt;br&gt;12) Shall not attempt to prevent any person from providing information or documents in response to any request or investigation.&lt;br&gt;13) Must act promptly to take any remedial action requested by the State Bar, the Administrative Office of Courts, the presiding disciplinary judge, and the Supreme Court.&lt;br&gt;14) Shall assure that all authorized persons and employees, in matters pertaining to legal services, perform all duties and functions in the manner ethically required of a lawyer pursuant to Supreme Court Rule 42.&lt;/p&gt;\n&lt;/div&gt;&quot;,
+  &quot;required&quot; : true,
+  &quot;readOnly&quot; : false,
+  &quot;checkLabel&quot; : &quot;By checking this box I, the designated principal, agree under Arizona Code of Judicial Administration § 7-208(F) to ensure the above&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Disclosure</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DPResponsibilitiesDate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Date&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : true,
+  &quot;defaultValue&quot; : &quot;TODAY&quot;,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;maxDate&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Date</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DPResponsibilitiesName</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0.0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;required&quot; : false,
+  &quot;debounceValue&quot; : 0.0,
+  &quot;repeat&quot; : false,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 6.0,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : false,
+  &quot;label&quot; : &quot;Name of the Designated Principal&quot;,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;help&quot; : false,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;maxLength&quot; : 255.0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DesignatedPrincipalResponsibilities</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;Designated Principal Responsibilities&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;nextLabel&quot; : &quot;Continue&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : &quot;&quot;,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;ariaLevel&quot; : 2,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>10.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtractLicenseInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Extract License Info&quot;,
+  &quot;bundle&quot; : &quot;ABSExtractBusinessLicense&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;element&quot; : &quot;licenseId&quot;,
+    &quot;inputParam&quot; : &quot;Id&quot;
+  } ],
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;licenseId&quot;
+      } ]
+    }
+  },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtractUserInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Extract User Info&quot;,
+  &quot;bundle&quot; : &quot;AZSCExtractUserInformation&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;element&quot; : &quot;userId&quot;,
+    &quot;inputParam&quot; : &quot;Id&quot;
+  } ],
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ApplicationInstructions</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;width: 100%; text-align: center; line-height: 2;\&quot;&gt;\n&lt;h2&gt;ARIZONA SUPREME COURT&lt;/h2&gt;\n&lt;h4&gt;Application for Initial License of Alternative Business Structure&lt;/h4&gt;\n&lt;/div&gt;\n&lt;div style=\&quot;padding: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 16px;\&quot;&gt;\n&lt;ol&gt;\n&lt;li&gt;&lt;u&gt;Instructions:&lt;/u&gt;&lt;br&gt;Carefully read all instructions prior to completing the application. Incomplete application submissions will result in the rejection of the application. For assistance, call the Certification and Licensing Division at &lt;a href=\&quot;tel:6024523378\&quot;&gt;(602) 452-3378&lt;/a&gt; or visit the Arizona Judicial Department website at &lt;a href=\&quot;https://www.azcourts.gov/cld/Alternative-Business-Structure\&quot;&gt;https://www.azcourts.gov/cld/Alternative-Business-Structure&lt;/a&gt;. &lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Completion:&lt;/u&gt;&lt;br&gt;Pursuant to ACJA &amp;sect; 7-209(E)(3)(b), applicants have 90 days to complete the application process. After 90 days, applicants will be required to submit a new application and new fees. &lt;strong&gt;Pursuant to &amp;sect; 7-209(E)(1)(a)(6), applicant shall notify the Certification and Licensing Division of any change relevant to the application for licensure within five (5) days of the change. &lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Registered Business Entity Documentation:&lt;/u&gt;&lt;br&gt;Pursuant to ACJA &amp;sect; 7-209(G)(1)(g), applicants must submit copies of Articles of Incorporation/Organization or Partnership Agreements and a Certificate of Good Standing or otherwise demonstrate authorization to do business in the State of Arizona. &lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Unregistered Business Entity Documentation:&lt;/u&gt;&lt;br&gt;Pursuant to ACJA &amp;sect; 7-209(G)(1)(g), applicants must submit copies of Articles of Incorporation/Organization or Partnership Agreements with the application. Therefore, unregistered business entity applicants must submit draft Articles of Incorporation/ Organization or Partnership Agreements and explain why the proposed business entity is not registered. Division staff&apos;s recommendation concerning licensure presented to the Committee on Alternative Business Structures will note that the entity has not yet been formed. Before the Committee provides its recommendation for licensure to the Supreme Court, applicant must be formed, authorized to do business in Arizona, and provide evidence of those facts that are satisfactory to Division Staff. At the time the evidence is presented to Division staff, applicant shall also submit Update of Application forms for the applicant, Designated Principal and Compliance Lawyer. Formation of the proposed business entity is not required if the Committee recommends denial of the license to the Supreme Court and the applicant does not challenge that recommendation. &lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Authorized Persons:&lt;/u&gt;&lt;br&gt;Arizona Code of Judicial Administration (ACJA)&amp;sect; 7-209(G)(1) requires each applicant to submit completed applications for the alternative business structure and each authorized person. ACJA &amp;sect; 7-209(A) defines Authorized Person as a person possessing:\n&lt;ol&gt;\n&lt;li&gt;An economic interest in the alternative business structure equal to or more than 10 percent of all economic interests in the alternative business structure; or&lt;/li&gt;\n&lt;li&gt;The legal right to exercise decision-making authority on behalf of the alternative business structure.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;ACJA &amp;sect; 7-209(A) further defines decision-making authority as the authority, by operation of law or by agreement, to directly or indirectly:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;Legally bind the ABS;&lt;/li&gt;\n&lt;li&gt;Control or participate in the management or affairs of the ABS;&lt;/li&gt;\n&lt;li&gt;Direct or cause the direction of the management and policies of the ABS; or&lt;/li&gt;\n&lt;li&gt;Make day-to-day or long-term decisions on matters of management, policy, and operations of the ABS.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;Therefore, a complete application requires the following:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;&lt;strong&gt;Appointment of Designated Principal&lt;/strong&gt; form for the person identified in Section I. Pursuant to Arizona Code of Judicial Administration &amp;sect; 7-209(G)(1)(f), a designated principal for the business entity must be an individual with whom Division Staff may communicate on any procedural or operational concern and who will have responsibilities pursuant to subsection &amp;sect;7-209(F), including contracting authority within the State of Arizona.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Appointment of Compliance Lawyer&lt;/strong&gt; form for the person identified in Section I. Pursuant to ACJA &amp;sect; 7-209(G)(3) each Alternative Business Structure must designate a Compliance lawyer with prescribed qualifications who agrees to responsibilities set forth in &amp;sect;7-209(G)(3)(b).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Authorized Person (Individual) Application and Authorized Person (Entity)&lt;/strong&gt; forms for each additional Authorized Person listed in Section II.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;/li&gt;\n&lt;li style=\&quot;padding-top: 10px;\&quot;&gt;&lt;u&gt;Fee Schedule:&lt;/u&gt;&lt;br&gt;All applicable NON-REFUNDABLE fees shall accompany this application and be made payable to the Arizona Supreme Court. Initial application fees are listed in ACJA &amp;sect; 7-209 (J).&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Assumed Name (or D.B.A.) and Trade Names:&lt;/u&gt;&lt;br&gt;While conducting business as an Alternative Business Structure, a licensee shall use the name as shown on the license and shall not transact business in this state under an assumed name or under any designation, name or style, corporate or otherwise, other than the real name of the business entity unless the business entity files with the Division Staff a certificate setting forth the name under which business will be transacted. &lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Conflict of Interest and Indemnification Statements and Submission to Jurisdiction, Authorization and Release:&lt;/u&gt;&lt;br&gt;The business entity owner or Designated Principal&apos;s signature and notary verification for these statements are required in Section IX. &lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Applicant Background Information:&lt;/u&gt;&lt;br&gt;If you answered YES to any question in Section VII of this application or the Authorized Person Application, the Designated Principal is required to submit:\n&lt;ol&gt;\n&lt;li&gt;list of all incidents and complete a written explanation of the events for each. This includes incidents which may be pending and/or in litigation; and,&lt;/li&gt;\n&lt;li&gt;any and all documentation which shows where the violation, finding, or conviction occurred, the nature and details of the case, case disposition, court, case number, and any other relevant information.&lt;/li&gt;\n&lt;/ol&gt;\nSubmit as many additional sheets as is necessary to fully explain each YES answer.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;li&gt;&lt;u&gt;Submission:&lt;/u&gt;&lt;br&gt;Submit your completed application, upload required documents, and pay fees online.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;div style=\&quot;height: 100px;\&quot;&gt;&amp;nbsp;&lt;/div&gt;\n&lt;/div&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Instructions</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;Instructions&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;nextLabel&quot; : &quot;Continue&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LoadDraftApplication</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Load Draft Application&quot;,
+  &quot;bundle&quot; : &quot;AZSCLoadDraftApplication&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;sInstanceId&quot;
+      } ]
+    }
+  },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NavigateToPayment</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Navigate to Payment&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : true,
+  &quot;pubsub&quot; : false,
+  &quot;message&quot; : {
+    &quot;PaymentRedirect&quot; : &quot;%PayNow%&quot;
+  },
+  &quot;targetType&quot; : &quot;Community Named Page&quot;,
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;replace&quot; : true,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;targetName&quot; : &quot;Payment__c&quot;,
+  &quot;targetParams&quot; : &quot;c__applnId=%ApplicationId%&quot;
+}</propertySetConfig>
+        <sequenceNumber>15.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <embeddedOmniScriptKey>ABS|PublicDirectory|English</embeddedOmniScriptKey>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Public Directory Information</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;Type&quot; : &quot;ABS&quot;,
+  &quot;Sub Type&quot; : &quot;PublicDirectory&quot;,
+  &quot;Language&quot; : &quot;English&quot;,
+  &quot;show&quot; : null
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>OmniScript</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save Document Uploads</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;AZSC_SaveDocumentUploads&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : true,
+    &quot;chainable&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : { },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;invokeMode&quot; : &quot;noBlock&quot;
+}</propertySetConfig>
+        <sequenceNumber>14.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save Renewal Application</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;ABS_SaveMainApplication&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : { },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>13.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:true,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%userId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:true,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:false,&quot;mergeSavedData&quot;:true,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;left&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;,&quot;currentLanguage&quot;:&quot;en_US&quot;,&quot;elementTypeToLwcTemplateMapping&quot;:{&quot;SaveForLaterAcknowledge&quot;:&quot;aZSC_SaveForLater&quot;},&quot;scrollToTopWhenNavigatingBetweenStepsOnExperienceCloudSites&quot;:true}</propertySetConfig>
+    <subType>RenewalApplication</subType>
+    <type>ABS</type>
+    <uniqueName>ABS_RenewalApplication_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniScript>

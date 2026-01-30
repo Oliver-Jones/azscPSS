@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "21d1672c-3c44-4fdd-9e87-22c0faeb90bb",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_CRF_Application__c",
+  "id" : "051ed120-7688-4a29-8f9d-0d722373dcaa",
+  "label" : "New CRF Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-crf-application",
+  "type" : "route",
+  "urlPrefix" : "applications/cr-program/new-crf-application"
+}

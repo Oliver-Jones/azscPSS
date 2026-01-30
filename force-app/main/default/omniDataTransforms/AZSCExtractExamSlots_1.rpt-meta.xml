@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCExtractExamSlots</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a7ebff5f-aaed-45ba-8fc0-4c5b55bdae48</globalKey>
+        <inputFieldName>ExamSlot:Slots_Registered__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:BookedSlots</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&gt;</filterOperator>
+        <filterValue>&apos;$Vlocity.TODAY&apos;</filterValue>
+        <globalKey>531a96ff-735c-4760-b8a9-e8362859053e</globalKey>
+        <inputFieldName>Schedule_Date__c</inputFieldName>
+        <inputObjectName>Exam_Slot__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>ExamSlot</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3c5b5867-81fa-478a-9ab9-c89bccac56db</globalKey>
+        <inputFieldName>ExamSlot:Schedule_Date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:ScheduleDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0d71a8dc-43bf-4009-a364-133a04d726c7</globalKey>
+        <inputFieldName>ExamSlot:End_Time__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>ExamSlots:EndTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>94f7b4aa-79a6-424a-bd15-7e0bdb33932a</globalKey>
+        <inputFieldName>ExamSlot:Session__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:Session</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>16393f8c-bb55-4fa7-8d3e-85eab3cb0bf3</globalKey>
+        <inputFieldName>ExamSlot:Total_Examinees_Slots__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:TotalSlots</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1f9bb89a-ed6c-4a7b-92f6-2b0c156041f2</globalKey>
+        <inputFieldName>ExamSlot:Status__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7a1eab31-77d8-4de5-a1c6-576b3c4c8cba</globalKey>
+        <inputFieldName>ExamSlot:Start_Time__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>ExamSlots:StartTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e2a468bf-13e1-495e-8933-df5d76a44fee</globalKey>
+        <inputFieldName>ExamSlot:Available_Examinees_Slot__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractExamSlots</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExamSlots:AvailableSlots</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ExamSlots&quot; : [ {
+    &quot;Session&quot; : &quot;9 AM - 12 PM&quot;,
+    &quot;dates&quot; : [ {
+      &quot;ScheduleDate&quot; : &quot;2025-11-17&quot;
+    }, {
+      &quot;ScheduleDate&quot; : &quot;2025-11-18&quot;
+    }, {
+      &quot;ScheduleDate&quot; : &quot;2025-11-19&quot;
+    } ]
+  }, {
+    &quot;Session&quot; : &quot;1 PM - 4 PM&quot;,
+    &quot;dates&quot; : [ {
+      &quot;ScheduleDate&quot; : &quot;2025-11-17&quot;
+    }, {
+      &quot;ScheduleDate&quot; : &quot;2025-11-18&quot;
+    }, {
+      &quot;ScheduleDate&quot; : &quot;2025-11-19&quot;
+    } ]
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>AZSCExtractExamSlots_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

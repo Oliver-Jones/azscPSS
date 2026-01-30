@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "af426530-4981-4735-9748-2b304975d219",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Authorized_Individual_Sub_Application__c",
+  "id" : "6b5be40c-3794-4e1b-92f5-5504f1859509",
+  "label" : "Authorized Individual Sub Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-authorized-individual-sub-application",
+  "type" : "route",
+  "urlPrefix" : "applications/abs-program/authorized-individual-sub-application"
+}

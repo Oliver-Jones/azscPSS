@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Business_License_Application</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>AppliedDate</columns>
+    <columns>LicenseType</columns>
+    <columns>Status</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Business License Application</label>
+</ListView>

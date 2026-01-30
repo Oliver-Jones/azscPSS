@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>true</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Application Payment Information</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ApplicationFeeCalculation</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Application Fee Calculation&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;AZSC_ApplicationFeeCalculation&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : { },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignRenewalPartialFee</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Assign Renewal Partial Fee&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;ApplnCategory&quot; : &quot;Partial&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;HasPartialRenewal&quot;
+      } ]
+    }
+  },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>false</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignTestValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Assign Test Values&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+    &quot;FeeType&quot; : &quot;Renewal Licensure&quot;,
+    &quot;ApplnCategory&quot; : &quot;Standard&quot;,
+    &quot;AuthorizedPersonInformation&quot; : {
+      &quot;AuthorizedPersonBlock&quot; : [ { }, {
+        &quot;AuthorizedPersonName&quot; : &quot;Pickachu&quot;
+      } ]
+    },
+    &quot;appType&quot; : &quot;CRIRenewalLicense&quot;,
+    &quot;LateFeeInfo&quot; : {
+      &quot;ApplnCategory&quot; : &quot;Late Renewal&quot;,
+      &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+      &quot;FeeType&quot; : &quot;Renewal Licensure&quot;
+    },
+    &quot;HasPartialRenewal&quot; : true,
+    &quot;hidePayLater&quot; : true
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CertifiedReporterPaymentOverviewNote</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock5&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;text-align: left; background: lightgray; padding: 15px; font-family: Helvetica, Arial, sans-serif; font-size: 16px;\&quot;&gt;As outlined in &lt;strong&gt;ACJA &amp;sect; 7-206(K)(3)&lt;/strong&gt;, certified reporters have &lt;strong&gt;two options&lt;/strong&gt; for paying their biennial renewal fees:&lt;/div&gt;\n&lt;div style=\&quot;text-align: left; background: lightgray; padding: 0px 15px; font-family: Helvetica, Arial, sans-serif; font-size: 16px;\&quot;&gt;\n&lt;p style=\&quot;padding: 7px 0px 7px 16px;\&quot;&gt;&lt;strong&gt;Option 1: Pay in Full (Biennial Payment)&lt;/strong&gt;&lt;/p&gt;\n&lt;ul style=\&quot;padding-left: 40px;\&quot;&gt;\n&lt;li&gt;&lt;strong&gt;When to Pay: &lt;/strong&gt;Between&lt;strong&gt; January 1 and January 31 of &lt;/strong&gt;each&lt;strong&gt; even-numbered year.&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Amount: $700.00&lt;/strong&gt; (biennial renewal fee).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Late Payment&lt;/strong&gt;:&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;Payments made between &lt;strong&gt;February 1 and February 28&lt;/strong&gt; will incur a &lt;strong&gt;late renewal fee of $100.00&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Total due if late: $800.00.&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/ul&gt;\n&lt;p style=\&quot;padding: 7px 0px 7px 16px;\&quot;&gt;&lt;strong&gt;Option 2: Split Payment (Annual Payment)&lt;/strong&gt;&lt;/p&gt;\n&lt;ul style=\&quot;padding-left: 40px;\&quot;&gt;\n&lt;li&gt;&lt;strong&gt;When to Pay:&lt;/strong&gt;&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;First half due &lt;strong&gt;January 1&amp;ndash;31&lt;/strong&gt; each year.&lt;/li&gt;\n&lt;li&gt;Second half due the following year in the same window.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;li&gt;&lt;strong&gt;Amount: $350.00&lt;/strong&gt; per year..&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Late Payment&lt;/strong&gt;:&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;Payments made between &lt;strong&gt;February 1 and February 28&lt;/strong&gt; will incur a &lt;strong&gt;late renewal fee of $100.00&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Total due if late: $450.00.&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;/div&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CertifiedReporterPaymentOverviewSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 100.0,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CRPaymentButtons</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;hide&quot; : false,
+  &quot;controlWidth&quot; : 5,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;lwcName&quot; : &quot;aZSC_PaymentOverview&quot;,
+  &quot;label&quot; : &quot;Payment Buttons&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;hide-pay-later&quot;,
+    &quot;source&quot; : &quot;%hidePayLater%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CRPaymentButtonsSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 7,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FullFeeTable</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;FullFeeTable&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;Standard&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;PayOption&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfFeeTable&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;parent-data&quot;,
+    &quot;source&quot; : &quot;true&quot;
+  }, {
+    &quot;name&quot; : &quot;records&quot;,
+    &quot;source&quot; : &quot;%FeeData%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GenericFeeTableSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 20.0,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PartialFeeTable</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;hide&quot; : false,
+  &quot;controlWidth&quot; : 12,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;Partial&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;PayOption&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;lwcName&quot; : &quot;cfFeeTable&quot;,
+  &quot;label&quot; : &quot;PartialFeeTable&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;parent-data&quot;,
+    &quot;source&quot; : &quot;true&quot;
+  }, {
+    &quot;name&quot; : &quot;records&quot;,
+    &quot;source&quot; : &quot;%PartialFeeData%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentMethodABSTitle</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;div&gt;\n&lt;div class=\&quot;slds-text-heading_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;&lt;u&gt;You can wish to Pay Now or Pay Later:&lt;/u&gt;&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Now&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Later&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;Please submit your payment using the following accepted forms of payment:\n&lt;ol class=\&quot;slds-p-left_medium\&quot;&gt;\n&lt;li&gt;Check or Money Order payable to &amp;ldquo;Arizona Supreme Court&amp;rdquo;&lt;/li&gt;\n&lt;li&gt;Visa or Mastercard with the &lt;a href=\&quot;https://www.azcourts.gov/Portals/0/26/Credit Card Authorization Form.pdf\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener\&quot;&gt;credit card authorization form&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;AND can be mailed OR dropped off at:&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Arizona Supreme Court&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt; 1501 W. Washington St.,&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Ste 104 Phoenix, AZ 85007&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;attn: Certification and Licensing Division (CBS Unit)&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;(Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)&lt;/span&gt;&lt;/li&gt;\n&lt;/ol&gt;\nYour application will remain in a Pending Payment status until the check is received and processed. At that time your application will be Submitted.&lt;br&gt;Parties designated as sub applicants will receive their application email reminders only after full payment has been processed for the main application.&lt;br&gt;Don&amp;rsquo;t want to wait for your check to be processed? Or selected Pay Later, but changed your mind?&lt;br&gt;You can log in to your account, find your application, and click &amp;ldquo;Pay Now&amp;rdquo; button to pay online.&lt;/div&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;OR&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;ABSInitialLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      }, {
+        &quot;field&quot; : &quot;appType&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;ABSRenewalLicense&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentMethodSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 30,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentMethodTitle</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;div&gt;\n&lt;div class=\&quot;slds-text-heading_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;&lt;u&gt;You can wish to Pay Now or Pay Later:&lt;/u&gt;&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Now&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Later&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;Please submit your payment using the following accepted forms of payment:\n&lt;ol class=\&quot;slds-p-left_medium\&quot;&gt;\n&lt;li&gt;Check or Money Order payable to &amp;ldquo;Arizona Supreme Court&amp;rdquo;&lt;/li&gt;\n&lt;li&gt;Visa or Mastercard with the &lt;a href=\&quot;https://www.azcourts.gov/Portals/0/26/Credit Card Authorization Form.pdf\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener\&quot;&gt;credit card authorization form&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;AND can be mailed OR dropped off at:&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Arizona Supreme Court&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt; 1501 W. Washington St.,&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Ste 104 Phoenix, AZ 85007&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;attn: Certification and Licensing Division (CBS Unit)&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;(Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)&lt;/span&gt;&lt;/li&gt;\n&lt;/ol&gt;\nYour application will remain in a Pending Payment status until the check is received and processed. At that time your application will be Submitted.&lt;br&gt;Don&amp;rsquo;t want to wait for your check to be processed? Or selected Pay Later, but changed your mind?&lt;br&gt;You can log in to your account, find your application, and click &amp;ldquo;Pay Now&amp;rdquo; button to pay online.&lt;/div&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;ABSInitialLicense&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      }, {
+        &quot;field&quot; : &quot;appType&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : &quot;ABSRenewalLicense&quot;
+      } ]
+    }
+  },
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PayOption</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 8,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : &quot;Standard&quot;,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Standard&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;Pay in Full (Biennial Payment)&quot;,
+    &quot;autoAdv&quot; : null
+  }, {
+    &quot;name&quot; : &quot;Partial&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;Split Payment (Annual Payment)&quot;,
+    &quot;autoAdv&quot; : null
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Radio</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PayOptionSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 20,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PayOptionTitle</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock3&quot;,
+  &quot;text&quot; : &quot;&lt;div class=\&quot;slds-text-heading_medium\&quot; style=\&quot;font-weight: bold; padding: 10px 0px;\&quot;&gt;&lt;span style=\&quot;color: #e03e2d;\&quot;&gt;&lt;strong&gt;*&lt;/strong&gt;&lt;/span&gt; &lt;u&gt;How would you like to do the payment?&lt;/u&gt;&lt;/div&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CertifiedReporterPaymentOverview</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;nextWidth&quot; : &quot;0&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;ssm&quot; : false,
+  &quot;knowledgeOptions&quot; : {
+    &quot;typeFilter&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;language&quot; : &quot;English&quot;
+  },
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;pubsub&quot; : false,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;previousWidth&quot; : &quot;0&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;HasPartialRenewal&quot;
+      } ]
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;label&quot; : &quot;Payment Overview&quot;,
+  &quot;message&quot; : { },
+  &quot;wpm&quot; : false,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;nextLabel&quot; : &quot;Continue&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FeeTable</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Fee Table&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfFeeTable&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;parent-data&quot;,
+    &quot;source&quot; : &quot;true&quot;
+  }, {
+    &quot;name&quot; : &quot;records&quot;,
+    &quot;source&quot; : &quot;%FeeData%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FeeTableSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 20.0,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentABSMessage</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;div&gt;\n&lt;div class=\&quot;slds-text-heading_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;&lt;u&gt;Payment Options:&lt;/u&gt;&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Now&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Later&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;Please submit your payment using the following accepted forms of payment:\n&lt;ol class=\&quot;slds-p-left_medium\&quot;&gt;\n&lt;li&gt;Check or Money Order payable to &amp;ldquo;Arizona Supreme Court&amp;rdquo;&lt;/li&gt;\n&lt;li&gt;Visa or Mastercard with the &lt;a href=\&quot;https://www.azcourts.gov/Portals/0/26/Credit Card Authorization Form.pdf\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener\&quot;&gt;credit card authorization form&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;AND can be mailed OR dropped off at:&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Arizona Supreme Court&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt; 1501 W. Washington St.,&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Ste 104 Phoenix, AZ 85007&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;attn: Certification and Licensing Division (CBS Unit)&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;(Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)&lt;/span&gt;&lt;/li&gt;\n&lt;/ol&gt;\nYour application will remain in a Pending Payment status until the check is received and processed. At that time your application will be Submitted.&lt;br&gt;Parties designated as sub applicants will receive their application email reminders only after full payment has been processed for the main application.&lt;br&gt;Don&amp;rsquo;t want to wait for your check to be processed? Or selected Pay Later, but changed your mind?&lt;br&gt;You can log in to your account, find your application, and click &amp;ldquo;Pay Now&amp;rdquo; button to pay online.&lt;/div&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;OR&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;ABSInitialLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      }, {
+        &quot;field&quot; : &quot;appType&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;ABSRenewalLicense&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentButtons</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 5,
+  &quot;label&quot; : &quot;Payment Buttons&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;aZSC_PaymentOverview&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;hide-pay-later&quot;,
+    &quot;source&quot; : &quot;%hidePayLater%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentButtonsSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 7,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentMessage</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;div&gt;\n&lt;div class=\&quot;slds-text-heading_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;&lt;u&gt;Payment Options:&lt;/u&gt;&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Now&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_large slds-p-left_medium\&quot; style=\&quot;font-weight: bold;\&quot;&gt;Pay Later&lt;/div&gt;\n&lt;div class=\&quot;slds-text-heading_small slds-p-top_medium slds-p-left_xx-large\&quot; style=\&quot;line-height: 2; text-align: justify;\&quot;&gt;Please submit your payment using the following accepted forms of payment:\n&lt;ol class=\&quot;slds-p-left_medium\&quot;&gt;\n&lt;li&gt;Check or Money Order payable to &amp;ldquo;Arizona Supreme Court&amp;rdquo;&lt;/li&gt;\n&lt;li&gt;Visa or Mastercard with the &lt;a href=\&quot;https://www.azcourts.gov/Portals/0/26/Credit Card Authorization Form.pdf\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener\&quot;&gt;credit card authorization form&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;AND can be mailed OR dropped off at:&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Arizona Supreme Court&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt; 1501 W. Washington St.,&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;Ste 104 Phoenix, AZ 85007&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;attn: Certification and Licensing Division (CBS Unit)&lt;/span&gt;&lt;br&gt;&lt;span class=\&quot;slds-p-left_medium\&quot;&gt;(Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)&lt;/span&gt;&lt;/li&gt;\n&lt;/ol&gt;\nYour application will remain in a Pending Payment status until the check is received and processed. At that time your application will be Submitted.&lt;br&gt;Don&amp;rsquo;t want to wait for your check to be processed? Or selected Pay Later, but changed your mind?&lt;br&gt;You can log in to your account, find your application, and click &amp;ldquo;Pay Now&amp;rdquo; button to pay online.&lt;/div&gt;\n&lt;/div&gt;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;ABSInitialLicense&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      }, {
+        &quot;field&quot; : &quot;appType&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : &quot;ABSRenewalLicense&quot;
+      } ]
+    }
+  },
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentMessageSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 30,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PaymentOverviewSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 100,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PaymentOverview</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;message&quot; : { },
+  &quot;ssm&quot; : false,
+  &quot;wpm&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;default&quot; : null,
+    &quot;custom&quot; : [ ]
+  },
+  &quot;allowSaveForLater&quot; : false,
+  &quot;chartLabel&quot; : null,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;HasPartialRenewal&quot;
+      } ]
+    }
+  },
+  &quot;knowledgeOptions&quot; : {
+    &quot;typeFilter&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;language&quot; : &quot;English&quot;
+  },
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;nextWidth&quot; : &quot;0&quot;,
+  &quot;nextLabel&quot; : &quot;Continue&quot;,
+  &quot;previousWidth&quot; : &quot;0&quot;,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;label&quot; : &quot;Payment Overview&quot;
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RenewalPartialFeeCalculation</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;ssm&quot; : false,
+  &quot;useContinuation&quot; : false,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;responseJSONPath&quot; : &quot;FeeData&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;OR&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;HasPartialRenewal&quot;
+      } ]
+    }
+  },
+  &quot;label&quot; : &quot;Renewal Partial Fee Calculation&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;message&quot; : { },
+  &quot;extraPayload&quot; : { },
+  &quot;integrationProcedureKey&quot; : &quot;AZSC_ApplicationFeeCalculation&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;responseJSONNode&quot; : &quot;PartialFeeData&quot;,
+  &quot;wpm&quot; : false,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;enableDefaultAbort&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:true,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:false,&quot;mergeSavedData&quot;:false,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;,&quot;currentLanguage&quot;:&quot;en_US&quot;}</propertySetConfig>
+    <subType>PaymentInformation</subType>
+    <type>AZSC</type>
+    <uniqueName>AZSC_PaymentInformation_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+</OmniScript>

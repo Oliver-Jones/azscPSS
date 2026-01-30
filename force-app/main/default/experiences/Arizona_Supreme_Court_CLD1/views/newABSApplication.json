@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "6bbfc4a8-3719-4d86-b7d6-cef55b7c6c18",
+  "label" : "New ABS Application",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0) url(/sfsites/c/file-asset/AlternativeBusinessStructure?v=1) center center /cover",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c7072f4a-f32e-4ccf-9e5a-ab876211ece2",
+          "columns" : [ {
+            "UUID" : "a9448f66-9f91-4d86-932c-a2e019ba9848",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c7072f4a-f32e-4ccf-9e5a-ab876211ece2",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "InitialApplication",
+            "theme" : "lightning",
+            "type" : "ABS"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "bbdd8cc4-c51d-436a-9a36-df28bcbc658c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a9448f66-9f91-4d86-932c-a2e019ba9848",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d786751b-aaba-49f2-b310-75fe43c64f2b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Alternative Business Structure Application"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "da09ddeb-12b1-4547-8d9c-7cb0d20aed50",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "595a90c5-bb57-438a-926c-73358e2d5d6f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-new-abs-application"
+}

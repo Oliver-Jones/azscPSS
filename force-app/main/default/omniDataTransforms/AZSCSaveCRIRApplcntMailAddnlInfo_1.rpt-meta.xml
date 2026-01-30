@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;RenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764722514509&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@mastek.com.krishdev&quot;,
+  &quot;userId&quot; : &quot;005O200000RJb18&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOz00000082zAMAQ&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;CRRenewalApplicantInfo&quot; : {
+    &quot;CRIR_HomePhone&quot; : &quot;3213213211&quot;,
+    &quot;CRIR_MailState&quot; : &quot;AZ&quot;,
+    &quot;CRIR_LastName&quot; : &quot;Thaya&quot;,
+    &quot;CRIR_MailZip&quot; : &quot;99999&quot;,
+    &quot;RenewalLicenseStatus&quot; : &quot;Active - Renewal Pending&quot;,
+    &quot;CRIR_HomeState&quot; : &quot;AZ&quot;,
+    &quot;CRIR_EmailAddr&quot; : &quot;w5qjt@starmail.net&quot;,
+    &quot;CRIR_FirstName&quot; : &quot;Blessing&quot;,
+    &quot;CRIR_MailCity&quot; : &quot;TEST CITY&quot;,
+    &quot;CRIR_MailAddr&quot; : &quot;TEST SITE ADDRESS&quot;,
+    &quot;CRIR_HomeFax&quot; : &quot;1232131232&quot;,
+    &quot;CRIR_MI&quot; : &quot;R&quot;,
+    &quot;CRIR_HomeCity&quot; : &quot;Bangalore&quot;,
+    &quot;CRIR_HomeAddr&quot; : &quot;Airport City&quot;,
+    &quot;CRIR_MobileNo&quot; : &quot;1232131232&quot;,
+    &quot;CRIR_HomeZip&quot; : &quot;12312&quot;
+  },
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;c__licenseId&quot; : &quot;0cEOz0000006rUfMAI&quot;,
+  &quot;UserInfo&quot; : {
+    &quot;IsPortalEnabled&quot; : false
+  },
+  &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+  &quot;FeeType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicantFirstName&quot; : &quot;&quot;,
+  &quot;ApplicantLastName&quot; : &quot;&quot;,
+  &quot;BusinessCountry&quot; : &quot;US&quot;,
+  &quot;BusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;Renewal Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRI_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRILicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;0cEOz0000006rUfMAI&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;CurrentDate&quot; : &quot;2025-12-02T18:30:00.000Z&quot;,
+  &quot;CurrentMonth&quot; : 12,
+  &quot;ApplnBusinessType&quot; : &quot;Standard&quot;,
+  &quot;sInstanceId&quot; : &quot;0kTO2000000C8HxMAK&quot;,
+  &quot;IsRenewalAppln&quot; : true,
+  &quot;ApplnRecId&quot; : &quot;0iTOz0000002bzZMAQ&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>0da665ce-1f84-42c8-a5b3-48de6f37e4ce</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>289a42ee-6223-4f5b-86c7-b68925b6217f</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_MailZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ba9be673-c6df-4440-ab0b-34d1ffd2ee05</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_EmailAddr</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Email_Address__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>59a3c979-e7b7-4825-ac95-61b3aec027a3</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_HomePhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b1bc7b0e-8698-42ad-8f74-687681da5582</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_MailState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Contact_Address_Info</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>550d3450-c1fa-48bb-9e43-631ec88d70f9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Mailing (e.g., PO Box)</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c31daee0-b07a-4ee2-98c4-c50053eebc24</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Information_Type__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>931a615a-0891-4826-9a74-b848a6a39342</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_MailCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>fa433bbd-5caa-4b24-989f-744dbbaa3482</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_HomeFax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c0f78ef5-7073-4335-be02-f47858a66990</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contact__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e3dc830a-f423-472a-9809-63eadbcdc129</globalKey>
+        <inputFieldName>IsRenewalAppln</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Active__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e314c964-4eb1-429b-8d33-daf36bbc36d3</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>121c70b0-8f89-4408-a38e-e5caabdb0fa6</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_MobileNo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Mobile_Phone__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6bd2e1e0-25d1-4fbe-8a37-f91e62f786e6</globalKey>
+        <inputFieldName>ApplnRecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IndApplication__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a299015e-2c8e-4c44-a4ab-8fce56c28355</globalKey>
+        <inputFieldName>CRRenewalApplicantInfo:CRIR_MailAddr</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIRApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCSaveCRIRApplcntMailAddnlInfo_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

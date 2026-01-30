@@ -1,0 +1,110 @@
+<template>
+	<div class="slds-grid slds-grid_align-end slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_xx-large">
+        <lightning-button class="" variant="brand" label="Pay Now" onclick={payNow}></lightning-button>
+		<template if:false={hidePayLater}>
+        	<lightning-button class="slds-p-left_small" variant="brand" label="Pay Later" onclick={payLater}></lightning-button>
+		</template>
+    </div>
+	<!--
+	<template lwc:if={showSpinner}>
+		<lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+	</template>
+    <template if:true={showTable}>
+		<section class="slds-p-vertical_large">
+			<table class="applnTable slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered slds-border_right slds-border_left">
+				<thead>
+					<tr>
+						<th style="width: 30%">
+							<div class='slds-grid'>
+								<div>
+									Application Type
+								</div>
+							</div>
+						</th>
+						<th style="width: 25%">
+							<div class='slds-grid'>
+								<div>
+									Classification
+								</div>
+							</div>
+						</th>
+						<th style="width: 25%">
+							<div class='slds-grid'>
+								<div>
+									Application Fee Type
+								</div>
+							</div>
+						</th>
+						<th style="width: 20%">
+							<div class='slds-grid'>
+								<div>
+									Fee Amount
+								</div>
+							</div>
+						</th>
+					</tr>
+				</thead>						
+				<tbody if:true={tableInfo}>
+					<template for:each={tableInfo} for:item='data'>
+						<tr key={data.key}>
+							<td>{data.value.Comments}</td>
+							<td>{data.value.Name}</td>
+							<td>{data.value.Fee_Type__c}</td>
+							<td>$ {data.value.FeeAmount}</td>
+						</tr>
+					</template>
+                    <tr>
+                        <td colspan="3" style="text-align:right; padding-right: 2rem; font-weight: 500; color: #000; padding-top: 16px;"><b>TOTAL</b></td>
+                        <td style="font-weight: 500; color: #000; padding-top: 16px;">$ {feeTotal}</td>
+                    </tr>
+				</tbody>
+			</table>
+		</section>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+            <div style="font-weight: 700;" class="slds-text-heading_medium">
+				<u>Payment Options:</u>
+			</div>
+            <div style="font-weight: 700;" class="slds-text-heading_small slds-p-top_large slds-p-left_medium">
+				Pay Now
+			</div>
+            <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				You will be directed to a secure site for the payment transaction using a credit/debit card. Once the payment is made, you will return to this portal, and your application will be Submitted.
+			</div>
+            <div style="font-weight: 700;" class="slds-text-heading_small slds-p-top_large slds-p-left_medium">
+				Pay Later
+			</div>
+            <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				Please submit your payment using the following accepted forms of payment:
+			</div>
+			<div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				1. Check or Money Order payable to “Arizona Supreme Court” <br/>
+				2. Visa or Mastercard with the <a target="_blank" href="https://www.azcourts.gov/Portals/0/26/Credit%20Card%20Authorization%20Form.pdf">credit card authorization form</a><br/>
+				3. AND can be mailed OR dropped off at
+			</div>
+			<div style="line-height: 2; text-align: left; padding-left: 10%;" class="slds-text-heading_small slds-p-top_xx-small slds-p-left_xx-large">
+				Arizona Supreme Court<br/>
+				1501 W. Washington St.,<br/>
+				Ste 104 Phoenix, AZ 85007<br/>
+				attn: Certification and Licensing Division
+			</div>
+			<div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				(Please indicate the purpose of the payment via check memo or letter so our front office can process the payment timely.)
+			</div>
+            <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				Your application will remain in a Pending Payment status until the check is received and processed. At that time your application will be Submitted.
+			</div>
+			<div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-top_medium slds-p-left_xx-large">
+				Parties designated as sub applicants will receive their application email reminders only after full payment has been processed for the main application.
+			</div>
+            <div style="line-height: 2; text-align: justify;" class="slds-text-heading_small slds-p-left_xx-large">
+				Don’t want to wait for your check to be processed? Or selected Pay Later, but changed your mind? <br />
+				You can log in to your account, find your application, and click “Pay Now” button to pay online. 
+			</div>
+        </div>
+		<div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 slds-p-top_xx-large">
+			<button type="button" title="Click here to Pay Now" class="payBtn vlocity-btn slds-button slds-button_brand slds-size_1-of-1 slds-p-horizontal_none slds-text-align_center" onclick={payNow}>Pay Now</button>
+			<button type="button" title="Click here to Pay Later" class="payBtn slds-m-right_x-large vlocity-btn slds-button slds-button_brand slds-size_1-of-1 slds-p-horizontal_none slds-text-align_center" onclick={payLater}>Pay Later</button>
+		</div>
+	</template>
+	-->
+</template>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "1b94c174-91fb-4657-8172-7b7333feabbd",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_FDT_Application__c",
+  "id" : "ba490afa-ac1c-4dbd-ba40-f9af9143334f",
+  "label" : "New FDT Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-fdt-application",
+  "type" : "route",
+  "urlPrefix" : "applications/fd-program/new-fdt-application"
+}

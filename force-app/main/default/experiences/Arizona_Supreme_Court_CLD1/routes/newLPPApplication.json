@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6ac103ba-b293-42d8-8214-2034b454262c",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "New_LPP_Application__c",
+  "id" : "fba78caf-f1f8-49f8-b5ff-9d6abad96e03",
+  "label" : "New LPP Application",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-new-lpp-application",
+  "type" : "route",
+  "urlPrefix" : "applications/lpp-program/new-lpp-application"
+}

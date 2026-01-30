@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CRI&quot;,
+  &quot;subType&quot; : &quot;InitialApplication&quot;,
+  &quot;sId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764713600030&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@mastek.com.krishdev&quot;,
+  &quot;userId&quot; : &quot;005Oz00000R2dVZ&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;InitialApplicantInfo&quot; : {
+    &quot;ApplicantMailingInputCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingInputStreet&quot; : &quot;124 Marine Drive&quot;,
+    &quot;ApplicantMailingInputCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantMailingInputState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantMailingInputZip&quot; : &quot;85224&quot;,
+    &quot;ApplicantHomeCloneCountry&quot; : null,
+    &quot;ApplicantHomeCloneStreet&quot; : null,
+    &quot;ApplicantHomeCloneCity&quot; : null,
+    &quot;ApplicantHomeCloneState&quot; : null,
+    &quot;ApplicantHomeCloneZip&quot; : null,
+    &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingStreet&quot; : &quot;124 Marine Drive&quot;,
+    &quot;ApplicantMailingCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantMailingState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantMailingZip&quot; : &quot;85224&quot;,
+    &quot;HasDriverLicense&quot; : false,
+    &quot;HasDriverLicenseInput&quot; : null,
+    &quot;DriverLicenseBlock&quot; : null,
+    &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantFirstName&quot; : &quot;John&quot;,
+    &quot;ApplicantLastName&quot; : &quot;Doe&quot;,
+    &quot;CertificationType&quot; : &quot;Standard&quot;,
+    &quot;ApplicantSocialSecurityNumber&quot; : &quot;465234236&quot;,
+    &quot;OfficialOrFreeLance&quot; : &quot;Official&quot;,
+    &quot;ApplicantHomeStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;ApplicantHomeCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantHomeZip&quot; : &quot;85224&quot;,
+    &quot;ApplicantMailingSameAsHome&quot; : &quot;No&quot;,
+    &quot;ApplicantTelephoneNumber&quot; : &quot;5346543664&quot;,
+    &quot;ApplicantFaxNumber&quot; : &quot;2432346523&quot;,
+    &quot;ApplicantCellPhoneNumber&quot; : &quot;2342356232&quot;,
+    &quot;ApplicantEmail&quot; : &quot;john.shelby@yopmail.com&quot;
+  },
+  &quot;RenewalApplicantInfo&quot; : null,
+  &quot;EmployerInfo&quot; : {
+    &quot;WorkCountry&quot; : &quot;US&quot;,
+    &quot;WorkState&quot; : &quot;AZ&quot;,
+    &quot;EmployerName&quot; : &quot;Overton Enterprises&quot;,
+    &quot;WorkStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;WorkCity&quot; : &quot;Chandler&quot;,
+    &quot;WorkZip&quot; : &quot;85224&quot;,
+    &quot;WorkTelephoneNumber&quot; : &quot;8579325600&quot;,
+    &quot;WorkEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;WorkFaxNumber&quot; : &quot;1512345325&quot;
+  },
+  &quot;ReportingFirmInformation&quot; : null,
+  &quot;EmploymentInformation&quot; : null,
+  &quot;ProfessionalSkillProficiency&quot; : {
+    &quot;ProofOfCitizenshipBlock&quot; : null,
+    &quot;ProfessionalInfoQ2ABlock&quot; : null,
+    &quot;ProfessionalInfoQ2BBlock&quot; : null,
+    &quot;ProfessionalInfoQ2CBlock&quot; : null,
+    &quot;ProfessionalInfoQ9&quot; : null,
+    &quot;ProfessionalInfoQ9Block&quot; : null,
+    &quot;ProfessionalInfoQ3Block&quot; : null,
+    &quot;ProfessionalInfoQ4Block&quot; : null,
+    &quot;ProfessionalInfoQ5Block&quot; : null,
+    &quot;ProfessionalInfoQ7Block&quot; : null,
+    &quot;CertifiedStateBlock&quot; : null,
+    &quot;ProfInfoQ1&quot; : false,
+    &quot;ProfInfoQ2&quot; : false,
+    &quot;ProfInfoQ3&quot; : false,
+    &quot;ProfInfoQ4&quot; : false,
+    &quot;ProfInfoQ5&quot; : false,
+    &quot;ProfInfoQ6&quot; : false,
+    &quot;ProfInfoQ7&quot; : false,
+    &quot;ProfInfoQ8&quot; : false,
+    &quot;ProfessionalInfoQ7&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ6&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ5&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ4&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ3&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ2&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ1&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ8&quot; : &quot;No&quot;
+  },
+  &quot;ApplicantAffidavit&quot; : null,
+  &quot;InitialBackgroundInformation&quot; : {
+    &quot;Block18&quot; : null,
+    &quot;Block19&quot; : null,
+    &quot;Block20&quot; : null,
+    &quot;Block21&quot; : null,
+    &quot;Block22&quot; : null,
+    &quot;Block23&quot; : null,
+    &quot;Block24&quot; : null,
+    &quot;Block25&quot; : null,
+    &quot;BgInfoQ18&quot; : false,
+    &quot;BgInfoQ19&quot; : false,
+    &quot;BgInfoQ20&quot; : false,
+    &quot;BgInfoQ21&quot; : false,
+    &quot;BgInfoQ22&quot; : false,
+    &quot;BgInfoQ23&quot; : false,
+    &quot;BgInfoQ24&quot; : false,
+    &quot;BgInfoQ25&quot; : false
+  },
+  &quot;RenewalBackgroundInformation&quot; : null,
+  &quot;CRIDocumentUploads&quot; : { },
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;Account&quot; : {
+    &quot;IsPersonAccount&quot; : true,
+    &quot;BillingCountryCode&quot; : &quot;US&quot;,
+    &quot;CreatedDate&quot; : &quot;Nov 6, 2025 5:07:56 PM&quot;,
+    &quot;Name&quot; : &quot;John Doe&quot;
+  },
+  &quot;UserInfo&quot; : {
+    &quot;AccountId&quot; : &quot;001Oz00000kV4b7IAC&quot;,
+    &quot;IsPortalEnabled&quot; : true,
+    &quot;ContactId&quot; : &quot;003Oz00000i2qE5IAI&quot;
+  },
+  &quot;Contact&quot; : {
+    &quot;Email&quot; : &quot;johndoe202@yopmail.com&quot;,
+    &quot;FirstName&quot; : &quot;John&quot;,
+    &quot;MailingCountryCode&quot; : &quot;US&quot;,
+    &quot;LastName&quot; : &quot;Doe&quot;,
+    &quot;Name&quot; : &quot;John Doe&quot;
+  },
+  &quot;appType&quot; : &quot;CRIInitialLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+  &quot;FeeType&quot; : &quot;Initial Licensure&quot;,
+  &quot;ApplnType&quot; : &quot;Initial Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRI_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRILicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;IsIndividualApplication&quot; : true,
+  &quot;sInstanceId&quot; : &quot;0kTO2000000C8BVMA0&quot;,
+  &quot;ApplnCategory&quot; : &quot;Standard (&lt;1 Year)&quot;,
+  &quot;FingerPrintingFeeInfo&quot; : {
+    &quot;ApplnCategory&quot; : &quot;Fingerprint Processing Fee&quot;,
+    &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+    &quot;FeeType&quot; : &quot;Initial Licensure&quot;
+  },
+  &quot;DRId_OmniScriptSavedSession&quot; : &quot;0kTO2000000C8BVMA0&quot;,
+  &quot;PublicDirectoryInfo&quot; : {
+    &quot;BusinessName&quot; : null,
+    &quot;PDName&quot; : &quot;James Overton&quot;,
+    &quot;AuthorizeOnlyBusinessName&quot; : true,
+    &quot;AuthorizeMyBusinessNameAndOtherInfo&quot; : true,
+    &quot;AuthorizeOnlyBusiness&quot; : null,
+    &quot;AuthorizeOnlyIndividual&quot; : true,
+    &quot;AuthorizeMyBusinessNameAndOther&quot; : null,
+    &quot;AuthorizeMyIndividualNameAndOther&quot; : true,
+    &quot;CountyBlock&quot; : {
+      &quot;CountiesServed&quot; : &quot;All Counties&quot;,
+      &quot;CountyInfo&quot; : {
+        &quot;DirectoryCountry&quot; : &quot;US&quot;,
+        &quot;DirectoryState&quot; : &quot;AZ&quot;,
+        &quot;DirectoryWebsite&quot; : &quot;www.overton.org&quot;,
+        &quot;DirectoryStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+        &quot;DirectoryCity&quot; : &quot;Chandler&quot;,
+        &quot;DirectoryZip&quot; : &quot;85224&quot;
+      }
+    },
+    &quot;PDMailingCountry&quot; : &quot;US&quot;,
+    &quot;PDMailingState&quot; : &quot;AZ&quot;,
+    &quot;IndividualName&quot; : &quot;James Overton&quot;,
+    &quot;PDEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;PDPhone&quot; : &quot;8579325600&quot;,
+    &quot;PDMailingStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;PDMailingCity&quot; : &quot;Chandler&quot;,
+    &quot;PDMailingZip&quot; : &quot;85224&quot;
+  },
+  &quot;AuthorizedBusinessInfoCheckboxError&quot; : false,
+  &quot;ProofOfCitizenshipError&quot; : false,
+  &quot;CertifiedStateError&quot; : false,
+  &quot;ApplicationId&quot; : &quot;0iTOz0000002bebMAA&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6fe3e051-9410-40d5-a89d-820d8e4535c1</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Email_Address__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7c919cf2-08de-48b3-bb29-bc87fc560a63</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantMailingZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>518f076b-2982-44d4-9d32-fcfbbf51b9b8</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantMailingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Mailing (e.g., PO Box)</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3b9a0549-6448-47f2-9da5-2cc475bd8718</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Information_Type__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e323a2f2-22c3-4d2d-8d0d-a317a88a1fac</globalKey>
+        <inputFieldName>PublicDirectoryInfo:CountyBlock:CountyInfo:DirectoryStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__Street__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>af35f30b-6308-4256-9f3a-450b96a01221</globalKey>
+        <inputFieldName>PublicDirectoryInfo:IndividualName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Name__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>50c4dfd3-1fc9-49ee-ae30-f5b888aa5602</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantMailingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9df66a09-0b0e-42a2-91e6-365ebb90bdb4</globalKey>
+        <inputFieldName>PublicDirectoryInfo:CountyBlock:CountyInfo:DirectoryState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>3598e0a8-85af-4c6e-9448-c8b6a082b83f</globalKey>
+        <inputFieldName>ApplicationId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IndApplication__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cc7bb8b5-973a-4508-9471-90832a5e56a5</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantTelephoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1933468e-2a8e-41e9-8446-2fbfcc1d51a1</globalKey>
+        <inputFieldName>PublicDirectoryInfo:CountyBlock:CountyInfo:DirectoryZip</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__PostalCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>179ee4c1-6cd6-4e97-b280-9465f6ed3d04</globalKey>
+        <inputFieldName>PublicDirectoryInfo:CountyBlock:CountyInfo:DirectoryCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Address__City__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9c888616-48ee-4072-bd7d-72e1b47ca9c3</globalKey>
+        <inputFieldName>UserInfo:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1ffcebd9-1068-45d3-935b-a9883319f411</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantMailingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Address_Info__StateCode__s</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Contact_Address_Info</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ea13c983-d653-4d97-be31-b000a74dd7a4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a5517169-ce0b-4269-beae-6b2f6595908f</globalKey>
+        <inputFieldName>PublicDirectoryInfo:CountyBlock:CountyInfo:DirectoryWebsite</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Website__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5e7fb5f1-e74d-4188-aad6-256762344067</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantFaxNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Fax_Number__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ada917c1-44f5-4340-9962-bfbdd51de9f7</globalKey>
+        <inputFieldName>InitialApplicantInfo:ApplicantCellPhoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Mobile_Phone__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>d49b8976-7ea7-44a7-ab18-a3b8c89fbdf1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d3f41331-4195-4e67-bdaf-699892d4dd49</globalKey>
+        <inputFieldName>IsIndividualApplication</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Active__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9f54ca5a-da97-42f0-98c4-52d04f809d9a</globalKey>
+        <inputFieldName>UserInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contact__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>966c2aa8-66a3-4057-998c-30173e9056bc</globalKey>
+        <inputFieldName>PublicDirectoryInfo:PDPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Phone__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>63986d4b-d4b3-4446-9a12-2b452ca33a5a</globalKey>
+        <inputFieldName>PublicDirectoryInfo:PDEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCSaveCRIApplcntMailAddnlInfo</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Directory_Email__c</outputFieldName>
+        <outputObjectName>Application_Information__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;FeeData&quot; : null,
+  &quot;PartialFeeData&quot; : null,
+  &quot;hidePayLater&quot; : null,
+  &quot;omniscriptId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CRI&quot;,
+  &quot;subType&quot; : &quot;InitialApplication&quot;,
+  &quot;sId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1764713600030&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@mastek.com.krishdev&quot;,
+  &quot;userId&quot; : &quot;005Oz00000R2dVZ&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNOz00000082PzMAI&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;InitialApplicantInfo&quot; : {
+    &quot;ApplicantMailingInputCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingInputStreet&quot; : &quot;124 Marine Drive&quot;,
+    &quot;ApplicantMailingInputCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantMailingInputState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantMailingInputZip&quot; : &quot;85224&quot;,
+    &quot;ApplicantHomeCloneCountry&quot; : null,
+    &quot;ApplicantHomeCloneStreet&quot; : null,
+    &quot;ApplicantHomeCloneCity&quot; : null,
+    &quot;ApplicantHomeCloneState&quot; : null,
+    &quot;ApplicantHomeCloneZip&quot; : null,
+    &quot;ApplicantMailingCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantMailingStreet&quot; : &quot;124 Marine Drive&quot;,
+    &quot;ApplicantMailingCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantMailingState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantMailingZip&quot; : &quot;85224&quot;,
+    &quot;HasDriverLicense&quot; : false,
+    &quot;HasDriverLicenseInput&quot; : null,
+    &quot;DriverLicenseBlock&quot; : null,
+    &quot;ApplicantHomeCountry&quot; : &quot;US&quot;,
+    &quot;ApplicantHomeState&quot; : &quot;AZ&quot;,
+    &quot;ApplicantFirstName&quot; : &quot;John&quot;,
+    &quot;ApplicantLastName&quot; : &quot;Doe&quot;,
+    &quot;CertificationType&quot; : &quot;Standard&quot;,
+    &quot;ApplicantSocialSecurityNumber&quot; : &quot;465234236&quot;,
+    &quot;OfficialOrFreeLance&quot; : &quot;Official&quot;,
+    &quot;ApplicantHomeStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;ApplicantHomeCity&quot; : &quot;Chandler&quot;,
+    &quot;ApplicantHomeZip&quot; : &quot;85224&quot;,
+    &quot;ApplicantMailingSameAsHome&quot; : &quot;No&quot;,
+    &quot;ApplicantTelephoneNumber&quot; : &quot;5346543664&quot;,
+    &quot;ApplicantFaxNumber&quot; : &quot;2432346523&quot;,
+    &quot;ApplicantCellPhoneNumber&quot; : &quot;2342356232&quot;,
+    &quot;ApplicantEmail&quot; : &quot;john.shelby@yopmail.com&quot;
+  },
+  &quot;RenewalApplicantInfo&quot; : null,
+  &quot;EmployerInfo&quot; : {
+    &quot;WorkCountry&quot; : &quot;US&quot;,
+    &quot;WorkState&quot; : &quot;AZ&quot;,
+    &quot;EmployerName&quot; : &quot;Overton Enterprises&quot;,
+    &quot;WorkStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;WorkCity&quot; : &quot;Chandler&quot;,
+    &quot;WorkZip&quot; : &quot;85224&quot;,
+    &quot;WorkTelephoneNumber&quot; : &quot;8579325600&quot;,
+    &quot;WorkEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;WorkFaxNumber&quot; : &quot;1512345325&quot;
+  },
+  &quot;ReportingFirmInformation&quot; : null,
+  &quot;EmploymentInformation&quot; : null,
+  &quot;ProfessionalSkillProficiency&quot; : {
+    &quot;ProofOfCitizenshipBlock&quot; : null,
+    &quot;ProfessionalInfoQ2ABlock&quot; : null,
+    &quot;ProfessionalInfoQ2BBlock&quot; : null,
+    &quot;ProfessionalInfoQ2CBlock&quot; : null,
+    &quot;ProfessionalInfoQ9&quot; : null,
+    &quot;ProfessionalInfoQ9Block&quot; : null,
+    &quot;ProfessionalInfoQ3Block&quot; : null,
+    &quot;ProfessionalInfoQ4Block&quot; : null,
+    &quot;ProfessionalInfoQ5Block&quot; : null,
+    &quot;ProfessionalInfoQ7Block&quot; : null,
+    &quot;CertifiedStateBlock&quot; : null,
+    &quot;ProfInfoQ1&quot; : false,
+    &quot;ProfInfoQ2&quot; : false,
+    &quot;ProfInfoQ3&quot; : false,
+    &quot;ProfInfoQ4&quot; : false,
+    &quot;ProfInfoQ5&quot; : false,
+    &quot;ProfInfoQ6&quot; : false,
+    &quot;ProfInfoQ7&quot; : false,
+    &quot;ProfInfoQ8&quot; : false,
+    &quot;ProfessionalInfoQ7&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ6&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ5&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ4&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ3&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ2&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ1&quot; : &quot;No&quot;,
+    &quot;ProfessionalInfoQ8&quot; : &quot;No&quot;
+  },
+  &quot;ApplicantAffidavit&quot; : null,
+  &quot;InitialBackgroundInformation&quot; : {
+    &quot;Block18&quot; : null,
+    &quot;Block19&quot; : null,
+    &quot;Block20&quot; : null,
+    &quot;Block21&quot; : null,
+    &quot;Block22&quot; : null,
+    &quot;Block23&quot; : null,
+    &quot;Block24&quot; : null,
+    &quot;Block25&quot; : null,
+    &quot;BgInfoQ18&quot; : false,
+    &quot;BgInfoQ19&quot; : false,
+    &quot;BgInfoQ20&quot; : false,
+    &quot;BgInfoQ21&quot; : false,
+    &quot;BgInfoQ22&quot; : false,
+    &quot;BgInfoQ23&quot; : false,
+    &quot;BgInfoQ24&quot; : false,
+    &quot;BgInfoQ25&quot; : false
+  },
+  &quot;RenewalBackgroundInformation&quot; : null,
+  &quot;CRIDocumentUploads&quot; : { },
+  &quot;CertifiedReporterPaymentOverview&quot; : null,
+  &quot;PaymentOverview&quot; : { },
+  &quot;Account&quot; : {
+    &quot;IsPersonAccount&quot; : true,
+    &quot;BillingCountryCode&quot; : &quot;US&quot;,
+    &quot;CreatedDate&quot; : &quot;Nov 6, 2025 5:07:56 PM&quot;,
+    &quot;Name&quot; : &quot;John Doe&quot;
+  },
+  &quot;UserInfo&quot; : {
+    &quot;AccountId&quot; : &quot;001Oz00000kV4b7IAC&quot;,
+    &quot;IsPortalEnabled&quot; : true,
+    &quot;ContactId&quot; : &quot;003Oz00000i2qE5IAI&quot;
+  },
+  &quot;Contact&quot; : {
+    &quot;Email&quot; : &quot;johndoe202@yopmail.com&quot;,
+    &quot;FirstName&quot; : &quot;John&quot;,
+    &quot;MailingCountryCode&quot; : &quot;US&quot;,
+    &quot;LastName&quot; : &quot;Doe&quot;,
+    &quot;Name&quot; : &quot;John Doe&quot;
+  },
+  &quot;appType&quot; : &quot;CRIInitialLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+  &quot;FeeType&quot; : &quot;Initial Licensure&quot;,
+  &quot;ApplnType&quot; : &quot;Initial Licensure&quot;,
+  &quot;RecordType&quot; : &quot;CRI_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRILicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;IsIndividualApplication&quot; : true,
+  &quot;sInstanceId&quot; : &quot;0kTO2000000C8BVMA0&quot;,
+  &quot;ApplnCategory&quot; : &quot;Standard (&lt;1 Year)&quot;,
+  &quot;FingerPrintingFeeInfo&quot; : {
+    &quot;ApplnCategory&quot; : &quot;Fingerprint Processing Fee&quot;,
+    &quot;ApplicationName&quot; : &quot;Certified Reporter Individual License&quot;,
+    &quot;FeeType&quot; : &quot;Initial Licensure&quot;
+  },
+  &quot;DRId_OmniScriptSavedSession&quot; : &quot;0kTO2000000C8BVMA0&quot;,
+  &quot;PublicDirectoryInfo&quot; : {
+    &quot;BusinessName&quot; : null,
+    &quot;PDName&quot; : &quot;James Overton&quot;,
+    &quot;AuthorizeOnlyBusinessName&quot; : true,
+    &quot;AuthorizeMyBusinessNameAndOtherInfo&quot; : true,
+    &quot;AuthorizeOnlyBusiness&quot; : null,
+    &quot;AuthorizeOnlyIndividual&quot; : true,
+    &quot;AuthorizeMyBusinessNameAndOther&quot; : null,
+    &quot;AuthorizeMyIndividualNameAndOther&quot; : true,
+    &quot;CountyBlock&quot; : {
+      &quot;CountiesServed&quot; : &quot;All Counties&quot;,
+      &quot;CountyInfo&quot; : {
+        &quot;DirectoryCountry&quot; : &quot;US&quot;,
+        &quot;DirectoryState&quot; : &quot;AZ&quot;,
+        &quot;DirectoryWebsite&quot; : &quot;www.overton.org&quot;,
+        &quot;DirectoryStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+        &quot;DirectoryCity&quot; : &quot;Chandler&quot;,
+        &quot;DirectoryZip&quot; : &quot;85224&quot;
+      }
+    },
+    &quot;PDMailingCountry&quot; : &quot;US&quot;,
+    &quot;PDMailingState&quot; : &quot;AZ&quot;,
+    &quot;IndividualName&quot; : &quot;James Overton&quot;,
+    &quot;PDEmail&quot; : &quot;john.shelby@yopmail.com&quot;,
+    &quot;PDPhone&quot; : &quot;8579325600&quot;,
+    &quot;PDMailingStreet&quot; : &quot;2195 W Chandler Blvd Suite 160&quot;,
+    &quot;PDMailingCity&quot; : &quot;Chandler&quot;,
+    &quot;PDMailingZip&quot; : &quot;85224&quot;
+  },
+  &quot;AuthorizedBusinessInfoCheckboxError&quot; : false,
+  &quot;ProofOfCitizenshipError&quot; : false,
+  &quot;CertifiedStateError&quot; : false,
+  &quot;ApplicationId&quot; : &quot;0iTOz0000002bebMAA&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>AZSCSaveCRIApplcntMailAddnlInfo_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

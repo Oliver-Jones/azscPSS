@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Arizona Supreme Court</label>
+    <protected>false</protected>
+    <values>
+        <field>ADO_End_Point__c</field>
+        <value xsi:type="xsd:string">https://ptl.az.gov/scs/rest/chargePayment</value>
+    </values>
+    <values>
+        <field>ADO_Return_Url__c</field>
+        <value xsi:type="xsd:string">https://azcld--mastekpssd.sandbox.my.salesforce-sites.com/azsc/services/apexrest/v1/jbillsgate</value>
+    </values>
+    <values>
+        <field>ADO_Test_Endpoint_URL__c</field>
+        <value xsi:type="xsd:string">https://az.stagingaz.gov/scs/rest/chargePayment</value>
+    </values>
+    <values>
+        <field>ADO_Test_Return_Url__c</field>
+        <value xsi:type="xsd:string">https://azcld--mastekpssd.sandbox.my.salesforce-sites.com/azsc/services/apexrest/v1/jbillsgate</value>
+    </values>
+    <values>
+        <field>Batch_Agency__c</field>
+        <value xsi:type="xsd:string">SPA</value>
+    </values>
+    <values>
+        <field>Board__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>DOC_agency__c</field>
+        <value xsi:type="xsd:string">SPA</value>
+    </values>
+    <values>
+        <field>GAO_Agency__c</field>
+        <value xsi:type="xsd:string">SPA</value>
+    </values>
+    <values>
+        <field>GaoTransactionInstantce__c</field>
+        <value xsi:type="xsd:string">ns2</value>
+    </values>
+    <values>
+        <field>GaoTransactionType__c</field>
+        <value xsi:type="xsd:string">http://payment.az.gov</value>
+    </values>
+    <values>
+        <field>Merchant_ID_Prod__c</field>
+        <value xsi:type="xsd:string">SPA</value>
+    </values>
+    <values>
+        <field>Merchant_ID_staging__c</field>
+        <value xsi:type="xsd:string">SPA_TEST</value>
+    </values>
+    <values>
+        <field>Merchant_Name__c</field>
+        <value xsi:type="xsd:string">SPA</value>
+    </values>
+    <values>
+        <field>Service_Prod__c</field>
+        <value xsi:type="xsd:string">SPA_PAYMENT</value>
+    </values>
+    <values>
+        <field>Service_staging__c</field>
+        <value xsi:type="xsd:string">SPA_TEST_PAYMENT</value>
+    </values>
+    <values>
+        <field>Summary_Description__c</field>
+        <value xsi:type="xsd:string">Payment for Arizona Supreme Court</value>
+    </values>
+</CustomMetadata>

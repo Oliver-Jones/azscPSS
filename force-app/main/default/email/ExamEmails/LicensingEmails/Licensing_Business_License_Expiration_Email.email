@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">{{{BusinessLicense.LastModifiedDate}}}<br />
+<br />
+Division records indicate no renewal application was received this certification period. Under the Arizona Code of Judicial Administration (“ACJA”) § effective midnight on {{{BusinessLicense.PeriodEnd}}},&nbsp;{{{BusinessLicense.License_Name__c}}} certificate {{{BusinessLicense.Name}}}, expired and is no longer active. You must immediately cease providing services. If you believe you have received this notification in error, please contact the Certification and Licensing Division by emailing the appropriate program inbox:<br />
+<br />
+Certified Reporter Program – CourtRep@courts.az.gov<br />
+Defensive Driving Program – Ddrive@courts.az.gov<br />
+Fiduciary Program – PFP@courts.az.gov<br />
+Legal Document Preparer Program – LDP@courts.az.gov<br />
+<br />
+<strong>NOTE REGARDING PENDING COMPLAINTS:</strong> The expiration of your certification DOES NOT limit the Division’s authority to investigate, or the Board's authority to act on, pending complaints.<br />
+<br />
+Sincerely,<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958</body>
+</html>

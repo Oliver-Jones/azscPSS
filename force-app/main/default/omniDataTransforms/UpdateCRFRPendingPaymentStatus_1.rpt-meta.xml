@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeeData&quot; : [ {
+    &quot;Function&quot; : &quot;&quot;,
+    &quot;ApplicationType&quot; : &quot;CRRenewalLicense&quot;,
+    &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+    &quot;ProductCode&quot; : &quot;&quot;,
+    &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+    &quot;Size&quot; : 1,
+    &quot;Fee&quot; : &quot;&quot;,
+    &quot;Total&quot; : 0,
+    &quot;RevenueSource&quot; : &quot;&quot;,
+    &quot;Index&quot; : 1,
+    &quot;IsLast&quot; : true
+  } ],
+  &quot;omniscriptId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;CertifiedReporter&quot;,
+  &quot;subType&quot; : &quot;RenewalAppln&quot;,
+  &quot;sId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;timeStamp&quot; : &quot;1762858660205&quot;,
+  &quot;userTimeZoneName&quot; : &quot;12&quot;,
+  &quot;userCurrencyCode&quot; : &quot;000&quot;,
+  &quot;userName&quot; : &quot;krish@azcld.com.dev02pss&quot;,
+  &quot;userId&quot; : &quot;005O400000X3dV4IAJ&quot;,
+  &quot;userTimeZone&quot; : &quot;sun.util.calendar.ZoneInfo[id=\&quot;America/Los_Angeles\&quot;,offset=-28800000,dstSavings=3600000,useDaylight=true,transitions=185,lastRule=java.util.SimpleTimeZone[id=America/Los_Angeles,offset=-28800000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=2,startDay=8,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=3,endMonth=10,endDay=1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNO40000005VcfMAE&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ApplicantInfo&quot; : null,
+  &quot;RenewalBusinessInformation&quot; : null,
+  &quot;CRRenewalApplicantInfo&quot; : {
+    &quot;CRIR_LastName&quot; : &quot;Doe&quot;,
+    &quot;RenewalLicenseStatus&quot; : &quot;Active&quot;,
+    &quot;CRIR_MI&quot; : &quot;H&quot;,
+    &quot;CRIR_EmailAddr&quot; : &quot;john.doe@yopmail.com&quot;,
+    &quot;CRIR_MobileNo&quot; : &quot;5554444345&quot;,
+    &quot;CRIR_FirstName&quot; : &quot;John&quot;
+  },
+  &quot;c__applnType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;c__licenseId&quot; : &quot;0cEO400000087sLMAQ&quot;,
+  &quot;Account&quot; : {
+    &quot;CreatedDate&quot; : &quot;Nov 11, 2025 4:16:57 AM&quot;,
+    &quot;BillingCountryCode&quot; : &quot;US&quot;,
+    &quot;Name&quot; : &quot;Park Jimin&quot;
+  },
+  &quot;UserInfo&quot; : {
+    &quot;AccountId&quot; : &quot;001O400001SYCR7IAP&quot;,
+    &quot;IsPortalEnabled&quot; : true,
+    &quot;ContactId&quot; : &quot;003O400001TFOTpIAP&quot;
+  },
+  &quot;Contact&quot; : {
+    &quot;Email&quot; : &quot;park.jimin@yopmail.com&quot;,
+    &quot;FirstName&quot; : &quot;Park&quot;,
+    &quot;MailingCountryCode&quot; : &quot;US&quot;,
+    &quot;LastName&quot; : &quot;Jimin&quot;,
+    &quot;Name&quot; : &quot;Park Jimin&quot;
+  },
+  &quot;appType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;ApplicationName&quot; : &quot;Certified Reporter Individual - Renewal Application&quot;,
+  &quot;FeeType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;DPBusinessCountry&quot; : &quot;US&quot;,
+  &quot;DPBusinessState&quot; : &quot;AZ&quot;,
+  &quot;DPHomeCountry&quot; : &quot;US&quot;,
+  &quot;DPHomeState&quot; : &quot;AZ&quot;,
+  &quot;SABusinessCountry&quot; : &quot;US&quot;,
+  &quot;SABusinessState&quot; : &quot;AZ&quot;,
+  &quot;CLBusinessCountry&quot; : &quot;US&quot;,
+  &quot;CLBusinessState&quot; : &quot;AZ&quot;,
+  &quot;PDMailingCountry&quot; : &quot;US&quot;,
+  &quot;PDMailingState&quot; : &quot;AZ&quot;,
+  &quot;ApplnType&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;RecordType&quot; : &quot;ABS_Application&quot;,
+  &quot;RegAuthTypeCode&quot; : &quot;CRRenewalLicense&quot;,
+  &quot;OwnerName&quot; : &quot;ABS_Specialist_Queue&quot;,
+  &quot;BusinessType&quot; : &quot;&quot;,
+  &quot;RenewalLicenseId&quot; : &quot;0cEO400000087sLMAQ&quot;,
+  &quot;NextYear&quot; : 2026,
+  &quot;ComingYear&quot; : 2027,
+  &quot;DRId_IndividualApplication&quot; : &quot;0iTO40000005Vj7MAE&quot;,
+  &quot;ApplnRecId&quot; : &quot;0iTO40000005Vj7MAE&quot;,
+  &quot;sInstanceId&quot; : &quot;0kTO40000005PVdMAM&quot;,
+  &quot;BackgroundInformation&quot; : {
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : null,
+    &quot;Block3&quot; : null,
+    &quot;Block4&quot; : null,
+    &quot;Block5&quot; : null,
+    &quot;Block6&quot; : null,
+    &quot;Block7&quot; : null,
+    &quot;Block8&quot; : null,
+    &quot;Block9&quot; : null,
+    &quot;Block10&quot; : null,
+    &quot;Block11&quot; : null,
+    &quot;Block12&quot; : null,
+    &quot;Block13&quot; : null,
+    &quot;Block14&quot; : null,
+    &quot;Block15&quot; : null,
+    &quot;Block16&quot; : null,
+    &quot;BgInfoQues17&quot; : null,
+    &quot;BgInfoQ1&quot; : false,
+    &quot;BgInfoQ2&quot; : false,
+    &quot;BgInfoQ3&quot; : false,
+    &quot;BgInfoQ4&quot; : false,
+    &quot;BgInfoQ5&quot; : false,
+    &quot;BgInfoQ6&quot; : false,
+    &quot;BgInfoQ7&quot; : false,
+    &quot;BgInfoQ8&quot; : false,
+    &quot;BgInfoQ9&quot; : false,
+    &quot;BgInfoQ10&quot; : false,
+    &quot;BgInfoQ11&quot; : false,
+    &quot;BgInfoQ12&quot; : false,
+    &quot;BgInfoQ13&quot; : false,
+    &quot;BgInfoQ14&quot; : false,
+    &quot;BgInfoQ15&quot; : false,
+    &quot;BgInfoQ16&quot; : false,
+    &quot;BgInfoQ17&quot; : false,
+    &quot;BgInfoQues1&quot; : &quot;No&quot;,
+    &quot;BgInfoQues2&quot; : &quot;No&quot;,
+    &quot;BgInfoQues3&quot; : &quot;No&quot;,
+    &quot;BgInfoQues4&quot; : &quot;No&quot;,
+    &quot;BgInfoQues6&quot; : &quot;No&quot;,
+    &quot;BgInfoQues5&quot; : &quot;No&quot;,
+    &quot;BgInfoQues7&quot; : &quot;No&quot;,
+    &quot;BgInfoQues8&quot; : &quot;No&quot;,
+    &quot;BgInfoQues9&quot; : &quot;No&quot;,
+    &quot;BgInfoQues10&quot; : &quot;No&quot;,
+    &quot;BgInfoQues11&quot; : &quot;No&quot;,
+    &quot;BgInfoQues12&quot; : &quot;No&quot;,
+    &quot;BgInfoQues13&quot; : &quot;No&quot;,
+    &quot;BgInfoQues14&quot; : &quot;No&quot;,
+    &quot;BgInfoQues15&quot; : &quot;No&quot;,
+    &quot;BgInfoQues16&quot; : &quot;No&quot;
+  },
+  &quot;CRIR_ApplicantAffidavit&quot; : {
+    &quot;CRIR_AffidavitCheck&quot; : false
+  },
+  &quot;CRIR_AuthReleaseAffirm&quot; : {
+    &quot;CRIR_AuthReleaseAffirmCheck&quot; : false,
+    &quot;AuthReleaseDate&quot; : &quot;2025-11-11&quot;
+  },
+  &quot;CRIR_DocUpload&quot; : {
+    &quot;DocBlock1&quot; : {
+      &quot;DocName1&quot; : &quot;Continuing Education&quot;
+    },
+    &quot;DocBlock2&quot; : {
+      &quot;DocName2&quot; : &quot;Supporting Documents&quot;
+    }
+  },
+  &quot;PayLater&quot; : true,
+  &quot;PayNow&quot; : false
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>UpdateCRFRPendingPaymentStatus</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Due</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>574e4280-5cf8-4725-9e91-5e0cbc4e3e9c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateCRFRPendingPaymentStatus</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_Status__c</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Payment Pending</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4a5e6570-303f-475a-87f5-631f71d60862</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateCRFRPendingPaymentStatus</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>724c439c-5d21-4991-9acd-4f05239df326</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdateCRFRPendingPaymentStatus</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d786c69c-ba6e-4db7-b3ca-5a7b6ceff48b</globalKey>
+        <inputFieldName>ApplnRecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateCRFRPendingPaymentStatus</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>BusinessLicenseApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>UpdateCRFRPendingPaymentStatus_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
