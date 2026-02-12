@@ -30,13 +30,13 @@
             "direction" : "ltr",
             "display" : "Display OmniScript on page",
             "inlineVariant" : "brand",
-            "language" : "",
-            "subType" : "",
-            "theme" : "",
-            "type" : ""
+            "language" : "English",
+            "subType" : "ServiceRequest",
+            "theme" : "lightning",
+            "type" : "AZSC"
           },
           "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
-          "id" : "6ca1cbe3-d18b-4a79-baf5-c3f7d91a5f85",
+          "id" : "68b27baf-f4f4-4878-9ee2-6ae834cbbb85",
           "renderPriority" : "NEUTRAL",
           "renditionMap" : { },
           "type" : "component"

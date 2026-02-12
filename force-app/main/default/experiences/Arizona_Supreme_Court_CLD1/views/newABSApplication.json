@@ -33,7 +33,7 @@
             "language" : "English",
             "subType" : "InitialApplication",
             "theme" : "lightning",
-            "type" : "ABS"
+            "type" : "AZSC"
           },
           "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
           "id" : "bbdd8cc4-c51d-436a-9a36-df28bcbc658c",

@@ -7,6 +7,22 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>IndividualApplication.Generate_PDF</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>IndividualApplication.Generate_Files</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>IndividualApplication.Pay_Now</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Payment Pending</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
                             <value>EditIARecord</value>
                         </valueListItems>
                         <valueListItems>
@@ -14,9 +30,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>ChangeOwnerOne</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>IndividualApplication.Generate_PDF</value>
                         </valueListItems>
                         <valueListItems>
                             <value>ChangeRecordType</value>
@@ -154,6 +167,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Board_Approval_Date__c</fieldItem>
+                <identifier>RecordBoard_Approval_Date_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Description</fieldItem>
                 <identifier>RecordDescriptionField</identifier>
             </fieldInstance>
@@ -237,6 +260,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status_Change_Reason__c</fieldItem>
                 <identifier>RecordStatus_Change_Reason_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Board_Approval_Date__c</fieldItem>
+                <identifier>RecordBoard_Approval_Date_cField3</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-dd305b84-3a72-4091-9616-9586a845b021</name>
@@ -2748,6 +2781,16 @@
                 <identifier>RecordStatusField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Certification_Type__c</fieldItem>
+                <identifier>RecordCertification_Type_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-85972f64-7c77-4754-b040-7b37f0343aae</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2788,16 +2831,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Certification_Type__c</fieldItem>
-                <identifier>RecordCertification_Type_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.LicensePermitNameId</fieldItem>
                 <identifier>RecordLicensePermitNameIdField2</identifier>
             </fieldInstance>
@@ -2810,6 +2843,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status_Change_Reason__c</fieldItem>
                 <identifier>RecordStatus_Change_Reason_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Board_Approval_Date__c</fieldItem>
+                <identifier>RecordBoard_Approval_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-7dc3dd6b-66be-4b70-9d1b-859b6f85e1ab</name>
@@ -2942,6 +2985,13 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name_on_Certificate__c</fieldItem>
                 <identifier>RecordName_on_Certificate__cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.ApplicationType}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Initial Licensure</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Facet-ffe21b44-a55a-4df0-9ca3-8f46b05b03fb</name>

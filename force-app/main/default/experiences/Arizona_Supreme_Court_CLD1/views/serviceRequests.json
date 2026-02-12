@@ -53,12 +53,12 @@
           "regions" : [ {
             "components" : [ {
               "componentAttributes" : {
-                "flexcardName" : "Applications",
+                "flexcardName" : "ServiceRequests",
                 "objectApiName" : "{!objectApiName}",
                 "recordId" : "{!recordId}"
               },
               "componentName" : "runtime_omnistudio:flexcard",
-              "id" : "be3cb08e-0a2a-4f46-b547-c392d4891a66",
+              "id" : "f4d6fb71-c428-4ff7-8890-dcae8d059085",
               "renderPriority" : "NEUTRAL",
               "renditionMap" : { },
               "type" : "component"
@@ -71,7 +71,7 @@
           }, {
             "components" : [ {
               "componentAttributes" : {
-                "flexcardName" : "Licenses",
+                "flexcardName" : "Complaints",
                 "objectApiName" : "{!objectApiName}",
                 "recordId" : "{!recordId}"
               },

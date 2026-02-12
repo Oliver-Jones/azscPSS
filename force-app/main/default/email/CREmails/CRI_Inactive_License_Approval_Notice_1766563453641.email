@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">Dear&nbsp;{{{Recipient.Name}}}</div>
+
+<div style="padding: 0px 50px; line-height: 1.5;"><br />
+The Board of Certified Reporters ("Board") has approved your request for Inactive Status.&nbsp; Your certification has been placed on inactive status in good standing effective {{{BusinessLicense.Board_Meeting_Date__c}}}.&nbsp; Pursuant to the Arizona Code of Judicial Administration § 7-201 (E)(8)(a):<br />
+<br />
+<i>The inactive licensed holder shall not engage in the practice of the profession or occupation of licensure pro bono or for a fee or other compensation while on inactive status and shall not present themselves as a licensed holder.</i><br />
+<br />
+Your inactive certification is valid through February 28, 2028.&nbsp; All Certified Reporter certifications expire on February 28 of every even numbered year at Midnight. If you wish to remain on inactive status next cycle, you must renew your inactive license.<br />
+<br />
+To be eligible for renewal of certification and to maintain compliance with ACJA §§ 7-201 and 7-206, you must complete no less than 10 hours of continuing education between January 1st and December 31st of 2026 and another 10 hours of continuing education between January 1st and December 31st of 2027, for a total of no less than 20 hours of continuing education.&nbsp; Pursuant to Arizona Code of Judicial Administration, § 7-206 (L)(9)(d), you will be required to submit proof of attendance of at least 20 hours of continuing education credits. Hours of participation are not transferable to certification periods other than the one in which the participation occurred.<br />
+<br />
+All certified reporters are responsible for having a working knowledge of and maintaining compliance with ACJA §§ 7-201 and 7-206, statutes and rules governing certified reporters in Arizona.&nbsp; All certificate holders must notify CLD of any change, in writing, of name, address, employment, and phone number within thirty (30) days of the change.&nbsp; You may email change forms to courtrep@courts.az.gov or you may submit a service request through the AZ Courts Portal. Please ensure your contact information remains up to date.<br />
+<br />
+The Certification and Licensing Division (“Division”) posts and distributes information on the Certified Reporter website, <a href="https://www.azcourts.gov/cld/Certified-Reporters-Program" rel="noreferrer noopener">https://www.azcourts.gov/cld/Certified-Reporters-Program</a>, and via email CourtRep@courts.az.gov.<br />
+<br />
+If you have any questions or need assistance with future renewals, please contact the Division using the information below.</div>
+
+<div style="padding-left:50%;"><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+CourtRep@courts.az.gov</div>
+</body>
+</html>

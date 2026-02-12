@@ -128,7 +128,7 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Read</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <searchLayouts>
         <customTabListAdditionalFields>OmniScriptLocaleCode</customTabListAdditionalFields>
         <customTabListAdditionalFields>IsContentEncoded</customTabListAdditionalFields>
@@ -137,5 +137,5 @@
         <searchResultsAdditionalFields>IsContentEncoded</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastSavedDateTime</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Read</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

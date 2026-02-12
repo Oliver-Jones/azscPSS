@@ -366,8 +366,8 @@
   &quot;label&quot; : &quot;Assign Initial Values&quot;,
   &quot;elementValueMap&quot; : {
     &quot;ApplicationName&quot; : &quot;Legal Document Preparer - Individual&quot;,
-    &quot;FeeType&quot; : &quot;=IF(%reinstate% == true, \&quot;Reinstatement Licensure\&quot;, \&quot;Renewal Licensure\&quot;)&quot;,
-    &quot;ApplnType&quot; : &quot;=IF(%reinstate% == true, \&quot;Reinstatement Licensure\&quot;, \&quot;Renewal Licensure\&quot;)&quot;,
+    &quot;FeeType&quot; : &quot;=IF(%BusinessLicense:Status% == \&quot;Inactive\&quot;, \&quot;Inactive Renewal Licensure\&quot;, \&quot;Renewal Licensure\&quot;)&quot;,
+    &quot;ApplnType&quot; : &quot;Renewal Licensure&quot;,
     &quot;RecordType&quot; : &quot;LDI_Application&quot;,
     &quot;RegAuthTypeCode&quot; : &quot;LDILicense&quot;,
     &quot;LicenseId&quot; : &quot;=%licenseId%&quot;,
@@ -375,9 +375,10 @@
     &quot;HasPartialRenewal&quot; : &quot;=%BusinessLicense:HasPartialRenewal%&quot;,
     &quot;AccountId&quot; : &quot;=%BusinessLicense:AccountId%&quot;,
     &quot;ContactId&quot; : &quot;=%BusinessLicense:ContactId%&quot;,
-    &quot;BusinessNumber&quot; : &quot;=%BusinessLicense:Name%&quot;,
     &quot;ApplnCategory&quot; : &quot;Standard&quot;,
-    &quot;appType&quot; : &quot;LDIRenewalLicense&quot;
+    &quot;appType&quot; : &quot;LDIRenewalLicense&quot;,
+    &quot;RenewalLicenseStatus&quot; : &quot;=%BusinessLicense:Status%&quot;,
+    &quot;RenewalLicenseNumber&quot; : &quot;=%BusinessLicense:Name%&quot;
   },
   &quot;showPersistentComponent&quot; : [ true, false ],
   &quot;show&quot; : null,
@@ -1158,6 +1159,34 @@
             <isActive>true</isActive>
             <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
             <level>1.0</level>
+            <name>ApplicationInactiveRenewalInstructions</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;width: 100%; text-align: center;\&quot;&gt;\n&lt;h2&gt;ARIZONA SUPREME COURT&lt;/h2&gt;\n&lt;h4&gt;Legal Document Preparer Individual - Inactive Renewal Instructions&lt;/h4&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;Inactive Renewal Licensure&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;FeeType&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
             <name>ApplicationInstructions</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
@@ -1176,34 +1205,6 @@
             <isActive>true</isActive>
             <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
             <level>1.0</level>
-            <name>ApplicationReinstateInstructions</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;controlWidth&quot; : 12,
-  &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;div style=\&quot;width: 100%; text-align: center;\&quot;&gt;\n&lt;h2&gt;ARIZONA SUPREME COURT&lt;/h2&gt;\n&lt;h4&gt;Legal Document Preparer Individual - Reinstatement Instructions&lt;/h4&gt;\n&lt;/div&gt;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;dataJSON&quot; : false,
-  &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;reinstate&quot;
-      } ]
-    }
-  }
-}</propertySetConfig>
-            <sequenceNumber>1.0</sequenceNumber>
-            <type>Text Block</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
             <name>ApplicationRenewalInstructions</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
@@ -1214,9 +1215,9 @@
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;reinstate&quot;
+        &quot;data&quot; : &quot;Renewal Licensure&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;FeeType&quot;
       } ]
     }
   },

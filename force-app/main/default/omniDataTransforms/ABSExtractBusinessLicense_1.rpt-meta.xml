@@ -12,13 +12,58 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>9fb1a9c0-453d-429c-9da0-f0dddef3c22e</globalKey>
-        <inputFieldName>BusinessLicense:Account.DBA_Name_1__c</inputFieldName>
+        <globalKey>6795a6e9-3af6-49ae-a0f0-43b232c15c4a</globalKey>
+        <inputFieldName>BusinessLicense:Account.DBA_Name_2__c</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>ABSExtractBusinessLicense</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:DBAName1</outputFieldName>
+        <outputFieldName>BusinessLicense:DBAName2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5ad3dad4-1a3b-40ee-a71c-095e8144304c</globalKey>
+        <inputFieldName>BusinessLicense:Business_Type__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:BusinessType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>39350f2f-645b-4639-ac19-c5f0919159b4</globalKey>
+        <inputFieldName>BusinessLicense:Account.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:AccountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>08743f60-57ed-4b81-be4b-97686368fef1</globalKey>
+        <inputFieldName>BusinessLicense:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ABSExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:AccountId</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -44,58 +89,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>5ad3dad4-1a3b-40ee-a71c-095e8144304c</globalKey>
-        <inputFieldName>BusinessLicense:Business_Type__c</inputFieldName>
+        <globalKey>9fb1a9c0-453d-429c-9da0-f0dddef3c22e</globalKey>
+        <inputFieldName>BusinessLicense:Account.DBA_Name_1__c</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>ABSExtractBusinessLicense</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:BusinessType</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>6795a6e9-3af6-49ae-a0f0-43b232c15c4a</globalKey>
-        <inputFieldName>BusinessLicense:Account.DBA_Name_2__c</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>ABSExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:DBAName2</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>08743f60-57ed-4b81-be4b-97686368fef1</globalKey>
-        <inputFieldName>BusinessLicense:AccountId</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>ABSExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:AccountId</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>39350f2f-645b-4639-ac19-c5f0919159b4</globalKey>
-        <inputFieldName>BusinessLicense:Account.Name</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>ABSExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:AccountName</outputFieldName>
+        <outputFieldName>BusinessLicense:DBAName1</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>

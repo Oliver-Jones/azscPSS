@@ -1,0 +1,42 @@
+<html> 
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto; line-height: 2;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">Hello {{{Recipient.Name}}},<br />
+<br />
+<span lang="EN-US" style="font-size:12.0pt;"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">The Division Director has reviewed your request for a Good Cause Exception and will issue a determination contingent on your successfully completing the following requirements of the Arizona Code of Judicial Administration:</span></span></span><br />
+<br />
+1.&nbsp;<b><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Log into </span></span></span></b><span lang="EN-US" style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Aptos&quot;,sans-serif"><a href="https://azcld--partial.sandbox.my.site.com/s/" style="text-decoration:underline"><b><span style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">AZCourts Portal</span></span></span></b></a></span></span></span><b><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif"> and complete the {{{BusinessLicense.PeriodStartYear__c}}}-{{{BusinessLicense.PeriodEndYear__c}}} [{{{BusinessLicense.License_Name__c}}}] renewal application</span>.</span></span></b></div>
+
+<div style="padding: 0px 50px; margin-left: 40px;"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">a.&nbsp;Portal Username: {{{BusinessLicense.ContactEmail__c}}}&nbsp;If you need your username updated please contact the division.</span></span></span><br />
+&nbsp;</div>
+
+<div style="padding: 0px 50px;"><span lang="EN-US" style=""><span style="line-height: 107%;">2.&nbsp;<span style="font-size: 12pt; font-weight: bold; font-family: &quot;Times New Roman&quot;, serif;">Pay the application fee of {{{BusinessLicense.Renewal_Late_Fee__c}}} for your {{{BusinessLicense.Type_of_License__c}}}&nbsp;renewal.</span></span></span><br />
+<br />
+3.&nbsp;<b><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Submit the application by {{{BusinessLicense.GCE_Submit_Deadline__c}}}, by close of business.</span></span></span></b></div>
+
+<div style="padding: 0px 50px; margin-left: 40px;"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">a.&nbsp;Please note Arizona Supreme Court hours are from 8 a.m. to 5 p.m.</span></span></span></div>
+
+<div style="padding: 0px 50px;">&nbsp;</div>
+
+<div style="padding: 0px 50px;"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">If you encounter any issues or technical difficulties, the Certification and Licensing Division and the appropriate programs can be reached at:</span></span></span><br />
+<br />
+<span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">1501 W. Washington St, Suite 104</span></span></span></span></span><br />
+<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Phoenix, AZ 85007</span></span></span></span></span></span><br />
+<span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Phone: (602) 452-3455 Fax: (602) 452-3958</span></span></span><br />
+<br />
+<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Fiduciary Program: </span></span></span><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">PFP@courts.az.gov </span></span></span></span></span></span><br />
+<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Certified Reporters: CourtRep@courts.az.gov </span></span></span></span></span></span><br />
+<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Legal Document Preparers: LDP@courts.az.gov </span></span></span></span></span></span><br />
+<span style="font-size:11pt"><span style="line-height:107%"><span style="font-family:Aptos,sans-serif"><span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Defensive Driving: ddrive@courts.az.gov </span></span></span></span></span></span><br />
+<span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Alternative Business Structures: </span></span></span><span lang="EN-US" style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Aptos&quot;,sans-serif"><a href="mailto:ABSProgram@courts.az.gov" style="color:#467886; text-decoration:underline"><span style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">ABSProgram@courts.az.gov</span></span></span></a></span></span></span><br />
+<br />
+<span lang="EN-US" style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Times New Roman&quot;,serif">Thank you for your attention to this matter.</span></span></span></div>
+</body>
+</html>

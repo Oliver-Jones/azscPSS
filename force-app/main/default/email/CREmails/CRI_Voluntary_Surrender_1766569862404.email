@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">Dear&nbsp;{{{Recipient.Name}}}</div>
+
+<div style="padding: 0px 50px; line-height: 1.5;"><br />
+On {{{BusinessLicense.Board_Meeting_Date__c}}}, the Board of Certified Reporters reviewed and accepted your request to voluntarily surrender your court reporter certificate number {{{BusinessLicense.License_Number__c}}}. in good standing, pursuant to Arizona Code of Judicial Administration §7-201(E)(7). Therefore, your court reporter certification is no longer active, and you are no longer authorized to practice as a court reporter in the State of Arizona.<br />
+<br />
+If you have any questions or require additional information, please contact the Certification and Licensing Division at <a href="mailto:courtrep@courts.az.gov" rel="noreferrer noopener">courtrep@courts.az.gov</a> or by phone at 602-452-3378.</div>
+
+<div style="padding-left:50%;"><br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+CourtRep@courts.az.gov</div>
+</body>
+</html>

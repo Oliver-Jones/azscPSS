@@ -1,6 +1,6 @@
 {
   "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
-  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "componentName" : "siteforce:sldsOneColLayout",
   "dataProviders" : [ ],
   "id" : "d65dc8e8-ce42-4f52-91b9-32ba1eefb1c9",
   "label" : "Record Detail",
@@ -20,19 +20,10 @@
       "type" : "component"
     }, {
       "componentAttributes" : {
-        "detailsTabLabel" : "Details",
-        "discussionsTabLabel" : "Feed",
-        "recordId" : "{!recordId}",
-        "relatedTabLabel" : "Related",
-        "showLegacyActivityComposer" : false,
-        "tab1Type" : "details",
-        "tab2Type" : "related",
-        "tab3Type" : "chatter",
-        "tab4Type" : "none",
-        "timelineTabLabel" : "Activity"
+        "recordId" : "{!recordId}"
       },
-      "componentName" : "forceCommunity:recordHomeTabs",
-      "id" : "38af420f-0367-43b3-a27f-f719b0ba2810",
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "bec11022-7dfb-42f3-8938-69ed65c78a0d",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"

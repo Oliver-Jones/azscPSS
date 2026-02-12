@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PeriodStartYear__c</fullName>
     <externalId>false</externalId>
-    <formula>TEXT(YEAR(DATEVALUE(PeriodStart)))</formula>
+    <formula>TEXT(YEAR(DATEVALUE(PeriodStart))  -  VALUE(RegulatoryAuthorizationType.ProcessingDuration))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>PeriodStartYear</label>
     <required>false</required>

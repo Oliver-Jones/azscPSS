@@ -45,6 +45,42 @@
         <type>Remote Action</type>
     </omniProcessElements>
     <omniProcessElements>
+        <description>Remote Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FetchPaymentURL</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;remoteMethod&quot; : &quot;getjBillingPaymentWebPage&quot;,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;elementValueMap&quot; : { },
+  &quot;failOnStepError&quot; : false,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;chainOnStep&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;%UserInfo:IsPortalEnabled% == true &amp;&amp; %PayNow% == true&quot;,
+  &quot;remoteClass&quot; : &quot;AZSC_OmniScriptUtilities&quot;,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;additionalInput&quot; : {
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessApplication:Id%&quot;
+  },
+  &quot;restOptions&quot; : { },
+  &quot;sendJSONNode&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
         <isActive>true</isActive>
         <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
         <level>0.0</level>
@@ -94,7 +130,7 @@
   &quot;failureResponse&quot; : { },
   &quot;id&quot; : &quot;&quot;,
   &quot;additionalInput&quot; : {
-    &quot;AccountId&quot; : &quot;%UserInfo:AccountId%&quot;,
+    &quot;AccountId&quot; : &quot;%AccountId%&quot;,
     &quot;IsPortalEnabled&quot; : &quot;%UserInfo:IsPortalEnabled%&quot;,
     &quot;appType&quot; : &quot;%appType%&quot;,
     &quot;IsPartialFee&quot; : &quot;=IF(%CertifiedReporterPaymentOverview:PayOption% == &apos;Partial&apos;, true, false)&quot;,
@@ -210,7 +246,8 @@
     &quot;HasDraft&quot; : &quot;%InitializeVariables:HasDraft%&quot;,
     &quot;ApplicantId&quot; : &quot;%InitializeVariables:ApplicantId%&quot;,
     &quot;DraftId&quot; : &quot;%InitializeVariables:DraftId%&quot;,
-    &quot;ApplicationId&quot; : &quot;=%LoadBusinessApplication:Id%&quot;
+    &quot;ApplicationId&quot; : &quot;=%LoadBusinessApplication:Id%&quot;,
+    &quot;PaymentURL&quot; : &quot;=%FetchPaymentURL:PaymentURL%&quot;
   },
   &quot;sendJSONPath&quot; : &quot;&quot;,
   &quot;disOnTplt&quot; : false,
@@ -219,7 +256,7 @@
   &quot;restOptions&quot; : { },
   &quot;sendJSONNode&quot; : &quot;&quot;
 }</propertySetConfig>
-        <sequenceNumber>7.0</sequenceNumber>
+        <sequenceNumber>8.0</sequenceNumber>
         <type>Response Action</type>
     </omniProcessElements>
     <omniProcessElements>

@@ -2037,21 +2037,6 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>830dc618-d8a8-45a3-b01f-521b0692b994</globalKey>
-        <inputFieldName>ApplicantInfo:CertificationType</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>LDILoadIndividualApplication</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Certification_Type__c</outputFieldName>
-        <outputObjectName>IndividualApplication</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
         <globalKey>a423cac5-e71e-4e97-8904-075fe2e3537d</globalKey>
         <inputFieldName>BusinessInformation:BusinessPhysicalStreet</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -2119,6 +2104,21 @@
         <name>LDILoadIndividualApplication</name>
         <outputCreationSequence>1.0</outputCreationSequence>
         <outputFieldName>HasBeenContactedByCourt__c</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>83270495-6893-4338-86ce-69e9d9fc618f</globalKey>
+        <inputFieldName>ApplnCategory</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LDILoadIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Certification_Type__c</outputFieldName>
         <outputObjectName>IndividualApplication</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>

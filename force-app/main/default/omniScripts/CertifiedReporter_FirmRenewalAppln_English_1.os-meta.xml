@@ -2517,7 +2517,16 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : null,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;sInstanceId&quot;
+      } ]
+    }
+  },
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,
@@ -2714,38 +2723,7 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;OR&quot;,
-      &quot;rules&quot; : [ {
-        &quot;group&quot; : {
-          &quot;operator&quot; : &quot;AND&quot;,
-          &quot;rules&quot; : [ {
-            &quot;field&quot; : &quot;SFUserRenew&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : null
-          }, {
-            &quot;field&quot; : &quot;SFUserRenew&quot;,
-            &quot;condition&quot; : &quot;=&quot;,
-            &quot;data&quot; : &quot;true&quot;
-          } ]
-        }
-      }, {
-        &quot;group&quot; : {
-          &quot;operator&quot; : &quot;AND&quot;,
-          &quot;rules&quot; : [ {
-            &quot;field&quot; : &quot;PayLater&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : null
-          }, {
-            &quot;field&quot; : &quot;PayLater&quot;,
-            &quot;condition&quot; : &quot;=&quot;,
-            &quot;data&quot; : &quot;true&quot;
-          } ]
-        }
-      } ]
-    }
-  },
+  &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,

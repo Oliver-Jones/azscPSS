@@ -158,6 +158,53 @@
         <isActive>true</isActive>
         <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
         <level>0.0</level>
+        <name>NavigatetoLDBRenewal</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;LDBLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;RegAuthType&quot;
+      } ]
+    }
+  },
+  &quot;replace&quot; : true,
+  &quot;ssm&quot; : false,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;omniscript__subType&quot; : &quot;RenewalApplication&quot;,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;omniscript__language&quot; : &quot;English&quot;,
+  &quot;pubsub&quot; : false,
+  &quot;omniscript__type&quot; : &quot;LDB&quot;,
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;targetType&quot; : &quot;Vlocity OmniScript&quot;,
+  &quot;label&quot; : &quot;NavigatetoLDBRenewal&quot;,
+  &quot;message&quot; : { },
+  &quot;wpm&quot; : false,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;targetLWCParams&quot; : &quot;c__licenseId=%RenewalLicenseId%&amp;c__userLogId=%UserLogId%&quot;
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
         <name>SetInitialValues</name>
         <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
         <propertySetConfig>{

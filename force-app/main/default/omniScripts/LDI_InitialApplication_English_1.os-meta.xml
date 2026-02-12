@@ -56,7 +56,7 @@
   &quot;Language&quot; : &quot;English&quot;,
   &quot;show&quot; : null
 }</propertySetConfig>
-        <sequenceNumber>4.0</sequenceNumber>
+        <sequenceNumber>6.0</sequenceNumber>
         <type>OmniScript</type>
     </omniProcessElements>
     <omniProcessElements>
@@ -100,7 +100,7 @@
   &quot;message&quot; : { },
   &quot;pubsub&quot; : false
 }</propertySetConfig>
-        <sequenceNumber>6.0</sequenceNumber>
+        <sequenceNumber>4.0</sequenceNumber>
         <type>Set Values</type>
     </omniProcessElements>
     <omniProcessElements>
@@ -142,7 +142,8 @@
     &quot;ApplicantHomeCity&quot; : &quot;%Account:BillingCity%&quot;,
     &quot;ApplicantHomeState&quot; : &quot;%Account:BillingStateCode%&quot;,
     &quot;ApplicantHomeZip&quot; : &quot;%Account:BillingPostalCode%&quot;,
-    &quot;ApplicantMiddleName&quot; : &quot;%Contact:MiddleName%&quot;
+    &quot;ApplicantMiddleName&quot; : &quot;%Contact:MiddleName%&quot;,
+    &quot;IsIndividualApplication&quot; : true
   },
   &quot;showPersistentComponent&quot; : [ true, false ],
   &quot;show&quot; : null,
@@ -182,7 +183,7 @@
   &quot;hide&quot; : false,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>2.0</sequenceNumber>
+            <sequenceNumber>1.0</sequenceNumber>
             <type>Checkbox</type>
         </childElements>
         <childElements>
@@ -216,7 +217,7 @@
   &quot;minDate&quot; : &quot;TODAY&quot;,
   &quot;maxDate&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>4.0</sequenceNumber>
+            <sequenceNumber>3.0</sequenceNumber>
             <type>Date</type>
         </childElements>
         <childElements>
@@ -227,7 +228,7 @@
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
   &quot;controlWidth&quot; : 6,
-  &quot;label&quot; : &quot;Printed Name of Applicant/Designated Principal&quot;,
+  &quot;label&quot; : &quot;Printed Name of Applicant&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
   &quot;required&quot; : true,
@@ -252,7 +253,7 @@
   &quot;hide&quot; : false,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>3.0</sequenceNumber>
+            <sequenceNumber>2.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -267,7 +268,7 @@
   &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>5.0</sequenceNumber>
+            <sequenceNumber>4.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -312,7 +313,7 @@
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
   &quot;expression&quot; : &quot;\&quot;Authorization Release Statement\&quot;&quot;,
-  &quot;hide&quot; : true,
+  &quot;hide&quot; : false,
   &quot;show&quot; : null,
   &quot;mask&quot; : null,
   &quot;dataType&quot; : null,
@@ -333,7 +334,7 @@
                 <propertySetConfig>{
   &quot;controlWidth&quot; : 12,
   &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;p&gt;&lt;strong&gt;Authorization and Release Statement&lt;/strong&gt; - Please upload Authorization and Release Statement Form. Refer to the Instructions for additional information.&lt;/p&gt;\n&lt;div class=\&quot;slds-text-color_weak accepted-types\&quot;&gt;Accepted Formats: .pdf, .jpeg, .jpg, .png&lt;/div&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;p&gt;&lt;strong&gt;Authorization and Release Statement&lt;/strong&gt;&amp;nbsp;- Please upload Authorization and Release Statement Form. Refer to the Instructions for additional information.&lt;/p&gt;\n&lt;div class=\&quot;slds-text-color_weak accepted-types\&quot;&gt;Accepted Formats: .pdf, .jpeg, .jpg, .png&lt;/div&gt;&quot;,
   &quot;show&quot; : null,
   &quot;dataJSON&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
@@ -349,7 +350,7 @@
             <name>AuthorizationStatementBlock1</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
-  &quot;controlWidth&quot; : 6,
+  &quot;controlWidth&quot; : 12,
   &quot;label&quot; : &quot;&quot;,
   &quot;collapse&quot; : false,
   &quot;repeat&quot; : false,
@@ -363,93 +364,6 @@
   &quot;ariaLevel&quot; : 3
 }</propertySetConfig>
             <sequenceNumber>0.0</sequenceNumber>
-            <type>Block</type>
-        </childElements>
-        <childElements>
-            <childElements>
-                <isActive>true</isActive>
-                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-                <level>2.0</level>
-                <name>AffirmationStatementLabel</name>
-                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-                <propertySetConfig>{
-  &quot;controlWidth&quot; : 12,
-  &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;p&gt;&lt;strong&gt;Designated Principal Affirmation Statement&lt;/strong&gt; - Please upload Designated Principal Affirmation Statement Form. Refer to the Instructions for additional information.&lt;/p&gt;\n&lt;div class=\&quot;slds-text-color_weak accepted-types\&quot;&gt;Accepted Formats: .pdf, .jpeg, .jpg, .png&lt;/div&gt;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;dataJSON&quot; : false,
-  &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false
-}</propertySetConfig>
-                <sequenceNumber>0.0</sequenceNumber>
-                <type>Text Block</type>
-            </childElements>
-            <childElements>
-                <isActive>true</isActive>
-                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-                <level>2.0</level>
-                <name>AuthorizationStatement2File</name>
-                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-                <propertySetConfig>{
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;controlWidth&quot; : 12.0,
-  &quot;uploadContDoc&quot; : true,
-  &quot;remoteOptions&quot; : { },
-  &quot;remoteMethod&quot; : &quot;&quot;,
-  &quot;errorMessage&quot; : {
-    &quot;custom&quot; : [ ]
-  },
-  &quot;label&quot; : &quot;Document(s)&quot;,
-  &quot;required&quot; : true,
-  &quot;extraPayload&quot; : { },
-  &quot;help&quot; : false,
-  &quot;remoteClass&quot; : &quot;&quot;,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;contentParentId&quot; : [ ]
-}</propertySetConfig>
-                <sequenceNumber>2.0</sequenceNumber>
-                <type>File</type>
-            </childElements>
-            <childElements>
-                <isActive>true</isActive>
-                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-                <level>2.0</level>
-                <name>AuthorizationStatement2Name</name>
-                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-                <propertySetConfig>{
-  &quot;expression&quot; : &quot;\&quot;Designated Principal Affirmation Statement\&quot;&quot;,
-  &quot;controlWidth&quot; : 12,
-  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
-  &quot;label&quot; : &quot;Designated Principal Affirmation Statement&quot;,
-  &quot;showInputWidth&quot; : false,
-  &quot;inputWidth&quot; : 12,
-  &quot;hideGroupSep&quot; : false,
-  &quot;hide&quot; : true,
-  &quot;disOnTplt&quot; : false,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;
-}</propertySetConfig>
-                <sequenceNumber>1.0</sequenceNumber>
-                <type>Formula</type>
-            </childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>AuthorizationStatementBlock2</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;controlWidth&quot; : 6.0,
-  &quot;repeat&quot; : false,
-  &quot;repeatClone&quot; : false,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;label&quot; : &quot;&quot;,
-  &quot;ariaLevel&quot; : 3.0,
-  &quot;collapse&quot; : false,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;
-}</propertySetConfig>
-            <sequenceNumber>1.0</sequenceNumber>
             <type>Block</type>
         </childElements>
         <isActive>true</isActive>

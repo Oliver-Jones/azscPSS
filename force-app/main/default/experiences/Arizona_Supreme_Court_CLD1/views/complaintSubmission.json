@@ -1,0 +1,76 @@
+{
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "88c6f5f3-e1a3-47e8-9703-9df17703dd5e",
+  "label" : "Complaint Submission",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "2967ea44-e61d-4224-a7ea-a3d26c7c52ee",
+          "columns" : [ {
+            "UUID" : "ad4dcad2-e1fe-4c21-ac8a-971b6fc49cb5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "2967ea44-e61d-4224-a7ea-a3d26c7c52ee",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "ApplicationSubmission",
+            "theme" : "lightning",
+            "type" : "AZSC"
+          },
+          "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+          "id" : "a980dfac-cc3c-49f6-9b8c-5d7f9215ce50",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ad4dcad2-e1fe-4c21-ac8a-971b6fc49cb5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d4d04571-b9a6-4810-b69d-6b9ff0c0e303",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Complaint Submission"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "926d9681-bfff-432c-97d3-7a08055d0e64",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "42ac64eb-b821-4043-b5b2-b1616ba5bb2b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "custom-complaint-submission"
+}

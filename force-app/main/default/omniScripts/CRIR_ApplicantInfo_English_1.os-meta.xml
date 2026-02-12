@@ -124,11 +124,11 @@
   &quot;label&quot; : &quot;Email Address&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;repeat&quot; : false,
   &quot;repeatClone&quot; : false,
   &quot;repeatLimit&quot; : null,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;defaultValue&quot; : null,
   &quot;help&quot; : false,
   &quot;helpText&quot; : &quot;&quot;,
@@ -160,11 +160,11 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Legal First Name&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;debounceValue&quot; : 0,
@@ -190,11 +190,11 @@
   &quot;label&quot; : &quot;Physical Home Address&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;repeat&quot; : false,
   &quot;repeatClone&quot; : false,
   &quot;repeatLimit&quot; : null,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;defaultValue&quot; : null,
   &quot;help&quot; : false,
   &quot;helpText&quot; : &quot;&quot;,
@@ -226,7 +226,7 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;showInputWidth&quot; : false,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;debounceValue&quot; : 0,
   &quot;repeat&quot; : false,
   &quot;placeholder&quot; : &quot;&quot;,
@@ -235,7 +235,7 @@
   &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 4,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;City&quot;,
   &quot;inputWidth&quot; : 12,
   &quot;help&quot; : false,
@@ -268,7 +268,7 @@
   &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 6,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Home Fax Number&quot;,
   &quot;inputWidth&quot; : 12,
   &quot;help&quot; : false,
@@ -292,11 +292,11 @@
   &quot;label&quot; : &quot;Home Telephone Number&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;repeat&quot; : false,
   &quot;repeatClone&quot; : false,
   &quot;repeatLimit&quot; : null,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;defaultValue&quot; : null,
   &quot;help&quot; : false,
   &quot;helpText&quot; : &quot;&quot;,
@@ -324,31 +324,37 @@
             <name>CRIR_HomeState</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 4,
-  &quot;ptrnErrText&quot; : &quot;&quot;,
-  &quot;minLength&quot; : 0,
-  &quot;pattern&quot; : &quot;&quot;,
-  &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
   &quot;label&quot; : &quot;State&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
-  &quot;help&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;debounceValue&quot; : 0,
+  &quot;required&quot; : true,
   &quot;repeat&quot; : false,
-  &quot;disOnTplt&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;SObject&quot;,
+    &quot;source&quot; : &quot;User.StateCode&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
   &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;placeholder&quot; : &quot;&quot;,
-  &quot;maxLength&quot; : 255,
+  &quot;accessibleInFutureSteps&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;mask&quot; : &quot;&quot;
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
 }</propertySetConfig>
             <sequenceNumber>10.0</sequenceNumber>
-            <type>Text</type>
+            <type>Select</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -364,11 +370,11 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Zip Code&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;debounceValue&quot; : 0,
@@ -394,11 +400,11 @@
   &quot;label&quot; : &quot;Legal Last Name&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;repeat&quot; : false,
   &quot;repeatClone&quot; : false,
   &quot;repeatLimit&quot; : null,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;defaultValue&quot; : null,
   &quot;help&quot; : false,
   &quot;helpText&quot; : &quot;&quot;,
@@ -430,7 +436,7 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;showInputWidth&quot; : false,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;debounceValue&quot; : 0,
   &quot;repeat&quot; : false,
   &quot;placeholder&quot; : &quot;&quot;,
@@ -439,7 +445,7 @@
   &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 12,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Mailing Address&quot;,
   &quot;inputWidth&quot; : 12,
   &quot;help&quot; : false,
@@ -466,11 +472,11 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;City&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;debounceValue&quot; : 0,
@@ -493,17 +499,53 @@
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
   &quot;accessibleInFutureSteps&quot; : false,
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;SObject&quot;,
+    &quot;source&quot; : &quot;User.StateCode&quot;
+  },
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 4.0,
+  &quot;repeatClone&quot; : false,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;readOnly&quot; : false,
+  &quot;label&quot; : &quot;State&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;required&quot; : true,
+  &quot;help&quot; : false,
+  &quot;hide&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;options&quot; : [ ],
+  &quot;disOnTplt&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>17.0</sequenceNumber>
+            <type>Select</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CRIR_MailZip</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;accessibleInFutureSteps&quot; : false,
   &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 4,
   &quot;ptrnErrText&quot; : &quot;&quot;,
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
-  &quot;label&quot; : &quot;State&quot;,
+  &quot;readOnly&quot; : false,
+  &quot;label&quot; : &quot;Zip Code&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;debounceValue&quot; : 0,
@@ -522,39 +564,6 @@
             <isActive>true</isActive>
             <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
             <level>1.0</level>
-            <name>CRIR_MailZip</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;controlWidth&quot; : 4,
-  &quot;ptrnErrText&quot; : &quot;&quot;,
-  &quot;minLength&quot; : 0,
-  &quot;pattern&quot; : &quot;&quot;,
-  &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
-  &quot;label&quot; : &quot;Zip Code&quot;,
-  &quot;showInputWidth&quot; : false,
-  &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
-  &quot;help&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;debounceValue&quot; : 0,
-  &quot;repeat&quot; : false,
-  &quot;disOnTplt&quot; : false,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;placeholder&quot; : &quot;&quot;,
-  &quot;maxLength&quot; : 255,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;mask&quot; : &quot;&quot;
-}</propertySetConfig>
-            <sequenceNumber>17.0</sequenceNumber>
-            <type>Text</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
             <name>CRIR_MI</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
@@ -562,7 +571,7 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;showInputWidth&quot; : false,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;debounceValue&quot; : 0,
   &quot;repeat&quot; : false,
   &quot;placeholder&quot; : &quot;&quot;,
@@ -571,7 +580,7 @@
   &quot;helpText&quot; : &quot;&quot;,
   &quot;controlWidth&quot; : 2,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Middle Initial&quot;,
   &quot;inputWidth&quot; : 12,
   &quot;help&quot; : false,
@@ -598,7 +607,7 @@
   &quot;minLength&quot; : 0,
   &quot;pattern&quot; : &quot;&quot;,
   &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : true,
+  &quot;readOnly&quot; : false,
   &quot;label&quot; : &quot;Cell Phone Number&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,

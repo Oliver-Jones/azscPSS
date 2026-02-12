@@ -13,18 +13,18 @@
     <name>AZSCLoadDraftApplication</name>
     <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
     <omniDataTransformItem>
-        <disabled>true</disabled>
+        <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <globalKey>eebef5dc-5d26-46d9-a4a1-b7decfce8af4</globalKey>
+        <globalKey>99c4158b-380e-40aa-a70d-5a291c1d6a23</globalKey>
+        <inputFieldName>RegAuthTypeCode</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
-        <migrationValue>FAKEMAPPING</migrationValue>
         <name>AZSCLoadDraftApplication</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Id</outputFieldName>
+        <outputFieldName>RegAuthCode__c</outputFieldName>
         <outputObjectName>OmniScriptSavedSession</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
@@ -43,15 +43,30 @@
         <upsertKey>true</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>eebef5dc-5d26-46d9-a4a1-b7decfce8af4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>AZSCLoadDraftApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>OmniScriptSavedSession</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>27a96074-0ff4-4e24-a96d-15ea65b6f5d9</globalKey>
-        <inputFieldName>BusinessName</inputFieldName>
+        <globalKey>f43fd276-aa32-487c-8dfa-a62386828c92</globalKey>
+        <inputFieldName>ApplnType</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>AZSCLoadDraftApplication</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Business_Name__c</outputFieldName>
+        <outputFieldName>Application_Type__c</outputFieldName>
         <outputObjectName>OmniScriptSavedSession</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -75,6 +90,21 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>27a96074-0ff4-4e24-a96d-15ea65b6f5d9</globalKey>
+        <inputFieldName>BusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCLoadDraftApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Business_Name__c</outputFieldName>
+        <outputObjectName>OmniScriptSavedSession</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>025bdd66-3eaf-4e00-b3e4-b7165844b284</globalKey>
         <inputFieldName>ApplicationName</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -90,28 +120,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>1c3882e6-2555-4b11-b509-8613e9c453a4</globalKey>
-        <inputFieldName>ABSApplicationId</inputFieldName>
+        <globalKey>7ec9b97d-9d03-473e-9868-1796a843ad3d</globalKey>
+        <inputFieldName>LicenseId</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>AZSCLoadDraftApplication</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>ABS_Application_Id__c</outputFieldName>
-        <outputObjectName>OmniScriptSavedSession</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>f43fd276-aa32-487c-8dfa-a62386828c92</globalKey>
-        <inputFieldName>ApplnType</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>AZSCLoadDraftApplication</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Application_Type__c</outputFieldName>
+        <outputFieldName>License_Id__c</outputFieldName>
         <outputObjectName>OmniScriptSavedSession</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>

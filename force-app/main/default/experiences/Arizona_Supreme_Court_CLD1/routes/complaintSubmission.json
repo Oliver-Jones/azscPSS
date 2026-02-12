@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "88c6f5f3-e1a3-47e8-9703-9df17703dd5e",
+  "appPageId" : "b387bb22-c558-4752-8fb6-55bbf6e92fd6",
+  "configurationTags" : [ ],
+  "devName" : "Complaint_Submission__c",
+  "id" : "e71f40cf-ca72-462e-8628-f7a0c716da07",
+  "label" : "Complaint Submission",
+  "pageAccess" : "Public",
+  "routeType" : "custom-complaint-submission",
+  "type" : "route",
+  "urlPrefix" : "complaint-submission"
+}

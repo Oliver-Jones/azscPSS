@@ -30,10 +30,10 @@
             "direction" : "ltr",
             "display" : "Display OmniScript on page",
             "inlineVariant" : "brand",
-            "language" : "",
-            "subType" : "",
-            "theme" : "",
-            "type" : ""
+            "language" : "English",
+            "subType" : "Complaint",
+            "theme" : "lightning",
+            "type" : "AZSC"
           },
           "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
           "id" : "dac09f6b-4355-45cb-a410-b99736dcf301",

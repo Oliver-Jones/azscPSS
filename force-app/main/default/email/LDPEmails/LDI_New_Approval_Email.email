@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015PY00000XRadv&amp;oid=00DKj000002YfWw&amp;lastMod=1764870419000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{IndividualApplication.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">{{{IndividualApplication.Business_Name__c}}},<br />
+{{{IndividualApplication.Business_Physical_Address_Formula__c}}}<br />
+<br />
+Re: {{{IndividualApplication.License_Name__c}}} Registration Confirmation – {{{IndividualApplication.ApplicationType}}} Approval<br />
+<br />
+Dear {{{Recipient.Name}}}:<br />
+<br />
+On {{{IndividualApplication.AppliedDate}}}, the Certification and Licensing Division received and approved an application for Arizona {{{IndividualApplication.License_Name__c}}} Registration Number {{{IndividualApplication.License_Number__c}}} effective as of {{{IndividualApplication.Cert_Date__c}}}. This communication confirms that the firm has been successfully registered.<br />
+<br />
+Please note that this registration is valid through June 30, 2027, and all firm registrations expire on June 30 of even-numbered years. To maintain active status, a renewal application must be submitted prior to the expiration date.<br />
+<br />
+If you have any questions or need assistance with future renewals, please contact the Division using the information below.</div>
+&nbsp;
+
+<div style="padding-left:50%;">Sincerely,<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+LDP@courts.az.gov  </div>
+</body>
+</html>

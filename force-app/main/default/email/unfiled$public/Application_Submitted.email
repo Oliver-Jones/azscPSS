@@ -1,0 +1,18 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><font face="Times New Roman, Times, serif" style=""><a name="_Int_wG1iK6gF" style=""><font style="">Thank you for submitting your {!Application__c.Application_Display_Name__c} for&nbsp;</font></a><font style="">{!Application__c.Application_Type__c}</font><a name="_Int_wG1iK6gF" style="">&nbsp;to the Certification and Licensing Division.</a></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><font face="Times New Roman, Times, serif"><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><font face="Times New Roman, Times, serif"><a name="_Int_VbnIuDDT">This auto-reply confirms that we have
+received your submission.</a></font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><span style="font-family: &quot;Times New Roman&quot;, Times, serif; text-indent: -0.25in;"><br></span></p><p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"></p><ul style=""><li><span style="font-family: &quot;Times New Roman&quot;, Times, serif; text-indent: -0.25in;">Application
+reference number:&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;, Times, serif; text-indent: -0.25in;">{!Application__c.Name}</span></li><li><span style="font-family: &quot;Times New Roman&quot;, Times, serif; text-indent: -0.25in;">Date
+received:&nbsp;</span><u style="font-family: &quot;Times New Roman&quot;, Times, serif; text-indent: -0.25in; box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(30, 30, 30); background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; margin: 0px; padding: 0px;"><span style="box-sizing: border-box; margin: 0px; padding: 0px;">{!Today()}</span></span></u></li></ul><p style=""></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><font face="Times New Roman, Times, serif"><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); margin-bottom: 0in;"><font face="Times New Roman, Times, serif" style=""><a name="_Int_l3wlxYZl" style="">If you need to provide additional
+information or have any questions, please email us at </a><a href="mailto:ABSProgram@courts.az.gov" style=""><span style="mso-bookmark:_Int_l3wlxYZl">@ABSProgram</span></a>.</font><font face="arial" style="font-size: 12pt;"><span style="mso-bookmark:_Int_l3wlxYZl"></span></font><span style="font-size: 10.5pt; font-family: &quot;Segoe UI&quot;, sans-serif; line-height: 107%; color: rgb(24, 24, 24);"><o:p></o:p></span></p>]]></td>
+</tr>
+</table>

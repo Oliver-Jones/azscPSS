@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Arizona_Supreme_Court</letterhead>
+    <name>Application Submitted</name>
+    <style>freeForm</style>
+    <subject>Application Received - Certification and Licensing Division</subject>
+    <textOnly>Thank you for submitting your {!Application__c.Application_Display_Name__c} for {!Application__c.Application_Type__c} to the Certification and Licensing Division.
+
+This auto-reply confirms that we have received your submission.
+
+Application reference number: {!Application__c.Name}
+Date received: {!Today()}
+
+If you need to provide additional information or have any questions, please email us at @ABSProgram.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

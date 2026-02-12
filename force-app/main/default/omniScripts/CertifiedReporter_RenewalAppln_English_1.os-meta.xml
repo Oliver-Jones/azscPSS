@@ -196,7 +196,16 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : null,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;ApplnRecId&quot;
+      } ]
+    }
+  },
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,
@@ -1285,7 +1294,7 @@
   &quot;label&quot; : &quot;LineBreak1&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>4.0</sequenceNumber>
+            <sequenceNumber>5.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1300,7 +1309,7 @@
   &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>3.0</sequenceNumber>
+            <sequenceNumber>4.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1387,9 +1396,54 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;dataJSON&quot; : false,
   &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false
+  &quot;sanitize&quot; : false,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;CRRenewalApplicantInfo:RenewalLicenseStatus&quot;
+      }, {
+        &quot;field&quot; : &quot;CRRenewalApplicantInfo:RenewalLicenseStatus&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;Active - Renewal Pending&quot;
+      } ]
+    }
+  }
 }</propertySetConfig>
             <sequenceNumber>2.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TextBlock4</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;CRRenewalApplicantInfo:RenewalLicenseStatus&quot;
+      }, {
+        &quot;field&quot; : &quot;CRRenewalApplicantInfo:RenewalLicenseStatus&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;data&quot; : &quot;Inactive&quot;
+      } ]
+    }
+  },
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;width: 100%; padding: 7px; text-align: justify; font-size: 13px; line-height: 2;\&quot;&gt;\n&lt;p style=\&quot;padding: 7px 0px 7px 16px;\&quot;&gt;&lt;strong&gt;Option 1: Pay in Full (Biennial Payment)&lt;/strong&gt;&lt;/p&gt;\n&lt;ul style=\&quot;padding-left: 40px;\&quot;&gt;\n&lt;li&gt;&lt;strong&gt;When to Pay: &lt;/strong&gt;Between&lt;strong&gt; January 1 and January 31 of &lt;/strong&gt;each&lt;strong&gt; even-numbered year.&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Amount: $100.00&lt;/strong&gt; (biennial renewal fee).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Late Payment&lt;/strong&gt;:&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;Payments made between &lt;strong&gt;February 1 and February 28&lt;/strong&gt; will incur a &lt;strong&gt;late renewal fee of $100.00&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Total due if late: $200.00.&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/ul&gt;\n&lt;p style=\&quot;padding: 7px 0px 7px 16px;\&quot;&gt;&lt;strong&gt;Option 2: Split Payment (Annual Payment)&lt;/strong&gt;&lt;/p&gt;\n&lt;ul style=\&quot;padding-left: 40px;\&quot;&gt;\n&lt;li&gt;&lt;strong&gt;When to Pay:&lt;/strong&gt;&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;First half due &lt;strong&gt;January 1&amp;ndash;31&lt;/strong&gt; each year.&lt;/li&gt;\n&lt;li&gt;Second half due the following year in the same window.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;li&gt;&lt;strong&gt;Amount: $50.00&lt;/strong&gt; per year..&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Late Payment&lt;/strong&gt;:&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;Payments made between &lt;strong&gt;February 1 and February 28&lt;/strong&gt; will incur a &lt;strong&gt;late renewal fee of $100.00&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Total due if late: $150.00.&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <isActive>true</isActive>
@@ -1531,7 +1585,16 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : null,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;sInstanceId&quot;
+      } ]
+    }
+  },
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,
@@ -1593,7 +1656,7 @@
   &quot;elementValueMap&quot; : {
     &quot;ApplnCategory&quot; : &quot;=%PaymentOption:PayOption%&quot;,
     &quot;LateAppType&quot; : &quot;Late Fee&quot;,
-    &quot;FeeType&quot; : &quot;Renewal Licensure&quot;,
+    &quot;FeeType&quot; : &quot;=IF(%CRRenewalApplicantInfo:RenewalLicenseStatus% == &apos;Inactive&apos;, &apos;Inactive Renewal Licensure&apos;, &apos;Renewal Licensure&apos;)&quot;,
     &quot;LateFeeApplicable&quot; : &quot;=%CurrentMonth% &gt; 1&quot;,
     &quot;IsPartialFee&quot; : &quot;=IF(%PaymentOption:PayOption% == \&quot;Partial\&quot;, true, false)&quot;
   },
@@ -1729,38 +1792,7 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;OR&quot;,
-      &quot;rules&quot; : [ {
-        &quot;group&quot; : {
-          &quot;operator&quot; : &quot;AND&quot;,
-          &quot;rules&quot; : [ {
-            &quot;field&quot; : &quot;PayLater&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : null
-          }, {
-            &quot;field&quot; : &quot;PayLater&quot;,
-            &quot;condition&quot; : &quot;=&quot;,
-            &quot;data&quot; : &quot;true&quot;
-          } ]
-        }
-      }, {
-        &quot;group&quot; : {
-          &quot;operator&quot; : &quot;AND&quot;,
-          &quot;rules&quot; : [ {
-            &quot;field&quot; : &quot;SFUserRenew&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : null
-          }, {
-            &quot;field&quot; : &quot;SFUserRenew&quot;,
-            &quot;condition&quot; : &quot;=&quot;,
-            &quot;data&quot; : &quot;true&quot;
-          } ]
-        }
-      } ]
-    }
-  },
+  &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,

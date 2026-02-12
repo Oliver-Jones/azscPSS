@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">
+<p>The Legal Document Preparer program has now opened its certification renewal application process and will close on {{{BusinessLicense.Expiration_Date__c}}}. Remaining days to renew: 37 Days.  </p>
+
+<p>PLEASE NOTE: If you do not apply and pay online in the first month of renewal (May), your application will be charged a $100 late renewal fee. </p>
+
+<p>You can apply and pay online for your renewal application using your debit or credit card. To start your application, please visit the AZ COURTS PORTAL link prior to your certification expiration. Additional resources can be found at&nbsp;<a href="https://www.azcourts.gov/cld">www.azcourts.gov/cld. </a> </p>
+
+<p>If you encounter difficulties renewing online, contact the Certification and Licensing Division at the email address below.  </p>
+
+<p>You will not be able to renew the certification after the date of expiration. <strong>All Legal Document Preparer Individual and Business Certifications will expire at Midnight on {{{BusinessLicense.Expiration_Date__c}}}.</strong> In the event you fail to renew your license prior to the expiration date, you must contact the Division for next steps.  </p>
+</div>
+
+<div style="padding-left:50%;"><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+LDP@courts.az.gov</div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+</body>
+</html>

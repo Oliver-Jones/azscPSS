@@ -44,60 +44,14 @@
   &quot;controlWidth&quot; : 12,
   &quot;label&quot; : &quot;TextBlock3&quot;,
   &quot;text&quot; : &quot;&lt;p style=\&quot;color: white; background: #c51244; font-size: 12px; line-height: 2; padding: 10px; text-align: left;\&quot;&gt;&lt;strong&gt;At least one of the following is required:&lt;/strong&gt;&lt;/p&gt;&quot;,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;AuthorizedBusinessInfoCheckboxError&quot;
-      } ]
-    }
-  },
+  &quot;show&quot; : null,
   &quot;dataJSON&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>8.0</sequenceNumber>
+            <sequenceNumber>7.0</sequenceNumber>
             <type>Text Block</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>AuthorizeMyBusinessNameAndOther</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;controlWidth&quot; : 12,
-  &quot;label&quot; : &quot;Checkbox1&quot;,
-  &quot;repeat&quot; : false,
-  &quot;repeatClone&quot; : false,
-  &quot;repeatLimit&quot; : null,
-  &quot;readOnly&quot; : false,
-  &quot;defaultValue&quot; : false,
-  &quot;help&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;helpTextPos&quot; : &quot;&quot;,
-  &quot;checkLabel&quot; : &quot;By checking this box, I hereby authorize to include my Business Name in the public online directory AND the following (Only provide information you want included in the directory. Leave other sections blank.)&quot;,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;IsIndividualApplication&quot;
-      } ]
-    }
-  },
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;hide&quot; : false,
-  &quot;disOnTplt&quot; : false
-}</propertySetConfig>
-            <sequenceNumber>11.0</sequenceNumber>
-            <type>Checkbox</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -108,7 +62,7 @@
             <propertySetConfig>{
   &quot;hideGroupSep&quot; : false,
   &quot;hide&quot; : true,
-  &quot;expression&quot; : &quot;IF(%IsIndividualApplication% == true, %PublicDirectoryInfo:AuthorizeMyIndividualNameAndOther%, %PublicDirectoryInfo:AuthorizeMyBusinessNameAndOther%)&quot;,
+  &quot;expression&quot; : &quot;IF(%BusinessApplicationAuthorize% == &apos;AuthorizeMyBusinessNameAndOther&apos;, true, IF(%IndividualApplicationAuthorize% == &apos;AuthorizeMyIndividualNameAndOther&apos;, true, false))&quot;,
   &quot;controlWidth&quot; : 4,
   &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
   &quot;disOnTplt&quot; : false,
@@ -117,80 +71,8 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>7.0</sequenceNumber>
+            <sequenceNumber>6.0</sequenceNumber>
             <type>Formula</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>AuthorizeMyIndividualNameAndOther</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;controlWidth&quot; : 12,
-  &quot;defaultValue&quot; : false,
-  &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : false,
-  &quot;checkLabel&quot; : &quot;By checking this box, I hereby authorize to include my Certified Holder Name in the public online directory AND the following (Only provide information you want included in the directory. Leave other sections blank.)&quot;,
-  &quot;label&quot; : &quot;Checkbox1&quot;,
-  &quot;help&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;repeat&quot; : false,
-  &quot;disOnTplt&quot; : false,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;helpTextPos&quot; : &quot;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;IsIndividualApplication&quot;
-      } ]
-    }
-  }
-}</propertySetConfig>
-            <sequenceNumber>12.0</sequenceNumber>
-            <type>Checkbox</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>AuthorizeOnlyBusiness</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;controlWidth&quot; : 12,
-  &quot;defaultValue&quot; : false,
-  &quot;repeatClone&quot; : false,
-  &quot;readOnly&quot; : false,
-  &quot;checkLabel&quot; : &quot;By checking this box, I hereby authorize to ONLY include my Business Name in the public online directory.&quot;,
-  &quot;label&quot; : &quot;Checkbox1&quot;,
-  &quot;help&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;repeat&quot; : false,
-  &quot;disOnTplt&quot; : false,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;helpTextPos&quot; : &quot;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;field&quot; : &quot;IsIndividualApplication&quot;,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;data&quot; : &quot;true&quot;
-      } ]
-    }
-  }
-}</propertySetConfig>
-            <sequenceNumber>9.0</sequenceNumber>
-            <type>Checkbox</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -199,7 +81,7 @@
             <name>AuthorizeOnlyBusinessName</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
-  &quot;expression&quot; : &quot;IF(%IsIndividualApplication% == true, %PublicDirectoryInfo:AuthorizeOnlyIndividual%, %PublicDirectoryInfo:AuthorizeOnlyBusiness%)&quot;,
+  &quot;expression&quot; : &quot;IF(%BusinessApplicationAuthorize% == &apos;AuthorizeOnlyBusiness&apos;, true, IF(%IndividualApplicationAuthorize% == &apos;AuthorizeOnlyIndividual&apos;, true, false))&quot;,
   &quot;controlWidth&quot; : 4,
   &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
   &quot;label&quot; : &quot;AuthorizeOnlyBusinessName&quot;,
@@ -210,44 +92,8 @@
   &quot;disOnTplt&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>6.0</sequenceNumber>
+            <sequenceNumber>5.0</sequenceNumber>
             <type>Formula</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>AuthorizeOnlyIndividual</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;accessibleInFutureSteps&quot; : false,
-  &quot;helpText&quot; : &quot;&quot;,
-  &quot;controlWidth&quot; : 12,
-  &quot;defaultValue&quot; : false,
-  &quot;repeatClone&quot; : false,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;field&quot; : &quot;IsIndividualApplication&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;data&quot; : &quot;true&quot;
-      } ]
-    }
-  },
-  &quot;readOnly&quot; : false,
-  &quot;checkLabel&quot; : &quot;By checking this box, I hereby authorize to ONLY include my Certified Holder Name in the public online directory.&quot;,
-  &quot;label&quot; : &quot;Checkbox1&quot;,
-  &quot;help&quot; : false,
-  &quot;hide&quot; : false,
-  &quot;repeat&quot; : false,
-  &quot;disOnTplt&quot; : false,
-  &quot;conditionType&quot; : &quot;Hide if False&quot;,
-  &quot;helpTextPos&quot; : &quot;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;
-}</propertySetConfig>
-            <sequenceNumber>10.0</sequenceNumber>
-            <type>Checkbox</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -265,8 +111,69 @@
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>17.0</sequenceNumber>
+            <sequenceNumber>14.0</sequenceNumber>
             <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>BusinessApplicationAuthorize</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;AuthorizeOnlyBusiness&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;By checking this box, I hereby authorize to ONLY include my Business Name in the public online directory.&quot;,
+    &quot;autoAdv&quot; : null
+  }, {
+    &quot;name&quot; : &quot;AuthorizeMyBusinessNameAndOther&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;By checking this box, I hereby authorize to include my Business Name in the public online directory AND the following (Only provide information you want included in the directory. Leave other sections blank.)&quot;,
+    &quot;autoAdv&quot; : null
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;IsIndividualApplication&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Radio</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -284,7 +191,7 @@
   &quot;sanitize&quot; : false,
   &quot;show&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>14.0</sequenceNumber>
+            <sequenceNumber>11.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -331,7 +238,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;autocomplete&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>2.0</sequenceNumber>
+            <sequenceNumber>1.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -897,8 +804,67 @@
   &quot;hide&quot; : false,
   &quot;ariaLevel&quot; : 3
 }</propertySetConfig>
-            <sequenceNumber>13.0</sequenceNumber>
+            <sequenceNumber>10.0</sequenceNumber>
             <type>Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>IndividualApplicationAuthorize</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;optionHeight&quot; : 100,
+  &quot;repeatClone&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;readOnly&quot; : false,
+  &quot;enableCaption&quot; : true,
+  &quot;label&quot; : &quot;&quot;,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;required&quot; : true,
+  &quot;help&quot; : false,
+  &quot;hide&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;AuthorizeOnlyIndividual&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;By checking this box, I hereby authorize to ONLY include my Certified Holder Name in the public online directory.&quot;,
+    &quot;autoAdv&quot; : null
+  }, {
+    &quot;name&quot; : &quot;AuthorizeMyIndividualNameAndOther&quot;,
+    &quot;developerName&quot; : null,
+    &quot;value&quot; : &quot;By checking this box, I hereby authorize to include my Certified Holder Name in the public online directory AND the following (Only provide information you want included in the directory. Leave other sections blank.)&quot;,
+    &quot;autoAdv&quot; : null
+  } ],
+  &quot;disOnTplt&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;optionWidth&quot; : 100,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;true&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;IsIndividualApplication&quot;
+      } ]
+    }
+  }
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Radio</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -942,36 +908,8 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>3.0</sequenceNumber>
+            <sequenceNumber>2.0</sequenceNumber>
             <type>Text</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>PDCommonNotes</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;controlWidth&quot; : 12,
-  &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;div style=\&quot;background: #DDD; padding: 10px; line-height: 2;\&quot;&gt;\n&lt;ul&gt;\n&lt;li&gt;Per ACJA &amp;sect; 7-201 (D)(4)(b)(4) Division staff shall maintain a list of certificate holders and post the list on the applicable website and make the list available to the public.&lt;/li&gt;\n&lt;li&gt;This form allows certificate holders to have specific information voluntarily included in the online directory, that is made available to the public by the Certification and Licensing Division (CLD).&lt;/li&gt;\n&lt;li&gt;Any changes must be provided to CLD within 30 days of the change.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;LPInitialLicense&quot;,
-        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;appType&quot;
-      } ]
-    }
-  },
-  &quot;dataJSON&quot; : false,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false
-}</propertySetConfig>
-            <sequenceNumber>0.0</sequenceNumber>
-            <type>Text Block</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -1005,36 +943,8 @@
   &quot;disOnTplt&quot; : false,
   &quot;autocomplete&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>15.0</sequenceNumber>
+            <sequenceNumber>12.0</sequenceNumber>
             <type>Email</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>PDLegalDocumentNotes</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;controlWidth&quot; : 12,
-  &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;div style=\&quot;background: #DDD; padding: 10px; line-height: 2;\&quot;&gt;\n&lt;ul&gt;\n&lt;li&gt;Per the ACJA, the names of regulated individuals and businesses are listed on a public directory on AZCourts.gov.&lt;/li&gt;\n&lt;li&gt;This form allows license and certificate holders to opt-in to have specific contact information included in the public online directory the Certification and Licensing Division (CLD) maintains under the Arizona Code of Judicial Administration.&lt;/li&gt;\n&lt;li&gt;Changes must be provided to CLD within 30 days and submitted for revision through a Service Request located on your home page within this portal.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;,
-  &quot;dataJSON&quot; : false,
-  &quot;textKey&quot; : &quot;&quot;,
-  &quot;sanitize&quot; : false,
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;LPInitialLicense&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;appType&quot;
-      } ]
-    }
-  }
-}</propertySetConfig>
-            <sequenceNumber>1.0</sequenceNumber>
-            <type>Text Block</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -1071,7 +981,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;autocomplete&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>20.0</sequenceNumber>
+            <sequenceNumber>17.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1111,7 +1021,7 @@
   &quot;hide&quot; : false,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>18.0</sequenceNumber>
+            <sequenceNumber>15.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -1151,7 +1061,7 @@
   &quot;label&quot; : &quot;State/Province&quot;,
   &quot;controlWidth&quot; : 4
 }</propertySetConfig>
-            <sequenceNumber>21.0</sequenceNumber>
+            <sequenceNumber>18.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -1189,7 +1099,7 @@
   &quot;label&quot; : &quot;Address Line&quot;,
   &quot;controlWidth&quot; : 8
 }</propertySetConfig>
-            <sequenceNumber>19.0</sequenceNumber>
+            <sequenceNumber>16.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1227,7 +1137,7 @@
   &quot;label&quot; : &quot;Zip/Postal Code&quot;,
   &quot;controlWidth&quot; : 4
 }</propertySetConfig>
-            <sequenceNumber>22.0</sequenceNumber>
+            <sequenceNumber>19.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1251,7 +1161,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>5.0</sequenceNumber>
+            <sequenceNumber>4.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1266,7 +1176,7 @@
   &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>4.0</sequenceNumber>
+            <sequenceNumber>3.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1304,7 +1214,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;autocomplete&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>16.0</sequenceNumber>
+            <sequenceNumber>13.0</sequenceNumber>
             <type>Telephone</type>
         </childElements>
         <childElements>
@@ -1319,8 +1229,27 @@
   &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>23.0</sequenceNumber>
+            <sequenceNumber>20.0</sequenceNumber>
             <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TextBlock1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;background: #DDD; padding: 10px; line-height: 2;\&quot;&gt;\n&lt;ul&gt;\n&lt;li&gt;Per ACJA &amp;sect; 7-201 (D)(4)(b)(4) Division staff shall maintain a list of certificate holders and post the list on the applicable website and make the list available to the public.&lt;/li&gt;\n&lt;li&gt;This form allows certificate holders to have specific information voluntarily included in the online directory, that is made available to the public by the Certification and Licensing Division (CLD).&lt;/li&gt;\n&lt;li&gt;Any changes must be provided to CLD within 30 days of the change.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
         </childElements>
         <isActive>true</isActive>
         <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>

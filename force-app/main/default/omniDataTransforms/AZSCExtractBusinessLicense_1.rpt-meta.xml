@@ -12,6 +12,21 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>f61d72d1-06f8-4d16-adc2-7b9e6a3b9e1d</globalKey>
+        <inputFieldName>BusinessLicense:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>9af088bd-ee84-4000-8bdc-7e62c504e4c1</globalKey>
         <inputFieldName>BusinessLicense:ContactId</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -74,6 +89,100 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>205a10ac-360c-4127-8a7a-67c8a44184f8</globalKey>
+        <inputFieldName>BusinessLicense:RegulatoryAuthorizationType.Partial_Renewal__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:HasPartialRenewal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>174bcd61-bc61-4071-992b-3158d7abb33c</globalKey>
+        <inputFieldName>BusinessLicense:Account.DBA_Name_3__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:DBAName3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Id</filterValue>
+        <globalKey>65855b1b-9d2c-4f4e-9a53-f32712f87e18</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>BusinessLicense</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>39350f2f-645b-4639-ac19-c5f0919159b4</globalKey>
+        <inputFieldName>BusinessLicense:Account.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:AccountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Name</filterValue>
+        <globalKey>fd73d957-b2bb-4840-86ad-88048a4f5cf1</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>BusinessLicense</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>745cdf29-f611-47ea-b282-0650a81df4d0</globalKey>
+        <inputFieldName>BusinessLicense:Contact.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:ContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>c1f71d99-5a5b-43a2-bbcb-1592fda4c4c1</globalKey>
         <inputFieldName>BusinessLicense:RegulatoryAuthorizationType.Expiration_Month__c</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -104,21 +213,6 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>205a10ac-360c-4127-8a7a-67c8a44184f8</globalKey>
-        <inputFieldName>BusinessLicense:RegulatoryAuthorizationType.Partial_Renewal__c</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>AZSCExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:HasPartialRenewal</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
         <globalKey>8e380ccc-6b0c-438d-a130-a0c155a479f7</globalKey>
         <inputFieldName>IsRenewalOpen</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -133,17 +227,19 @@
     </omniDataTransformItem>
     <omniDataTransformItem>
         <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>174bcd61-bc61-4071-992b-3158d7abb33c</globalKey>
-        <inputFieldName>BusinessLicense:Account.DBA_Name_3__c</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <filterGroup>2.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>ContactId</filterValue>
+        <globalKey>30ed1fd1-a6f8-4d98-9cb9-429a12cf0642</globalKey>
+        <inputFieldName>ContactId</inputFieldName>
+        <inputObjectName>BusinessLicense</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>AZSCExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:DBAName3</outputFieldName>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
@@ -159,23 +255,6 @@
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>Id</filterValue>
-        <globalKey>65855b1b-9d2c-4f4e-9a53-f32712f87e18</globalKey>
-        <inputFieldName>Id</inputFieldName>
-        <inputObjectName>BusinessLicense</inputObjectName>
-        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>AZSCExtractBusinessLicense</name>
-        <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <omniDataTransformItem>
@@ -205,21 +284,6 @@
         <name>AZSCExtractBusinessLicense</name>
         <outputCreationSequence>1.0</outputCreationSequence>
         <outputFieldName>BusinessLicenseNumber</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <transformValuesMappings>{ }</transformValuesMappings>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>39350f2f-645b-4639-ac19-c5f0919159b4</globalKey>
-        <inputFieldName>BusinessLicense:Account.Name</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>AZSCExtractBusinessLicense</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense:AccountName</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>
@@ -306,23 +370,6 @@
     </omniDataTransformItem>
     <omniDataTransformItem>
         <disabled>false</disabled>
-        <filterGroup>1.0</filterGroup>
-        <filterOperator>=</filterOperator>
-        <filterValue>Name</filterValue>
-        <globalKey>fd73d957-b2bb-4840-86ad-88048a4f5cf1</globalKey>
-        <inputFieldName>Name</inputFieldName>
-        <inputObjectName>BusinessLicense</inputObjectName>
-        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>AZSCExtractBusinessLicense</name>
-        <outputCreationSequence>0.0</outputCreationSequence>
-        <outputFieldName>BusinessLicense</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <globalKey>0cc1f16b-15c9-4765-9f0f-0a27f5f7cf55</globalKey>
         <inputFieldName>BusinessLicense:Id</inputFieldName>
@@ -354,6 +401,21 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>b81bb3de-64f3-44f0-93a2-5fa3bad08bf9</globalKey>
+        <inputFieldName>BusinessLicense:Contact.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicenseContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <globalKey>070a6254-204c-4ce1-a5e4-c3150c6f0b45</globalKey>
         <inputFieldName>IsLateFeeApplicable</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
@@ -362,6 +424,21 @@
         <outputCreationSequence>1.0</outputCreationSequence>
         <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
         <outputFieldName>BusinessLicense:IsLateFeeApplicable</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0007be16-dd23-4e75-8d10-9e61ff2d3377</globalKey>
+        <inputFieldName>BusinessLicense:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AZSCExtractBusinessLicense</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BusinessLicense:Name</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <transformValuesMappings>{ }</transformValuesMappings>

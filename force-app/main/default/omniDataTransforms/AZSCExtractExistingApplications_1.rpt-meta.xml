@@ -45,9 +45,9 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>ApplicationName</filterValue>
+        <filterValue>LicenseCode</filterValue>
         <globalKey>3497e7b0-cffd-4650-8cdd-b1a90dd64625</globalKey>
-        <inputFieldName>LicenseType.Name</inputFieldName>
+        <inputFieldName>LicenseType.RegulatoryAuthCode</inputFieldName>
         <inputObjectName>IndividualApplication</inputObjectName>
         <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -64,7 +64,7 @@
         <filterOperator>=</filterOperator>
         <filterValue>ContactId</filterValue>
         <globalKey>457266a6-c7fe-4406-8ca9-e48b028e598d</globalKey>
-        <inputFieldName>PrimaryOwnerId</inputFieldName>
+        <inputFieldName>ApplicantId</inputFieldName>
         <inputObjectName>BusinessLicenseApplication</inputObjectName>
         <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -111,9 +111,9 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>ApplicationName</filterValue>
+        <filterValue>LicenseCode</filterValue>
         <globalKey>ad978c38-ab00-4752-9bb1-e5d2394d80ea</globalKey>
-        <inputFieldName>LicenseType.Name</inputFieldName>
+        <inputFieldName>LicenseType.RegulatoryAuthCode</inputFieldName>
         <inputObjectName>BusinessLicenseApplication</inputObjectName>
         <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -160,9 +160,9 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>ApplicationName</filterValue>
+        <filterValue>LicenseCode</filterValue>
         <globalKey>4adf3448-8f2c-4d25-916d-6d856cc7f4f3</globalKey>
-        <inputFieldName>Application_Name__c</inputFieldName>
+        <inputFieldName>RegAuthCode__c</inputFieldName>
         <inputObjectName>OmniScriptSavedSession</inputObjectName>
         <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>

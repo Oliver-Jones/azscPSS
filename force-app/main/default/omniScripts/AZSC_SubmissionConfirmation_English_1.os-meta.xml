@@ -387,8 +387,51 @@
     }
   }
 }</propertySetConfig>
-        <sequenceNumber>2.0</sequenceNumber>
+        <sequenceNumber>3.0</sequenceNumber>
         <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NavigateAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;targetName&quot; : &quot;Exams__c&quot;,
+  &quot;controlWidth&quot; : 12,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;replace&quot; : true,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;IndExamId&quot;
+      } ]
+    }
+  },
+  &quot;targetType&quot; : &quot;Community Named Page&quot;,
+  &quot;label&quot; : &quot;Navigate to Exams Home&quot;,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;wpm&quot; : false,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>Navigate Action</type>
     </omniProcessElements>
     <omniProcessElements>
         <isActive>true</isActive>
@@ -435,25 +478,25 @@
   &quot;businessEvent&quot; : &quot;&quot;,
   &quot;targetName&quot; : &quot;Applications__c&quot;
 }</propertySetConfig>
-        <sequenceNumber>3.0</sequenceNumber>
+        <sequenceNumber>4.0</sequenceNumber>
         <type>Navigate Action</type>
     </omniProcessElements>
     <omniProcessElements>
         <isActive>true</isActive>
         <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
         <level>0.0</level>
-        <name>NavigateToExamsHome</name>
+        <name>NavigateToServiceRequestHome</name>
         <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
         <propertySetConfig>{
   &quot;objectAction&quot; : &quot;home&quot;,
-  &quot;targetName&quot; : &quot;Exams__c&quot;,
+  &quot;targetName&quot; : &quot;Service_Requests__c&quot;,
   &quot;controlWidth&quot; : 12,
   &quot;targetId&quot; : &quot;%ContextId%&quot;,
   &quot;iconName&quot; : &quot;&quot;,
   &quot;loginAction&quot; : &quot;login&quot;,
   &quot;replace&quot; : true,
   &quot;targetType&quot; : &quot;Community Named Page&quot;,
-  &quot;label&quot; : &quot;Navigate to Exams Home&quot;,
+  &quot;label&quot; : &quot;Navigate to Service Request Home&quot;,
   &quot;ssm&quot; : false,
   &quot;message&quot; : { },
   &quot;targetFilter&quot; : &quot;Recent&quot;,
@@ -474,13 +517,141 @@
       &quot;rules&quot; : [ {
         &quot;data&quot; : null,
         &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-        &quot;field&quot; : &quot;IndExamId&quot;
+        &quot;field&quot; : &quot;CaseId&quot;
       } ]
     }
   }
 }</propertySetConfig>
-        <sequenceNumber>4.0</sequenceNumber>
+        <sequenceNumber>5.0</sequenceNumber>
         <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ServiceRequestConfirmationBody</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 4,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;padding: 20px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; text-align: center; background: #f4f6f9; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin-bottom: 20px;\&quot;&gt;Service Request Number: &lt;strong&gt;%ApplnNumber%&lt;/strong&gt;&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ServiceRequestConfirmationBodySpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 4.0,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ServiceRequestConfirmationSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;padding&quot; : 100.0,
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ServiceRequestConfirmationTitle</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock1&quot;,
+  &quot;text&quot; : &quot;&lt;div style=\&quot;padding: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px;\&quot;&gt;\n&lt;h1 style=\&quot;text-align: center;\&quot;&gt;Service Request Submitted Successfully!&lt;/h1&gt;\n&lt;/div&gt;&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;dataJSON&quot; : false,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ServiceRequestConfirmation</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;nextWidth&quot; : &quot;4&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;OR&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;CaseId&quot;
+      } ]
+    }
+  },
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;ssm&quot; : false,
+  &quot;saveLabel&quot; : &quot;Save &amp; Exit&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;pubsub&quot; : false,
+  &quot;saveMessage&quot; : &quot;Do you wish to save your progress and exit this application?&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;previousWidth&quot; : &quot;0&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ]
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;label&quot; : &quot;Complete&quot;,
+  &quot;message&quot; : { },
+  &quot;wpm&quot; : false,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;previousLabel&quot; : &quot;Back&quot;,
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;nextLabel&quot; : &quot;Back to Home&quot;,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Step</type>
     </omniProcessElements>
     <omniProcessElements>
         <isActive>true</isActive>

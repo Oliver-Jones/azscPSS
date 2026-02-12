@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Arizona_Supreme_Court</letterhead>
+    <name>Application Documents Rejected</name>
+    <style>freeForm</style>
+    <subject>Documents Rejected</subject>
+    <textOnly>Dear {!Application__c.Account__c},
+
+One or more document submitted with {!Application__c.Name} have been rejected.  Please login at {!Site.UrlPathPrefix} to review the reasons for the rejection and resubmit the necessary documents.  You application cannot be considered further until this issue is resolved.
+
+Feel free to contact us at the number provided herein with any questions are concerns regarding the above information.
+
+Regards,
+
+Arizona Supreme Court
+(602) 555-5555</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

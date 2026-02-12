@@ -130,7 +130,7 @@
   &quot;failureResponse&quot; : { },
   &quot;id&quot; : &quot;&quot;,
   &quot;additionalInput&quot; : {
-    &quot;AccountId&quot; : &quot;%UserInfo:AccountId%&quot;,
+    &quot;AccountId&quot; : &quot;%AccountId%&quot;,
     &quot;IsPortalEnabled&quot; : &quot;%UserInfo:IsPortalEnabled%&quot;,
     &quot;appType&quot; : &quot;%appType%&quot;,
     &quot;IsPartialFee&quot; : &quot;=IF(%CertifiedReporterPaymentOverview:PayOption% == &apos;Partial&apos;, true, false)&quot;,
@@ -246,7 +246,8 @@
     &quot;HasDraft&quot; : &quot;%InitializeVariables:HasDraft%&quot;,
     &quot;ApplicantId&quot; : &quot;%InitializeVariables:ApplicantId%&quot;,
     &quot;DraftId&quot; : &quot;%InitializeVariables:DraftId%&quot;,
-    &quot;ApplicationId&quot; : &quot;=%LoadIndividualApplication:Id%&quot;
+    &quot;ApplicationId&quot; : &quot;=%LoadIndividualApplication:Id%&quot;,
+    &quot;PaymentURL&quot; : &quot;=%FetchPaymentURL:PaymentURL%&quot;
   },
   &quot;sendJSONPath&quot; : &quot;&quot;,
   &quot;disOnTplt&quot; : false,

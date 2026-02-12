@@ -137,7 +137,7 @@
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Yes_Has_Contact</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>1 AND 2 AND ( (3 AND 4 ) OR ( ( 5 OR 6 ) AND 7) )</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Account.PersonContactId</leftValueReference>
                 <operator>IsNull</operator>
@@ -150,6 +150,41 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>LDILicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>LDBLicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDILicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDBLicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApplicationType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Renewal Licensure</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -379,6 +414,11 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         <dataType>String</dataType>
         <expression>&apos;Update on &apos;+{!$Record.LicenseType.Name}+&apos; Application&apos;</expression>
     </formulas>
+    <formulas>
+        <name>OrgWideEmail</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.LicenseType.RegulatoryAuthCode}, 3) &amp; &apos;OrgWideEmail&apos;</expression>
+    </formulas>
     <interviewLabel>Individual Application Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Individual Application Flow</label>
     <processMetadataValues>
@@ -460,12 +500,6 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             <field>PeriodEnd</field>
             <value>
                 <elementReference>LicenseExpiryDate</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>PeriodStart</field>
-            <value>
-                <elementReference>LicenseStartDate</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -662,7 +696,7 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             <field>DeveloperName</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>OrgWideEmail</stringValue>
+                <elementReference>OrgWideEmail</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -731,12 +765,6 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             <field>PeriodEnd</field>
             <value>
                 <elementReference>LicenseExpiryDate</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>PeriodStart</field>
-            <value>
-                <elementReference>LicenseStartDate</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

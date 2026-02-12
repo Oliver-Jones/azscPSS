@@ -267,6 +267,43 @@
             <targetReference>For_Every_Participant</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Regulatory_Transaction_Fee_Item_Asssignment</name>
+        <label>Regulatory Transaction Fee Item Asssignment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>feeItem.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_2.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>feeItem.FeeAmount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>feeItems</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>feeItem</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_2</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>LDBApplication</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>LDB_Application</stringValue>
+        </value>
+    </constants>
     <customErrors>
         <name>Pending_Action_Plans_Error</name>
         <label>Pending Action Plans Error</label>
@@ -317,17 +354,70 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Business_Entity_Exemption_Changed</name>
+        <label>Business Entity Exemption Changed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Is_New_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Is_Business_Entity_Exemption_requested__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Is_Business_Entity_Exemption_requested__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>LDBApplication</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Regulatory_Transaction_Fee</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Check_Application_has_Contact</name>
         <label>Check Application has Contact</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>Send_Email_for_approval</targetReference>
+            <targetReference>Fetch_Community_User</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
             <name>Yes_Has_Contact</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>1 AND 2 AND ( (3 AND 4 ) OR ( ( 5 OR 6 ) AND 7) )</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Applicant.Id</leftValueReference>
                 <operator>IsNull</operator>
@@ -340,6 +430,41 @@
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>LDILicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>LDBLicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDILicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LicenseType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDBLicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApplicationType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Renewal Licensure</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -730,7 +855,7 @@
     <formulas>
         <name>ActionPlanTemplateName</name>
         <dataType>String</dataType>
-        <expression>IF( {!Accepted}, {!$Record.LicenseType.Name}&amp;&apos; &apos;&amp;TEXT({!$Record.ApplicationType})&amp;&apos; Admin Staff Tasks&apos;, IF( {!In_Review}, {!$Record.LicenseType.Name}&amp;&apos; &apos;&amp;TEXT({!$Record.ApplicationType})&amp;&apos; Certification Specialist Tasks&apos;, &apos;&apos;))</expression>
+        <expression>IF( {!Accepted}, {!$Record.LicenseType.Name}&amp;&apos; - &apos;&amp;TEXT({!$Record.ApplicationType})&amp;&apos; - Admin Staff Tasks&apos;, IF( {!In_Review}, {!$Record.LicenseType.Name}&amp;&apos; - &apos;&amp;TEXT({!$Record.ApplicationType})&amp;&apos; - Certification Specialist Tasks&apos;, &apos;&apos;))</expression>
     </formulas>
     <formulas>
         <name>CommunityURL</name>
@@ -741,12 +866,20 @@
         <name>EmailUniqueName</name>
         <dataType>String</dataType>
         <expression>IF(
-    ISPICKVAL({!$Record.Status}, &apos;Approved&apos;),
-    LEFT($Record.LicenseType.RegulatoryAuthCode, 3) &amp; &apos;_Approval_Email&apos;,
+    ISPICKVAL({!$Record.Status}, &apos;Approved&apos;) &amp;&amp;
+    ISPICKVAL({!$Record.ApplicationType}, &apos;Initial Licensure&apos;),
+    LEFT($Record.LicenseType.RegulatoryAuthCode, 3) &amp; &apos;_New_Approval_Email&apos;,
+
     IF(
-        ISPICKVAL({!$Record.Status}, &apos;Canceled&apos;),
-        LEFT($Record.LicenseType.RegulatoryAuthCode, 3) &amp; &apos;_Denial_Email&apos;,
-        &apos;&apos;
+        ISPICKVAL({!$Record.Status}, &apos;Approved&apos;) &amp;&amp;
+        ISPICKVAL({!$Record.ApplicationType}, &apos;Renewal Licensure&apos;),
+        LEFT($Record.LicenseType.RegulatoryAuthCode, 3) &amp; &apos;_Renewal_Approval_Email&apos;,
+
+        IF(
+            ISPICKVAL({!$Record.Status}, &apos;Denied&apos;),
+            LEFT($Record.LicenseType.RegulatoryAuthCode, 3) &amp; &apos;_Denial_Email&apos;,
+            &apos;&apos;
+        )
     )
 )</expression>
     </formulas>
@@ -780,6 +913,11 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         <name>OrgURL</name>
         <dataType>String</dataType>
         <expression>LEFT({!$Api.Partner_Server_URL_260}, FIND(&apos;/services&apos;, {!$Api.Partner_Server_URL_260}))</expression>
+    </formulas>
+    <formulas>
+        <name>OrgWideEmail</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.LicenseType.RegulatoryAuthCode}, 3) &amp; &apos;OrgWideEmail&apos;</expression>
     </formulas>
     <formulas>
         <name>SubApplicationLink</name>
@@ -832,6 +970,20 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         </nextValueConnector>
         <noMoreValuesConnector>
             <targetReference>Status_Change_Check2</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_2</name>
+        <label>Loop 2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Regulatory_Transaction_Fee_Items</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Regulatory_Transaction_Fee_Item_Asssignment</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Regulatory_Transaction_Fee_Items</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -919,12 +1071,6 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             <field>PeriodEnd</field>
             <value>
                 <elementReference>LicenseExpiryDate</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>PeriodStart</field>
-            <value>
-                <elementReference>LicenseStartDate</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1400,6 +1546,48 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>Get_Regulatory_Transaction_Fee</name>
+        <label>Get Regulatory Transaction Fee</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Regulatory_Transaction_Fee_Items</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentRecordId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RegulatoryTrxnFee</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Regulatory_Transaction_Fee_Items</name>
+        <label>Get Regulatory Transaction Fee Items</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RegulatoryTrxnFeeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Regulatory_Transaction_Fee.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>RegulatoryTrxnFeeItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Send_Email_Label</name>
         <label>Send Email Label</label>
         <locationX>0</locationX>
@@ -1413,7 +1601,7 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             <field>DeveloperName</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>OrgWideEmail</stringValue>
+                <elementReference>OrgWideEmail</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -1457,12 +1645,6 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>PeriodStart</field>
-            <value>
-                <elementReference>LicenseStartDate</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
             <field>Status</field>
             <value>
                 <stringValue>Active</stringValue>
@@ -1502,11 +1684,21 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         </inputAssignments>
         <inputReference>$Record.Case_Relationships__r</inputReference>
     </recordUpdates>
-    <start>
+    <recordUpdates>
+        <name>Update_Regulatory_Transaction_Fee_Items</name>
+        <label>Update Regulatory Transaction Fee Items</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Is_New_Record</targetReference>
+        </connector>
+        <inputReference>feeItems</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Business_Entity_Exemption_Changed</targetReference>
         </connector>
         <object>BusinessLicenseApplication</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
@@ -1599,6 +1791,22 @@ IF(TEXT({!$Record.LicenseType.Expiration_Type__c}) == &apos;No Expiration&apos;,
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>A new ABS Application was submitted</text>
     </textTemplates>
+    <variables>
+        <name>feeItem</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>RegulatoryTrxnFeeItem</objectType>
+    </variables>
+    <variables>
+        <name>feeItems</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>RegulatoryTrxnFeeItem</objectType>
+    </variables>
     <variables>
         <name>RecipientIds</name>
         <dataType>String</dataType>

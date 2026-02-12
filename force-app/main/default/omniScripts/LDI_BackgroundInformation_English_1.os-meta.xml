@@ -3059,13 +3059,13 @@
             <propertySetConfig>{
   &quot;accessibleInFutureSteps&quot; : false,
   &quot;hide&quot; : false,
-  &quot;controlWidth&quot; : 12.0,
+  &quot;controlWidth&quot; : 12,
   &quot;repeat&quot; : false,
   &quot;show&quot; : {
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,
       &quot;rules&quot; : [ {
-        &quot;field&quot; : &quot;BgInfoQues14&quot;,
+        &quot;field&quot; : &quot;BgInfoQues15&quot;,
         &quot;condition&quot; : &quot;=&quot;,
         &quot;data&quot; : &quot;Yes&quot;
       } ]
@@ -4244,7 +4244,7 @@
             <propertySetConfig>{
   &quot;controlWidth&quot; : 12,
   &quot;label&quot; : &quot;TextBlock1&quot;,
-  &quot;text&quot; : &quot;&lt;p style=\&quot;background-color: lightgray; padding: 10px;\&quot;&gt;If the answer to any of the following questions is &lt;strong&gt;&amp;ldquo;Yes&amp;rdquo;&lt;/strong&gt;, you are required to submit documentation indicating date of conviction or finding, nature and details of the case, including the case disposition, location, court, and case number.&lt;/p&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;p style=\&quot;background-color: lightgray; padding: 10px;\&quot;&gt;&lt;span data-olk-copy-source=\&quot;MessageBody\&quot;&gt;If you answer &lt;strong&gt;&amp;ldquo;Yes&amp;rdquo;&lt;/strong&gt; to any of the following questions, you must submit documentation indicating the date of conviction or finding, nature and details of the case/incident, case disposition, location, court, and case number, and include a detailed written or typed description of the circumstances surrounding the case/incident.&lt;/span&gt;.&lt;/p&gt;&quot;,
   &quot;show&quot; : {
     &quot;group&quot; : {
       &quot;operator&quot; : &quot;AND&quot;,

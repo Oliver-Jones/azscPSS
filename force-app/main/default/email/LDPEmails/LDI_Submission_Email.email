@@ -1,0 +1,13 @@
+<html>
+<head> 
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Thank you for submitting your&nbsp;{{{IndividualApplication.License_Name__c}}} for&nbsp;{{{IndividualApplication.ApplicationType}}} to the Certification and Licensing Division.<br />
+<br />
+This auto-reply confirms that we have received your submission.<br />
+<br />
+Application reference number:&nbsp;{{{IndividualApplication.Name}}}<br />
+Date received:&nbsp;{{{IndividualApplication.AppliedDate}}}<br />
+<br />
+If you need to provide additional information or have any questions, please email us at @ABSProgram.</body>
+</html>

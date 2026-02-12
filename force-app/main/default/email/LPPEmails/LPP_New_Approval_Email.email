@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{IndividualApplication.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">{{{Recipient.Name}}},<br />
+{{{Recipient.MailingStreet}}},<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}}&nbsp;{{{Recipient.MailingPostalCode}}}<br />
+<br />
+Re: Legal Paraprofessional Application Approval<br />
+<br />
+Dear {{{Recipient.Name}}}:
+<p>Congratulations! On {{{IndividualApplication.AppliedDate}}}, the Board of Allied Legal Service Providers approved an initial application for Arizona Legal Paraprofessional licensure. Once the State Bar of Arizona issues us your Bar Number, we will send your license credentials via U.S. Mail.</p>
+
+<p>The Certification and Licensing Division posts and distributes information on the Legal Paraprofessional website, <a href="https://www.azcourts.gov/cld/Legal-Paraprofessional">https://www.azcourts.gov/cld/Legal-Paraprofessional</a>, and via email LPProgram@courts.az.gov. Please ensure your contact information remains up to date.</p>
+
+<p>If you have any questions or need assistance with future renewals, please contact the Division using the information above.</p>
+</div>
+&nbsp;
+
+<div style="padding-left:50%;">Sincerely,<br />
+Certification and Licensing Division Staff,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+LPProgram@courts.az.gov  </div>
+</body>
+</html>

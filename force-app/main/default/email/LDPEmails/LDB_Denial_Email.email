@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Committee on&nbsp;{{{BusinessLicenseApplication.License_Name__c}}}&nbsp;denied your&nbsp;{{{BusinessLicenseApplication.ApplicationType}}} application.<br />
+&nbsp;
+<p style="margin-bottom: 16px;">Sincerely,</p>
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958</body>
+</html>

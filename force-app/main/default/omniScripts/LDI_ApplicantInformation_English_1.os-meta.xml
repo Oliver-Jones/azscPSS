@@ -36,7 +36,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>5.0</sequenceNumber>
+            <sequenceNumber>7.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -70,7 +70,7 @@
   &quot;maxLength&quot; : 255.0,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>7.0</sequenceNumber>
+            <sequenceNumber>9.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -104,7 +104,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>8.0</sequenceNumber>
+            <sequenceNumber>10.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -138,7 +138,7 @@
   &quot;maxLength&quot; : 255.0,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>9.0</sequenceNumber>
+            <sequenceNumber>11.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -181,7 +181,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;(999) 999-9999&quot;
 }</propertySetConfig>
-            <sequenceNumber>15.0</sequenceNumber>
+            <sequenceNumber>17.0</sequenceNumber>
             <type>Telephone</type>
         </childElements>
         <childElements>
@@ -202,7 +202,7 @@
   &quot;label&quot; : &quot;Date of Birth&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;dateType&quot; : &quot;string&quot;,
@@ -222,7 +222,7 @@
   &quot;maxDate&quot; : &quot;TODAY - 18 years&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>11.0</sequenceNumber>
+            <sequenceNumber>13.0</sequenceNumber>
             <type>Date</type>
         </childElements>
         <childElements>
@@ -262,7 +262,7 @@
   &quot;placeholder&quot; : &quot;Email Address&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>12.0</sequenceNumber>
+            <sequenceNumber>14.0</sequenceNumber>
             <type>Email</type>
         </childElements>
         <childElements>
@@ -296,7 +296,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;(999) 999-9999&quot;
 }</propertySetConfig>
-            <sequenceNumber>14.0</sequenceNumber>
+            <sequenceNumber>16.0</sequenceNumber>
             <type>Telephone</type>
         </childElements>
         <childElements>
@@ -332,7 +332,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>2.0</sequenceNumber>
+            <sequenceNumber>4.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -367,7 +367,7 @@
   &quot;show&quot; : null,
   &quot;conditionType&quot; : &quot;Hide if False&quot;
 }</propertySetConfig>
-            <sequenceNumber>20.0</sequenceNumber>
+            <sequenceNumber>22.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -398,7 +398,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>34.0</sequenceNumber>
+            <sequenceNumber>36.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -431,7 +431,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>32.0</sequenceNumber>
+            <sequenceNumber>34.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -462,7 +462,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>35.0</sequenceNumber>
+            <sequenceNumber>37.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -493,7 +493,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>33.0</sequenceNumber>
+            <sequenceNumber>35.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -524,7 +524,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>36.0</sequenceNumber>
+            <sequenceNumber>38.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -563,7 +563,7 @@
   &quot;helpTextPos&quot; : &quot;&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>18.0</sequenceNumber>
+            <sequenceNumber>20.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -602,7 +602,7 @@
   &quot;helpTextPos&quot; : &quot;&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>21.0</sequenceNumber>
+            <sequenceNumber>23.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -637,7 +637,7 @@
   &quot;show&quot; : null,
   &quot;conditionType&quot; : &quot;Hide if False&quot;
 }</propertySetConfig>
-            <sequenceNumber>19.0</sequenceNumber>
+            <sequenceNumber>21.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -672,7 +672,7 @@
   &quot;maxLength&quot; : 255,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>22.0</sequenceNumber>
+            <sequenceNumber>24.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -726,7 +726,7 @@
   &quot;maxLength&quot; : 255,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>4.0</sequenceNumber>
+            <sequenceNumber>6.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -748,7 +748,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>40.0</sequenceNumber>
+            <sequenceNumber>42.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -770,7 +770,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>38.0</sequenceNumber>
+            <sequenceNumber>40.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -814,7 +814,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>29.0</sequenceNumber>
+            <sequenceNumber>31.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -862,7 +862,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>27.0</sequenceNumber>
+            <sequenceNumber>29.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -910,7 +910,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>30.0</sequenceNumber>
+            <sequenceNumber>32.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -954,7 +954,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>28.0</sequenceNumber>
+            <sequenceNumber>30.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -998,7 +998,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>31.0</sequenceNumber>
+            <sequenceNumber>33.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1019,7 +1019,7 @@
   &quot;disOnTplt&quot; : false,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>37.0</sequenceNumber>
+            <sequenceNumber>39.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1069,7 +1069,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;show&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>25.0</sequenceNumber>
+            <sequenceNumber>27.0</sequenceNumber>
             <type>Radio</type>
         </childElements>
         <childElements>
@@ -1093,7 +1093,7 @@
   &quot;label&quot; : &quot;LineBreak1&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>26.0</sequenceNumber>
+            <sequenceNumber>28.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1115,7 +1115,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>41.0</sequenceNumber>
+            <sequenceNumber>43.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1137,7 +1137,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>39.0</sequenceNumber>
+            <sequenceNumber>41.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1159,7 +1159,7 @@
   &quot;inputWidth&quot; : 12,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>42.0</sequenceNumber>
+            <sequenceNumber>44.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1181,7 +1181,7 @@
   &quot;label&quot; : &quot;Legal Middle Name&quot;,
   &quot;showInputWidth&quot; : false,
   &quot;inputWidth&quot; : 12,
-  &quot;required&quot; : false,
+  &quot;required&quot; : true,
   &quot;help&quot; : false,
   &quot;hide&quot; : false,
   &quot;debounceValue&quot; : 0,
@@ -1195,7 +1195,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>3.0</sequenceNumber>
+            <sequenceNumber>5.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1238,7 +1238,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>45.0</sequenceNumber>
+            <sequenceNumber>47.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1282,7 +1282,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>16.0</sequenceNumber>
+            <sequenceNumber>18.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1327,7 +1327,7 @@
   &quot;maxLength&quot; : 255,
   &quot;mask&quot; : &quot;***-**-9999&quot;
 }</propertySetConfig>
-            <sequenceNumber>10.0</sequenceNumber>
+            <sequenceNumber>12.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -1370,23 +1370,8 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;(999) 999-9999&quot;
 }</propertySetConfig>
-            <sequenceNumber>13.0</sequenceNumber>
+            <sequenceNumber>15.0</sequenceNumber>
             <type>Telephone</type>
-        </childElements>
-        <childElements>
-            <isActive>true</isActive>
-            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
-            <level>1.0</level>
-            <name>CertificationTypeSpace</name>
-            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{
-  &quot;label&quot; : &quot;LineBreak1&quot;,
-  &quot;padding&quot; : 20,
-  &quot;show&quot; : null,
-  &quot;HTMLTemplateId&quot; : &quot;&quot;
-}</propertySetConfig>
-            <sequenceNumber>1.0</sequenceNumber>
-            <type>Line Break</type>
         </childElements>
         <childElements>
             <childElements>
@@ -1608,7 +1593,7 @@
   &quot;mode&quot; : &quot;&quot;,
   &quot;maxDisplay&quot; : 3
 }</propertySetConfig>
-            <sequenceNumber>51.0</sequenceNumber>
+            <sequenceNumber>53.0</sequenceNumber>
             <type>Edit Block</type>
         </childElements>
         <childElements>
@@ -1633,7 +1618,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>46.0</sequenceNumber>
+            <sequenceNumber>48.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1657,7 +1642,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;disOnTplt&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>49.0</sequenceNumber>
+            <sequenceNumber>51.0</sequenceNumber>
             <type>Formula</type>
         </childElements>
         <childElements>
@@ -1712,7 +1697,7 @@
   &quot;optionWidth&quot; : 100,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>48.0</sequenceNumber>
+            <sequenceNumber>50.0</sequenceNumber>
             <type>Radio</type>
         </childElements>
         <childElements>
@@ -1740,7 +1725,7 @@
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>47.0</sequenceNumber>
+            <sequenceNumber>49.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -1758,7 +1743,7 @@
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>17.0</sequenceNumber>
+            <sequenceNumber>19.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -1773,7 +1758,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;lwcComponentOverride&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>61.0</sequenceNumber>
+            <sequenceNumber>63.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1798,7 +1783,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;lwcComponentOverride&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>50.0</sequenceNumber>
+            <sequenceNumber>52.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1814,7 +1799,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;lwcComponentOverride&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>43.0</sequenceNumber>
+            <sequenceNumber>45.0</sequenceNumber>
             <type>Line Break</type>
         </childElements>
         <childElements>
@@ -1832,7 +1817,7 @@
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>23.0</sequenceNumber>
+            <sequenceNumber>25.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -1851,7 +1836,7 @@
   &quot;sanitize&quot; : false,
   &quot;show&quot; : null
 }</propertySetConfig>
-            <sequenceNumber>24.0</sequenceNumber>
+            <sequenceNumber>26.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -1879,7 +1864,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>44.0</sequenceNumber>
+            <sequenceNumber>46.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -1919,7 +1904,7 @@
   &quot;placeholder&quot; : &quot;Email Address&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>53.0</sequenceNumber>
+            <sequenceNumber>55.0</sequenceNumber>
             <type>Email</type>
         </childElements>
         <childElements>
@@ -1963,7 +1948,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>58.0</sequenceNumber>
+            <sequenceNumber>60.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -2011,7 +1996,7 @@
   &quot;helpTextPos&quot; : &quot;&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>56.0</sequenceNumber>
+            <sequenceNumber>58.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -2059,7 +2044,7 @@
   &quot;helpTextPos&quot; : &quot;&quot;,
   &quot;HTMLTemplateId&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>59.0</sequenceNumber>
+            <sequenceNumber>61.0</sequenceNumber>
             <type>Select</type>
         </childElements>
         <childElements>
@@ -2103,7 +2088,7 @@
   &quot;maxLength&quot; : 255,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>57.0</sequenceNumber>
+            <sequenceNumber>59.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -2147,7 +2132,7 @@
   &quot;maxLength&quot; : 255,
   &quot;mask&quot; : &quot;&quot;
 }</propertySetConfig>
-            <sequenceNumber>60.0</sequenceNumber>
+            <sequenceNumber>62.0</sequenceNumber>
             <type>Text</type>
         </childElements>
         <childElements>
@@ -2190,7 +2175,7 @@
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;mask&quot; : &quot;(999) 999-9999&quot;
 }</propertySetConfig>
-            <sequenceNumber>54.0</sequenceNumber>
+            <sequenceNumber>56.0</sequenceNumber>
             <type>Telephone</type>
         </childElements>
         <childElements>
@@ -2218,8 +2203,122 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>6.0</sequenceNumber>
+            <sequenceNumber>8.0</sequenceNumber>
             <type>Text Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RenewalLicenseNumber</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;LDIRenewalLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      } ]
+    }
+  },
+  &quot;showInputWidth&quot; : false,
+  &quot;required&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;repeat&quot; : false,
+  &quot;disabled&quot; : false,
+  &quot;placeholder&quot; : &quot;LDP-82****&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;controlWidth&quot; : 6,
+  &quot;repeatClone&quot; : false,
+  &quot;readOnly&quot; : true,
+  &quot;label&quot; : &quot;License Number&quot;,
+  &quot;inputWidth&quot; : 12,
+  &quot;help&quot; : false,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;maxLength&quot; : 255,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RenewalLicenseStatus</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;License Status&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;LDIRenewalLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;disabled&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RenewalLicenseStatusSpace</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 20,
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;LDIInitialLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;appType&quot;
+      } ]
+    }
+  },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
         </childElements>
         <childElements>
             <isActive>true</isActive>
@@ -2246,7 +2345,7 @@
   &quot;textKey&quot; : &quot;&quot;,
   &quot;sanitize&quot; : false
 }</propertySetConfig>
-            <sequenceNumber>52.0</sequenceNumber>
+            <sequenceNumber>54.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <childElements>
@@ -2274,7 +2373,7 @@
     }
   }
 }</propertySetConfig>
-            <sequenceNumber>55.0</sequenceNumber>
+            <sequenceNumber>57.0</sequenceNumber>
             <type>Text Block</type>
         </childElements>
         <isActive>true</isActive>

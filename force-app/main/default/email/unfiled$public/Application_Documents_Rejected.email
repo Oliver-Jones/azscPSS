@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Dear {!Application__c.Account__c},<div><br></div><div>One or more document submitted with&nbsp;{!Application__c.Name} have been rejected.&nbsp; Please login <a href="https://azcld--partial.sandbox.my.site.com">here </a>to review the reasons for the rejection and resubmit the necessary documents.&nbsp; You application cannot be considered further until this issue is resolved.</div><div><br></div><div>Feel free to contact us at the number provided herein with any questions are concerns regarding the above information.</div><div><br></div><div>Regards,</div><div><br></div><div>Arizona Supreme Court</div><div>(602) 555-5555</div>]]></td>
+</tr>
+</table>

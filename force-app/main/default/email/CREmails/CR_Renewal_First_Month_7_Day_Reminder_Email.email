@@ -3,9 +3,9 @@
 	<title></title>
 </head>
 <body style="height: auto; min-height: auto;">
-<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015PY00000XRadv&amp;oid=00DKj000002YfWw&amp;lastMod=1764870419000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
 <br />
-{{{CurrentDate}}}</div>
+{{{BusinessLicense.LastModifiedDate}}}</div>
 &nbsp;
 
 <div style="padding: 0px 50px;"><br />

@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{IndividualApplication.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">
+<p>{{{Recipient.Name}}},<br />
+{{{Recipient.MailingStreet}}},<br />
+{{{Recipient.MailingCity}}}, {{{Recipient.MailingState}}}&nbsp;{{{Recipient.MailingPostalCode}}}<br />
+<br />
+Re:&nbsp;Certified Reporter Renewal - Application Approval &nbsp;</p>
+
+<p>Dear {{{Recipient.Name}}}: &nbsp;</p>
+
+<p>Congratulations! On&nbsp;{{{IndividualApplication.AppliedDate}}},&nbsp;the Board of Certified Reporters approved your application for renewal of Arizona Certified Reporting individual certificate/licensure, license number {{{IndividualApplication.License_Number__c}}}. Enclosed in this communication is a printable 3.5” x 2” certificate.</p>
+
+<p>Please note that this&nbsp;certificate/license is valid from&nbsp;March 1,&nbsp;2026 through February 28, 2028, and all&nbsp;certified reporters will&nbsp;expire on February 28 of even-numbered years. To&nbsp;maintain&nbsp;active status, a renewal application must be&nbsp;submitted&nbsp;prior to the expiration date. &nbsp;</p>
+
+<p>Certification and Licensing Division (“Division”) posts and distributes information on the Certified Reporter website,&nbsp;<a href="https://www.azcourts.gov/cld/Certified-Reporters-Program" rel="noreferrer noopener">https://www.azcourts.gov/cld/Certified-Reporters-Program</a>, and via email&nbsp;CourtRep@courts.az.gov. Please ensure your contact information&nbsp;remains&nbsp;up to date.&nbsp;&nbsp;</p>
+
+<p>If you have any questions or need&nbsp;assistance&nbsp;with future renewals, please contact the Division using the&nbsp;information&nbsp;below.</p>
+</div>
+
+<div style="padding-left:50%;">Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+courtrep@courts.az.gov</div>
+</body>
+</html>

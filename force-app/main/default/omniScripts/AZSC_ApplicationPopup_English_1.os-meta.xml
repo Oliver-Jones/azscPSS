@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
     <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
-    <isActive>true</isActive>
+    <isActive>false</isActive>
     <isIntegrationProcedure>false</isIntegrationProcedure>
     <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
     <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
@@ -547,7 +547,7 @@
             <name>PageType</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
             <propertySetConfig>{
-  &quot;expression&quot; : &quot;IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Initial\&quot;), \&quot;New\&quot;, IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Renewal\&quot;), \&quot;Renewal\&quot;, IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Reinstatement\&quot;), \&quot;Reinstatement\&quot;, \&quot;\&quot;)))&quot;,
+  &quot;expression&quot; : &quot;IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Initial\&quot;), \&quot;New\&quot;, IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Renewal\&quot;), \&quot;Renewal\&quot;, IF(CONTAINS(%ApplicationInformation:ApplnTypeBlock:ApplnTypeInput%, \&quot;Reinstatement\&quot;), \&quot;Reinstate\&quot;, \&quot;\&quot;)))&quot;,
   &quot;controlWidth&quot; : 12,
   &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
   &quot;label&quot; : &quot;PageType&quot;,
@@ -758,9 +758,7 @@
   &quot;wpm&quot; : false,
   &quot;elementValueMap&quot; : {
     &quot;ApplicationType&quot; : &quot;=%ApplicationInformation:ApplnType%&quot;,
-    &quot;LicenseCode&quot; : &quot;=%ApplicationInformation:ApplnCode%&quot;,
-    &quot;PageName&quot; : &quot;=CONCATENATE(%ApplicationInformation:PageType%, \&quot;_\&quot;,  SUBSTRING(%ApplicationInformation:ApplnCode%, 0, 3), &apos;_Application__c&apos;)&quot;,
-    &quot;PageParams&quot; : &quot;=IF(%ApplicationInformation:ApplnType% == &apos;Initial Licensure&apos;, IF(%ApplicationInformation:ApplnCode% == \&quot;ABSLicense\&quot;, \&quot;c__businessType=%ABSApplicationInformation:NewBusinessType%\&quot;, \&quot;\&quot;), IF(%ApplicationInformation:ApplnCode% == \&quot;ABSLicense\&quot;, \&quot;c__licenseId=%LicenseId%&amp;c__businessType=%ABSApplicationInformation:RenewalBusinessType%\&quot;, \&quot;c__licenseId=%LicenseId%\&quot;))&quot;
+    &quot;LicenseCode&quot; : &quot;=%ApplicationInformation:ApplnCode%&quot;
   },
   &quot;showPersistentComponent&quot; : [ true, false ],
   &quot;label&quot; : &quot;Assign Initial Values&quot;,
@@ -770,6 +768,29 @@
   &quot;pubsub&quot; : false
 }</propertySetConfig>
         <sequenceNumber>4.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>AssignPageValues</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;wpm&quot; : false,
+  &quot;elementValueMap&quot; : {
+    &quot;PageName&quot; : &quot;=CONCATENATE(%ApplicationInformation:PageType%, \&quot;_\&quot;,  SUBSTRING(%ApplicationInformation:ApplnCode%, 0, 3), &apos;_Application__c&apos;)&quot;,
+    &quot;PageParams&quot; : &quot;=IF(%ApplicationInformation:ApplnType% == &apos;Initial Licensure&apos;, IF(%ApplicationInformation:ApplnCode% == \&quot;ABSLicense\&quot;, \&quot;c__businessType=%ABSApplicationInformation:NewBusinessType%\&quot;, IF(%ApplicationInformation:ApplnCode% == \&quot;LPPLicense\&quot;, \&quot;c__subjectMatter=%LPApplicationInfo:LPEndoSubMatter%\&quot;, \&quot;\&quot;)), IF(%ApplicationInformation:ApplnCode% == \&quot;ABSLicense\&quot;, \t\t\&quot;c__licenseId=%LicenseId%&amp;c__businessType=%ABSApplicationInformation:RenewalBusinessType%\&quot;, \&quot;c__licenseId=%LicenseId%\&quot;))&quot;
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;label&quot; : &quot;Assign Page Values&quot;,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>9.0</sequenceNumber>
         <type>Set Values</type>
     </omniProcessElements>
     <omniProcessElements>
@@ -927,32 +948,19 @@
   },
   &quot;show&quot; : {
     &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;operator&quot; : &quot;OR&quot;,
       &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;IsNew&quot;
+        &quot;data&quot; : null,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;field&quot; : &quot;BusinessLicenseApplication:Id&quot;
       }, {
-        &quot;field&quot; : &quot;ApplicationInformation:ApplnType&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;data&quot; : &quot;Initial Licensure&quot;
+        &quot;field&quot; : &quot;IndividualApplication:Id&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null
       }, {
-        &quot;group&quot; : {
-          &quot;operator&quot; : &quot;OR&quot;,
-          &quot;rules&quot; : [ {
-            &quot;field&quot; : &quot;BusinessLicenseApplication:Id&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : &quot;&quot;
-          }, {
-            &quot;field&quot; : &quot;IndividualApplication:Id&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : &quot;&quot;
-          }, {
-            &quot;field&quot; : &quot;OmniScriptSavedSession:Id&quot;,
-            &quot;condition&quot; : &quot;&lt;&gt;&quot;,
-            &quot;data&quot; : null
-          } ]
-        }
+        &quot;field&quot; : &quot;OmniScriptSavedSession:Id&quot;,
+        &quot;condition&quot; : &quot;&lt;&gt;&quot;,
+        &quot;data&quot; : null
       } ]
     }
   },
@@ -1021,20 +1029,7 @@
   &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
   &quot;redirectPreviousWidth&quot; : 3,
   &quot;showPersistentComponent&quot; : [ true, false ],
-  &quot;show&quot; : {
-    &quot;group&quot; : {
-      &quot;operator&quot; : &quot;AND&quot;,
-      &quot;rules&quot; : [ {
-        &quot;data&quot; : &quot;true&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;field&quot; : &quot;IsNew&quot;
-      }, {
-        &quot;field&quot; : &quot;ApplicationInformation:ApplnType&quot;,
-        &quot;condition&quot; : &quot;=&quot;,
-        &quot;data&quot; : &quot;Initial Licensure&quot;
-      } ]
-    }
-  },
+  &quot;show&quot; : null,
   &quot;HTMLTemplateId&quot; : &quot;&quot;,
   &quot;wpm&quot; : false,
   &quot;ssm&quot; : false,
@@ -1103,6 +1098,162 @@
         <type>DataRaptor Extract Action</type>
     </omniProcessElements>
     <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 10,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak2&quot;,
+  &quot;padding&quot; : 70,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LPEndoSubMatter</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 10,
+  &quot;label&quot; : &quot;Please select Endorsement Subject Matter(s)&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;SObject&quot;,
+    &quot;source&quot; : &quot;IndividualApplication.Endorsement_Subject_Matter__c&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Multi-select</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TextBlock2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;TextBlock2&quot;,
+  &quot;text&quot; : &quot;&lt;p style=\&quot;font-size: 16px; line-height: 2; font-weight: 500; padding: 10px;\&quot;&gt;(Note: Core and Practice Area Exams must be successfully completed before submitting an application for licensure.)&lt;/p&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>LPApplicationInfo</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;Legal Paraprofessional (LP) Application&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Previous&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;nextLabel&quot; : &quot;Launch Application&quot;,
+  &quot;nextWidth&quot; : &quot;4&quot;,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save for later&quot;,
+  &quot;saveChangesLabel&quot; : &quot;Save Changes&quot;,
+  &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : {
+    &quot;group&quot; : {
+      &quot;operator&quot; : &quot;AND&quot;,
+      &quot;rules&quot; : [ {
+        &quot;data&quot; : &quot;LPPLicense&quot;,
+        &quot;condition&quot; : &quot;=&quot;,
+        &quot;field&quot; : &quot;LicenseCode&quot;
+      } ]
+    }
+  },
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : false,
+  &quot;allowSaveChanges&quot; : false,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;ariaLevel&quot; : &quot;&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessElements>
         <isActive>true</isActive>
         <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
         <level>0.0</level>
@@ -1136,7 +1287,7 @@
   &quot;lwcComponentOverride&quot; : &quot;&quot;,
   &quot;targetParams&quot; : &quot;%PageParams%&quot;
 }</propertySetConfig>
-        <sequenceNumber>8.0</sequenceNumber>
+        <sequenceNumber>10.0</sequenceNumber>
         <type>Navigate Action</type>
     </omniProcessElements>
     <omniProcessElements>

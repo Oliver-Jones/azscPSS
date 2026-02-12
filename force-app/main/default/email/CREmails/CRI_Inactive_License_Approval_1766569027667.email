@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;">Dear&nbsp;{{{Recipient.Name}}}</div>
+
+<div style="padding: 0px 50px; line-height: 1.5;"><br />
+Congratulations! On {{{BusinessLicense.Board_Meeting_Date__c}}}, the Board of Certified Reporters approved an application for renewal of Arizona Certified Reporting Individual Inactive certification, certification number {{{BusinessLicense.License_Number__c}}}. Your certification is valid from March 1, 2026 through February 28, 2028.&nbsp; Enclosed in this communication is a printable 3.5” x 2” certificate.<br />
+<br />
+Your inactive certification is valid through February 28, 2028.  All Certified Reporter certifications expire on February 28 of every even numbered year at Midnight. If you wish to remain on inactive status next cycle, you must renew your inactive license.
+<p>Certification and Licensing Division (“Division”) posts and distributes information on the Certified Reporter website, <a href="https://www.azcourts.gov/cld/Certified-Reporters-Program" rel="noreferrer noopener">https://www.azcourts.gov/cld/Certified-Reporters-Program</a>, and via email CourtRep@courts.az.gov. Please ensure your contact information remains up to date.&nbsp;&nbsp;</p>
+
+<p>If you have any questions or need assistance with future renewals, please contact the Division using the information below.</p>
+</div>
+
+<div style="padding-left:50%;"><br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+CourtRep@courts.az.gov</div>
+</body>
+</html>

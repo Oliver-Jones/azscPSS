@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
+    <!--<types>
         <members>TaskStatus</members>
         <members>IaApplnStatus</members>
         <members>LPIApplnStatus</members>
         <name>StandardValueSet</name>
-    </types><!--
+    </types> !--><!--
     <types>
         <members>ExamEmails/Exam_Accommodation_Approval_Email</members>
         <members>ExamEmails/Exam_Accommodation_Denial_Email</members>
@@ -28,12 +28,68 @@
         <members>LicensingEmails/Licensing_Individual_Application_Approval_Email</members>
         <members>LicensingEmails/Licensing_Business_License_Application_Approval_Email</members>
         <name>EmailTemplate</name>
+    </types>!-->
+    <types>
+        <members>ABSEmails/ABS_Renewal_30_Day_Reminder_1758696996570</members>
+        <members>ABSEmails/ABS_Renewal_90_Day_Reminder_1758696730521</members>
+        <members>CREmails/CRF_New_Approval_Email</members>
+        <members>CREmails/CRF_Renewal_Approval_Email</members>
+        <members>CREmails/CRF_Expiration_Email</members>
+        <members>CREmails/CRF_Good_Cause_Exception_Email</members>
+        <members>CREmails/CRI_Expiration_Email</members>
+        <members>CREmails/CRI_Good_Cause_Exception_Email</members>
+        <members>CREmails/CRF_Denial_Email</members>
+        <members>CREmails/CRF_Submission_Email</members>
+        <members>CREmails/CRI_Denial_Email</members>
+        <members>CREmails/CRI_New_Approval_Email</members>
+        <members>CREmails/CRI_Renewal_Approval_Email</members>
+        <members>CREmails/CRI_Submission_Email</members>
+        <members>CREmails/CR_Renewal_60_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_First_Month_14_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_First_Month_1_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_First_Month_7_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_Second_Month_14_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_Second_Month_1_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_Second_Month_7_Day_Reminder_Email</members>
+        <members>CREmails/CR_Renewal_Second_Month_Reminder_Email</members>
+        <members>LPPEmails/LPP_New_Approval_Email</members>
+        <members>LDPEmails/LDB_New_Approval_Email</members>
+        <members>LDPEmails/LDB_Renewal_Approval_Email</members>
+        <members>LDPEmails/LDB_Denial_Email</members>
+        <members>LDPEmails/LDB_Expiration_Email</members>
+        <members>LDPEmails/LDB_Good_Cause_Exception_Email</members>
+        <members>LDPEmails/LDB_Submission_Email</members>
+        <members>LDPEmails/LDI_New_Approval_Email</members>
+        <members>LDPEmails/LDI_Renewal_Approval_Email</members>
+        <members>LDPEmails/LDI_Denial_Email</members>
+        <members>LDPEmails/LDI_Expiration_Email</members>
+        <members>LDPEmails/LDI_Good_Cause_Exception_Email</members>
+        <members>LDPEmails/LDI_Submission_Email</members>
+        <members>LDPEmails/LDB_Renewal_60_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_First_Month_14_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_First_Month_1_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_First_Month_7_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_Second_Month_1_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_Second_Month_7_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_Second_Month_14_Day_Reminder_Email</members>
+        <members>LDPEmails/LDB_Renewal_Second_Month_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_60_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_First_Month_14_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_First_Month_1_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_First_Month_7_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_Second_Month_1_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_Second_Month_7_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_Second_Month_14_Day_Reminder_Email</members>
+        <members>LDPEmails/LDI_Renewal_Second_Month_Reminder_Email</members>
+        <name>EmailTemplate</name>
     </types>
     <types>
-        <members>ExamEmails</members>
-        <members>LicensingEmails</members>
+        <members>CREmails</members>
+        <members>LDPEmails</members>
+        <members>LPPEmails</members>
+        <members>ABSEmails</members>
         <name>EmailTemplateFolder</name>
-    </types>!-->
+    </types>
     <!--
     <types>
         <members>*</members>

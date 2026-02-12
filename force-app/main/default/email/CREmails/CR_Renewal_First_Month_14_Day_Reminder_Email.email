@@ -3,13 +3,13 @@
 	<title></title>
 </head>
 <body style="height: auto; min-height: auto;">
-<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015PY00000XRadv&amp;oid=00DKj000002YfWw&amp;lastMod=1764870419000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld--dev01pss.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
 <br />
-{{{CurrentDate}}}</div>
+{{{BusinessLicense.LastModifiedDate}}}</div>
 &nbsp;
 
 <div style="padding: 0px 50px;"><br />
-The Certified Reporters program has now opened its certification renewal application process and will close on {ExpirationDate}. Remaining days to renew: 41 Days. &nbsp;&nbsp;<br />
+The Certified Reporters program has now opened its certification renewal application process and will close on {{{BusinessLicense.Expiration_Date__c}}}. Remaining days to renew: 41 Days. &nbsp;&nbsp;<br />
 <br />
 PLEASE NOTE: If you do not apply and pay online in the first month of renewal &nbsp;&nbsp;<br />
 (January), your application will be charged a $100 late renewal fee. &nbsp;&nbsp;<br />
@@ -22,7 +22,7 @@ If you encounter difficulties renewing online, contact the Certification and &nb
 Licensing Division at the email address below. &nbsp;&nbsp;<br />
 <br />
 You will not be able to renew the license after the date of expiration. <strong>All Certified &nbsp;&nbsp;<br />
-Reporter Individual Certificates and Registered Firms will expire at Midnight on {ExpirationDate}</strong>. In the event you fail to renew your license prior to the expiration date, you must contact the Division for next steps. &nbsp;</div>
+Reporter Individual Certificates and Registered Firms will expire at Midnight on {{{BusinessLicense.Expiration_Date__c}}}</strong>. In the event you fail to renew your license prior to the expiration date, you must contact the Division for next steps. &nbsp;</div>
 
 <div style="padding-left:50%;"><br />
 <br />

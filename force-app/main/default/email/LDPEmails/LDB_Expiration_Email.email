@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align:center;"><img alt="AZSCEmailHeader.png" src="https://azcld.my.salesforce.com/servlet/servlet.ImageServer?id=015O100000E11LN&amp;oid=00DO100000HJmIT&amp;lastMod=1766754550000" style="max-width:100%;" title="AZSCEmailHeader" /><br />
+<br />
+{{{BusinessLicense.LastModifiedDate}}}</div>
+&nbsp;
+
+<div style="padding: 0px 50px;"><br />
+Dear {{{Recipient.Name}}},</div>
+
+<p style="padding: 0px 50px;">&nbsp;</p>
+
+<div style="padding: 0px 50px;">
+<p>Division records indicate no Legal Document Preparer renewal application was received during this certification period.  </p>
+
+<p>Under the Arizona Code of Judicial Administration ("ACJA") §7-208 effective midnight on {{{BusinessLicense.PeriodEnd}}}, Legal Document Preparer certificate {{{BusinessLicense.Name}}}, expired and is no longer active. You must immediately cease providing services.  </p>
+
+<p>If you believe you have received this notification in error, please contact the Certification and Licensing Division by emailing the Legal Document Preparer program inbox:  <br />
+<br />
+Legal Document Preparer Program - <a href="https://LDP@courts.az.gov">LDP@courts.az.gov</a></p>
+</div>
+
+<div style="padding-left:50%;"><br />
+<br />
+Sincerely,<br />
+<br />
+Certification and Licensing Division,<br />
+1501 West Washington, Suite 104<br />
+Phoenix, AZ 85007<br />
+Phone: (602) 452-3378 Fax: (602) 452-3958<br />
+LDP@courts.az.gov  </div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+
+<div id="" style="left: 16.3333px; top: 8px;">&nbsp;</div>
+</body>
+</html>

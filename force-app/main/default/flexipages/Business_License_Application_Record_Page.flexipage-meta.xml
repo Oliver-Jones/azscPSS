@@ -17,13 +17,16 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
+                            <value>BusinessLicenseApplication.Generate_PDF</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>BusinessLicenseApplication.Generate_Files</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>EditRecord</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Clone</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>BusinessLicenseApplication.Generate_PDF</value>
                         </valueListItems>
                         <valueListItems>
                             <value>BusinessLicenseApplication.Add_Check_Money_Order</value>
@@ -1623,6 +1626,16 @@
                 <identifier>RecordStatus_Change_Reason_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Board_Approval_Date__c</fieldItem>
+                <identifier>RecordBoard_Approval_Date_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-6a2f8a13-cb40-4250-acc4-e8bd0c1d542a</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2253,6 +2266,16 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.AccountId</fieldItem>
+                <identifier>RecordAccountIdField3</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Status</fieldItem>
                 <identifier>RecordStatusField3</identifier>
             </fieldInstance>
@@ -2273,8 +2296,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.AccountId</fieldItem>
-                <identifier>RecordAccountIdField3</identifier>
+                <fieldItem>Record.Board_Approval_Date__c</fieldItem>
+                <identifier>RecordBoard_Approval_Date_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-97ce1a45-4906-48e2-8b42-6188f6dfaf44</name>

@@ -60,6 +60,66 @@
         <offset>0</offset>
         <versionString>2.0.1</versionString>
     </actionCalls>
+    <actionCalls>
+        <name>Send_Email_on_Initial_Approval</name>
+        <label>Send Email on Initial Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>Fetch_Org_Wide_Email_Address.Address</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useEmailTemplate</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailTemplateId</name>
+            <value>
+                <elementReference>Fetch_Email_Template_of_Initial_Approval.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>attachmentId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+            <value>
+                <elementReference>$Record.ContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>logEmailOnSend</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>2.0.1</versionString>
+    </actionCalls>
     <apiVersion>64.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
@@ -78,6 +138,53 @@
             <targetReference>Is_Newly_Created</targetReference>
         </connector>
     </assignments>
+    <decisions>
+        <name>Certified_Date_Check</name>
+        <label>Certified Date Check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Certified_Date_Is_updated</name>
+            <conditionLogic>1 AND 2 AND 3 AND ( 4 OR 5 )</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.PeriodStart</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.PeriodStart</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RegulatoryAuthorizationType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDBLicense</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RegulatoryAuthorizationType.RegulatoryAuthCode</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LDILicense</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Email_Template_of_Initial_Approval</targetReference>
+            </connector>
+            <label>Certified Date Is updated</label>
+        </rules>
+    </decisions>
     <decisions>
         <name>Check_License_has_Contact</name>
         <label>Check License has Contact</label>
@@ -103,6 +210,35 @@
             </conditions>
             <connector>
                 <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_License_has_Contact_1</name>
+        <label>Check License has Contact</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ContactId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Fetch_Email_Template_of_Initial_Approval.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_on_Initial_Approval</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
@@ -137,6 +273,9 @@
         <label>Status is Changed</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Certified_Date_Check</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>No Change</defaultConnectorLabel>
         <rules>
             <name>Status_Expired</name>
@@ -220,6 +359,11 @@
         <dataType>String</dataType>
         <expression>IF({!CalculatedStatus} == {!Expired_Status_Metadata.Value__c} &amp;&amp; {!$Record.Good_Cause_Exception__c} == true, {!Good_Cause_Exempt_Status_Metadata.Value__c}, IF(OR(ISBLANK(TEXT({!$Record.Status})), ISNULL(TEXT({!$Record.Status})), TEXT({!$Record.Status}) == {!Active_Status_Metadata.Value__c}, TEXT({!$Record.Status}) == {!Renewal_Pending_Status_Metadata.Value__c}, TEXT({!$Record.Status}) == {!Expired_Status_Metadata.Value__c}), {!CalculatedStatus}, TEXT({!$Record.Status})))</expression>
     </formulas>
+    <formulas>
+        <name>UniqueNameOfApprovalTemplate</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.RegulatoryAuthorizationType.RegulatoryAuthCode}, 3) &amp; &quot;_New_Approval_Email&quot;</expression>
+    </formulas>
     <interviewLabel>Business License Flow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Business License Flow</label>
     <processMetadataValues>
@@ -290,7 +434,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Fetch_Org_Wide_Metadata</targetReference>
+            <targetReference>Check_License_has_Contact</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -298,6 +442,27 @@
             <operator>EqualTo</operator>
             <value>
                 <elementReference>EmailTemplateName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>EmailTemplate</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Fetch_Email_Template_of_Initial_Approval</name>
+        <label>Fetch Email Template of Initial Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_License_has_Contact_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>UniqueNameOfApprovalTemplate</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -332,7 +497,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Check_License_has_Contact</targetReference>
+            <targetReference>Status_Changed</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -436,7 +601,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Status_Changed</targetReference>
+            <targetReference>Fetch_Org_Wide_Metadata</targetReference>
         </connector>
         <inputAssignments>
             <field>Status</field>
